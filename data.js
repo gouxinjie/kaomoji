@@ -1,6 +1,6 @@
 /**
  * 颜文字图鉴 · 数据源
- * 38 大类、约 100+ 个颜文字
+ * 42 大类、约 100+ 个颜文字
  * 通过 window.KAOMOJI_DATA 暴露给页面
  */
 window.KAOMOJI_DATA = {
@@ -10,7 +10,7 @@ window.KAOMOJI_DATA = {
         icon: '(⊙_⊙)',
         subtitle: '从嘲讽到撒娇，从极简到沙雕 · 点击颜文字即可复制',
         totalLabel: '点击 复制',
-        totalCount: 38
+        totalCount: 42
     },
 
     // 14 大分类
@@ -703,6 +703,98 @@ window.KAOMOJI_DATA = {
                 { symbol: '(´･_･)`', desc: '纠结' },
                 { symbol: '(・へ・)?', desc: '不解歪头' },
                 { symbol: '(￣ー￣)?', desc: '深思' }
+            ]
+        },
+        {
+            id: 'cool',
+            name: '超酷',
+            emoji: '😎',
+            badge: 15,
+            items: [
+                { symbol: '(⌐■_■)', desc: '墨镜装酷' },
+                { symbol: '(•_•) ( •_•)>⌐■-■ (⌐■_■)', desc: '墨镜三段' },
+                { symbol: '(￣ー￣)', desc: '面无表情' },
+                { symbol: '(｀⌒´)', desc: '酷酷撇嘴' },
+                { symbol: '(¬‿¬)', desc: '狡黠酷' },
+                { symbol: '( ͡° ͜ʖ ͡°)', desc: '经典坏笑' },
+                { symbol: '(｀∀´)Ψ', desc: '邪魅酷' },
+                { symbol: '(★ω★)', desc: '闪耀酷' },
+                { symbol: '(￣ε(#￣)', desc: '傲娇酷' },
+                { symbol: '(๑˃̵ᴗ˂̵)و', desc: '酷酷挥手' },
+                { symbol: '(｀・ω・´)', desc: '自信酷' },
+                { symbol: '(￣▽￣)ノ', desc: '酷酷拜拜' },
+                { symbol: '(•̀ᴗ•́)و', desc: '酷酷加油' },
+                { symbol: '(✧ω✧)', desc: '酷酷眨眼' },
+                { symbol: '(｀ε´)', desc: '酷酷哼哼' }
+            ]
+        },
+        {
+            id: 'dumb2',
+            name: '超傻',
+            emoji: '🤤',
+            badge: 15,
+            items: [
+                { symbol: '(⊙_⊙)', desc: '呆滞' },
+                { symbol: '(゜o゜;', desc: '傻眼' },
+                { symbol: '(°ロ°)', desc: '惊呆' },
+                { symbol: '(・_・;)', desc: '冒汗尴尬' },
+                { symbol: '(；一_一)', desc: '生无可恋' },
+                { symbol: '(´･_･)`', desc: '呆懵' },
+                { symbol: '(｡ŏ_ŏ)', desc: '傻乎乎' },
+                { symbol: '(⊙ˍ⊙)', desc: '发呆' },
+                { symbol: '(；°Д°)', desc: '傻住' },
+                { symbol: '(￣o￣)', desc: '呆脸' },
+                { symbol: '(・へ・)', desc: '懵懵' },
+                { symbol: '(；ﾟдﾟ)', desc: '目瞪口呆' },
+                { symbol: '(´-﹏-)`', desc: '无奈傻' },
+                { symbol: '(；ω；)', desc: '傻哭' },
+                { symbol: '(｡•́ - •̀｡)', desc: '傻傻的' }
+            ]
+        },
+        {
+            id: 'gentle',
+            name: '超温柔',
+            emoji: '🕊️',
+            badge: 15,
+            items: [
+                { symbol: '(｡♥‿♥｡)', desc: '含情脉脉' },
+                { symbol: '(´∀｀)♡', desc: '温柔比心' },
+                { symbol: '(๑˘͈ ᵕ ˘͈๑)', desc: '温柔可爱' },
+                { symbol: '(✿◠‿◠)', desc: '温柔微笑' },
+                { symbol: '(◕‿◕✿)', desc: '带花温柔' },
+                { symbol: '(ᵔᴥᵔ)', desc: '憨憨温柔' },
+                { symbol: '(´｡• ᵕ •｡)`', desc: '抿嘴温柔' },
+                { symbol: '(๑´ㅂ๑)`', desc: '嘟嘴温柔' },
+                { symbol: '(｡･ω･｡)', desc: '乖乖温柔' },
+                { symbol: '(♡˙︶˙♡)', desc: '温柔爱意' },
+                { symbol: '(づ￣ ³￣)づ', desc: '温柔亲亲' },
+                { symbol: '(つ≧▽≦)つ', desc: '温柔抱抱' },
+                { symbol: '(´,,•ω•,,)♡', desc: '温柔心动' },
+                { symbol: '(๑•ᴗ•๑)', desc: '温柔软萌' },
+                { symbol: '(˘͈ ᵕ ˘͈๑)', desc: '温柔羞羞' }
+            ]
+        },
+        {
+            id: 'exaggerate',
+            name: '超夸张',
+            emoji: '😱',
+            badge: 15,
+            items: [
+                { symbol: '(╯°□°)╯︵ ┻━┻', desc: '暴怒掀桌' },
+                { symbol: '(ノಠ益ಠ)ノ彡┻━┻', desc: '狂怒掀桌' },
+                { symbol: '(╬ Ò ‸ Ó)', desc: '气炸' },
+                { symbol: '(ﾒﾟ皿ﾟ)ﾒ', desc: '怒到磨牙' },
+                { symbol: '(＃｀д´)ﾉ', desc: '暴走' },
+                { symbol: '(╬◣д◢)', desc: '怒目圆睁' },
+                { symbol: '(；д；)', desc: '泪崩' },
+                { symbol: '(இ﹏இ)', desc: '嚎啕大哭' },
+                { symbol: '(ㄒoㄒ)', desc: '大哭' },
+                { symbol: '(T_T)', desc: '泪流满面' },
+                { symbol: '(´；ω；｀)', desc: '伤心欲绝' },
+                { symbol: '(ﾉ´ヮ)ﾉ*: ･ﾟ✧`', desc: '疯狂撒花' },
+                { symbol: '(★≧▽≦)', desc: '闪耀狂喜' },
+                { symbol: '(๑˃̶͈̀ロ˂̶͈́)و', desc: '激情澎湃' },
+                { symbol: '( ͡° ͜ʖ ͡°)✧', desc: '坏笑搞怪' }
             ]
         }
     ],

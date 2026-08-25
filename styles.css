@@ -194,6 +194,10 @@ body {
 .c-furious .card-emoji   { background: #ffd6d6; }
 .c-heart .card-emoji     { background: #ffd9ec; }
 .c-think .card-emoji     { background: #e6f0ff; }
+.c-cool .card-emoji      { background: #e0e7ff; }
+.c-dumb2 .card-emoji     { background: #f0e6d0; }
+.c-gentle .card-emoji    { background: #ffe3ec; }
+.c-exaggerate .card-emoji { background: #ffe0d6; }
 .c-ascii .card-emoji     { background: #f5e8ff; }
 
 .card-title {
