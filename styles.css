@@ -169,6 +169,11 @@ body {
 .c-art .card-emoji       { background: #ffe9e9; }
 .c-crash .card-emoji     { background: #fff0e0; }
 .c-daily .card-emoji     { background: #e6f4ff; }
+.c-dumb .card-emoji      { background: #fff4d6; }
+.c-cute .card-emoji      { background: #ffe0ec; }
+.c-awkward .card-emoji   { background: #e8e7f5; }
+.c-angry .card-emoji     { background: #ffdfdd; }
+.c-happy .card-emoji     { background: #fff0b8; }
 .c-ascii .card-emoji     { background: #f5e8ff; }
 
 .card-title {

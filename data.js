@@ -1,6 +1,6 @@
 /**
  * 颜文字图鉴 · 数据源
- * 13 大类、约 100+ 个颜文字
+ * 18 大类、约 100+ 个颜文字
  * 通过 window.KAOMOJI_DATA 暴露给页面
  */
 window.KAOMOJI_DATA = {
@@ -10,7 +10,7 @@ window.KAOMOJI_DATA = {
         icon: '(⊙_⊙)',
         subtitle: '从嘲讽到撒娇，从极简到沙雕 · 点击颜文字即可复制',
         totalLabel: '点击 复制',
-        totalCount: 13
+        totalCount: 18
     },
 
     // 14 大分类
@@ -237,6 +237,81 @@ window.KAOMOJI_DATA = {
                 { symbol: '(。-ω-)zzz', desc: '困死了' },
                 { symbol: 'σ(´∀｀*)', desc: '开心冲鸭' },
                 { symbol: 'm(_ _)m', desc: '拜托了' }
+            ]
+        },
+        {
+            id: 'dumb',
+            name: '经典呆萌 · 惊讶',
+            emoji: '😲',
+            badge: 8,
+            items: [
+                { symbol: '(⊙_⊙)', desc: '瞪大眼' },
+                { symbol: '(⊙o⊙)', desc: '圆眼惊讶' },
+                { symbol: '(๑•́ ₃ •̀๑)', desc: '呆萌眨眼' },
+                { symbol: '(｡ŏ_ŏ)', desc: '呆滞盯' },
+                { symbol: '(・_・;)', desc: '尴尬冒汗' },
+                { symbol: '(゜o゜;', desc: '惊讶结巴' },
+                { symbol: '(°ロ°)', desc: '惊掉下巴' },
+                { symbol: '(・∀・)', desc: '呆呆的' }
+            ]
+        },
+        {
+            id: 'cute',
+            name: '可爱 · 卖萌',
+            emoji: '🥰',
+            badge: 8,
+            items: [
+                { symbol: '(๑•̀ㅂ•́)و✧', desc: '握拳加油' },
+                { symbol: '(づ｡◕‿‿◕｡)づ', desc: '要抱抱' },
+                { symbol: '(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧', desc: '撒花转圈' },
+                { symbol: '(｡♥‿♥｡)', desc: '含情脉脉' },
+                { symbol: '(◕‿◕✿)', desc: '带花微笑' },
+                { symbol: '(ᵔᴥᵔ)', desc: '憨憨呆萌' },
+                { symbol: '(✿◠‿◠)', desc: '纯洁无辜' },
+                { symbol: '(๑˃̵ᴗ˂̵)و', desc: '可爱应援' }
+            ]
+        },
+        {
+            id: 'awkward',
+            name: '无语 · 尴尬',
+            emoji: '🤦',
+            badge: 8,
+            items: [
+                { symbol: '¯\\_(ツ)_/¯', desc: '耸肩无奈' },
+                { symbol: '(¬_¬)', desc: '白眼' },
+                { symbol: '(－‸ლ)', desc: '扶额无语' },
+                { symbol: '(눈_눈)', desc: '死鱼眼' },
+                { symbol: '(￣ヘ￣)', desc: '不屑扭头' },
+                { symbol: '(；￣Д￣)', desc: '满头黑线' },
+                { symbol: '(╮°□°）╭', desc: '摊手无奈' }
+            ]
+        },
+        {
+            id: 'angry',
+            name: '生气 · 傲娇',
+            emoji: '😠',
+            badge: 8,
+            items: [
+                { symbol: '(╬ Ò ‸ Ó)', desc: '气鼓鼓' },
+                { symbol: '(╯°□°）╯︵ ┻━┻', desc: '掀桌' },
+                { symbol: '(ノಠ益ಠ)ノ', desc: '暴怒掀桌' },
+                { symbol: '(｀Д´)', desc: '生气叉腰' },
+                { symbol: '(ﾒ ﾟ皿ﾟ)ﾒ', desc: '磨牙怒视' },
+                { symbol: '(๑•̀д•́๑)', desc: '气到跳脚' }
+            ]
+        },
+        {
+            id: 'happy',
+            name: '开心 · 兴奋',
+            emoji: '🎉',
+            badge: 6,
+            items: [
+                { symbol: '＼(≧▽≦)／', desc: '欢呼雀跃' },
+                { symbol: '(ﾉ´ヮ)ﾉ*: ･ﾟ`', desc: '疯狂打call' },
+                { symbol: '٩(◕‿◕｡)۶', desc: '手舞足蹈' },
+                { symbol: '(≧∇≦)/', desc: '开心挥手' },
+                { symbol: 'ヽ(>∀<☆)ノ', desc: '星星眼开心' },
+                { symbol: '(★ω★)/', desc: '闪耀兴奋' }
             ]
         }
     ],
