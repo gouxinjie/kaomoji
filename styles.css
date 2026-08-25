@@ -240,6 +240,13 @@ body {
 .c-composure .card-emoji { background: #e6e8ee; }
 .c-hardstubborn .card-emoji { background: #fff3c7; }
 .c-drama2 .card-emoji    { background: #f3e0ff; }
+.c-workslacking .card-emoji { background: #e6f0e6; }
+.c-examstress .card-emoji { background: #ffdcdc; }
+.c-marriagepressure .card-emoji { background: #f0e8d0; }
+.c-rainyday .card-emoji  { background: #dce8f2; }
+.c-binge .card-emoji     { background: #ffe0e6; }
+.c-overtime .card-emoji  { background: #e2e6ee; }
+.c-payday .card-emoji    { background: #fff0c8; }
 .c-ascii .card-emoji     { background: #f5e8ff; }
 
 .card-title {

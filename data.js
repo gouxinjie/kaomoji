@@ -1,6 +1,6 @@
 /**
  * 颜文字图鉴 · 数据源
- * 90 大类、约 100+ 个颜文字
+ * 98 大类、约 100+ 个颜文字
  * 通过 window.KAOMOJI_DATA 暴露给页面
  */
 window.KAOMOJI_DATA = {
@@ -10,7 +10,7 @@ window.KAOMOJI_DATA = {
         icon: '(⊙_⊙)',
         subtitle: '从嘲讽到撒娇，从极简到沙雕 · 点击颜文字即可复制',
         totalLabel: '点击 复制',
-        totalCount: 90
+        totalCount: 98
     },
 
     // 14 大分类
@@ -1611,6 +1611,118 @@ window.KAOMOJI_DATA = {
                 { symbol: '(ﾒﾟ皿ﾟ)ﾒ', desc: '怒飙戏' },
                 { symbol: '(ﾉ°ο°)ノ', desc: '摇晃飙戏' },
                 { symbol: '(；∀；) 我真的会谢', desc: '我真的会谢' }
+            ]
+        },
+        {
+            id: 'workslacking',
+            name: '上班摸鱼',
+            emoji: '🧊',
+            badge: 8,
+            items: [
+                { symbol: '(－_－) 假装在忙', desc: '假装在忙' },
+                { symbol: '(￣ρ￣) 划水中', desc: '划水中' },
+                { symbol: '(´-ω-｀) 没人发现吧', desc: '没人发现吧' },
+                { symbol: '(；一_一) 领导来了', desc: '领导来了' },
+                { symbol: '(￣ー￣) 认真工作中（装的）', desc: '认真工作中' },
+                { symbol: '(・_・) 什么都没看见', desc: '什么都没看见' },
+                { symbol: '(´,_ゝ｀) 再摸五分钟', desc: '再摸五分钟' },
+                { symbol: '(￣ω￣) 还没到点', desc: '还没到点' }
+            ]
+        },
+        {
+            id: 'examstress',
+            name: '考试前 · 复习崩溃',
+            emoji: '📚',
+            badge: 8,
+            items: [
+                { symbol: '(；д；) 记不住了', desc: '记不住了' },
+                { symbol: '(இ﹏இ) 心态崩了', desc: '心态崩了' },
+                { symbol: '(´；ω；｀) 我是不是要挂', desc: '我是不是要挂' },
+                { symbol: '(；°Д°) 还有这么多', desc: '还有这么多' },
+                { symbol: '(＃°Д°) 来不及了', desc: '来不及了' },
+                { symbol: '(；一_一) 摆烂算了', desc: '摆烂算了' },
+                { symbol: '(´-﹏-) 不会啊`', desc: '不会啊' },
+                { symbol: '(T_T) 救命', desc: '救命' }
+            ]
+        },
+        {
+            id: 'marriagepressure',
+            name: '被催婚 · 被催生',
+            emoji: '👵',
+            badge: 8,
+            items: [
+                { symbol: '(；一_一) 再说吧', desc: '再说吧' },
+                { symbol: '(￣ー￣) 不急', desc: '不急' },
+                { symbol: '(¬_¬) 关你什么事', desc: '关你什么事' },
+                { symbol: '(´-ω-｀) 随便', desc: '随便' },
+                { symbol: '(；°Д°) 别问了', desc: '别问了' },
+                { symbol: '(￣ヘ￣) 听不懂', desc: '听不懂' },
+                { symbol: '(・へ・) 我还小', desc: '我还小' },
+                { symbol: '(´,_ゝ｀) 下一位', desc: '下一位' }
+            ]
+        },
+        {
+            id: 'rainyday',
+            name: '下雨天不想出门',
+            emoji: '🌧️',
+            badge: 8,
+            items: [
+                { symbol: '(－_－) 不出门', desc: '不出门' },
+                { symbol: '(￣ρ￣) 下雨了真好', desc: '下雨了真好' },
+                { symbol: '(´-ω-｀) 合法躺平', desc: '合法躺平' },
+                { symbol: '(∪､∪) 睡觉', desc: '睡觉' },
+                { symbol: '(｡-_-｡) 哪也不去', desc: '哪也不去' },
+                { symbol: '(－ω－) 完美借口', desc: '完美借口' },
+                { symbol: '(￣o￣) 继续躺', desc: '继续躺' },
+                { symbol: '(´,_ゝ｀) 谁去谁是狗', desc: '谁去谁是狗' }
+            ]
+        },
+        {
+            id: 'binge',
+            name: '追剧 · 刷剧上头',
+            emoji: '📺',
+            badge: 8,
+            items: [
+                { symbol: '(★ω★) 下一集！', desc: '下一集' },
+                { symbol: '(✧ω✧) 好期待', desc: '好期待' },
+                { symbol: '(´∀｀) 真的假的', desc: '真的假的' },
+                { symbol: '(；°Д°) 居然这样', desc: '居然这样' },
+                { symbol: '(＃°Д°) 我受不了了', desc: '我受不了了' },
+                { symbol: '(；д；) 男女主啊', desc: '男女主啊' },
+                { symbol: '(´；ω；｀) 好感动', desc: '好感动' },
+                { symbol: '(๑˃̶͈̀ロ˂̶͈́)و 追更中', desc: '追更中' }
+            ]
+        },
+        {
+            id: 'overtime',
+            name: '加班到深夜',
+            emoji: '🌙',
+            badge: 8,
+            items: [
+                { symbol: '(；一_一) 还没完', desc: '还没完' },
+                { symbol: '(´-﹏-) 好累`', desc: '好累' },
+                { symbol: '(－_－) 眼睛要瞎了', desc: '眼睛要瞎了' },
+                { symbol: '(￣ρ￣) 再撑一下', desc: '再撑一下' },
+                { symbol: '(；°Д°) 为什么是我', desc: '为什么是我' },
+                { symbol: '(´；ω；｀) 想回家', desc: '想回家' },
+                { symbol: '(T_T) 明天还要早起', desc: '明天还要早起' },
+                { symbol: '(；ω；) 我恨加班', desc: '我恨加班' }
+            ]
+        },
+        {
+            id: 'payday',
+            name: '发工资那天',
+            emoji: '💰',
+            badge: 8,
+            items: [
+                { symbol: '(★≧▽≦) 发钱了！', desc: '发钱了' },
+                { symbol: '(✧ω✧) 开心', desc: '开心' },
+                { symbol: '(´∀｀)♡ 终于', desc: '终于' },
+                { symbol: '(๑¯∀¯๑) 可以花钱了', desc: '可以花钱了' },
+                { symbol: '(≧∇≦)/ 快乐', desc: '快乐' },
+                { symbol: '(ﾉ´ヮ)ﾉ*: ･ﾟ✧`', desc: '撒花' },
+                { symbol: '(￣▽￣)ノ 奥利给', desc: '奥利给' },
+                { symbol: '(★ω★)/ 财富自由（暂时）', desc: '财富自由' }
             ]
         }
     ],
