@@ -331,6 +331,14 @@ body {
 .c-scorching .card-emoji { background: #ffe0d6; }
 .c-heavyrain .card-emoji { background: #dce8f2; }
 .c-freezing .card-emoji { background: #e0e8f2; }
+.c-wildanimal .card-emoji { background: #f0e8d0; }
+.c-eyevariant .card-emoji { background: #e0e8f2; }
+.c-mouthvariant .card-emoji { background: #ffdcdc; }
+.c-bodyaction .card-emoji { background: #ffe8e0; }
+.c-longcombo .card-emoji { background: #f3e0ff; }
+.c-specialcombo .card-emoji { background: #fff0c8; }
+.c-minimal .card-emoji  { background: #e8e8e0; }
+.c-obscure .card-emoji  { background: #f0e8d0; }
 .c-ascii .card-emoji    { background: #f5e8ff; }
 
 .card-title {

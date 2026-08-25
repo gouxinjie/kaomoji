@@ -1,6 +1,6 @@
 /**
  * 颜文字图鉴 · 数据源
- * 186 大类、约 100+ 个颜文字
+ * 194 大类、约 100+ 个颜文字
  * 通过 window.KAOMOJI_DATA 暴露给页面
  */
 window.KAOMOJI_DATA = {
@@ -10,7 +10,7 @@ window.KAOMOJI_DATA = {
         icon: '(⊙_⊙)',
         subtitle: '从嘲讽到撒娇，从极简到沙雕 · 点击颜文字即可复制',
         totalLabel: '点击 复制',
-        totalCount: 186
+        totalCount: 194
     },
 
     // 14 大分类
@@ -2773,6 +2773,143 @@ window.KAOMOJI_DATA = {
                 { symbol: '(´-﹏-)` 手冻僵了', desc: '手冻僵了' },
                 { symbol: '(∪､∪) 缩成一团', desc: '缩成一团' },
                 { symbol: '(つ≧▽≦)つ 求暖气', desc: '求暖气' }
+            ]
+        },
+        {
+            id: 'wildanimal',
+            name: '魔性动物系',
+            emoji: '🐾',
+            badge: 10,
+            items: [
+                { symbol: '(▽◕ ᴥ ◕▽)', desc: '欢快的狗子' },
+                { symbol: '(◣_◢)', desc: '愤怒的小鸟' },
+                { symbol: '(,,-㉨-,,)', desc: '河豚鼓腮' },
+                { symbol: '(❍ᴥ❍ʋ)', desc: '警觉的狐狸' },
+                { symbol: '(≧∇≦)ﾉ', desc: '兴奋的企鹅' },
+                { symbol: '/(^o^)/', desc: '举手欢呼' },
+                { symbol: '(ʘ‿ʘ)', desc: '猫头鹰凝视' },
+                { symbol: '(◑‿◐)', desc: '阴阳眼' },
+                { symbol: '(｀∀´)Ψ', desc: '邪魅猫猫' },
+                { symbol: '(￣(エ)￣)', desc: '熊仓鼠' }
+            ]
+        },
+        {
+            id: 'eyevariant',
+            name: '眼睛变体 · 眼神杀',
+            emoji: '👁️',
+            badge: 10,
+            items: [
+                { symbol: '(◉‿◉)', desc: '圆瞪大眼' },
+                { symbol: '(◔‿◔)', desc: '挑眉暗示' },
+                { symbol: '(ಠ‿ಠ)', desc: '眯眼嘲讽' },
+                { symbol: '(✧‿✧)', desc: '星星眼闪光' },
+                { symbol: '(⇀‸↼)', desc: '死鱼眼' },
+                { symbol: '(⌣_⌣)', desc: '安详佛系' },
+                { symbol: '(˘‿˘)', desc: '满足微笑' },
+                { symbol: '(♥‿♥)', desc: '爱心眼花痴' },
+                { symbol: '(◕‿◕)', desc: '大眼睛无辜' },
+                { symbol: '(❁‿❁)', desc: '睫毛星星眼' }
+            ]
+        },
+        {
+            id: 'mouthvariant',
+            name: '嘴变体 · 情绪丰富',
+            emoji: '👄',
+            badge: 8,
+            items: [
+                { symbol: '(°ᴗ°)', desc: '开心到飞起' },
+                { symbol: '(°◡°)', desc: '温和微笑' },
+                { symbol: '(°皿°)', desc: '愤怒咬牙' },
+                { symbol: '(°∀°)', desc: '傻笑呆萌' },
+                { symbol: '(°ᗜ°)', desc: '咧嘴笑' },
+                { symbol: '(°͈́⌣°͈̀)', desc: '眯眼抿嘴笑' },
+                { symbol: '(°◠°)', desc: '期待好奇' },
+                { symbol: '(°̥̥̥̥̥̥̥̥ω°̥̥̥̥̥̥̥̥ )', desc: '超委屈大哭' }
+            ]
+        },
+        {
+            id: 'bodyaction',
+            name: '身体动作系',
+            emoji: '🕺',
+            badge: 9,
+            items: [
+                { symbol: '(ﾉ≧∀≦)ﾉ', desc: '双手挥舞' },
+                { symbol: '(ノ°ο°)ノ', desc: '慌张乱跑' },
+                { symbol: '(ﾉ´ヮ)ﾉ*:･ﾟ✧`', desc: '撒花' },
+                { symbol: '(｀・ω・´)ゞ', desc: '敬礼' },
+                { symbol: '(´･_･)ﾉ⌒●~*`', desc: '扔炸弹' },
+                { symbol: '(￣ε(#￣)☆╰╮o(￣皿￣///)', desc: '揍人' },
+                { symbol: '(╬ Ò﹏Ó)', desc: '强忍怒火' },
+                { symbol: '(｀へ´)╯', desc: '甩手生气' },
+                { symbol: '( ´◔ ‸◔\')', desc: '怀疑人生' }
+            ]
+        },
+        {
+            id: 'longcombo',
+            name: '超长组合型',
+            emoji: '🎪',
+            badge: 8,
+            items: [
+                { symbol: 'ヽ(｀⌒´)ノ', desc: '愤怒' },
+                { symbol: 'ヽ(´▽｀)/', desc: '开心' },
+                { symbol: 'ヽ(｀Д´)ﾉ', desc: '抓狂' },
+                { symbol: 'ヽ(｀皿´)ﾉ', desc: '暴怒' },
+                { symbol: 'ヽ(´ー｀)ノ', desc: '悠闲' },
+                { symbol: 'ヽ(・∀・)ﾉ', desc: '轻快' },
+                { symbol: 'ヽ(´ω｀)ノ', desc: '治愈' },
+                { symbol: 'ヽ(´▽｀)ノ♪', desc: '哼歌' }
+            ]
+        },
+        {
+            id: 'specialcombo',
+            name: '特殊符号组合',
+            emoji: '🌟',
+            badge: 10,
+            items: [
+                { symbol: '(ง •̀_•́)ง', desc: '准备打架' },
+                { symbol: '(๑•̀ㅂ•́)و✧', desc: '握拳有干劲' },
+                { symbol: '(｀・ω・´)ゞ', desc: '乖巧敬礼' },
+                { symbol: '( ˘ ³˘)♥', desc: '飞吻' },
+                { symbol: '(´｡• ᵕ •｡) ♡`', desc: '温柔心动' },
+                { symbol: '(´▽ʃ♡)ƪ`', desc: '捧心' },
+                { symbol: '(˶‾᷄ ⁻̫ ‾᷅˵)', desc: '害羞脸红' },
+                { symbol: '(๑¯◡¯๑)', desc: '憨憨傻笑' },
+                { symbol: '(っ˘ω˘ς)', desc: '猫咪蜷缩' },
+                { symbol: '(ノ｀Д´)ノ彡┻━┻', desc: '掀桌升级版' }
+            ]
+        },
+        {
+            id: 'minimal',
+            name: '极简 · 单字符变体',
+            emoji: '⚫',
+            badge: 8,
+            items: [
+                { symbol: '(｡)', desc: '弱弱小眼睛' },
+                { symbol: '(｀)', desc: '有故事的眼睛' },
+                { symbol: '(｀◕‸◕´+)', desc: '强忍委屈' },
+                { symbol: '(◡‿◡✿)', desc: '绿茶微笑' },
+                { symbol: '(♡◡♡)', desc: '超爱' },
+                { symbol: '(♥ω♥*)', desc: '心动到不行' },
+                { symbol: '(˘･_･˘)', desc: '冷漠' },
+                { symbol: '(˘ω˘)', desc: '安详' }
+            ]
+        },
+        {
+            id: 'obscure',
+            name: '冷门魔性',
+            emoji: '🎁',
+            badge: 9,
+            items: [
+                { symbol: '(；一_一)', desc: '死鱼眼凝视' },
+                { symbol: '(；¬_¬)', desc: '斜眼偷瞄' },
+                { symbol: '(｀ε´)', desc: '臭脸' },
+                { symbol: '(´ཀ」 ∠)_`', desc: '哭到躺平' },
+                { symbol: '(；′⌒)`', desc: '啜泣' },
+                { symbol: '(´°̥̥̥̥̥̥̥̥ω°̥̥̥̥̥̥̥̥｀)', desc: '世界崩塌式哭泣' },
+                { symbol: '(☞ﾟ∀ﾟ)☞', desc: '指指点点' },
+                { symbol: '☜(ﾟヮﾟ☜)', desc: '反向指点' },
+                { symbol: '(╭☞•́⍛•̀)╭☞', desc: '社会人指你' },
+                { symbol: '(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧', desc: '魔法少女变身' }
             ]
         }
     ],
