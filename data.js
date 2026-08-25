@@ -1,6 +1,6 @@
 /**
  * 颜文字图鉴 · 数据源
- * 171 大类、约 100+ 个颜文字
+ * 186 大类、约 100+ 个颜文字
  * 通过 window.KAOMOJI_DATA 暴露给页面
  */
 window.KAOMOJI_DATA = {
@@ -10,7 +10,7 @@ window.KAOMOJI_DATA = {
         icon: '(⊙_⊙)',
         subtitle: '从嘲讽到撒娇，从极简到沙雕 · 点击颜文字即可复制',
         totalLabel: '点击 复制',
-        totalCount: 171
+        totalCount: 186
     },
 
     // 14 大分类
@@ -2593,6 +2593,186 @@ window.KAOMOJI_DATA = {
                 { symbol: '(´-﹏-)`', desc: '烦躁' },
                 { symbol: '(－_－) 怎么还不走', desc: '怎么还不走' },
                 { symbol: '(￣ー￣) 听歌吧', desc: '听歌吧' }
+            ]
+        },
+        {
+            id: 'graduate',
+            name: '刚毕业',
+            emoji: '🎓',
+            badge: 4,
+            items: [
+                { symbol: '(；°Д°) 以后怎么办', desc: '以后怎么办' },
+                { symbol: '(´-﹏-)` 好迷茫', desc: '好迷茫' },
+                { symbol: '(★ω★)/ 新开始！`', desc: '新开始' },
+                { symbol: '(；一_一) 先躺平一下', desc: '先躺平一下' }
+            ]
+        },
+        {
+            id: 'firstyear',
+            name: '上班一年内',
+            emoji: '💼',
+            badge: 4,
+            items: [
+                { symbol: '(；一_一) 原来是这样', desc: '原来是这样' },
+                { symbol: '(´-_ゝ｀) 学到了', desc: '学到了' },
+                { symbol: '(¬_¬) 职场啊', desc: '职场啊' },
+                { symbol: '(￣ー￣) 适应中', desc: '适应中' }
+            ]
+        },
+        {
+            id: 'thirty',
+            name: '三十岁前后',
+            emoji: '⏳',
+            badge: 4,
+            items: [
+                { symbol: '(；一_一) 时间好快', desc: '时间好快' },
+                { symbol: '(´-ω-｀) 该认真了吗', desc: '该认真了吗' },
+                { symbol: '(￣ρ￣) 还是想躺', desc: '还是想躺' },
+                { symbol: '(・へ・) 随便吧', desc: '随便吧' }
+            ]
+        },
+        {
+            id: 'retire',
+            name: '退休幻想',
+            emoji: '🏖️',
+            badge: 4,
+            items: [
+                { symbol: '(－_－) 躺平人生', desc: '躺平人生' },
+                { symbol: '(￣ρ￣) 每天睡觉', desc: '每天睡觉' },
+                { symbol: '(´-ω-｀) 理想生活', desc: '理想生活' },
+                { symbol: '(∪､∪) 谁也不见', desc: '谁也不见' }
+            ]
+        },
+        {
+            id: 'lowbattery',
+            name: '手机没电',
+            emoji: '🔋',
+            badge: 4,
+            items: [
+                { symbol: '(；°Д°) 要关机了！', desc: '要关机了' },
+                { symbol: '(＃°Д°) 充电宝呢', desc: '充电宝呢' },
+                { symbol: '(´⊙ω⊙)`', desc: '慌' },
+                { symbol: '(；一_一) 焦虑', desc: '焦虑' }
+            ]
+        },
+        {
+            id: 'slowinternet',
+            name: '网速很慢',
+            emoji: '🐌',
+            badge: 4,
+            items: [
+                { symbol: '(－_－)', desc: '无奈' },
+                { symbol: '(￣ρ￣)', desc: '等' },
+                { symbol: '(；一_一) 转圈圈', desc: '转圈圈' },
+                { symbol: '(´-_ゝ｀) 快点啊', desc: '快点啊' }
+            ]
+        },
+        {
+            id: 'systemupdate',
+            name: '系统更新',
+            emoji: '🔧',
+            badge: 4,
+            items: [
+                { symbol: '(¬_¬) 又更新', desc: '又更新' },
+                { symbol: '(￣ー￣) 强制的吗', desc: '强制的吗' },
+                { symbol: '(；一_一) 先不更', desc: '先不更' },
+                { symbol: '(´-ω-｀) 怕出问题', desc: '怕出问题' }
+            ]
+        },
+        {
+            id: 'freeresc',
+            name: '找到免费资源',
+            emoji: '🆓',
+            badge: 4,
+            items: [
+                { symbol: '(★ω★)/ 有了！`', desc: '有了' },
+                { symbol: '(✧ω✧) 开心', desc: '开心' },
+                { symbol: '(≧∇≦)/ 太好了', desc: '太好了' },
+                { symbol: '(´∀｀)♡ 幸福', desc: '幸福' }
+            ]
+        },
+        {
+            id: 'schoolstart',
+            name: '开学前',
+            emoji: '🏫',
+            badge: 4,
+            items: [
+                { symbol: '(；д；) 不想开学', desc: '不想开学' },
+                { symbol: '(இ﹏இ) 假期呢', desc: '假期呢' },
+                { symbol: '(´；ω；｀) 作业还没写', desc: '作业还没写' },
+                { symbol: '(T_T) 好快', desc: '好快' }
+            ]
+        },
+        {
+            id: 'attentive',
+            name: '认真听课',
+            emoji: '🎓',
+            badge: 4,
+            items: [
+                { symbol: '(｀・ω・´)', desc: '专注' },
+                { symbol: '(•̀ᴗ•́)', desc: '认真' },
+                { symbol: '(๑•̀ㅂ•́)', desc: '用心' },
+                { symbol: '(´-_ゝ｀) 记下了', desc: '记下了' }
+            ]
+        },
+        {
+            id: 'daydream',
+            name: '走神中',
+            emoji: '☁️',
+            badge: 4,
+            items: [
+                { symbol: '(－_－)', desc: '放空' },
+                { symbol: '(￣ρ￣)', desc: '发呆' },
+                { symbol: '(´-ω-｀) 在想晚饭', desc: '在想晚饭' },
+                { symbol: '(；一_一) 老师说什么了', desc: '老师说什么了' }
+            ]
+        },
+        {
+            id: 'examweek',
+            name: '考前一周',
+            emoji: '📚',
+            badge: 4,
+            items: [
+                { symbol: '(；°Д°) 来不及了', desc: '来不及了' },
+                { symbol: '(＃°Д°) 通宵吧', desc: '通宵吧' },
+                { symbol: '(´；ω；｀) 好慌', desc: '好慌' },
+                { symbol: '(；д；) 心态崩了', desc: '心态崩了' }
+            ]
+        },
+        {
+            id: 'scorching',
+            name: '暴晒',
+            emoji: '☀️',
+            badge: 4,
+            items: [
+                { symbol: '(；一_一) 要融化了', desc: '要融化了' },
+                { symbol: '(´-ω-｀) 中暑边缘', desc: '中暑边缘' },
+                { symbol: '(－_－) 不想出门', desc: '不想出门' },
+                { symbol: '(￣ρ￣) 空调救我', desc: '空调救我' }
+            ]
+        },
+        {
+            id: 'heavyrain',
+            name: '暴雨',
+            emoji: '⛈️',
+            badge: 4,
+            items: [
+                { symbol: '(；°Д°) 好大的雨', desc: '好大的雨' },
+                { symbol: '(＃°Д°) 没带伞', desc: '没带伞' },
+                { symbol: '(´⊙ω⊙)`', desc: '懵' },
+                { symbol: '(；一_一) 等雨停', desc: '等雨停' }
+            ]
+        },
+        {
+            id: 'freezing',
+            name: '极冷',
+            emoji: '🥶',
+            badge: 4,
+            items: [
+                { symbol: '(；°Д°) 好冷！', desc: '好冷' },
+                { symbol: '(´-﹏-)` 手冻僵了', desc: '手冻僵了' },
+                { symbol: '(∪､∪) 缩成一团', desc: '缩成一团' },
+                { symbol: '(つ≧▽≦)つ 求暖气', desc: '求暖气' }
             ]
         }
     ],

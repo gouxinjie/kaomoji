@@ -316,6 +316,21 @@ body {
 .c-latetime .card-emoji { background: #ffe0d6; }
 .c-gohome .card-emoji   { background: #fff0c8; }
 .c-trafficjam .card-emoji { background: #ece4dc; }
+.c-graduate .card-emoji { background: #fff0c8; }
+.c-firstyear .card-emoji { background: #f0e8d0; }
+.c-thirty .card-emoji   { background: #e4e0e8; }
+.c-retire .card-emoji   { background: #e0f0e6; }
+.c-lowbattery .card-emoji { background: #ffe0d6; }
+.c-slowinternet .card-emoji { background: #e4e0e8; }
+.c-systemupdate .card-emoji { background: #f0e8d0; }
+.c-freeresc .card-emoji  { background: #fff0c8; }
+.c-schoolstart .card-emoji { background: #ffdcdc; }
+.c-attentive .card-emoji { background: #e0e8f2; }
+.c-daydream .card-emoji { background: #e0f0e6; }
+.c-examweek .card-emoji { background: #ffdcdc; }
+.c-scorching .card-emoji { background: #ffe0d6; }
+.c-heavyrain .card-emoji { background: #dce8f2; }
+.c-freezing .card-emoji { background: #e0e8f2; }
 .c-ascii .card-emoji    { background: #f5e8ff; }
 
 .card-title {
