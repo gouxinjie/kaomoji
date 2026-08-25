@@ -219,6 +219,13 @@ body {
 .c-perfunctory .card-emoji { background: #ece4dc; }
 .c-focused .card-emoji   { background: #e8f2e8; }
 .c-excited .card-emoji   { background: #fff0c8; }
+.c-slacking .card-emoji  { background: #e6f0e6; }
+.c-ruminate .card-emoji  { background: #e2e6ee; }
+.c-fullgiveup .card-emoji { background: #ece4dc; }
+.c-fakework .card-emoji  { background: #f0e8d0; }
+.c-breakdown .card-emoji { background: #ffe0d6; }
+.c-neutral .card-emoji   { background: #e8e8e0; }
+.c-stubborn .card-emoji  { background: #fff3c7; }
 .c-ascii .card-emoji     { background: #f5e8ff; }
 
 .card-title {

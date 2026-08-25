@@ -1,6 +1,6 @@
 /**
  * 颜文字图鉴 · 数据源
- * 66 大类、约 100+ 个颜文字
+ * 74 大类、约 100+ 个颜文字
  * 通过 window.KAOMOJI_DATA 暴露给页面
  */
 window.KAOMOJI_DATA = {
@@ -10,7 +10,7 @@ window.KAOMOJI_DATA = {
         icon: '(⊙_⊙)',
         subtitle: '从嘲讽到撒娇，从极简到沙雕 · 点击颜文字即可复制',
         totalLabel: '点击 复制',
-        totalCount: 66
+        totalCount: 74
     },
 
     // 14 大分类
@@ -1233,6 +1233,132 @@ window.KAOMOJI_DATA = {
                 { symbol: '(★ω★)/', desc: '星光挥手' },
                 { symbol: '(⌒▽⌒)☆', desc: '星星期待' },
                 { symbol: '(๑¯∀¯๑)ノ', desc: '得意挥手' }
+            ]
+        },
+        {
+            id: 'slacking',
+            name: '超摸鱼 · 划水中',
+            emoji: '🐟',
+            badge: 10,
+            items: [
+                { symbol: '(－_－)', desc: '摸鱼脸' },
+                { symbol: '(￣ρ￣)', desc: '瘫着划水' },
+                { symbol: '(´-ω-｀)', desc: '悠哉摸鱼' },
+                { symbol: '(；一_一)', desc: '假装发呆' },
+                { symbol: '(￣ー￣) 假装在忙', desc: '假装在忙' },
+                { symbol: '(・_・)', desc: '划水中' },
+                { symbol: '(´,_ゝ｀)', desc: '慵懒摸鱼' },
+                { symbol: '(￣ω￣)', desc: '悠闲' },
+                { symbol: '(－ω－)', desc: '走神' },
+                { symbol: '(｡-_-｡) 没人发现吧', desc: '没人发现吧' }
+            ]
+        },
+        {
+            id: 'ruminate',
+            name: '超内耗 · 自我攻击',
+            emoji: '🌀',
+            badge: 10,
+            items: [
+                { symbol: '(´；ω；｀)', desc: '内耗想哭' },
+                { symbol: '(；д；)', desc: '自责泪目' },
+                { symbol: '(´-﹏-)`', desc: '自我怀疑' },
+                { symbol: '(๑•́ ₃ •̀๑)', desc: '委屈内耗' },
+                { symbol: '(｡•́︿•̀｡)', desc: '难受' },
+                { symbol: '(；一_一)', desc: '自我否定' },
+                { symbol: '(´･_･)`', desc: '反复纠结' },
+                { symbol: '(இ﹏இ)', desc: '内耗爆哭' },
+                { symbol: '(；ω；)', desc: '焦虑' },
+                { symbol: '(´；д；) 我是不是很差`', desc: '我是不是很差' }
+            ]
+        },
+        {
+            id: 'fullgiveup',
+            name: '超摆烂 · 彻底躺平',
+            emoji: '🛏️',
+            badge: 10,
+            items: [
+                { symbol: '¯\\_(ツ)_/¯', desc: '彻底摆烂' },
+                { symbol: '(╮°□°)╭', desc: '躺平摊手' },
+                { symbol: '(－‸ლ)', desc: '放弃扶额' },
+                { symbol: '(￣ヘ￣)', desc: '不想管' },
+                { symbol: '(；一_一) 算了', desc: '算了' },
+                { symbol: '(´-﹏-)`', desc: '无奈躺平' },
+                { symbol: '(・へ・)', desc: '随它吧' },
+                { symbol: '(￣ρ￣)', desc: '彻底瘫' },
+                { symbol: '(－_－)', desc: '佛系' },
+                { symbol: '(´,_ゝ｀) 不干了', desc: '不干了' }
+            ]
+        },
+        {
+            id: 'fakework',
+            name: '超装忙 · 表演式努力',
+            emoji: '💼',
+            badge: 10,
+            items: [
+                { symbol: '(｀・ω・´)', desc: '装认真' },
+                { symbol: '(•̀ᴗ•́)و', desc: '表演努力' },
+                { symbol: '(๑•̀ㅂ•́)', desc: '假装专注' },
+                { symbol: '(￣ー￣)', desc: '装严肃' },
+                { symbol: '(´-_ゝ｀) 我很忙', desc: '我很忙' },
+                { symbol: '(・∀・)', desc: '装投入' },
+                { symbol: '(｀д´)', desc: '假装较劲' },
+                { symbol: '(¬_¬)', desc: '装认真盯' },
+                { symbol: '(๑˃̵ᴗ˂̵)و', desc: '表演奋斗' },
+                { symbol: '(•̀ω•́) 认真工作中', desc: '认真工作中' }
+            ]
+        },
+        {
+            id: 'breakdown',
+            name: '超破防 · 瞬间崩溃',
+            emoji: '💥',
+            badge: 10,
+            items: [
+                { symbol: '(；д；)', desc: '瞬间泪崩' },
+                { symbol: '(இ﹏இ)', desc: '崩溃大哭' },
+                { symbol: '(T_T)', desc: '破防泪流' },
+                { symbol: '(´；ω；｀)', desc: '心态崩了' },
+                { symbol: '(；∀；)', desc: '崩溃爆哭' },
+                { symbol: '(＃°Д°)', desc: '大惊崩溃' },
+                { symbol: '(；ﾟДﾟ)', desc: '瞬间呆滞' },
+                { symbol: '(╯°□°)╯︵ ┻━┻', desc: '崩溃掀桌' },
+                { symbol: '(ノಠ益ಠ)ノ', desc: '狂怒破防' },
+                { symbol: '(；°ロ°) 心态崩了', desc: '心态崩了' }
+            ]
+        },
+        {
+            id: 'neutral',
+            name: '超端水 · 谁都不得罪',
+            emoji: '⚖️',
+            badge: 10,
+            items: [
+                { symbol: '(￣▽￣)ノ', desc: '和稀泥' },
+                { symbol: '(・∀・)', desc: '都行都行' },
+                { symbol: '(´∀｀)', desc: '无所谓' },
+                { symbol: '(；一_一)', desc: '不表态' },
+                { symbol: '(￣ー￣)', desc: '中立脸' },
+                { symbol: '(・_・)', desc: '两边都行' },
+                { symbol: '(´-_ゝ｀)', desc: '不站队' },
+                { symbol: '(；°Д°) 都对', desc: '都对' },
+                { symbol: '(・へ・)', desc: '都听你的' },
+                { symbol: '(￣ω￣) 都可以', desc: '都可以' }
+            ]
+        },
+        {
+            id: 'stubborn',
+            name: '超嘴硬 · 死不承认',
+            emoji: '😤',
+            badge: 10,
+            items: [
+                { symbol: '(￣^￣)', desc: '嘴硬哼' },
+                { symbol: '(｀ε´)', desc: '死鸭子嘴硬' },
+                { symbol: '(¬_¬)', desc: '死不承认' },
+                { symbol: '(｀д´)', desc: '嘴硬恼' },
+                { symbol: '(￣ー￣)', desc: '硬撑' },
+                { symbol: '(´-ω-｀)', desc: '嘴硬装没事' },
+                { symbol: '(；一_一) 才没有', desc: '才没有' },
+                { symbol: '(￣ヘ￣)', desc: '死不松口' },
+                { symbol: '(｀⌒´)', desc: '倔强撇嘴' },
+                { symbol: '(¬‿¬) 我才不在乎', desc: '我才不在乎' }
             ]
         }
     ],
