@@ -1,6 +1,6 @@
 /**
  * 颜文字图鉴 · 数据源
- * 24 大类、约 100+ 个颜文字
+ * 30 大类、约 100+ 个颜文字
  * 通过 window.KAOMOJI_DATA 暴露给页面
  */
 window.KAOMOJI_DATA = {
@@ -10,7 +10,7 @@ window.KAOMOJI_DATA = {
         icon: '(⊙_⊙)',
         subtitle: '从嘲讽到撒娇，从极简到沙雕 · 点击颜文字即可复制',
         totalLabel: '点击 复制',
-        totalCount: 24
+        totalCount: 30
     },
 
     // 14 大分类
@@ -453,6 +453,112 @@ window.KAOMOJI_DATA = {
                 { symbol: '(｀д´)', desc: '无语' },
                 { symbol: '(；￣ェ￣)', desc: '尴尬冒汗' },
                 { symbol: '(ㆆ_ㆆ)', desc: '黑线呆滞' }
+            ]
+        },
+        {
+            id: 'supersoft',
+            name: '超可爱 · 软萌',
+            emoji: '🐰',
+            badge: 10,
+            items: [
+                { symbol: '(๑´∀๑)`', desc: '软萌可爱' },
+                { symbol: '(๑˘͈ ᵕ ˘͈๑)', desc: '害羞可爱' },
+                { symbol: '(´∀｀)♡', desc: '开心比心' },
+                { symbol: '(๑•́₃•̀๑)', desc: '歪头可爱' },
+                { symbol: '(｡•́‿•̀｡)', desc: '微笑软萌' },
+                { symbol: '(๑˃́ꇴ˂̀๑)', desc: '欢喜雀跃' },
+                { symbol: '(๑¯◡¯๑)', desc: '眯眼可爱' },
+                { symbol: '(´｡• ᵕ •｡)`', desc: '抿嘴软萌' },
+                { symbol: '(๑˘̩̩̩̩̩̩́˘̩̩̩̩̩̩̀๑)', desc: '嘟嘴可爱' },
+                { symbol: '(๑ᵔ◡ᵔ๑)', desc: '眯眼满足' }
+            ]
+        },
+        {
+            id: 'tsundere',
+            name: '得意 · 傲娇',
+            emoji: '😼',
+            badge: 10,
+            items: [
+                { symbol: '(￣ε(#￣)', desc: '傲娇哼' },
+                { symbol: '(｀ε´)', desc: '傲娇噘嘴' },
+                { symbol: '(¬‿¬ )', desc: '狡黠傲娇' },
+                { symbol: '(๑˃̵ᴗ˂̵)و ✧', desc: '得意挥拳' },
+                { symbol: '(★≧▽≦)', desc: '闪耀得意' },
+                { symbol: '(๑•̀ㅂ•́)√', desc: '帅酷确认' },
+                { symbol: '(｀∀´)Ψ', desc: '邪魅傲娇' },
+                { symbol: '(￣▽￣)ゞ', desc: '得意敬礼' },
+                { symbol: '(๑¯∀¯๑)ノ', desc: '得意挥手' },
+                { symbol: '(๑˃̶͈̀ロ˂̶͈́)و', desc: '激情打call' }
+            ]
+        },
+        {
+            id: 'poor',
+            name: '委屈 · 可怜',
+            emoji: '🥀',
+            badge: 10,
+            items: [
+                { symbol: '(´；ω；｀)', desc: '伤心大哭' },
+                { symbol: '(｡•́︿•̀｡)', desc: '撅嘴含泪' },
+                { symbol: '(๑•́︵•̀๑)', desc: '难过脸' },
+                { symbol: '(˃̣̣̥ω˂̣̣̥)', desc: '哇哇哭' },
+                { symbol: '(இ﹏இ)', desc: '泪眼婆娑' },
+                { symbol: '(´;︵; )`', desc: '委屈撇嘴' },
+                { symbol: '(๑ˊᯅˋ๑)', desc: '哭哭脸' },
+                { symbol: '(｡ŏ﹏ŏ)', desc: '可怜巴巴' },
+                { symbol: '(；ω；)', desc: '泪目' },
+                { symbol: '(´-﹏-)`', desc: '无奈可怜' }
+            ]
+        },
+        {
+            id: 'embarrassed',
+            name: '无语 · 尴尬',
+            emoji: '🙃',
+            badge: 10,
+            items: [
+                { symbol: '(；一_一)', desc: '生无可恋' },
+                { symbol: '(￣ヘ￣)', desc: '不屑扭头' },
+                { symbol: '(¬_¬)`', desc: '翻白眼' },
+                { symbol: '(ㆆᴗㆆ)', desc: '黑线无语' },
+                { symbol: '(；°Д°)', desc: '震惊尴尬' },
+                { symbol: '(・へ・)', desc: '噘嘴无奈' },
+                { symbol: '(；￣Д￣)', desc: '满头黑线' },
+                { symbol: '(⊙ˍ⊙)', desc: '呆滞' },
+                { symbol: '(；´Д)`', desc: '张大嘴尴尬' },
+                { symbol: '(；ﾟдﾟ)', desc: '目瞪口呆' }
+            ]
+        },
+        {
+            id: 'weird',
+            name: '沙雕 · 搞怪',
+            emoji: '🤡',
+            badge: 10,
+            items: [
+                { symbol: '( ͡° ͜ʖ ͡°)✧', desc: '坏笑眨眼' },
+                { symbol: '(☞ﾟ∀ﾟ)☞', desc: '指点搞怪' },
+                { symbol: '(ノ°ο°)ノ', desc: '疯狂摇晃' },
+                { symbol: '(╬◣д◢)', desc: '愤怒搞怪' },
+                { symbol: '(｀⌒´メ)', desc: '撇嘴嫌弃' },
+                { symbol: '(・∀・)ノ', desc: '挥手傻乐' },
+                { symbol: '(　ﾟдﾟ)', desc: '目瞪口呆' },
+                { symbol: '(´▽｀)ノ', desc: '开心挥手' },
+                { symbol: '( ͡~ ͜ʖ ͡°)', desc: '眯眼坏笑' },
+                { symbol: '( ˙o˙ )', desc: '呆萌转圈' }
+            ]
+        },
+        {
+            id: 'action2',
+            name: '特殊动作',
+            emoji: '🎬',
+            badge: 8,
+            items: [
+                { symbol: '(づ￣ ³￣)づ', desc: '亲一口' },
+                { symbol: '(つ≧▽≦)つ', desc: '抱抱' },
+                { symbol: '(ﾉ´ヮ)ﾉ*: ･ﾟ`', desc: '撒花' },
+                { symbol: '(⌒▽⌒)☆', desc: '星星眼' },
+                { symbol: '(╯‵□′)╯︵┻━┻', desc: '掀桌' },
+                { symbol: '┬─┬ ノ( º _ ºノ)', desc: '扶桌' },
+                { symbol: '( •_•)>⌐■-■', desc: '戴墨镜' },
+                { symbol: '(⌐■_■)', desc: '戴好墨镜' }
             ]
         }
     ],

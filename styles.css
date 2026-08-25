@@ -180,6 +180,12 @@ body {
 .c-sob .card-emoji       { background: #e0ecff; }
 .c-proud .card-emoji     { background: #fff3c4; }
 .c-speechless .card-emoji { background: #e5e7eb; }
+.c-supersoft .card-emoji { background: #ffe0ee; }
+.c-tsundere .card-emoji  { background: #fef3c7; }
+.c-poor .card-emoji      { background: #e6e7ff; }
+.c-embarrassed .card-emoji { background: #ffe4d6; }
+.c-weird .card-emoji     { background: #dbf3e3; }
+.c-action2 .card-emoji   { background: #fff2cc; }
 .c-ascii .card-emoji     { background: #f5e8ff; }
 
 .card-title {
