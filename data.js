@@ -1,6 +1,6 @@
 /**
  * 颜文字图鉴 · 数据源
- * 106 大类、约 100+ 个颜文字
+ * 120 大类、约 100+ 个颜文字
  * 通过 window.KAOMOJI_DATA 暴露给页面
  */
 window.KAOMOJI_DATA = {
@@ -10,7 +10,7 @@ window.KAOMOJI_DATA = {
         icon: '(⊙_⊙)',
         subtitle: '从嘲讽到撒娇，从极简到沙雕 · 点击颜文字即可复制',
         totalLabel: '点击 复制',
-        totalCount: 106
+        totalCount: 120
     },
 
     // 14 大分类
@@ -1849,6 +1849,162 @@ window.KAOMOJI_DATA = {
                 { symbol: '(￣ヘ￣)', desc: '死不松口' },
                 { symbol: '(｀⌒´)', desc: '倔强撇嘴' },
                 { symbol: '(¬‿¬) 我不在乎', desc: '我不在乎' }
+            ]
+        },
+        {
+            id: 'caughtslacking',
+            name: '摸鱼被抓包',
+            emoji: '😳',
+            badge: 4,
+            items: [
+                { symbol: '(；°Д°) ！！', desc: '被抓包' },
+                { symbol: '(＃°Д°) 完了', desc: '完了' },
+                { symbol: '(；一_一) 我在工作', desc: '我在工作' },
+                { symbol: '(´⊙ω⊙)` 假装认真', desc: '假装认真' }
+            ]
+        },
+        {
+            id: 'bosslie',
+            name: '老板画饼',
+            emoji: '🫓',
+            badge: 4,
+            items: [
+                { symbol: '(¬‿¬) 又来了', desc: '又来了' },
+                { symbol: '(￣ー￣) 哦', desc: '哦' },
+                { symbol: '(；一_一) 听听就好', desc: '听听就好' },
+                { symbol: '(´-_ゝ｀) 下次一定', desc: '下次一定' }
+            ]
+        },
+        {
+            id: 'fridayoff',
+            name: '周五下班',
+            emoji: '🎉',
+            badge: 4,
+            items: [
+                { symbol: '(★≧▽≦) 终于！', desc: '终于' },
+                { symbol: '(✧ω✧) 自由了', desc: '自由了' },
+                { symbol: '(≧∇≦)/ 冲鸭', desc: '冲鸭' },
+                { symbol: '(ﾉ´ヮ)ﾉ*: ･ﾟ✧`', desc: '撒花' }
+            ]
+        },
+        {
+            id: 'crush',
+            name: '暗恋中',
+            emoji: '💘',
+            badge: 4,
+            items: [
+                { symbol: '(´,,•ω•,,)♡', desc: '心动' },
+                { symbol: '(〃ω〃)', desc: '害羞' },
+                { symbol: '(*/ω＼*)', desc: '捂脸' },
+                { symbol: '(๑˘͈ ᵕ ˘͈๑)', desc: '暗恋可爱' }
+            ]
+        },
+        {
+            id: 'leftread',
+            name: '被已读不回',
+            emoji: '📵',
+            badge: 4,
+            items: [
+                { symbol: '(；一_一)', desc: '已读不回' },
+                { symbol: '(´-﹏-)`', desc: '难受' },
+                { symbol: '(๑•́ ₃ •̀๑)', desc: '委屈' },
+                { symbol: '(；ω；) 我没事', desc: '我没事' }
+            ]
+        },
+        {
+            id: 'reconcile',
+            name: '复合边缘',
+            emoji: '💞',
+            badge: 4,
+            items: [
+                { symbol: '(´；ω；｀)', desc: '想复合' },
+                { symbol: '(；д；)', desc: '纠结' },
+                { symbol: '(இ﹏இ)', desc: '难过' },
+                { symbol: '(T_T) 还要不要继续', desc: '还要不要继续' }
+            ]
+        },
+        {
+            id: 'emptyfridge',
+            name: '冰箱空空',
+            emoji: '🍽️',
+            badge: 4,
+            items: [
+                { symbol: '(；д；) 没吃的了', desc: '没吃的了' },
+                { symbol: '(๑•́₃•̀๑) 饿', desc: '饿' },
+                { symbol: '(´-﹏-)` 点外卖吧', desc: '点外卖吧' },
+                { symbol: '(；一_一) 懒得做', desc: '懒得做' }
+            ]
+        },
+        {
+            id: 'package',
+            name: '快递到了',
+            emoji: '📦',
+            badge: 4,
+            items: [
+                { symbol: '(★ω★)/ 我的！', desc: '我的' },
+                { symbol: '(✧ω✧) 开心', desc: '开心' },
+                { symbol: '(≧∇≦)/ 拆拆拆', desc: '拆拆拆' },
+                { symbol: '(´∀｀)♡', desc: '满意' }
+            ]
+        },
+        {
+            id: 'sleepin',
+            name: '周末睡到自然醒',
+            emoji: '🛌',
+            badge: 4,
+            items: [
+                { symbol: '(－_－) zzZ', desc: '自然醒' },
+                { symbol: '(￣ρ￣)..zz', desc: '赖床' },
+                { symbol: '(´-ω-｀) 好幸福', desc: '好幸福' },
+                { symbol: '(∪､∪) 继续睡', desc: '继续睡' }
+            ]
+        },
+        {
+            id: 'cram',
+            name: '考前突击',
+            emoji: '📖',
+            badge: 4,
+            items: [
+                { symbol: '(；°Д°) 来不及了', desc: '来不及了' },
+                { symbol: '(＃°Д°) 救命', desc: '救命' },
+                { symbol: '(´；ω；｀) 记不住', desc: '记不住' },
+                { symbol: '(；д；) 心态崩了', desc: '心态崩了' }
+            ]
+        },
+        {
+            id: 'examdone',
+            name: '考完解放',
+            emoji: '🎓',
+            badge: 4,
+            items: [
+                { symbol: '(★≧▽≦) 终于结束', desc: '终于结束' },
+                { symbol: '(✧ω✧) 自由！', desc: '自由' },
+                { symbol: '(≧∇≦)/ 开心', desc: '开心' },
+                { symbol: '(ﾉ´ヮ)ﾉ*: ･ﾟ✧`', desc: '撒花' }
+            ]
+        },
+        {
+            id: 'forcedsocial',
+            name: '被迫营业',
+            emoji: '😬',
+            badge: 4,
+            items: [
+                { symbol: '(￣▽￣)ノ 哈哈', desc: '哈哈' },
+                { symbol: '(；一_一) 我笑了', desc: '我笑了' },
+                { symbol: '(´-_ゝ｀) 开心（假）', desc: '开心假' },
+                { symbol: '(¬‿¬) 哦是吗', desc: '哦是吗' }
+            ]
+        },
+        {
+            id: 'alonetime',
+            name: '独自一人很舒服',
+            emoji: '☕',
+            badge: 4,
+            items: [
+                { symbol: '(－_－)', desc: '放空' },
+                { symbol: '(￣ρ￣)', desc: '惬意' },
+                { symbol: '(´-ω-｀)', desc: '自在' },
+                { symbol: '(｡-_-｡) 清净', desc: '清净' }
             ]
         }
     ],

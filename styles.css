@@ -254,6 +254,19 @@ body {
 .c-performer .card-emoji { background: #f3e0ff; }
 .c-stoic2 .card-emoji    { background: #e0eee8; }
 .c-stubborn2 .card-emoji { background: #fff3c7; }
+.c-caughtslacking .card-emoji { background: #ffe0d6; }
+.c-bosslie .card-emoji   { background: #f0e8d0; }
+.c-fridayoff .card-emoji { background: #fff0c8; }
+.c-crush .card-emoji     { background: #ffd9ec; }
+.c-leftread .card-emoji  { background: #e4e0e8; }
+.c-reconcile .card-emoji { background: #ffd9ec; }
+.c-emptyfridge .card-emoji { background: #ffe0e0; }
+.c-package .card-emoji   { background: #e0e8f2; }
+.c-sleepin .card-emoji   { background: #e2e8ee; }
+.c-cram .card-emoji      { background: #ffdcdc; }
+.c-examdone .card-emoji  { background: #fff0c8; }
+.c-forcedsocial .card-emoji { background: #ece4dc; }
+.c-alonetime .card-emoji { background: #e0eee8; }
 .c-ascii .card-emoji     { background: #f5e8ff; }
 
 .card-title {
