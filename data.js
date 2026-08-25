@@ -1,6 +1,6 @@
 /**
  * 颜文字图鉴 · 数据源
- * 18 大类、约 100+ 个颜文字
+ * 24 大类、约 100+ 个颜文字
  * 通过 window.KAOMOJI_DATA 暴露给页面
  */
 window.KAOMOJI_DATA = {
@@ -10,7 +10,7 @@ window.KAOMOJI_DATA = {
         icon: '(⊙_⊙)',
         subtitle: '从嘲讽到撒娇，从极简到沙雕 · 点击颜文字即可复制',
         totalLabel: '点击 复制',
-        totalCount: 18
+        totalCount: 24
     },
 
     // 14 大分类
@@ -312,6 +312,147 @@ window.KAOMOJI_DATA = {
                 { symbol: '(≧∇≦)/', desc: '开心挥手' },
                 { symbol: 'ヽ(>∀<☆)ノ', desc: '星星眼开心' },
                 { symbol: '(★ω★)/', desc: '闪耀兴奋' }
+            ]
+        },
+        {
+            id: 'supercute',
+            name: '超级可爱系',
+            emoji: '💗',
+            badge: 15,
+            items: [
+                { symbol: '(๑•̀ㅂ•́)و✧', desc: '握拳应援' },
+                { symbol: '(づ｡◕‿‿◕｡)づ', desc: '要抱抱' },
+                { symbol: '(｡♥‿♥｡)', desc: '含情脉脉' },
+                { symbol: '(◕‿◕✿)', desc: '带花微笑' },
+                { symbol: '(✿◠‿◠)', desc: '纯洁无辜' },
+                { symbol: '(ᵔᴥᵔ)', desc: '憨憨呆萌' },
+                { symbol: '(๑˃̵ᴗ˂̵)و', desc: '可爱应援' },
+                { symbol: '(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧', desc: '撒花转圈' },
+                { symbol: '(๑>◡<๑)', desc: '开心眯眼' },
+                { symbol: '(๑¯∀¯๑)', desc: '得意可爱' },
+                { symbol: '(๑•ᴗ•๑)', desc: '软萌微笑' },
+                { symbol: '(๑´ㅂ๑)`', desc: '嘟嘴卖萌' },
+                { symbol: '(๑•́ ₃ •̀๑)', desc: '委屈巴巴' },
+                { symbol: '(｡･ω･｡)', desc: '乖乖可爱' },
+                { symbol: '(๑•̀ω•́๑)', desc: '元气满满' }
+            ]
+        },
+        {
+            id: 'crazy',
+            name: '沙雕 · 搞怪系',
+            emoji: '🤪',
+            badge: 18,
+            items: [
+                { symbol: '( ͡° ͜ʖ ͡°)', desc: '经典坏笑' },
+                { symbol: '(¬‿¬)', desc: '狡黠奸笑' },
+                { symbol: '(☞ﾟヮﾟ)☞', desc: '指点迷津' },
+                { symbol: '(•_•) ( •_•)>⌐■-■ (⌐■_■)', desc: '墨镜三段' },
+                { symbol: '¯\\_(ツ)_/¯', desc: '耸肩无奈' },
+                { symbol: '(╯°□°)╯︵ ┻━┻', desc: '掀桌' },
+                { symbol: '┬─┬ノ( º _ ºノ)', desc: '扶桌' },
+                { symbol: '(ノಠ益ಠ)ノ彡┻━┻', desc: '暴怒掀桌' },
+                { symbol: '(￣▽￣)ノ', desc: '挥手拜拜' },
+                { symbol: '(｀・ω・´)', desc: '得意叉腰' },
+                { symbol: '( ͡°ω ͡°)', desc: '坏笑暧昧' },
+                { symbol: '(ʘ‿ʘ)', desc: '瞪眼惊讶' },
+                { symbol: '(¬_¬)', desc: '白眼' },
+                { symbol: '(눈_눈)', desc: '死鱼眼' },
+                { symbol: '(；￣Д￣)', desc: '满头黑线' },
+                { symbol: '(╮°□°)╭', desc: '摊手无奈' },
+                { symbol: '(๑•̀д•́๑)', desc: '炸毛' },
+                { symbol: '(╬ Ò ‸ Ó)', desc: '气鼓鼓' },
+                { symbol: '(ﾒﾟ皿ﾟ)ﾒ', desc: '磨牙怒视' }
+            ]
+        },
+        {
+            id: 'cutemix',
+            name: '可爱 + 沙雕混合',
+            emoji: '🍭',
+            badge: 14,
+            items: [
+                { symbol: '(๑˘︶˘๑)', desc: '可爱满足' },
+                { symbol: '(๑•́ ₃ •̀๑)ﾉﾞ', desc: '挥手可爱' },
+                { symbol: '(๑>؂<๑)', desc: '开心雀跃' },
+                { symbol: '(๑´ڡ๑)`', desc: '偷吃' },
+                { symbol: '(๑•́∀•̀๑)', desc: '软萌得意' },
+                { symbol: '(๑‾̀◡‾́๑)', desc: '眯眼偷笑' },
+                { symbol: '(๑•̀ㅂ•́)و', desc: '举旗加油' },
+                { symbol: '(๑˃̶͈̀ロ˂̶͈́)و', desc: '疯狂打call' },
+                { symbol: '(๑˘͈ ᵕ ˘͈๑)', desc: '害羞可爱' },
+                { symbol: '(๑´ㅂ๑)♡`', desc: '嘟嘴比心' },
+                { symbol: '(๑•́ ₃ •̀๑)', desc: '一脸问号' },
+                { symbol: '(๑¯◡¯๑) ♪', desc: '哼歌开心' },
+                { symbol: '(๑•̀ω•́)ノ', desc: '挥手元气' },
+                { symbol: '(๑˃̵ᴗ˂̵)و ̑̑', desc: '双举应援' }
+            ]
+        },
+        {
+            id: 'sob',
+            name: '超委屈 · 哭哭',
+            emoji: '🥺',
+            badge: 15,
+            items: [
+                { symbol: '(๑•́ ₃ •̀๑)', desc: '委屈巴巴' },
+                { symbol: '(｡•́︿•̀｡)', desc: '撅嘴含泪' },
+                { symbol: '(๑•́ω•̀๑)', desc: '含泪委屈' },
+                { symbol: '(；д；)', desc: '泪光闪闪' },
+                { symbol: '(ㄒoㄒ)', desc: '大哭' },
+                { symbol: '(T_T)', desc: '泪流满面' },
+                { symbol: '(இωஇ)', desc: '暴风哭泣' },
+                { symbol: '(｡ŏ_ŏ)', desc: '泪眼汪汪' },
+                { symbol: '(๑´•.̫ • ๑)`', desc: '撇嘴可怜' },
+                { symbol: '(๑>_<๑)', desc: '纠结皱眉' },
+                { symbol: '(๑•́︵•̀๑)', desc: '难过脸' },
+                { symbol: '( ˃̣̣̥ω˂̣̣̥ )', desc: '哇哇大哭' },
+                { symbol: '(๑˘̩̩̩̩̩̩́˘̩̩̩̩̩̩̀๑)', desc: '憋屈抽泣' },
+                { symbol: '(｡•́ - •̀｡)', desc: '隐忍含泪' },
+                { symbol: '(๑•́ ₃ •̀๑)ﾉﾞ', desc: '挥手委屈' }
+            ]
+        },
+        {
+            id: 'proud',
+            name: '超得意 · 骄傲',
+            emoji: '😎',
+            badge: 15,
+            items: [
+                { symbol: '(๑•̀ㅂ•́)و✧', desc: '挥拳得意' },
+                { symbol: '(￣▽￣)ノ', desc: '得意挥手' },
+                { symbol: '(｀・ω・´)', desc: '自信叉腰' },
+                { symbol: '(๑˃̵ᴗ˂̵)و', desc: '骄傲应援' },
+                { symbol: '(★ω★)/', desc: '闪耀挥手' },
+                { symbol: '(๑¯∀¯๑)', desc: '得意可爱' },
+                { symbol: '(๑´ڡ๑)`', desc: '偷着乐' },
+                { symbol: '(๑•̀ω•́๑)', desc: '神气满满' },
+                { symbol: '(๑>◡<๑)', desc: '骄傲眯眼' },
+                { symbol: '(๑˘︶˘๑)', desc: '满足得意' },
+                { symbol: '(๑‾̀◡‾́๑)', desc: '眯眼炫耀' },
+                { symbol: '(๑˃̶͈̀ロ˂̶͈́)و', desc: '激情打call' },
+                { symbol: '(｀∀´)Ψ', desc: '邪魅得意' },
+                { symbol: '(￣ω￣)', desc: '享受满足' },
+                { symbol: '(๑•̀д•́๑)و', desc: '霸气挥拳' }
+            ]
+        },
+        {
+            id: 'speechless',
+            name: '超无语 · 尴尬',
+            emoji: '😶',
+            badge: 15,
+            items: [
+                { symbol: '(¬_¬)', desc: '白眼' },
+                { symbol: '(눈_눈)', desc: '死鱼眼' },
+                { symbol: '(；￣Д￣)', desc: '满头黑线' },
+                { symbol: '(╮°□°)╭', desc: '摊手无奈' },
+                { symbol: '(－‸ლ)', desc: '扶额' },
+                { symbol: '(￣ヘ￣)', desc: '不屑扭头' },
+                { symbol: '(・_・;)', desc: '冒汗尴尬' },
+                { symbol: '(゜o゜;', desc: '惊讶结巴' },
+                { symbol: '(°ロ°)', desc: '惊掉下巴' },
+                { symbol: '(⊙_⊙)', desc: '呆滞' },
+                { symbol: '(；一_一)', desc: '生无可恋' },
+                { symbol: '(¬‿¬)', desc: '狡黠' },
+                { symbol: '(｀д´)', desc: '无语' },
+                { symbol: '(；￣ェ￣)', desc: '尴尬冒汗' },
+                { symbol: '(ㆆ_ㆆ)', desc: '黑线呆滞' }
             ]
         }
     ],
