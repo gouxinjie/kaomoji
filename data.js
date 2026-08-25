@@ -1,6 +1,6 @@
 /**
  * 颜文字图鉴 · 数据源
- * 74 大类、约 100+ 个颜文字
+ * 82 大类、约 100+ 个颜文字
  * 通过 window.KAOMOJI_DATA 暴露给页面
  */
 window.KAOMOJI_DATA = {
@@ -10,7 +10,7 @@ window.KAOMOJI_DATA = {
         icon: '(⊙_⊙)',
         subtitle: '从嘲讽到撒娇，从极简到沙雕 · 点击颜文字即可复制',
         totalLabel: '点击 复制',
-        totalCount: 74
+        totalCount: 82
     },
 
     // 14 大分类
@@ -1359,6 +1359,132 @@ window.KAOMOJI_DATA = {
                 { symbol: '(￣ヘ￣)', desc: '死不松口' },
                 { symbol: '(｀⌒´)', desc: '倔强撇嘴' },
                 { symbol: '(¬‿¬) 我才不在乎', desc: '我才不在乎' }
+            ]
+        },
+        {
+            id: 'cringe',
+            name: '超社死 · 当场去世',
+            emoji: '🫠',
+            badge: 10,
+            items: [
+                { symbol: '(；°Д°)', desc: '当场社死' },
+                { symbol: '(＃°Д°)', desc: '尴尬石化' },
+                { symbol: '(；ﾟДﾟ)', desc: '社死呆滞' },
+                { symbol: '(´⊙ω⊙)`', desc: '尴尬到变形' },
+                { symbol: '(；一_一)', desc: '想消失' },
+                { symbol: '(；ω；)', desc: '社死想哭' },
+                { symbol: '(இдஇ)', desc: '崩溃社死' },
+                { symbol: '(；´Д)`', desc: '张大嘴尴尬' },
+                { symbol: '(゜Д゜；)', desc: '惊呆社死' },
+                { symbol: '(；°ロ°) 好想挖个洞', desc: '好想挖个洞' }
+            ]
+        },
+        {
+            id: 'pretendsleep',
+            name: '超装睡 · 假装没看见',
+            emoji: '🙈',
+            badge: 10,
+            items: [
+                { symbol: '(－_－) zzZ', desc: '装睡' },
+                { symbol: '(￣ρ￣)..zz', desc: '装熟睡' },
+                { symbol: '(´-ω-｀)', desc: '装困' },
+                { symbol: '(∪､∪)', desc: '装眯眼' },
+                { symbol: '(｡-_-｡)', desc: '装没听见' },
+                { symbol: '(－ω－)', desc: '装迷糊' },
+                { symbol: '(￣o￣)', desc: '装睡实盯' },
+                { symbol: '(´,_ゝ｀)', desc: '装慵懒' },
+                { symbol: '(；一_一) 我睡着了', desc: '我睡着了' },
+                { symbol: '(｡´-ω-｀｡)', desc: '装软绵绵' }
+            ]
+        },
+        {
+            id: 'sweetmouth',
+            name: '超嘴甜 · 疯狂彩虹屁',
+            emoji: '🌈',
+            badge: 10,
+            items: [
+                { symbol: '(´∀｀)♡', desc: '夸你比心' },
+                { symbol: '(｡♥‿♥｡)', desc: '甜言蜜语' },
+                { symbol: '(♡˙︶˙♡)', desc: '疯狂夸赞' },
+                { symbol: '(´,,•ω•,,)♡', desc: '心动彩虹屁' },
+                { symbol: '(๑˘͈ ᵕ ˘͈๑)', desc: '可爱夸夸' },
+                { symbol: '(✿◠‿◠)', desc: '温柔夸奖' },
+                { symbol: '(◕‿◕✿)', desc: '带花彩虹屁' },
+                { symbol: '(ᵔᴥᵔ)', desc: '憨憨夸赞' },
+                { symbol: '(づ￣ ³￣)づ', desc: '夸你亲亲' },
+                { symbol: '(つ≧▽≦)つ 你好棒', desc: '你好棒' }
+            ]
+        },
+        {
+            id: 'sarcastic',
+            name: '超阴阳 · 表面客气',
+            emoji: '🫖',
+            badge: 10,
+            items: [
+                { symbol: '(￣▽￣)ノ', desc: '假客气' },
+                { symbol: '(¬‿¬)', desc: '阴阳怪气' },
+                { symbol: '(｀∀´)', desc: '表面乐呵' },
+                { symbol: '(；一_一)', desc: '无语敷衍' },
+                { symbol: '(￣ー￣)', desc: '假平静' },
+                { symbol: '(・_・)', desc: '表面淡定' },
+                { symbol: '(´-_ゝ｀)', desc: '假随和' },
+                { symbol: '(¬_¬)', desc: '皮笑肉不笑' },
+                { symbol: '(￣ω￣)', desc: '假无所谓' },
+                { symbol: '(｀ε´) 哦是吗', desc: '哦是吗' }
+            ]
+        },
+        {
+            id: 'heartless',
+            name: '超绝情 · 冷酷无情',
+            emoji: '🧊',
+            badge: 10,
+            items: [
+                { symbol: '(￣ー￣)', desc: '冷酷' },
+                { symbol: '(－_－)', desc: '冷脸' },
+                { symbol: '(・_・)', desc: '冷漠' },
+                { symbol: '(´-_ゝ｀)', desc: '绝情眯眼' },
+                { symbol: '(；一_一)', desc: '无情' },
+                { symbol: '(￣ω￣)', desc: '无所谓' },
+                { symbol: '(・へ・)', desc: '冷面' },
+                { symbol: '(´･_･)`', desc: '冷淡皱眉' },
+                { symbol: '(￣ρ￣)', desc: '冷瘫' },
+                { symbol: '(´-ω-｀) 关我什么事', desc: '关我什么事' }
+            ]
+        },
+        {
+            id: 'overacting',
+            name: '超戏多 · 全程演技在线',
+            emoji: '🎬',
+            badge: 10,
+            items: [
+                { symbol: '(╯°□°)╯︵ ┻━┻', desc: '掀桌飙戏' },
+                { symbol: '(ノಠ益ಠ)ノ彡┻━┻', desc: '狂怒飙戏' },
+                { symbol: '(；д；)', desc: '泪目飙戏' },
+                { symbol: '(இ﹏இ)', desc: '痛哭飙戏' },
+                { symbol: '(＃°Д°)', desc: '惊讶飙戏' },
+                { symbol: '(；ﾟДﾟ)', desc: '震惊飙戏' },
+                { symbol: '(╬ Ò ‸ Ó)', desc: '气炸飙戏' },
+                { symbol: '(ﾒﾟ皿ﾟ)ﾒ', desc: '怒飙戏' },
+                { symbol: '(ﾉ°ο°)ノ', desc: '摇晃飙戏' },
+                { symbol: '(；∀；) 我真的会谢', desc: '我真的会谢' }
+            ]
+        },
+        {
+            id: 'stoic',
+            name: '超淡人 · 情绪稳定',
+            emoji: '🧘',
+            badge: 10,
+            items: [
+                { symbol: '(￣ー￣)', desc: '情绪稳定' },
+                { symbol: '(－_－)', desc: '平静' },
+                { symbol: '(・_・)', desc: '淡定' },
+                { symbol: '(´-_ゝ｀)', desc: '稳如老狗' },
+                { symbol: '(￣ω￣)', desc: '心态平和' },
+                { symbol: '(；一_一)', desc: '看淡一切' },
+                { symbol: '(´･_･)`', desc: '淡定淡定' },
+                { symbol: '(・へ・)', desc: '波澜不惊' },
+                { symbol: '(￣ρ￣)', desc: '佛系躺平' },
+                { symbol: '(´-ω-｀) 都行吧', desc: '都行吧' }
             ]
         }
     ],
