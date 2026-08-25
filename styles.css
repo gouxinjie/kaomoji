@@ -1,0 +1,480 @@
+/* ===========================================================
+   颜文字图鉴 · 样式表
+   还原 UI 设计稿：白底玻璃拟态 · 4 列网格 · 彩色特性卡
+   =========================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background: #f6f7fb;
+    font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', system-ui, -apple-system, sans-serif;
+    color: #2a2f3c;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    padding: 32px 24px 40px;
+}
+
+/* ---------- 容器 ---------- */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* ---------- 头部 ---------- */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 28px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 10px;
+}
+
+.brand-icon {
+    background: linear-gradient(135deg, #e7efff 0%, #d8e6ff 100%);
+    color: #4a7bff;
+    font-family: 'Segoe UI', 'SF Mono', 'Courier New', monospace;
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding: 8px 18px;
+    border-radius: 999px;
+    box-shadow: 0 4px 14px rgba(74, 123, 255, 0.15);
+    letter-spacing: 0.5px;
+}
+
+.brand-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #1f2330;
+    letter-spacing: 1px;
+}
+
+.subhead {
+    color: #6b7280;
+    font-size: 0.95rem;
+    padding-left: 14px;
+    border-left: 3px solid #4a7bff;
+    letter-spacing: 0.3px;
+}
+
+.header-info {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 10px 22px;
+    border-radius: 999px;
+    border: 1px solid rgba(74, 123, 255, 0.15);
+    box-shadow: 0 6px 20px rgba(31, 35, 48, 0.04);
+    color: #4a5160;
+    font-size: 0.92rem;
+}
+
+.info-icon {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #4a7bff;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'Georgia', serif;
+}
+
+.header-info .divider {
+    color: #c8cdd9;
+}
+
+/* ---------- 卡片网格 ---------- */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    margin-bottom: 36px;
+}
+
+/* ---------- 单张卡片 ---------- */
+.card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 22px;
+    padding: 20px 18px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 6px 24px rgba(31, 35, 48, 0.05),
+                0 1px 2px rgba(31, 35, 48, 0.03);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 36px rgba(31, 35, 48, 0.08),
+                0 2px 4px rgba(31, 35, 48, 0.04);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    padding-bottom: 14px;
+    border-bottom: 1px dashed #e8eaf0;
+}
+
+.card-emoji {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.05rem;
+    flex-shrink: 0;
+}
+
+/* 每张卡片的彩色圆形图标 */
+.c-shock .card-emoji    { background: #e7f0ff; }
+.c-mock .card-emoji     { background: #ffe7ee; }
+.c-coquetry .card-emoji { background: #ffe7f0; }
+.c-cry .card-emoji      { background: #e7eaff; }
+.c-minimal .card-emoji  { background: #e6f8ee; }
+.c-action .card-emoji   { background: #fff4e0; }
+.c-animal .card-emoji    { background: #fde6f0; }
+.c-cyber .card-emoji     { background: #e7eef9; }
+.c-green .card-emoji     { background: #e8f5e9; }
+.c-funny .card-emoji     { background: #f3e8ff; }
+.c-art .card-emoji       { background: #ffe9e9; }
+.c-crash .card-emoji     { background: #fff0e0; }
+.c-daily .card-emoji     { background: #e6f4ff; }
+.c-ascii .card-emoji     { background: #f5e8ff; }
+
+.card-title {
+    flex: 1;
+    font-size: 1.02rem;
+    font-weight: 700;
+    color: #1f2330;
+    letter-spacing: 0.3px;
+}
+
+.card-badge {
+    background: #f3f5fa;
+    color: #6b7280;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 999px;
+    min-width: 26px;
+    text-align: center;
+}
+
+/* ---------- 颜文字列表 ---------- */
+.emoji-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex: 1;
+}
+
+.emoji-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 6px;
+    border-radius: 12px;
+    transition: background 0.15s ease;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.emoji-item:hover {
+    background: #f6f8fc;
+}
+
+.emoji-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+    min-width: 0;
+}
+
+.emoji-symbol {
+    font-family: 'Segoe UI', 'SF Mono', 'PingFang SC', 'Courier New', monospace;
+    font-size: 0.95rem;
+    color: #1f2330;
+    min-width: 78px;
+    max-width: 110px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex-shrink: 0;
+    font-weight: 500;
+}
+
+.emoji-desc {
+    font-size: 0.85rem;
+    color: #6b7280;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.copy-btn {
+    flex-shrink: 0;
+    background: #f3f5fa;
+    color: #6b7280;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.18s ease;
+    padding: 0;
+}
+
+.copy-btn:hover {
+    background: #4a7bff;
+    color: white;
+    transform: scale(1.08);
+}
+
+.copy-btn:active {
+    transform: scale(0.92);
+}
+
+.copy-btn.copied {
+    background: #22c55e;
+    color: white;
+}
+
+.copy-btn svg {
+    width: 14px;
+    height: 14px;
+    fill: currentColor;
+}
+
+/* ---------- 巨型文字画卡 ---------- */
+.art-card .emoji-list {
+    gap: 14px;
+}
+
+.art-block {
+    background: #fafbfd;
+    border: 1px solid #eef0f5;
+    border-radius: 14px;
+    padding: 14px 12px 10px;
+    position: relative;
+    transition: background 0.15s ease;
+}
+
+.art-block:hover {
+    background: #f3f5fa;
+}
+
+.art-pre {
+    font-family: 'SF Mono', 'Cascadia Code', 'Consolas', 'Courier New', monospace;
+    font-size: 0.78rem;
+    line-height: 1.35;
+    color: #1f2330;
+    white-space: pre;
+    overflow-x: auto;
+    margin: 0;
+    padding-right: 36px;
+}
+
+.art-pre::-webkit-scrollbar { height: 4px; }
+.art-pre::-webkit-scrollbar-thumb { background: #d6dae3; border-radius: 2px; }
+
+.art-foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.art-desc {
+    color: #6b7280;
+    font-size: 0.8rem;
+}
+
+/* ---------- 查看更多 ---------- */
+.more-link {
+    margin-top: 14px;
+    text-align: center;
+    color: #4a7bff;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 6px 0;
+    transition: color 0.15s ease;
+    user-select: none;
+}
+
+.more-link:hover {
+    color: #1f5bff;
+}
+
+.more-link .arrow {
+    transition: transform 0.2s ease;
+    display: inline-block;
+}
+
+.more-link.expanded .arrow {
+    transform: rotate(180deg);
+}
+
+/* 折叠样式：默认只显示前 5 条 */
+.emoji-list.collapsed .emoji-item:nth-child(n+6) {
+    display: none;
+}
+
+.emoji-list.expanded .emoji-item {
+    display: flex;
+}
+
+/* ---------- 底部特性区 ---------- */
+.features {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 22px;
+    padding: 28px 24px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-bottom: 28px;
+    box-shadow: 0 6px 24px rgba(31, 35, 48, 0.05);
+}
+
+.feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.feature-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.feat-blue   { background: #e7f0ff; }
+.feat-green  { background: #e6f8ee; }
+.feat-purple { background: #f3e8ff; }
+.feat-orange { background: #fff0e0; }
+
+.feature-text {
+    flex: 1;
+}
+
+.feature-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1f2330;
+    margin-bottom: 6px;
+}
+
+.feature-desc {
+    font-size: 0.8rem;
+    color: #6b7280;
+    line-height: 1.55;
+}
+
+/* ---------- 页脚 ---------- */
+.footer-note {
+    text-align: center;
+    color: #6b7280;
+    font-size: 0.88rem;
+    padding: 18px 0 4px;
+    letter-spacing: 0.4px;
+}
+
+.footer-note .heart {
+    color: #ff5e7e;
+    display: inline-block;
+    margin-left: 4px;
+}
+
+/* ---------- Toast ---------- */
+.toast {
+    position: fixed;
+    bottom: 36px;
+    left: 50%;
+    transform: translate(-50%, 16px);
+    background: rgba(31, 35, 48, 0.92);
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    box-shadow: 0 12px 32px rgba(31, 35, 48, 0.25);
+    opacity: 0;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    pointer-events: none;
+    z-index: 999;
+    backdrop-filter: blur(8px);
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+/* ---------- 响应式 ---------- */
+@media (max-width: 1100px) {
+    .grid { grid-template-columns: repeat(3, 1fr); }
+    .features { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 800px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+    .brand-title { font-size: 1.7rem; }
+    .features { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 520px) {
+    body { padding: 20px 14px 30px; }
+    .grid { grid-template-columns: 1fr; gap: 16px; }
+    .site-header { flex-direction: column; }
+    .header-info { align-self: flex-start; }
+    .brand-title { font-size: 1.5rem; }
+    .emoji-symbol { min-width: 60px; font-size: 0.85rem; }
+}
