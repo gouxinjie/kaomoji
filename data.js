@@ -1,6 +1,6 @@
 /**
  * 颜文字图鉴 · 数据源
- * 98 大类、约 100+ 个颜文字
+ * 106 大类、约 100+ 个颜文字
  * 通过 window.KAOMOJI_DATA 暴露给页面
  */
 window.KAOMOJI_DATA = {
@@ -10,7 +10,7 @@ window.KAOMOJI_DATA = {
         icon: '(⊙_⊙)',
         subtitle: '从嘲讽到撒娇，从极简到沙雕 · 点击颜文字即可复制',
         totalLabel: '点击 复制',
-        totalCount: 98
+        totalCount: 106
     },
 
     // 14 大分类
@@ -1723,6 +1723,132 @@ window.KAOMOJI_DATA = {
                 { symbol: '(ﾉ´ヮ)ﾉ*: ･ﾟ✧`', desc: '撒花' },
                 { symbol: '(￣▽￣)ノ 奥利给', desc: '奥利给' },
                 { symbol: '(★ω★)/ 财富自由（暂时）', desc: '财富自由' }
+            ]
+        },
+        {
+            id: 'introvert',
+            name: '超内向 · 社恐人设',
+            emoji: '🫥',
+            badge: 10,
+            items: [
+                { symbol: '(´；ω；｀)', desc: '社恐想哭' },
+                { symbol: '(；一_一)', desc: '不敢直视' },
+                { symbol: '(｡ŏ_ŏ)', desc: '躲闪' },
+                { symbol: '(´-﹏-)`', desc: '想溜走' },
+                { symbol: '(；°Д°) 别看我', desc: '别看我' },
+                { symbol: '(・へ・)', desc: '沉默' },
+                { symbol: '(´･_･)`', desc: '低头纠结' },
+                { symbol: '(；ω；)', desc: '想哭' },
+                { symbol: '(๑•́ ₃ •̀๑)', desc: '委屈社恐' },
+                { symbol: '(；´Д) 我想回家`', desc: '我想回家' }
+            ]
+        },
+        {
+            id: 'extrovert',
+            name: '超外向 · 社交达人',
+            emoji: '🗣️',
+            badge: 10,
+            items: [
+                { symbol: '(☞ﾟ∀ﾟ)☞', desc: '指点开聊' },
+                { symbol: '(★ω★)/', desc: '热情挥手' },
+                { symbol: '(๑•̀ㅂ•́)و✧', desc: '活力开聊' },
+                { symbol: '(ﾉ´ヮ)ﾉ*: ･ﾟ✧`', desc: '撒花开聊' },
+                { symbol: '(≧∇≦)/', desc: '热情欢呼' },
+                { symbol: '(✧ω✧)', desc: '星星眼搭话' },
+                { symbol: '(｀∀´)Ψ', desc: '社交达人' },
+                { symbol: '(•̀ᴗ•́)و', desc: '健谈' },
+                { symbol: '(★≧▽≦)', desc: '闪耀社交' },
+                { symbol: '(๑˃̵ᴗ˂̵)و 来聊天！', desc: '来聊天' }
+            ]
+        },
+        {
+            id: 'zen',
+            name: '超佛系 · 随缘人设',
+            emoji: '🍃',
+            badge: 10,
+            items: [
+                { symbol: '¯\\_(ツ)_/¯', desc: '随缘' },
+                { symbol: '(￣ー￣)', desc: '佛系脸' },
+                { symbol: '(－_－)', desc: '看淡' },
+                { symbol: '(・_・)', desc: '随缘' },
+                { symbol: '(´-_ゝ｀)', desc: '佛系眯眼' },
+                { symbol: '(；一_一) 都行', desc: '都行' },
+                { symbol: '(￣ω￣)', desc: '无所谓' },
+                { symbol: '(・へ・)', desc: '随缘吧' },
+                { symbol: '(´･_･)`', desc: '佛系皱眉' },
+                { symbol: '(￣ρ￣) 顺其自然', desc: '顺其自然' }
+            ]
+        },
+        {
+            id: 'grinder',
+            name: '超卷王 · 努力人设',
+            emoji: '📈',
+            badge: 10,
+            items: [
+                { symbol: '(｀・ω・´)', desc: '卷王' },
+                { symbol: '(•̀ᴗ•́)و', desc: '努力卷' },
+                { symbol: '(๑•̀ㅂ•́)', desc: '认真卷' },
+                { symbol: '(ง •̀_•́)ง', desc: '斗志卷' },
+                { symbol: '(๑˃̵ᴗ˂̵)و', desc: '拼命卷' },
+                { symbol: '(•̀ω•́)✧', desc: '闪耀卷' },
+                { symbol: '(｀д´)', desc: '卷到较劲' },
+                { symbol: '(¬_¬)', desc: '卷王盯' },
+                { symbol: '(๑˃̶͈̀ロ˂̶͈́)و', desc: '激情卷' },
+                { symbol: '(•̀ᴗ•́) 我还能卷', desc: '我还能卷' }
+            ]
+        },
+        {
+            id: 'performer',
+            name: '超戏精 · 表演型人格',
+            emoji: '🎭',
+            badge: 10,
+            items: [
+                { symbol: '(╯°□°)╯︵ ┻━┻', desc: '掀桌飙戏' },
+                { symbol: '(ノಠ益ಠ)ノ彡┻━┻', desc: '狂怒飙戏' },
+                { symbol: '(；д；)', desc: '泪目飙戏' },
+                { symbol: '(இ﹏இ)', desc: '痛哭飙戏' },
+                { symbol: '(＃°Д°)', desc: '惊讶飙戏' },
+                { symbol: '(；ﾟДﾟ)', desc: '震惊飙戏' },
+                { symbol: '(╬ Ò ‸ Ó)', desc: '气炸飙戏' },
+                { symbol: '(ﾒﾟ皿ﾟ)ﾒ', desc: '怒飙戏' },
+                { symbol: '(ﾉ°ο°)ノ', desc: '摇晃飙戏' },
+                { symbol: '(；∀；) 我真的会谢', desc: '我真的会谢' }
+            ]
+        },
+        {
+            id: 'stoic2',
+            name: '超淡人 · 情绪稳定型',
+            emoji: '🧘',
+            badge: 10,
+            items: [
+                { symbol: '(￣ー￣)', desc: '情绪稳定' },
+                { symbol: '(－_－)', desc: '平静' },
+                { symbol: '(・_・)', desc: '淡定' },
+                { symbol: '(´-_ゝ｀)', desc: '稳如老狗' },
+                { symbol: '(；一_一)', desc: '看淡一切' },
+                { symbol: '(￣ω￣)', desc: '心态平和' },
+                { symbol: '(・へ・)', desc: '波澜不惊' },
+                { symbol: '(´･_･)`', desc: '淡定淡定' },
+                { symbol: '(￣ρ￣)', desc: '佛系躺平' },
+                { symbol: '(´-ω-｀) 没事的', desc: '没事的' }
+            ]
+        },
+        {
+            id: 'stubborn2',
+            name: '超嘴硬 · 死鸭子嘴硬',
+            emoji: '🦆',
+            badge: 10,
+            items: [
+                { symbol: '(￣^￣)', desc: '嘴硬' },
+                { symbol: '(｀ε´)', desc: '死鸭子嘴硬' },
+                { symbol: '(¬_¬)', desc: '死不承认' },
+                { symbol: '(｀д´)', desc: '嘴硬恼' },
+                { symbol: '(￣ー￣)', desc: '硬撑' },
+                { symbol: '(´-ω-｀)', desc: '嘴硬装没事' },
+                { symbol: '(；一_一) 才没有', desc: '才没有' },
+                { symbol: '(￣ヘ￣)', desc: '死不松口' },
+                { symbol: '(｀⌒´)', desc: '倔强撇嘴' },
+                { symbol: '(¬‿¬) 我不在乎', desc: '我不在乎' }
             ]
         }
     ],
