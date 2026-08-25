@@ -1,6 +1,6 @@
 /**
  * 颜文字图鉴 · 数据源
- * 42 大类、约 100+ 个颜文字
+ * 50 大类、约 100+ 个颜文字
  * 通过 window.KAOMOJI_DATA 暴露给页面
  */
 window.KAOMOJI_DATA = {
@@ -10,7 +10,7 @@ window.KAOMOJI_DATA = {
         icon: '(⊙_⊙)',
         subtitle: '从嘲讽到撒娇，从极简到沙雕 · 点击颜文字即可复制',
         totalLabel: '点击 复制',
-        totalCount: 42
+        totalCount: 50
     },
 
     // 14 大分类
@@ -855,6 +855,132 @@ window.KAOMOJI_DATA = {
                 { symbol: '(★≧∀≦★)', desc: '闪耀狂喜' },
                 { symbol: '(；∀；)', desc: '感动痛哭' },
                 { symbol: '(ﾟдﾟ)！', desc: '震惊尖叫' }
+            ]
+        },
+        {
+            id: 'lazy',
+            name: '超懒 · 躺平',
+            emoji: '🦥',
+            badge: 10,
+            items: [
+                { symbol: '(－_－)', desc: '懒得动' },
+                { symbol: '(￣ρ￣)', desc: '瘫着' },
+                { symbol: '(´-ω-｀)', desc: '犯困懒' },
+                { symbol: '(∪､∪)', desc: '眯眼躺' },
+                { symbol: '(｡-_-｡)', desc: '眼皮沉重' },
+                { symbol: '(－ω－) zzZ', desc: '睡意来袭' },
+                { symbol: '(￣o￣) ..zz', desc: '昏昏欲睡' },
+                { symbol: '(´,_ゝ｀)', desc: '慵懒眯眼' },
+                { symbol: '(；一_一)', desc: '生无可恋' },
+                { symbol: '(￣ー￣) 不想动', desc: '不想动' }
+            ]
+        },
+        {
+            id: 'craving',
+            name: '超馋 · 想吃',
+            emoji: '🍕',
+            badge: 10,
+            items: [
+                { symbol: '(￣﹃￣)', desc: '流口水' },
+                { symbol: '(๑´ڡ๑)`', desc: '馋嘴' },
+                { symbol: '(´∀｀) 好香', desc: '好香' },
+                { symbol: '(๑˃́ꇴ˂̀๑)', desc: '想吃眼' },
+                { symbol: '( ˘▽˘)っ♨', desc: '吹热气' },
+                { symbol: '(๑¯◡¯๑) 真香', desc: '真香' },
+                { symbol: '(￣ω￣) 饿了', desc: '饿了' },
+                { symbol: '(๑•́₃•̀๑) 想吃', desc: '想吃' },
+                { symbol: '(´▽｀)ノ♪', desc: '开心开吃' },
+                { symbol: '(๑˘̩̩̩̩̩̩́˘̩̩̩̩̩̩̀๑)', desc: '馋馋的' }
+            ]
+        },
+        {
+            id: 'obedient',
+            name: '超乖 · 听话',
+            emoji: '🐑',
+            badge: 10,
+            items: [
+                { symbol: '(๑•ᴗ•๑)', desc: '乖乖软萌' },
+                { symbol: '(｡･ω･｡)', desc: '乖巧' },
+                { symbol: '(´∀｀*)', desc: '听话微笑' },
+                { symbol: '(๑´ㅂ๑)`', desc: '嘟嘴乖巧' },
+                { symbol: '(˘͈ ᵕ ˘͈๑)', desc: '温顺乖巧' },
+                { symbol: '(๑ᵔ◡ᵔ๑)', desc: '乖乖眯眼' },
+                { symbol: '(｡◕‿◕｡)', desc: '纯真听话' },
+                { symbol: '(´• ω •)`', desc: '轻软听话' },
+                { symbol: '(๑˘︶˘๑)', desc: '满足听话' },
+                { symbol: '(✿◠‿◠)', desc: '乖巧带花' }
+            ]
+        },
+        {
+            id: 'naughty',
+            name: '超坏 · 调皮',
+            emoji: '😜',
+            badge: 10,
+            items: [
+                { symbol: '( ͡° ͜ʖ ͡°)', desc: '坏笑' },
+                { symbol: '(¬‿¬)', desc: '狡黠' },
+                { symbol: '(｀∀´)Ψ', desc: '调皮邪魅' },
+                { symbol: '(☞ﾟ∀ﾟ)☞', desc: '指点搞怪' },
+                { symbol: '( ͡~ ͜ʖ ͡°)', desc: '眯眼坏笑' },
+                { symbol: '(✧≖ ͜ʖ≖)', desc: '狡诈眯眼' },
+                { symbol: '(￣ε(#￣)', desc: '傲娇调皮' },
+                { symbol: '(｀ε´)', desc: '哼哼调皮' },
+                { symbol: '(¬_¬)', desc: '白眼调皮' },
+                { symbol: '( ͡°ω ͡°)', desc: '暧昧坏笑' }
+            ]
+        },
+        {
+            id: 'nervous',
+            name: '超慌 · 紧张',
+            emoji: '😰',
+            badge: 10,
+            items: [
+                { symbol: '(；゜o゜)', desc: '惊慌' },
+                { symbol: '(゜Д゜；)', desc: '惊呆' },
+                { symbol: '(；°Д°)', desc: '吓到' },
+                { symbol: '(´⊙ω⊙)`', desc: '慌张' },
+                { symbol: '(；ﾟдﾟ)', desc: '目瞪口呆' },
+                { symbol: '(；一_一)', desc: '紧张冒汗' },
+                { symbol: '(´；д；)`', desc: '慌到哭' },
+                { symbol: '(；ω；)', desc: '紧张泪目' },
+                { symbol: '(｡ŏ_ŏ)', desc: '慌慌张张' },
+                { symbol: '(；´Д)`', desc: '张大嘴慌' }
+            ]
+        },
+        {
+            id: 'satisfied',
+            name: '超满足 · 幸福',
+            emoji: '😍',
+            badge: 10,
+            items: [
+                { symbol: '(´∀｀)♡', desc: '幸福比心' },
+                { symbol: '(๑˘͈ ᵕ ˘͈๑)', desc: '幸福满足' },
+                { symbol: '(｡♥‿♥｡)', desc: '满心欢喜' },
+                { symbol: '(♡˙︶˙♡)', desc: '甜蜜幸福' },
+                { symbol: '(´｡• ᵕ •｡)`', desc: '幸福抿嘴' },
+                { symbol: '(๑´ڡ๑)`', desc: '满足馋嘴' },
+                { symbol: '(ˊᗜˋ*)', desc: '甜甜幸福' },
+                { symbol: '(´∇｀)', desc: '幸福宠溺' },
+                { symbol: '(๑˘︶˘๑)', desc: '满足开心' },
+                { symbol: '(´,,•ω•,,)♡', desc: '幸福心动' }
+            ]
+        },
+        {
+            id: 'petrified',
+            name: '超震惊 · 石化',
+            emoji: '🧊',
+            badge: 10,
+            items: [
+                { symbol: '(⊙_⊙)', desc: '石化' },
+                { symbol: '(°ロ°)', desc: '惊掉下巴' },
+                { symbol: '(゜o゜;', desc: '傻眼' },
+                { symbol: '(；°ロ°)', desc: '惊到张嘴' },
+                { symbol: '(＃°Д°)', desc: '大惊' },
+                { symbol: '(；ﾟДﾟ)', desc: '震惊' },
+                { symbol: '(இдஇ)', desc: '震惊泪目' },
+                { symbol: '(´⊙ω⊙)`', desc: '呆滞石化' },
+                { symbol: '(・_・;)', desc: '冒汗石化' },
+                { symbol: '(⊙ˍ⊙)', desc: '石化了' }
             ]
         }
     ],

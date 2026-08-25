@@ -198,6 +198,13 @@ body {
 .c-dumb2 .card-emoji     { background: #f0e6d0; }
 .c-gentle .card-emoji    { background: #ffe3ec; }
 .c-exaggerate .card-emoji { background: #ffe0d6; }
+.c-lazy .card-emoji      { background: #eae6e0; }
+.c-craving .card-emoji   { background: #ffe9d6; }
+.c-obedient .card-emoji  { background: #e0f0e6; }
+.c-naughty .card-emoji   { background: #f0e8d0; }
+.c-nervous .card-emoji   { background: #ffe0d0; }
+.c-satisfied .card-emoji { background: #ffd9ec; }
+.c-petrified .card-emoji { background: #e0e8f5; }
 .c-ascii .card-emoji     { background: #f5e8ff; }
 
 .card-title {
