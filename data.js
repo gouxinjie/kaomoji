@@ -709,7 +709,7 @@ window.KAOMOJI_DATA = {
             id: 'cool',
             name: '超酷',
             emoji: '😎',
-            badge: 15,
+            badge: 30,
             items: [
                 { symbol: '(⌐■_■)', desc: '墨镜装酷' },
                 { symbol: '(•_•) ( •_•)>⌐■-■ (⌐■_■)', desc: '墨镜三段' },
@@ -725,14 +725,29 @@ window.KAOMOJI_DATA = {
                 { symbol: '(￣▽￣)ノ', desc: '酷酷拜拜' },
                 { symbol: '(•̀ᴗ•́)و', desc: '酷酷加油' },
                 { symbol: '(✧ω✧)', desc: '酷酷眨眼' },
-                { symbol: '(｀ε´)', desc: '酷酷哼哼' }
+                { symbol: '(｀ε´)', desc: '酷酷哼哼' },
+                { symbol: '(￣ー￣)ゞ', desc: '冷酷敬礼' },
+                { symbol: '(｀∀´)ノ', desc: '酷酷挥手' },
+                { symbol: '(¬_¬ )', desc: '酷酷白眼' },
+                { symbol: '( ͡° ͜ʖ ͡°)つ', desc: '坏笑递物' },
+                { symbol: '(✧≖ ͜ʖ≖)', desc: '眯眼酷' },
+                { symbol: '(｀⌒´メ)', desc: '酷酷撇嘴' },
+                { symbol: '(￣ε￣)', desc: '闭眼享受' },
+                { symbol: '(•̀ω•́)✧', desc: '闪耀酷' },
+                { symbol: '(★ᴗ★)', desc: '星星眼酷' },
+                { symbol: '(｀・ω・´)ノ', desc: '自信挥手' },
+                { symbol: '(￣ω￣)ﾉ', desc: '惬意挥手' },
+                { symbol: '(¬‿¬)つ', desc: '狡黠递物' },
+                { symbol: '( ͡~ ͜ʖ ͡°)', desc: '眯眼坏笑' },
+                { symbol: '(｀ε´)ノ', desc: '傲娇挥手' },
+                { symbol: '(✧ω✧)ノ', desc: '酷炫挥手' }
             ]
         },
         {
             id: 'dumb2',
             name: '超傻',
             emoji: '🤤',
-            badge: 15,
+            badge: 30,
             items: [
                 { symbol: '(⊙_⊙)', desc: '呆滞' },
                 { symbol: '(゜o゜;', desc: '傻眼' },
@@ -748,14 +763,29 @@ window.KAOMOJI_DATA = {
                 { symbol: '(；ﾟдﾟ)', desc: '目瞪口呆' },
                 { symbol: '(´-﹏-)`', desc: '无奈傻' },
                 { symbol: '(；ω；)', desc: '傻哭' },
-                { symbol: '(｡•́ - •̀｡)', desc: '傻傻的' }
+                { symbol: '(｡•́ - •̀｡)', desc: '傻傻的' },
+                { symbol: '(⊙o⊙)', desc: '圆眼呆' },
+                { symbol: '(・∀・；)', desc: '冒汗呆' },
+                { symbol: '(´⊙ω⊙)`', desc: '囧傻' },
+                { symbol: '(；゜o゜)', desc: '惊呆' },
+                { symbol: '(゜Д゜；)', desc: '石傻' },
+                { symbol: '(´･ω･)`', desc: '懵圈' },
+                { symbol: '(｡´-ω-｀｡)', desc: '迷迷糊糊' },
+                { symbol: '(⊙﹏⊙)', desc: '呆瓜' },
+                { symbol: '(；´Д)`', desc: '张大嘴傻' },
+                { symbol: '(￣△￣)', desc: '傻愣' },
+                { symbol: '(・_・。)', desc: '呆若木鸡' },
+                { symbol: '(；￣ー￣)', desc: '一脸懵' },
+                { symbol: '(´；д；)`', desc: '傻哭' },
+                { symbol: '(゜-゜；)', desc: '迷惑傻' },
+                { symbol: '(；・_・)', desc: '茫然' }
             ]
         },
         {
             id: 'gentle',
             name: '超温柔',
             emoji: '🕊️',
-            badge: 15,
+            badge: 30,
             items: [
                 { symbol: '(｡♥‿♥｡)', desc: '含情脉脉' },
                 { symbol: '(´∀｀)♡', desc: '温柔比心' },
@@ -771,14 +801,29 @@ window.KAOMOJI_DATA = {
                 { symbol: '(つ≧▽≦)つ', desc: '温柔抱抱' },
                 { symbol: '(´,,•ω•,,)♡', desc: '温柔心动' },
                 { symbol: '(๑•ᴗ•๑)', desc: '温柔软萌' },
-                { symbol: '(˘͈ ᵕ ˘͈๑)', desc: '温柔羞羞' }
+                { symbol: '(˘͈ ᵕ ˘͈๑)', desc: '温柔羞羞' },
+                { symbol: '(´∀｀*)', desc: '温柔浅笑' },
+                { symbol: '(๑˘︶˘๑)', desc: '温柔满足' },
+                { symbol: '(｡•́‿•̀｡)', desc: '温柔微笑' },
+                { symbol: '(˘͈ ᵕ ˘͈ )', desc: '眉眼弯弯' },
+                { symbol: '(´,,•ω•,,)', desc: '温柔呢喃' },
+                { symbol: '(๑ᵔ◡ᵔ๑)', desc: '温柔眯眼' },
+                { symbol: '(✿´ ꒳  )`', desc: '捧花温柔' },
+                { symbol: '(´∇｀)', desc: '温柔宠溺' },
+                { symbol: '(๑´ڡ๑)`', desc: '温柔馋嘴' },
+                { symbol: '(｡◕‿◕｡)', desc: '纯真温柔' },
+                { symbol: '(♡ω♡)', desc: '爱心温柔' },
+                { symbol: '(´｡•ω•｡)`', desc: '软糯温柔' },
+                { symbol: '(๑˃́ꇴ˂̀๑)', desc: '欢喜温柔' },
+                { symbol: '(ˊᗜˋ*)', desc: '甜甜温柔' },
+                { symbol: '(´• ω •)`', desc: '轻软温柔' }
             ]
         },
         {
             id: 'exaggerate',
             name: '超夸张',
             emoji: '😱',
-            badge: 15,
+            badge: 30,
             items: [
                 { symbol: '(╯°□°)╯︵ ┻━┻', desc: '暴怒掀桌' },
                 { symbol: '(ノಠ益ಠ)ノ彡┻━┻', desc: '狂怒掀桌' },
@@ -794,7 +839,22 @@ window.KAOMOJI_DATA = {
                 { symbol: '(ﾉ´ヮ)ﾉ*: ･ﾟ✧`', desc: '疯狂撒花' },
                 { symbol: '(★≧▽≦)', desc: '闪耀狂喜' },
                 { symbol: '(๑˃̶͈̀ロ˂̶͈́)و', desc: '激情澎湃' },
-                { symbol: '( ͡° ͜ʖ ͡°)✧', desc: '坏笑搞怪' }
+                { symbol: '( ͡° ͜ʖ ͡°)✧', desc: '坏笑搞怪' },
+                { symbol: '(ノ°ο°)ノ', desc: '疯狂摇晃' },
+                { symbol: '(＃°Д°)', desc: '大惊失色' },
+                { symbol: '(；ﾟДﾟ)', desc: '目瞪口呆' },
+                { symbol: '(இдஇ)', desc: '泪流成河' },
+                { symbol: '(；д；)ノ', desc: '挥手痛哭' },
+                { symbol: '(╯‵□′)╯', desc: '怒摔' },
+                { symbol: '(╬ﾟдﾟ)', desc: '怒到极致' },
+                { symbol: '(｀д´)ﾉ', desc: '暴怒挥手' },
+                { symbol: '(；°ロ°)', desc: '惊到张大嘴' },
+                { symbol: '(☆▽☆)', desc: '星星眼爆' },
+                { symbol: '(≧∇≦)/', desc: '狂喜挥手' },
+                { symbol: '(ﾉ≧∀≦)ﾉ', desc: '疯狂欢呼' },
+                { symbol: '(★≧∀≦★)', desc: '闪耀狂喜' },
+                { symbol: '(；∀；)', desc: '感动痛哭' },
+                { symbol: '(ﾟдﾟ)！', desc: '震惊尖叫' }
             ]
         }
     ],
