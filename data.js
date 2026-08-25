@@ -1,6 +1,6 @@
 /**
  * 颜文字图鉴 · 数据源
- * 50 大类、约 100+ 个颜文字
+ * 58 大类、约 100+ 个颜文字
  * 通过 window.KAOMOJI_DATA 暴露给页面
  */
 window.KAOMOJI_DATA = {
@@ -10,7 +10,7 @@ window.KAOMOJI_DATA = {
         icon: '(⊙_⊙)',
         subtitle: '从嘲讽到撒娇，从极简到沙雕 · 点击颜文字即可复制',
         totalLabel: '点击 复制',
-        totalCount: 50
+        totalCount: 58
     },
 
     // 14 大分类
@@ -981,6 +981,132 @@ window.KAOMOJI_DATA = {
                 { symbol: '(´⊙ω⊙)`', desc: '呆滞石化' },
                 { symbol: '(・_・;)', desc: '冒汗石化' },
                 { symbol: '(⊙ˍ⊙)', desc: '石化了' }
+            ]
+        },
+        {
+            id: 'sleepy2',
+            name: '超困 · 想睡',
+            emoji: '🥱',
+            badge: 10,
+            items: [
+                { symbol: '(－_－) zzZ', desc: '困到眯眼' },
+                { symbol: '(￣ρ￣)..zz', desc: '眼皮打架' },
+                { symbol: '(´-ω-｀)', desc: '哈欠连天' },
+                { symbol: '(∪､∪)', desc: '困困眯眼' },
+                { symbol: '(｡-_-｡)', desc: '昏昏欲睡' },
+                { symbol: '(－ω－) 好困', desc: '好困' },
+                { symbol: '(￣o￣) zzZ', desc: '睡意沉沉' },
+                { symbol: '(´,_ゝ｀)', desc: '困到瘫' },
+                { symbol: '(；一_一) 撑不住了', desc: '撑不住了' },
+                { symbol: '(｡´-ω-｀｡)', desc: '软绵绵困' }
+            ]
+        },
+        {
+            id: 'tsundere2',
+            name: '超傲娇',
+            emoji: '🐱',
+            badge: 10,
+            items: [
+                { symbol: '(￣^￣)', desc: '傲娇哼' },
+                { symbol: '(｀ε´)', desc: '傲娇噘嘴' },
+                { symbol: '(￣ε(#￣)', desc: '傲娇脸' },
+                { symbol: '(¬_¬)', desc: '傲娇白眼' },
+                { symbol: '(｀д´)', desc: '傲娇恼' },
+                { symbol: '(￣ー￣)', desc: '面无表情' },
+                { symbol: '(´-ω-｀)', desc: '傲娇困' },
+                { symbol: '(；一_一)', desc: '傲娇无语' },
+                { symbol: '(￣ヘ￣)', desc: '傲娇扭头' },
+                { symbol: '(｀⌒´)', desc: '傲娇撇嘴' }
+            ]
+        },
+        {
+            id: 'expect',
+            name: '超期待 · 期待ing',
+            emoji: '✨',
+            badge: 10,
+            items: [
+                { symbol: '(★ω★)', desc: '星光期待' },
+                { symbol: '(✧ω✧)', desc: '闪闪期待' },
+                { symbol: '(☆▽☆)', desc: '星星眼' },
+                { symbol: '(≧∇≦)/', desc: '欢呼期待' },
+                { symbol: '(ﾉ≧∀≦)ﾉ', desc: '狂喜期待' },
+                { symbol: '(๑˃̶͈̀ロ˂̶͈́)و', desc: '激情期待' },
+                { symbol: '(´∀｀) 好期待', desc: '好期待' },
+                { symbol: '(๑¯∀¯๑)', desc: '得意期待' },
+                { symbol: '(★≧▽≦)', desc: '闪耀期待' },
+                { symbol: '(⌒▽⌒)☆', desc: '星星期待' }
+            ]
+        },
+        {
+            id: 'giveup2',
+            name: '超无奈 · 摆烂中',
+            emoji: '🥀',
+            badge: 10,
+            items: [
+                { symbol: '¯\\_(ツ)_/¯', desc: '耸肩摆烂' },
+                { symbol: '(╮°□°)╭', desc: '摊手' },
+                { symbol: '(－‸ლ)', desc: '扶额' },
+                { symbol: '(￣ヘ￣)', desc: '无所谓' },
+                { symbol: '(；一_一)', desc: '生无可恋' },
+                { symbol: '(´-﹏-)`', desc: '无奈' },
+                { symbol: '(・へ・)', desc: '噘嘴无奈' },
+                { symbol: '(´；ω；｀)', desc: '崩溃' },
+                { symbol: '(｡ŏ_ŏ)', desc: '木然' },
+                { symbol: '(；°Д°)', desc: '傻眼' }
+            ]
+        },
+        {
+            id: 'clingy',
+            name: '超粘人 · 求关注',
+            emoji: '🫶',
+            badge: 10,
+            items: [
+                { symbol: '(づ￣ ³￣)づ', desc: '要亲亲' },
+                { symbol: '(つ≧▽≦)つ', desc: '要抱抱' },
+                { symbol: '(｡♥‿♥｡)', desc: '含情脉脉' },
+                { symbol: '(´∀｀)♡', desc: '开心比心' },
+                { symbol: '(๑•́ ₃ •̀๑) 看我', desc: '看我' },
+                { symbol: '(ﾉ´ヮ)ﾉ*: ･ﾟ`', desc: '撒花求关注' },
+                { symbol: '(๑˘͈ ᵕ ˘͈๑)', desc: '粘人可爱' },
+                { symbol: '(´,,•ω•,,)♡', desc: '心动粘人' },
+                { symbol: '(つ´∀｀)つ', desc: '抱紧紧' },
+                { symbol: '(｡•́︿•̀｡) 理我', desc: '理我' }
+            ]
+        },
+        {
+            id: 'drama',
+            name: '超戏精 · 夸张演技',
+            emoji: '🎭',
+            badge: 10,
+            items: [
+                { symbol: '(╯°□°)╯︵ ┻━┻', desc: '暴怒掀桌' },
+                { symbol: '(ノಠ益ಠ)ノ彡┻━┻', desc: '狂怒掀桌' },
+                { symbol: '(；д；)', desc: '泪崩' },
+                { symbol: '(இ﹏இ)', desc: '嚎啕大哭' },
+                { symbol: '(＃°Д°)', desc: '大惊' },
+                { symbol: '(；ﾟДﾟ)', desc: '震惊' },
+                { symbol: '(╬ Ò ‸ Ó)', desc: '气炸' },
+                { symbol: '(ﾒﾟ皿ﾟ)ﾒ', desc: '怒到磨牙' },
+                { symbol: '(ﾉ°ο°)ノ', desc: '疯狂摇晃' },
+                { symbol: '(；∀；)', desc: '感动痛哭' }
+            ]
+        },
+        {
+            id: 'calm',
+            name: '超淡定 · 面无表情',
+            emoji: '🧘',
+            badge: 10,
+            items: [
+                { symbol: '(￣ー￣)', desc: '面无表情' },
+                { symbol: '(－_－)', desc: '无感' },
+                { symbol: '(・_・)', desc: '平淡' },
+                { symbol: '(´-_ゝ｀)', desc: '淡定眯眼' },
+                { symbol: '(￣ω￣)', desc: '无所谓' },
+                { symbol: '(；一_一)', desc: '淡看一切' },
+                { symbol: '(´･_･)`', desc: '淡定皱眉' },
+                { symbol: '(・へ・)', desc: '淡定噘嘴' },
+                { symbol: '(￣ρ￣)', desc: '淡定瘫' },
+                { symbol: '(´-ω-｀)', desc: '淡定困' }
             ]
         }
     ],

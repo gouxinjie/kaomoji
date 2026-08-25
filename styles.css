@@ -205,6 +205,13 @@ body {
 .c-nervous .card-emoji   { background: #ffe0d0; }
 .c-satisfied .card-emoji { background: #ffd9ec; }
 .c-petrified .card-emoji { background: #e0e8f5; }
+.c-sleepy2 .card-emoji   { background: #e2e6ee; }
+.c-tsundere2 .card-emoji { background: #fff3c7; }
+.c-expect .card-emoji    { background: #ffe9e6; }
+.c-giveup2 .card-emoji   { background: #e8e0d6; }
+.c-clingy .card-emoji    { background: #ffdceb; }
+.c-drama .card-emoji     { background: #f3e0ff; }
+.c-calm .card-emoji      { background: #e0eee8; }
 .c-ascii .card-emoji     { background: #f5e8ff; }
 
 .card-title {
