@@ -283,6 +283,19 @@ body {
 .c-cheeridol .card-emoji { background: #ffe8e0; }
 .c-noticket .card-emoji  { background: #e4e0e8; }
 .c-concert .card-emoji   { background: #f3e0ff; }
+.c-funnypost .card-emoji { background: #fff0c8; }
+.c-exex .card-emoji      { background: #e8e8e0; }
+.c-hastag .card-emoji    { background: #ffe8e0; }
+.c-netfight .card-emoji  { background: #f3e0ff; }
+.c-bigsale .card-emoji   { background: #ffdcdc; }
+.c-package2 .card-emoji  { background: #e0e8f2; }
+.c-buyregret .card-emoji { background: #ece4dc; }
+.c-afternight .card-emoji { background: #e2e8ee; }
+.c-sick .card-emoji      { background: #ffe0e0; }
+.c-afterworkout .card-emoji { background: #e0f0e6; }
+.c-insomnia .card-emoji  { background: #e4e0e8; }
+.c-naturalwake .card-emoji { background: #fff0c8; }
+.c-alarmwake .card-emoji { background: #ffe0d6; }
 .c-ascii .card-emoji     { background: #f5e8ff; }
 
 .card-title {

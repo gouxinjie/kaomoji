@@ -1,6 +1,6 @@
 /**
  * 颜文字图鉴 · 数据源
- * 136 大类、约 100+ 个颜文字
+ * 151 大类、约 100+ 个颜文字
  * 通过 window.KAOMOJI_DATA 暴露给页面
  */
 window.KAOMOJI_DATA = {
@@ -10,7 +10,7 @@ window.KAOMOJI_DATA = {
         icon: '(⊙_⊙)',
         subtitle: '从嘲讽到撒娇，从极简到沙雕 · 点击颜文字即可复制',
         totalLabel: '点击 复制',
-        totalCount: 136
+        totalCount: 151
     },
 
     // 14 大分类
@@ -2197,6 +2197,162 @@ window.KAOMOJI_DATA = {
                 { symbol: '(´∀｀)♡ 幸福', desc: '幸福' },
                 { symbol: '(ﾉ´ヮ)ﾉ*: ･ﾟ✧` 尖叫', desc: '尖叫' },
                 { symbol: '(★ω★)/ 爱豆我来了！', desc: '爱豆我来了' }
+            ]
+        },
+        {
+            id: 'funnypost',
+            name: '刷到好笑的',
+            emoji: '😂',
+            badge: 4,
+            items: [
+                { symbol: '(☆▽☆) 哈哈哈哈', desc: '哈哈哈哈' },
+                { symbol: '(≧∇≦)/ 笑死', desc: '笑死' },
+                { symbol: '(´∀｀) 太逗了', desc: '太逗了' },
+                { symbol: '(★ω★)/ 转发', desc: '转发' }
+            ]
+        },
+        {
+            id: 'exex',
+            name: '看到前任动态',
+            emoji: '😐',
+            badge: 4,
+            items: [
+                { symbol: '(；一_一)', desc: '无视' },
+                { symbol: '(¬_¬)', desc: '无语' },
+                { symbol: '(￣ー￣)', desc: '无感' },
+                { symbol: '(´-_ゝ｀) 关我什么事', desc: '关我什么事' }
+            ]
+        },
+        {
+            id: 'hastag',
+            name: '被催更 · 被@',
+            emoji: '🔔',
+            badge: 4,
+            items: [
+                { symbol: '(；°Д°) 我在！', desc: '我在' },
+                { symbol: '(＃°Д°) 来了来了', desc: '来了来了' },
+                { symbol: '(´⊙ω⊙)`', desc: '呆住' },
+                { symbol: '(；一_一) 马上回', desc: '马上回' }
+            ]
+        },
+        {
+            id: 'netfight',
+            name: '网友吵架',
+            emoji: '🥊',
+            badge: 4,
+            items: [
+                { symbol: '(¬‿¬) 哦', desc: '哦' },
+                { symbol: '(￣ー￣) 随便', desc: '随便' },
+                { symbol: '(｀ε´) 你说得对', desc: '你说得对' },
+                { symbol: '(；一_一) 懒得吵', desc: '懒得吵' }
+            ]
+        },
+        {
+            id: 'bigsale',
+            name: '双十一 · 大促',
+            emoji: '🛒',
+            badge: 4,
+            items: [
+                { symbol: '(★≧▽≦) 买买买！', desc: '买买买' },
+                { symbol: '(✧ω✧) 已经下单', desc: '已经下单' },
+                { symbol: '(＃°Д°) 购物车爆炸', desc: '购物车爆炸' },
+                { symbol: '(；ﾟДﾟ) 钱不够了', desc: '钱不够了' }
+            ]
+        },
+        {
+            id: 'package2',
+            name: '快递到了',
+            emoji: '📦',
+            badge: 4,
+            items: [
+                { symbol: '(★ω★)/ 我的！`', desc: '我的' },
+                { symbol: '(≧∇≦)/ 拆！', desc: '拆' },
+                { symbol: '(´∀｀)♡ 好开心', desc: '好开心' },
+                { symbol: '(๑¯∀¯๑) 终于到了', desc: '终于到了' }
+            ]
+        },
+        {
+            id: 'buyregret',
+            name: '买完后悔',
+            emoji: '😮‍💨',
+            badge: 4,
+            items: [
+                { symbol: '(；一_一) 好像不需要', desc: '好像不需要' },
+                { symbol: '(´-﹏-)` 又乱花钱', desc: '又乱花钱' },
+                { symbol: '(；д；) 退货吧', desc: '退货吧' },
+                { symbol: '(T_T) 下次理智点', desc: '下次理智点' }
+            ]
+        },
+        {
+            id: 'afternight',
+            name: '熬夜后',
+            emoji: '🥱',
+            badge: 4,
+            items: [
+                { symbol: '(；一_一) 黑眼圈', desc: '黑眼圈' },
+                { symbol: '(´-ω-｀) 好困', desc: '好困' },
+                { symbol: '(－_－) 眼睛痛', desc: '眼睛痛' },
+                { symbol: '(￣ρ￣) 不想起床', desc: '不想起床' }
+            ]
+        },
+        {
+            id: 'sick',
+            name: '突然生病',
+            emoji: '🤒',
+            badge: 4,
+            items: [
+                { symbol: '(；д；) 好难受', desc: '好难受' },
+                { symbol: '(இ﹏இ) 头好痛', desc: '头好痛' },
+                { symbol: '(´；ω；｀) 请假吧', desc: '请假吧' },
+                { symbol: '(T_T) 只想躺着', desc: '只想躺着' }
+            ]
+        },
+        {
+            id: 'afterworkout',
+            name: '运动完',
+            emoji: '🏃',
+            badge: 4,
+            items: [
+                { symbol: '(；°Д°) 腿不是我的', desc: '腿不是我的' },
+                { symbol: '(´-﹏-)` 酸爽', desc: '酸爽' },
+                { symbol: '(๑•̀ㅂ•́)و 但我坚持了', desc: '但我坚持了' },
+                { symbol: '(★ω★)/ 感觉变好了', desc: '感觉变好了' }
+            ]
+        },
+        {
+            id: 'insomnia',
+            name: '失眠',
+            emoji: '🌙',
+            badge: 4,
+            items: [
+                { symbol: '(；一_一) 睡不着', desc: '睡不着' },
+                { symbol: '(´-﹏-)` 想太多', desc: '想太多' },
+                { symbol: '(－_－) 数羊中', desc: '数羊中' },
+                { symbol: '(￣ρ￣) 已经凌晨了', desc: '已经凌晨了' }
+            ]
+        },
+        {
+            id: 'naturalwake',
+            name: '睡到自然醒',
+            emoji: '😴',
+            badge: 4,
+            items: [
+                { symbol: '(－_－) zzZ', desc: '自然醒' },
+                { symbol: '(￣ρ￣)..zz', desc: '赖床' },
+                { symbol: '(´-ω-｀) 好幸福', desc: '好幸福' },
+                { symbol: '(∪､∪) 继续睡', desc: '继续睡' }
+            ]
+        },
+        {
+            id: 'alarmwake',
+            name: '被闹钟吵醒',
+            emoji: '⏰',
+            badge: 4,
+            items: [
+                { symbol: '(；°Д°) ！！', desc: '惊醒' },
+                { symbol: '(＃°Д°) 好吵', desc: '好吵' },
+                { symbol: '(´⊙ω⊙)` 再睡五分钟', desc: '再睡五分钟' },
+                { symbol: '(；一_一) 不想醒', desc: '不想醒' }
             ]
         }
     ],
