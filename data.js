@@ -1,6 +1,6 @@
 /**
  * 颜文字图鉴 · 数据源
- * 82 大类、约 100+ 个颜文字
+ * 90 大类、约 100+ 个颜文字
  * 通过 window.KAOMOJI_DATA 暴露给页面
  */
 window.KAOMOJI_DATA = {
@@ -10,7 +10,7 @@ window.KAOMOJI_DATA = {
         icon: '(⊙_⊙)',
         subtitle: '从嘲讽到撒娇，从极简到沙雕 · 点击颜文字即可复制',
         totalLabel: '点击 复制',
-        totalCount: 82
+        totalCount: 90
     },
 
     // 14 大分类
@@ -1485,6 +1485,132 @@ window.KAOMOJI_DATA = {
                 { symbol: '(・へ・)', desc: '波澜不惊' },
                 { symbol: '(￣ρ￣)', desc: '佛系躺平' },
                 { symbol: '(´-ω-｀) 都行吧', desc: '都行吧' }
+            ]
+        },
+        {
+            id: 'pretenddead',
+            name: '超装死 · 装看不见',
+            emoji: '☠️',
+            badge: 10,
+            items: [
+                { symbol: '(－_－)', desc: '装死脸' },
+                { symbol: '(￣ρ￣)', desc: '瘫着装死' },
+                { symbol: '(´-ω-｀)', desc: '装没看见' },
+                { symbol: '(∪､∪)', desc: '装眯眼' },
+                { symbol: '(｡-_-｡)', desc: '装失明' },
+                { symbol: '(－ω－) 我死了', desc: '我死了' },
+                { symbol: '(￣o￣)', desc: '装木讷' },
+                { symbol: '(´,_ゝ｀)', desc: '装慵懒' },
+                { symbol: '(；一_一)', desc: '假装不存在' },
+                { symbol: '(｡´-ω-｀｡) 听不见', desc: '听不见' }
+            ]
+        },
+        {
+            id: 'nagging',
+            name: '超嘴碎 · 碎碎念',
+            emoji: '🗯️',
+            badge: 10,
+            items: [
+                { symbol: '(｀・ω・´)', desc: '念叨' },
+                { symbol: '(・∀・)', desc: '碎碎念' },
+                { symbol: '(´∀｀)', desc: '唠叨' },
+                { symbol: '(¬‿¬)', desc: '阴阳念叨' },
+                { symbol: '(￣▽￣)', desc: '啰嗦' },
+                { symbol: '(；一_一)', desc: '无语念叨' },
+                { symbol: '(・_・)', desc: '不停说' },
+                { symbol: '(´-_ゝ｀)', desc: '碎碎念中' },
+                { symbol: '(￣ー￣) 我跟你讲', desc: '我跟你讲' },
+                { symbol: '(｀ε´) 真的假的', desc: '真的假的' }
+            ]
+        },
+        {
+            id: 'socialmax',
+            name: '超社牛开大',
+            emoji: '🔥',
+            badge: 10,
+            items: [
+                { symbol: '(☞ﾟ∀ﾟ)☞', desc: '开大搭话' },
+                { symbol: '(★ω★)/', desc: '星光挥手' },
+                { symbol: '(๑•̀ㅂ•́)و✧', desc: '火力全开' },
+                { symbol: '(ﾉ´ヮ)ﾉ*: ･ﾟ✧`', desc: '疯狂撒花' },
+                { symbol: '(≧∇≦)/', desc: '热情欢呼' },
+                { symbol: '(✧ω✧)', desc: '闪亮社交' },
+                { symbol: '(｀∀´)Ψ', desc: '社交巅峰' },
+                { symbol: '(•̀ᴗ•́)و', desc: '聊嗨了' },
+                { symbol: '(★≧▽≦)', desc: '闪耀开大' },
+                { symbol: '(๑˃̵ᴗ˂̵)و 我来了', desc: '我来了' }
+            ]
+        },
+        {
+            id: 'collapse2',
+            name: '超破防瞬间',
+            emoji: '💔',
+            badge: 10,
+            items: [
+                { symbol: '(；д；)', desc: '瞬间泪崩' },
+                { symbol: '(இ﹏இ)', desc: '崩溃大哭' },
+                { symbol: '(T_T)', desc: '破防泪流' },
+                { symbol: '(´；ω；｀)', desc: '心态崩了' },
+                { symbol: '(；∀；)', desc: '崩溃爆哭' },
+                { symbol: '(＃°Д°)', desc: '大惊崩溃' },
+                { symbol: '(；ﾟДﾟ)', desc: '瞬间呆滞' },
+                { symbol: '(╯°□°)╯︵ ┻━┻', desc: '崩溃掀桌' },
+                { symbol: '(ノಠ益ಠ)ノ', desc: '狂怒破防' },
+                { symbol: '(；°ロ°) 心态没了', desc: '心态没了' }
+            ]
+        },
+        {
+            id: 'composure',
+            name: '超端着 · 强装镇定',
+            emoji: '🎩',
+            badge: 10,
+            items: [
+                { symbol: '(￣ー￣)', desc: '强装镇定' },
+                { symbol: '(－_－)', desc: '装稳' },
+                { symbol: '(・_・)', desc: '假装淡定' },
+                { symbol: '(´-_ゝ｀)', desc: '强装从容' },
+                { symbol: '(；一_一)', desc: '内心慌' },
+                { symbol: '(￣ω￣)', desc: '表面平静' },
+                { symbol: '(・へ・)', desc: '强撑' },
+                { symbol: '(´･_･)`', desc: '强装皱眉' },
+                { symbol: '(￣ρ￣)', desc: '硬装慵懒' },
+                { symbol: '(´-ω-｀) 我没事', desc: '我没事' }
+            ]
+        },
+        {
+            id: 'hardstubborn',
+            name: '超嘴硬到底',
+            emoji: '🦆',
+            badge: 10,
+            items: [
+                { symbol: '(￣^￣)', desc: '嘴硬到底' },
+                { symbol: '(｀ε´)', desc: '死鸭子嘴硬' },
+                { symbol: '(¬_¬)', desc: '死不承认' },
+                { symbol: '(｀д´)', desc: '嘴硬恼' },
+                { symbol: '(￣ー￣)', desc: '硬撑' },
+                { symbol: '(´-ω-｀)', desc: '嘴硬装没事' },
+                { symbol: '(；一_一) 才没有', desc: '才没有' },
+                { symbol: '(￣ヘ￣)', desc: '死不松口' },
+                { symbol: '(｀⌒´)', desc: '倔强撇嘴' },
+                { symbol: '(¬‿¬) 我不在乎', desc: '我不在乎' }
+            ]
+        },
+        {
+            id: 'drama2',
+            name: '超戏精本精',
+            emoji: '🎭',
+            badge: 10,
+            items: [
+                { symbol: '(╯°□°)╯︵ ┻━┻', desc: '掀桌飙戏' },
+                { symbol: '(ノಠ益ಠ)ノ彡┻━┻', desc: '狂怒飙戏' },
+                { symbol: '(；д；)', desc: '泪目飙戏' },
+                { symbol: '(இ﹏இ)', desc: '痛哭飙戏' },
+                { symbol: '(＃°Д°)', desc: '惊讶飙戏' },
+                { symbol: '(；ﾟДﾟ)', desc: '震惊飙戏' },
+                { symbol: '(╬ Ò ‸ Ó)', desc: '气炸飙戏' },
+                { symbol: '(ﾒﾟ皿ﾟ)ﾒ', desc: '怒飙戏' },
+                { symbol: '(ﾉ°ο°)ノ', desc: '摇晃飙戏' },
+                { symbol: '(；∀；) 我真的会谢', desc: '我真的会谢' }
             ]
         }
     ],
