@@ -1,6 +1,6 @@
 /**
  * 颜文字图鉴 · 数据源
- * 30 大类、约 100+ 个颜文字
+ * 38 大类、约 100+ 个颜文字
  * 通过 window.KAOMOJI_DATA 暴露给页面
  */
 window.KAOMOJI_DATA = {
@@ -10,7 +10,7 @@ window.KAOMOJI_DATA = {
         icon: '(⊙_⊙)',
         subtitle: '从嘲讽到撒娇，从极简到沙雕 · 点击颜文字即可复制',
         totalLabel: '点击 复制',
-        totalCount: 30
+        totalCount: 38
     },
 
     // 14 大分类
@@ -559,6 +559,150 @@ window.KAOMOJI_DATA = {
                 { symbol: '┬─┬ ノ( º _ ºノ)', desc: '扶桌' },
                 { symbol: '( •_•)>⌐■-■', desc: '戴墨镜' },
                 { symbol: '(⌐■_■)', desc: '戴好墨镜' }
+            ]
+        },
+        {
+            id: 'sleepy',
+            name: '睡觉 · 困困',
+            emoji: '😴',
+            badge: 10,
+            items: [
+                { symbol: '(∪､∪)', desc: '眯眼困' },
+                { symbol: '(｡sleepy｡)', desc: '睡眼惺忪' },
+                { symbol: '(－_－) zzZ', desc: '犯困' },
+                { symbol: '(￣ρ￣)..zzZ', desc: '打盹' },
+                { symbol: '(´-ω-｀)', desc: '困困' },
+                { symbol: '(｡-_-｡)', desc: '眼皮打架' },
+                { symbol: '(∪.∪ )...zzz', desc: '昏昏欲睡' },
+                { symbol: '(－ω－) zz', desc: '打瞌睡' },
+                { symbol: '(｡´-ω-｀｡)', desc: '软绵绵困' },
+                { symbol: '(￣o￣) zzZ', desc: '睡熟了' }
+            ]
+        },
+        {
+            id: 'hungry',
+            name: '吃饭 · 馋',
+            emoji: '🍜',
+            badge: 10,
+            items: [
+                { symbol: '(๑´ڡ๑)`', desc: '馋嘴' },
+                { symbol: '(￣﹃￣)', desc: '流口水' },
+                { symbol: '(๑˃́ꇴ˂̀๑)', desc: '想吃眼' },
+                { symbol: '(´∀｀)♡ 好吃', desc: '好吃' },
+                { symbol: '(๑¯◡¯๑)', desc: '开心吃' },
+                { symbol: '( ˘▽˘)っ♨', desc: '吹热气' },
+                { symbol: '(๑˘̩̩̩̩̩̩́˘̩̩̩̩̩̩̀๑) 想吃', desc: '想吃' },
+                { symbol: '(￣ω￣)', desc: '吃饱满足' },
+                { symbol: '(๑•́₃•̀๑) 饿', desc: '饿' },
+                { symbol: '(´▽｀)ノ♪ 真香', desc: '真香' }
+            ]
+        },
+        {
+            id: 'shy',
+            name: '害羞 · 脸红',
+            emoji: '😊',
+            badge: 10,
+            items: [
+                { symbol: '(〃ω〃)', desc: '羞羞' },
+                { symbol: '(´,,•ω•,,)♡', desc: '脸红心跳' },
+                { symbol: '(*/ω＼*)', desc: '捂脸害羞' },
+                { symbol: '(〃∇〃)', desc: '羞红了' },
+                { symbol: '(´∀｀*)', desc: '害羞笑' },
+                { symbol: '(๑˘͈ ᵕ ˘͈๑)', desc: '害羞可爱' },
+                { symbol: '(⁄ ⁄•⁄ω⁄•⁄ ⁄)', desc: '扭捏害羞' },
+                { symbol: '(｡•́‿•̀｡)', desc: '腼腆' },
+                { symbol: '(๑´ㅂ๑)`', desc: '嘟嘴羞' },
+                { symbol: '(≧◡≦)', desc: '害羞眯眼' }
+            ]
+        },
+        {
+            id: 'cheer',
+            name: '加油 · 努力',
+            emoji: '💪',
+            badge: 10,
+            items: [
+                { symbol: '(๑•̀ㅂ•́)و✧', desc: '挥拳加油' },
+                { symbol: '(ง •̀_•́)ง', desc: '斗志满满' },
+                { symbol: '(๑˃̵ᴗ˂̵)و', desc: '握拳努力' },
+                { symbol: '(•̀ᴗ•́)و', desc: '振作' },
+                { symbol: '(๑•̀д•́๑)و', desc: '使劲加油' },
+                { symbol: '(ง°∀°)ง', desc: '干劲十足' },
+                { symbol: '(๑˃̶͈̀ロ˂̶͈́)و', desc: '激情冲' },
+                { symbol: '(•̀ω•́ )✧', desc: '闪耀努力' },
+                { symbol: '(๑¯∀¯๑)ノ', desc: '自信挥手' },
+                { symbol: '(｀・ω・´)ゞ', desc: '敬礼认真' }
+            ]
+        },
+        {
+            id: 'giveup',
+            name: '无奈 · 摆烂',
+            emoji: '🛋️',
+            badge: 10,
+            items: [
+                { symbol: '¯\\_(ツ)_/¯', desc: '耸肩摆烂' },
+                { symbol: '(╮°□°)╭', desc: '摊手' },
+                { symbol: '(－‸ლ)', desc: '扶额' },
+                { symbol: '(￣ヘ￣)', desc: '无所谓' },
+                { symbol: '(；一_一)', desc: '生无可恋' },
+                { symbol: '(´-﹏-)`', desc: '无奈' },
+                { symbol: '(´；ω；｀)', desc: '崩溃' },
+                { symbol: '(｡ŏ_ŏ)', desc: '木然' },
+                { symbol: '(；°Д°)', desc: '傻眼' },
+                { symbol: '(・へ・)', desc: '噘嘴无奈' }
+            ]
+        },
+        {
+            id: 'furious',
+            name: '生气 · 炸毛',
+            emoji: '😤',
+            badge: 10,
+            items: [
+                { symbol: '(╬ Ò ‸ Ó)', desc: '气鼓鼓' },
+                { symbol: '(ﾒﾟ皿ﾟ)ﾒ', desc: '磨牙怒视' },
+                { symbol: '(๑•̀д•́๑)', desc: '炸毛' },
+                { symbol: '(｀⌒´メ)', desc: '撇嘴恼火' },
+                { symbol: '(╬◣д◢)', desc: '愤怒' },
+                { symbol: '(＃｀д´)ﾉ', desc: '暴怒' },
+                { symbol: '(｀ε´)', desc: '气哼哼' },
+                { symbol: '(￣^￣)', desc: '不爽' },
+                { symbol: '(｀д´)', desc: '恼火' },
+                { symbol: '(ノಠ益ಠ)ノ', desc: '怒掀桌' }
+            ]
+        },
+        {
+            id: 'heart',
+            name: '比心 · 喜欢',
+            emoji: '💖',
+            badge: 10,
+            items: [
+                { symbol: '(´∀｀)♡', desc: '开心比心' },
+                { symbol: '(｡♥‿♥｡)', desc: '含情脉脉' },
+                { symbol: '(♡˙︶˙♡)', desc: '爱意满满' },
+                { symbol: '(´,,•ω•,,)♡', desc: '心动' },
+                { symbol: '(๑˘͈ ᵕ ˘͈๑)♡', desc: '害羞比心' },
+                { symbol: '(✿◠‿◠)', desc: '温柔喜欢' },
+                { symbol: '(◕‿◕✿)', desc: '带花喜欢' },
+                { symbol: '(ᵔᴥᵔ)', desc: '憨憨喜欢' },
+                { symbol: '(づ￣ ³￣)づ', desc: '亲亲' },
+                { symbol: '(つ≧▽≦)つ', desc: '拥抱' }
+            ]
+        },
+        {
+            id: 'think',
+            name: '思考 · 疑惑',
+            emoji: '🤔',
+            badge: 10,
+            items: [
+                { symbol: '(・_・?)', desc: '疑惑' },
+                { symbol: '(？o？)', desc: '满脑问号' },
+                { symbol: '(゜-゜)', desc: '歪头想' },
+                { symbol: '(・∀・？)', desc: '不解' },
+                { symbol: '(｡ŏ_ŏ)', desc: '思考中' },
+                { symbol: '(⊙_⊙)?', desc: '震惊疑惑' },
+                { symbol: '(；一_一)?', desc: '无语疑惑' },
+                { symbol: '(´･_･)`', desc: '纠结' },
+                { symbol: '(・へ・)?', desc: '不解歪头' },
+                { symbol: '(￣ー￣)?', desc: '深思' }
             ]
         }
     ],
