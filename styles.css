@@ -267,6 +267,22 @@ body {
 .c-examdone .card-emoji  { background: #fff0c8; }
 .c-forcedsocial .card-emoji { background: #ece4dc; }
 .c-alonetime .card-emoji { background: #e0eee8; }
+.c-rankup .card-emoji    { background: #e0e8f2; }
+.c-rankdown .card-emoji  { background: #ffdcdc; }
+.c-addicted .card-emoji  { background: #ffe0d6; }
+.c-badteammate .card-emoji { background: #f0e8d0; }
+.c-tripstart .card-emoji { background: #fff0c8; }
+.c-triptired .card-emoji { background: #e4e0e8; }
+.c-scenery .card-emoji   { background: #e0f0e6; }
+.c-tripback .card-emoji  { background: #ece4dc; }
+.c-workoutdone .card-emoji { background: #e0e8f2; }
+.c-nolift .card-emoji    { background: #ece4dc; }
+.c-sore .card-emoji      { background: #ffe0e0; }
+.c-watchotherlift .card-emoji { background: #f0e8d0; }
+.c-seeidol .card-emoji   { background: #fff0c8; }
+.c-cheeridol .card-emoji { background: #ffe8e0; }
+.c-noticket .card-emoji  { background: #e4e0e8; }
+.c-concert .card-emoji   { background: #f3e0ff; }
 .c-ascii .card-emoji     { background: #f5e8ff; }
 
 .card-title {

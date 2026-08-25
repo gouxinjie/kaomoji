@@ -1,6 +1,6 @@
 /**
  * 颜文字图鉴 · 数据源
- * 120 大类、约 100+ 个颜文字
+ * 136 大类、约 100+ 个颜文字
  * 通过 window.KAOMOJI_DATA 暴露给页面
  */
 window.KAOMOJI_DATA = {
@@ -10,7 +10,7 @@ window.KAOMOJI_DATA = {
         icon: '(⊙_⊙)',
         subtitle: '从嘲讽到撒娇，从极简到沙雕 · 点击颜文字即可复制',
         totalLabel: '点击 复制',
-        totalCount: 120
+        totalCount: 136
     },
 
     // 14 大分类
@@ -2005,6 +2005,198 @@ window.KAOMOJI_DATA = {
                 { symbol: '(￣ρ￣)', desc: '惬意' },
                 { symbol: '(´-ω-｀)', desc: '自在' },
                 { symbol: '(｡-_-｡) 清净', desc: '清净' }
+            ]
+        },
+        {
+            id: 'rankup',
+            name: '上分中',
+            emoji: '🎮',
+            badge: 4,
+            items: [
+                { symbol: '(๑•̀ㅂ•́)و✧ 冲！', desc: '冲' },
+                { symbol: '(•̀ᴗ•́)و 我能行', desc: '我能行' },
+                { symbol: '(ง •̀_•́)ง 认真打', desc: '认真打' },
+                { symbol: '(★ω★)/ 稳住', desc: '稳住' }
+            ]
+        },
+        {
+            id: 'rankdown',
+            name: '掉分 · 被虐',
+            emoji: '😭',
+            badge: 4,
+            items: [
+                { symbol: '(；д；) 又掉了', desc: '又掉了' },
+                { symbol: '(இ﹏இ) 心态崩了', desc: '心态崩了' },
+                { symbol: '(´；ω；｀) 为什么', desc: '为什么' },
+                { symbol: '(T_T) 我不玩了', desc: '我不玩了' }
+            ]
+        },
+        {
+            id: 'addicted',
+            name: '打到上头',
+            emoji: '🔥',
+            badge: 4,
+            items: [
+                { symbol: '(＃°Д°) 再来一局！', desc: '再来一局' },
+                { symbol: '(；ﾟДﾟ) 停不下来', desc: '停不下来' },
+                { symbol: '(ﾉ°ο°)ノ 最后一把', desc: '最后一把' },
+                { symbol: '(★≧▽≦) 赢了！', desc: '赢了' }
+            ]
+        },
+        {
+            id: 'badteammate',
+            name: '队友坑',
+            emoji: '💢',
+            badge: 4,
+            items: [
+                { symbol: '(¬_¬) 谢谢你', desc: '谢谢你' },
+                { symbol: '(￣ー￣) 哦', desc: '哦' },
+                { symbol: '(；一_一) 没事', desc: '没事' },
+                { symbol: '(｀ε´) 下次别排了', desc: '下次别排了' }
+            ]
+        },
+        {
+            id: 'tripstart',
+            name: '出发前',
+            emoji: '🧳',
+            badge: 4,
+            items: [
+                { symbol: '(★ω★)/ 终于可以玩了！', desc: '终于可以玩了' },
+                { symbol: '(✧ω✧) 好期待', desc: '好期待' },
+                { symbol: '(≧∇≦)/ 冲鸭', desc: '冲鸭' },
+                { symbol: '(ﾉ´ヮ)ﾉ*: ･ﾟ✧`', desc: '撒花' }
+            ]
+        },
+        {
+            id: 'triptired',
+            name: '路途疲惫',
+            emoji: '🚄',
+            badge: 4,
+            items: [
+                { symbol: '(；一_一) 好累', desc: '好累' },
+                { symbol: '(´-ω-｀) 想睡觉', desc: '想睡觉' },
+                { symbol: '(－_－) 到了吗', desc: '到了吗' },
+                { symbol: '(￣ρ￣) 腿好酸', desc: '腿好酸' }
+            ]
+        },
+        {
+            id: 'scenery',
+            name: '看到美景',
+            emoji: '🏞️',
+            badge: 4,
+            items: [
+                { symbol: '(☆▽☆) 好漂亮！', desc: '好漂亮' },
+                { symbol: '(´∀｀)♡ 幸福', desc: '幸福' },
+                { symbol: '(๑˘͈ ᵕ ˘͈๑) 值得了', desc: '值得了' },
+                { symbol: '(★≧▽≦) 拍拍拍', desc: '拍拍拍' }
+            ]
+        },
+        {
+            id: 'tripback',
+            name: '回家后',
+            emoji: '🏠',
+            badge: 4,
+            items: [
+                { symbol: '(－_－) 终于到家', desc: '终于到家' },
+                { symbol: '(´-ω-｀) 只想躺', desc: '只想躺' },
+                { symbol: '(￣ρ￣) 行李不想拆', desc: '行李不想拆' },
+                { symbol: '(；一_一) 明天还要上班', desc: '明天还要上班' }
+            ]
+        },
+        {
+            id: 'workoutdone',
+            name: '打卡成功',
+            emoji: '💪',
+            badge: 4,
+            items: [
+                { symbol: '(๑•̀ㅂ•́)و✧ 今天完成！', desc: '今天完成' },
+                { symbol: '(•̀ᴗ•́)و 我真棒', desc: '我真棒' },
+                { symbol: '(★ω★)/ 坚持住了', desc: '坚持住了' },
+                { symbol: '(≧∇≦)/ 又进步了', desc: '又进步了' }
+            ]
+        },
+        {
+            id: 'nolift',
+            name: '不想动',
+            emoji: '🛋️',
+            badge: 4,
+            items: [
+                { symbol: '(－_－) 好累', desc: '好累' },
+                { symbol: '(´-ω-｀) 明天再练', desc: '明天再练' },
+                { symbol: '(；一_一) 摆烂一天', desc: '摆烂一天' },
+                { symbol: '(￣ρ￣) 躺着也是练', desc: '躺着也是练' }
+            ]
+        },
+        {
+            id: 'sore',
+            name: '练完酸爽',
+            emoji: '😵',
+            badge: 4,
+            items: [
+                { symbol: '(；°Д°) 腿不是我的', desc: '腿不是我的' },
+                { symbol: '(´-﹏-)` 下不了楼梯', desc: '下不了楼梯' },
+                { symbol: '(；д；) 好酸', desc: '好酸' },
+                { symbol: '(T_T) 但很爽', desc: '但很爽' }
+            ]
+        },
+        {
+            id: 'watchotherlift',
+            name: '看别人练',
+            emoji: '👀',
+            badge: 4,
+            items: [
+                { symbol: '(¬‿¬) 练得真好', desc: '练得真好' },
+                { symbol: '(￣ー￣) 我下次也练', desc: '我下次也练' },
+                { symbol: '(；一_一) 先看看', desc: '先看看' },
+                { symbol: '(´-_ゝ｀) 学到了', desc: '学到了' }
+            ]
+        },
+        {
+            id: 'seeidol',
+            name: '看到爱豆',
+            emoji: '🌟',
+            badge: 4,
+            items: [
+                { symbol: '(★ω★)/ 是他/她！', desc: '是他她' },
+                { symbol: '(✧ω✧) 好帅/好美', desc: '好帅好美' },
+                { symbol: '(´∀｀)♡ 心动', desc: '心动' },
+                { symbol: '(๑˘͈ ᵕ ˘͈๑) 幸福死了', desc: '幸福死了' }
+            ]
+        },
+        {
+            id: 'cheeridol',
+            name: '应援 · 投票',
+            emoji: '📣',
+            badge: 4,
+            items: [
+                { symbol: '(๑•̀ㅂ•́)و✧ 冲！', desc: '冲' },
+                { symbol: '(•̀ᴗ•́)و 为你投票', desc: '为你投票' },
+                { symbol: '(ง •̀_•́)ง 加油！', desc: '加油' },
+                { symbol: '(★≧▽≦) 我们是最棒的', desc: '我们是最棒的' }
+            ]
+        },
+        {
+            id: 'noticket',
+            name: '没抢到票 · 没中签',
+            emoji: '🎟️',
+            badge: 4,
+            items: [
+                { symbol: '(；д；) 又没中', desc: '又没中' },
+                { symbol: '(இ﹏இ) 好难过', desc: '好难过' },
+                { symbol: '(´；ω；｀) 下次一定', desc: '下次一定' },
+                { symbol: '(T_T) 为什么', desc: '为什么' }
+            ]
+        },
+        {
+            id: 'concert',
+            name: '看演唱会 · 直播',
+            emoji: '🎤',
+            badge: 4,
+            items: [
+                { symbol: '(☆▽☆) 好近！', desc: '好近' },
+                { symbol: '(´∀｀)♡ 幸福', desc: '幸福' },
+                { symbol: '(ﾉ´ヮ)ﾉ*: ･ﾟ✧` 尖叫', desc: '尖叫' },
+                { symbol: '(★ω★)/ 爱豆我来了！', desc: '爱豆我来了' }
             ]
         }
     ],
