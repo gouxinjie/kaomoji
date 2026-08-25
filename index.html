@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>颜文字图鉴 · 让表达更有趣</title>
-    <meta name="description" content="14 大类精选颜文字，一键复制，让表达更有趣">
+    <meta name="description" content="151 大类精选颜文字，一键复制，让表达更有趣">
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -13,11 +13,27 @@
     <!-- 头部（由 app.js 渲染） -->
     <header class="site-header" id="site-header"></header>
 
-    <!-- 14 类卡片网格（由 app.js 渲染） -->
-    <main class="grid" id="grid"></main>
+    <!-- 移动端分类筛选按钮 -->
+    <button type="button" class="mobile-filter-btn" id="mobile-filter-btn"
+        aria-label="打开分类筛选" title="分类筛选"></button>
 
-    <!-- 底部特性区（由 app.js 渲染） -->
-    <section class="features" id="features"></section>
+    <!-- 搜索框（由 app.js 渲染） -->
+    <div id="search-bar"></div>
+
+    <!-- 主体：侧边栏 + 内容区 -->
+    <div class="layout">
+        <!-- 侧边栏分类筛选（由 app.js 渲染） -->
+        <aside class="sidebar" id="sidebar"></aside>
+
+        <!-- 内容区 -->
+        <div class="content">
+            <!-- 分类卡片网格（由 app.js 渲染） -->
+            <main class="grid" id="grid"></main>
+
+            <!-- 底部特性区（由 app.js 渲染） -->
+            <section class="features" id="features"></section>
+        </div>
+    </div>
 
     <!-- 页脚（由 app.js 渲染） -->
     <footer class="footer-note" id="footer-note"></footer>

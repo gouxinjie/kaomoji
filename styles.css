@@ -1,6 +1,6 @@
 /* ===========================================================
    颜文字图鉴 · 样式表
-   还原 UI 设计稿：白底玻璃拟态 · 4 列网格 · 彩色特性卡
+   还原 UI 设计稿：白底玻璃拟态 · 3 列网格 · 彩色特性卡
    =========================================================== */
 
 * {
@@ -20,6 +20,37 @@ html, body {
 
 body {
     padding: 32px 24px 40px;
+}
+
+/* ---------- 全局滚动条优化 ---------- */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #c3c9d6 transparent;
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #c3c9d6;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: #9aa1b0;
+    background-clip: padding-box;
+}
+
+*::-webkit-scrollbar-corner {
+    background: transparent;
 }
 
 /* ---------- 容器 ---------- */
@@ -106,10 +137,251 @@ body {
     color: #c8cdd9;
 }
 
+/* ---------- 移动端分类筛选按钮（桌面端默认隐藏，移动端见响应式） ---------- */
+.mobile-filter-btn {
+    display: none;
+    border: none;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* ---------- 搜索框 ---------- */
+#search-bar {
+    margin-bottom: 24px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    padding: 0 14px;
+    box-shadow: 0 4px 18px rgba(31, 35, 48, 0.05);
+    max-width: 560px;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.search-box:focus-within {
+    box-shadow: 0 0 0 3px rgba(74, 123, 255, 0.15), 0 4px 18px rgba(31, 35, 48, 0.06);
+    border-color: rgba(74, 123, 255, 0.4);
+}
+
+.search-icon {
+    width: 18px;
+    height: 18px;
+    fill: #9aa1b0;
+    flex-shrink: 0;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 0.95rem;
+    color: #2a2f3c;
+    padding: 12px 0;
+    font-family: inherit;
+}
+
+.search-input::placeholder {
+    color: #a7adbb;
+}
+
+.search-clear {
+    border: none;
+    background: #eef1f6;
+    color: #6b7280;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background 0.15s ease;
+}
+
+.search-clear:hover {
+    background: #4a7bff;
+    color: white;
+}
+
+/* ---------- 主体布局：侧边栏 + 内容 ---------- */
+.layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 24px;
+    align-items: start;
+}
+
+/* ---------- 侧边栏 ---------- */
+.sidebar {
+    position: sticky;
+    top: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    padding: 16px 12px;
+    box-shadow: 0 6px 24px rgba(31, 35, 48, 0.05);
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+}
+
+.sidebar-head {
+    display: flex;
+    align-items: center;
+    padding: 0 8px 12px;
+}
+
+.sidebar-title {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #9aa1b0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.sidebar-hint {
+    font-size: 0.72rem;
+    color: #a7adbb;
+    margin-left: auto;
+    margin-right: 8px;
+}
+
+.sidebar-clear {
+    border: none;
+    background: #f0f4ff;
+    color: #4a7bff;
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 999px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+.sidebar-clear:hover {
+    background: #4a7bff;
+    color: #fff;
+}
+
+.sidebar-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    transition: opacity 0.2s ease;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.15s ease;
+    user-select: none;
+}
+
+.sidebar-item:hover {
+    background: #f0f4ff;
+}
+
+.sidebar-item.active {
+    background: #4a7bff;
+    color: #fff;
+}
+
+.sidebar-emoji {
+    width: 24px;
+    text-align: center;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.sidebar-name {
+    flex: 1;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sidebar-count {
+    font-size: 0.72rem;
+    color: #9aa1b0;
+    background: rgba(0, 0, 0, 0.04);
+    padding: 1px 7px;
+    border-radius: 999px;
+    flex-shrink: 0;
+}
+
+.sidebar-item.active .sidebar-count {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* ---------- 内容区 ---------- */
+.content {
+    min-width: 0;
+}
+
+/* ---------- 空结果 ---------- */
+.empty-result {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    color: #6b7280;
+}
+
+.empty-icon {
+    display: block;
+    font-size: 2.4rem;
+    margin-bottom: 12px;
+    font-family: 'Segoe UI', 'SF Mono', monospace;
+}
+
+.empty-result p {
+    margin-bottom: 16px;
+}
+
+.empty-reset {
+    border: none;
+    background: #4a7bff;
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.15s ease;
+    font-family: inherit;
+}
+
+.empty-reset:hover {
+    background: #1f5bff;
+}
+
 /* ---------- 卡片网格 ---------- */
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 22px;
     margin-bottom: 36px;
 }
@@ -119,8 +391,10 @@ body {
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border-radius: 22px;
+    border-radius: 12px;
     padding: 20px 18px 18px;
+    min-width: 0;
+    overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.6);
     box-shadow: 0 6px 24px rgba(31, 35, 48, 0.05),
                 0 1px 2px rgba(31, 35, 48, 0.03);
@@ -429,7 +703,7 @@ body {
 .art-block {
     background: #fafbfd;
     border: 1px solid #eef0f5;
-    border-radius: 14px;
+    border-radius: 10px;
     padding: 14px 12px 10px;
     position: relative;
     transition: background 0.15s ease;
@@ -489,6 +763,9 @@ body {
 .more-link .arrow {
     transition: transform 0.2s ease;
     display: inline-block;
+    line-height: 1;
+    font-size: 0.85rem;
+    margin-top: 1px;
 }
 
 .more-link.expanded .arrow {
@@ -510,7 +787,7 @@ body {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.6);
-    border-radius: 22px;
+    border-radius: 12px;
     padding: 28px 24px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -604,16 +881,153 @@ body {
 }
 
 @media (max-width: 800px) {
-    .grid { grid-template-columns: repeat(2, 1fr); }
-    .brand-title { font-size: 1.7rem; }
+    body { padding: 20px 16px 36px; }
+    .grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .brand-title { font-size: 1.6rem; }
+    .brand-icon { font-size: 1.2rem; padding: 7px 14px; }
     .features { grid-template-columns: 1fr; }
+    .site-header { margin-bottom: 20px; }
+
+    /* 布局变单列 */
+    .layout { grid-template-columns: 1fr; gap: 0; }
+
+    /* 移动端筛选按钮：右下角圆形悬浮，滚动时始终可见 */
+    .mobile-filter-btn {
+        position: fixed;
+        right: 16px;
+        bottom: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        margin: 0;
+        border-radius: 50%;
+        font-size: 0;
+        z-index: 1000;
+        box-shadow: 0 4px 16px rgba(74, 123, 255, 0.35);
+        border: 1px solid rgba(74, 123, 255, 0.35);
+        background: rgba(74, 123, 255, 0.96);
+        color: #fff;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+    }
+
+    .mobile-filter-btn::before {
+        content: '☰';
+        font-size: 1.1rem;
+        line-height: 1;
+    }
+
+    .mobile-filter-btn:hover {
+        background: #3d6bff;
+    }
+
+    .search-box { max-width: 100%; }
+    #search-bar { margin-bottom: 18px; }
+
+    /* 两列时符号略收窄，避免拥挤 */
+    .emoji-symbol { min-width: 64px; max-width: 96px; }
+    .emoji-desc { font-size: 0.82rem; }
+
+    /* 侧边栏改为左侧抽屉，默认滑出屏幕 */
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: min(340px, 88vw);
+        max-height: 100vh;
+        height: 100%;
+        margin: 0;
+        border-radius: 0 14px 14px 0;
+        z-index: 1002;
+        transform: translateX(-105%);
+        transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+        box-shadow: 8px 0 32px rgba(31, 35, 48, 0.18);
+        padding: 20px 12px;
+        display: flex;
+        flex-direction: column;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .sidebar.drawer-open {
+        transform: translateX(0);
+    }
+
+    /* 抽屉列表独立滚动 */
+    .sidebar .sidebar-list {
+        overflow-y: auto;
+        flex: 1;
+        min-height: 0;
+        padding-right: 2px;
+    }
+
+    /* 抽屉触控目标加大 */
+    .sidebar .sidebar-item {
+        padding: 12px 10px;
+        border-radius: 10px;
+    }
+    .sidebar .sidebar-name { font-size: 0.95rem; }
+    .sidebar .sidebar-head { padding: 0 8px 14px; }
+}
+
+/* ---------- 移动端抽屉遮罩 ---------- */
+.sidebar-mask {
+    position: fixed;
+    inset: 0;
+    background: rgba(31, 35, 48, 0.45);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    z-index: 1001;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.sidebar-mask.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* 抽屉打开时锁定背景滚动 */
+body.no-scroll {
+    overflow: hidden;
 }
 
 @media (max-width: 520px) {
-    body { padding: 20px 14px 30px; }
-    .grid { grid-template-columns: 1fr; gap: 16px; }
-    .site-header { flex-direction: column; }
-    .header-info { align-self: flex-start; }
-    .brand-title { font-size: 1.5rem; }
+    body { padding: 16px 12px 32px; }
+    .grid { grid-template-columns: 1fr; gap: 14px; }
+    .site-header { flex-direction: column; gap: 14px; }
+    .header-info { align-self: flex-start; padding: 8px 16px; font-size: 0.85rem; }
+    .brand-title { font-size: 1.4rem; }
+    .brand { gap: 10px; margin-bottom: 8px; }
+    .subhead { font-size: 0.85rem; padding-left: 10px; }
     .emoji-symbol { min-width: 60px; font-size: 0.85rem; }
+
+    /* 卡片：减小内边距，贴合小屏 */
+    .card { padding: 16px 14px 14px; }
+    .card-header { margin-bottom: 12px; padding-bottom: 10px; gap: 8px; }
+    .card-title { font-size: 0.98rem; }
+    .emoji-item { padding: 11px 8px; gap: 8px; border-radius: 10px; }
+    .emoji-left { gap: 10px; }
+
+    /* 触控目标：放大复制按钮 */
+    .copy-btn { width: 34px; height: 34px; border-radius: 9px; }
+    .copy-btn svg { width: 16px; height: 16px; }
+
+    /* 特性区 */
+    .features { padding: 20px 18px; gap: 18px; border-radius: 12px; }
+    .feature { gap: 12px; }
+    .feature-icon { width: 38px; height: 38px; font-size: 1rem; }
+    .feature-desc { font-size: 0.82rem; }
+
+    /* 页脚 */
+    .footer-note { font-size: 0.82rem; padding: 14px 0 2px; }
+
+    /* 搜索框触控放大 */
+    .search-input { padding: 13px 0; font-size: 0.95rem; }
+    .search-box { padding: 0 12px; }
+    .mobile-filter-btn { padding: 13px 16px; }
 }

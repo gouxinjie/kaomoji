@@ -16,6 +16,7 @@
     const COPY_ICON_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm0 16H8V7h11v14z"/></svg>';
 
     /* ---------------- 工具 ---------------- */
+    // 统一转义工具：覆盖 HTML 与属性上下文（含 " 与 '）
     function escapeHtml(str) {
         if (str == null) return '';
         return String(str)
@@ -24,9 +25,6 @@
             .replace(/>/g, '&gt;')
             .replace(/"/g, '&quot;')
             .replace(/'/g, '&#39;');
-    }
-    function escapeAttr(str) {
-        return escapeHtml(str);
     }
 
     /* ---------------- 头部 ---------------- */
@@ -51,11 +49,216 @@
         `;
     }
 
+    /* ---------------- 状态 ---------------- */
+    let activeCategories = new Set(['all']); // 当前筛选的分类 id 集合（多选）
+    let searchKeyword = '';                  // 当前搜索关键词
+
+    function filteredCategories() {
+        const kw = searchKeyword.trim().toLowerCase();
+        const allSelected = activeCategories.has('all');
+        return DATA.categories.filter(cat => {
+            // 分类筛选：多选（all 表示全选）
+            if (!allSelected && !activeCategories.has(cat.id)) return false;
+            // 关键词筛选：匹配分类名 / 符号 / 描述
+            if (!kw) return true;
+            if (cat.name.toLowerCase().includes(kw)) return true;
+            return cat.items.some(item =>
+                String(item.symbol).toLowerCase().includes(kw) ||
+                String(item.desc || '').toLowerCase().includes(kw)
+            );
+        });
+    }
+
+    /* ---------------- 搜索框 ---------------- */
+    function renderSearch() {
+        const wrap = document.getElementById('search-bar');
+        if (!wrap) return;
+        wrap.innerHTML = `
+            <div class="search-box">
+                <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z"/>
+                </svg>
+                <input type="text" id="search-input" class="search-input"
+                    placeholder="搜索颜文字"
+                    aria-label="搜索颜文字" autocomplete="off">
+                <button type="button" class="search-clear" id="search-clear" aria-label="清除搜索" hidden>✕</button>
+            </div>
+        `;
+        const input = wrap.querySelector('#search-input');
+        const clear = wrap.querySelector('#search-clear');
+        // 输入防抖：避免每次按键都全量重渲染网格
+        let debounceTimer = null;
+        input.addEventListener('input', function () {
+            searchKeyword = this.value;
+            clear.hidden = !this.value;
+            clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(renderGrid, 200);
+        });
+        clear.addEventListener('click', function () {
+            input.value = '';
+            searchKeyword = '';
+            this.hidden = true;
+            input.focus();
+            renderGrid();
+        });
+    }
+
+    /* ---------------- 侧边栏筛选（桌面折叠 + 移动端抽屉） ---------------- */
+    const mqMobile = window.matchMedia('(max-width: 800px)'); // 缓存，避免重复创建
+    let sidebarMask = null;  // 移动端抽屉遮罩
+    let maskCloseTimer = null; // 遮罩关闭过渡定时器
+    let maskVisible = false;   // 遮罩当前是否处于显示状态
+
+    function isMobile() {
+        return mqMobile.matches;
+    }
+
+    // 打开移动端抽屉
+    function openSidebar() {
+        const aside = document.getElementById('sidebar');
+        if (!aside || !isMobile()) return;
+        clearTimeout(maskCloseTimer);
+        if (!sidebarMask) {
+            sidebarMask = document.createElement('div');
+            sidebarMask.className = 'sidebar-mask';
+            sidebarMask.addEventListener('click', closeSidebar);
+            document.body.appendChild(sidebarMask);
+        }
+        maskVisible = true;
+        aside.classList.add('drawer-open');
+        sidebarMask.classList.add('show');
+        document.body.classList.add('no-scroll');
+    }
+
+    // 关闭移动端抽屉
+    function closeSidebar() {
+        const aside = document.getElementById('sidebar');
+        if (!aside) return;
+        aside.classList.remove('drawer-open');
+        document.body.classList.remove('no-scroll');
+        if (sidebarMask && maskVisible) {
+            maskVisible = false;
+            sidebarMask.classList.remove('show');
+            // 等过渡结束后移除遮罩节点，避免竞态
+            clearTimeout(maskCloseTimer);
+            maskCloseTimer = setTimeout(() => {
+                if (sidebarMask && !maskVisible) {
+                    sidebarMask.remove();
+                    sidebarMask = null;
+                }
+            }, 250);
+        }
+    }
+
+    function renderSidebar() {
+        const aside = document.getElementById('sidebar');
+        if (!aside) return;
+        const items = [
+            { id: 'all', emoji: '🌐', name: '全部', count: DATA.categories.length },
+            ...DATA.categories.map(cat => ({
+                id: cat.id,
+                emoji: cat.emoji,
+                name: cat.name,
+                count: cat.items.length
+            }))
+        ];
+        const isFiltered = !activeCategories.has('all'); // 是否处于具体分类筛选状态
+        aside.innerHTML = `
+            <div class="sidebar-head">
+                <span class="sidebar-title">分类筛选</span>
+                <span class="sidebar-hint">可多选</span>
+                <button type="button" class="sidebar-clear" id="sidebar-clear"
+                    ${isFiltered ? '' : 'hidden'}>清空</button>
+            </div>
+            <ul class="sidebar-list">
+                ${items.map(it => `
+                    <li class="sidebar-item ${activeCategories.has(it.id) ? 'active' : ''}"
+                        data-id="${escapeHtml(it.id)}" role="button" tabindex="0">
+                        <span class="sidebar-emoji">${escapeHtml(it.emoji)}</span>
+                        <span class="sidebar-name">${escapeHtml(it.name)}</span>
+                        <span class="sidebar-count">${it.count}</span>
+                    </li>
+                `).join('')}
+            </ul>
+        `;
+
+        // 更新清空按钮显隐
+        const clearBtn = aside.querySelector('#sidebar-clear');
+        function updateClearVisibility() {
+            if (clearBtn) clearBtn.hidden = activeCategories.has('all');
+        }
+        if (clearBtn) clearBtn.addEventListener('click', function () {
+            activeCategories = new Set(['all']);
+            // 全量重渲染以重置所有选中态与清空按钮
+            renderSidebar();
+            renderGrid();
+        });
+
+        // 分类项：只切换 active 状态，避免全量重渲染侧边栏
+        aside.querySelectorAll('.sidebar-item').forEach(item => {
+            const select = () => {
+                const id = item.getAttribute('data-id');
+                // 多选逻辑
+                if (id === 'all') {
+                    activeCategories = new Set(['all']);
+                } else {
+                    activeCategories.delete('all');
+                    if (activeCategories.has(id)) {
+                        activeCategories.delete(id);
+                        if (activeCategories.size === 0) activeCategories.add('all');
+                    } else {
+                        activeCategories.add(id);
+                    }
+                }
+                // 更新选中态与清空按钮，仅操作对应 DOM，避免重建整个侧边栏
+                const isActive = activeCategories.has(id);
+                item.classList.toggle('active', isActive);
+                if (id === 'all') {
+                    // 点"全部"时取消其它所有选中
+                    aside.querySelectorAll('.sidebar-item').forEach(other => {
+                        if (other !== item) other.classList.remove('active');
+                    });
+                } else {
+                    // 选具体分类时取消"全部"高亮
+                    const allItem = aside.querySelector('.sidebar-item[data-id="all"]');
+                    if (allItem) allItem.classList.remove('active');
+                }
+                updateClearVisibility();
+                renderGrid();
+            };
+            item.addEventListener('click', select);
+            item.addEventListener('keydown', e => {
+                if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); select(); }
+            });
+        });
+    }
+
     /* ---------------- 卡片网格 ---------------- */
     function renderGrid() {
         const grid = document.getElementById('grid');
         if (!grid) return;
-        grid.innerHTML = DATA.categories.map(cat => renderCard(cat)).join('');
+        const cats = filteredCategories();
+        if (cats.length === 0) {
+            grid.innerHTML = `
+                <div class="empty-result">
+                    <span class="empty-icon">(・_・;)</span>
+                    <p>没有找到匹配的颜文字</p>
+                    <button type="button" class="empty-reset" id="empty-reset">清空筛选</button>
+                </div>`;
+            const reset = grid.querySelector('#empty-reset');
+            if (reset) reset.addEventListener('click', function () {
+                activeCategories = new Set(['all']);
+                searchKeyword = '';
+                const input = document.getElementById('search-input');
+                if (input) { input.value = ''; }
+                const clear = document.getElementById('search-clear');
+                if (clear) { clear.hidden = true; }
+                renderSidebar();
+                renderGrid();
+            });
+            return;
+        }
+        grid.innerHTML = cats.map(cat => renderCard(cat)).join('');
     }
 
     function renderCard(cat) {
@@ -84,7 +287,7 @@
         if (isArt) {
             return `
                 <li class="emoji-item art-block-wrap">
-                    <div class="art-block" data-text="${escapeAttr(item.symbol)}">
+                    <div class="art-block" data-text="${escapeHtml(item.symbol)}">
                         <pre class="art-pre">${escapeHtml(item.symbol)}</pre>
                         <div class="art-foot">
                             <span class="art-desc">${escapeHtml(item.desc)}</span>
@@ -95,7 +298,7 @@
             `;
         }
         return `
-            <li class="emoji-item" data-text="${escapeAttr(item.symbol)}">
+            <li class="emoji-item" data-text="${escapeHtml(item.symbol)}">
                 <div class="emoji-left">
                     <span class="emoji-symbol">${escapeHtml(item.symbol)}</span>
                     <span class="emoji-desc">${escapeHtml(item.desc)}</span>
@@ -235,14 +438,28 @@
         });
     }
 
+    /* ---------------- 移动端筛选按钮 & 抽屉 ---------------- */
+    function setupMobileFilter() {
+        const btn = document.getElementById('mobile-filter-btn');
+        if (!btn) return;
+        btn.addEventListener('click', openSidebar);
+        // 尺寸变化：从移动端切回桌面时清理抽屉状态
+        window.addEventListener('resize', function () {
+            if (!isMobile()) closeSidebar();
+        });
+    }
+
     /* ---------------- 启动 ---------------- */
     function init() {
         renderHeader();
+        renderSearch();
+        renderSidebar();
         renderGrid();
         renderFeatures();
         renderFooter();
         setupCopy();
         setupMore();
+        setupMobileFilter();
     }
 
     if (document.readyState === 'loading') {
