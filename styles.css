@@ -296,7 +296,27 @@ body {
 .c-insomnia .card-emoji  { background: #e4e0e8; }
 .c-naturalwake .card-emoji { background: #fff0c8; }
 .c-alarmwake .card-emoji { background: #ffe0d6; }
-.c-ascii .card-emoji     { background: #f5e8ff; }
+.c-springfest .card-emoji { background: #ffdcdc; }
+.c-midautumn .card-emoji { background: #fff0c8; }
+.c-newyear .card-emoji  { background: #e0e8f2; }
+.c-valentine .card-emoji { background: #ffd9ec; }
+.c-moviesaw .card-emoji { background: #fff0c8; }
+.c-moviesad .card-emoji { background: #ffdcdc; }
+.c-movieboring .card-emoji { background: #ece4dc; }
+.c-movietalk .card-emoji { background: #e0f0e6; }
+.c-loopmusic .card-emoji { background: #e0e8f2; }
+.c-musiccry .card-emoji { background: #ffdcdc; }
+.c-musichype .card-emoji { background: #ffe0d6; }
+.c-headphones .card-emoji { background: #e4e0e8; }
+.c-petcuddle .card-emoji { background: #ffd9ec; }
+.c-petignored .card-emoji { background: #ece4dc; }
+.c-petmischief .card-emoji { background: #ffe0d6; }
+.c-petsleep .card-emoji { background: #e2e8ee; }
+.c-rushmetro .card-emoji { background: #e0e8f2; }
+.c-latetime .card-emoji { background: #ffe0d6; }
+.c-gohome .card-emoji   { background: #fff0c8; }
+.c-trafficjam .card-emoji { background: #ece4dc; }
+.c-ascii .card-emoji    { background: #f5e8ff; }
 
 .card-title {
     flex: 1;

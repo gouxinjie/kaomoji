@@ -1,6 +1,6 @@
 /**
  * 颜文字图鉴 · 数据源
- * 151 大类、约 100+ 个颜文字
+ * 171 大类、约 100+ 个颜文字
  * 通过 window.KAOMOJI_DATA 暴露给页面
  */
 window.KAOMOJI_DATA = {
@@ -10,7 +10,7 @@ window.KAOMOJI_DATA = {
         icon: '(⊙_⊙)',
         subtitle: '从嘲讽到撒娇，从极简到沙雕 · 点击颜文字即可复制',
         totalLabel: '点击 复制',
-        totalCount: 151
+        totalCount: 171
     },
 
     // 14 大分类
@@ -2353,6 +2353,246 @@ window.KAOMOJI_DATA = {
                 { symbol: '(＃°Д°) 好吵', desc: '好吵' },
                 { symbol: '(´⊙ω⊙)` 再睡五分钟', desc: '再睡五分钟' },
                 { symbol: '(；一_一) 不想醒', desc: '不想醒' }
+            ]
+        },
+        {
+            id: 'springfest',
+            name: '春节 · 过年',
+            emoji: '🧧',
+            badge: 4,
+            items: [
+                { symbol: '(★≧▽≦) 过年啦！', desc: '过年啦' },
+                { symbol: '(´∀｀)♡ 收红包', desc: '收红包' },
+                { symbol: '(✧ω✧) 好吃的好多', desc: '好吃的好多' },
+                { symbol: '(≧∇≦)/ 放烟花', desc: '放烟花' }
+            ]
+        },
+        {
+            id: 'midautumn',
+            name: '中秋',
+            emoji: '🥮',
+            badge: 4,
+            items: [
+                { symbol: '(´∀｀) 月亮好圆', desc: '月亮好圆' },
+                { symbol: '(๑˘͈ ᵕ ˘͈๑) 吃月饼', desc: '吃月饼' },
+                { symbol: '(★ω★) 想家', desc: '想家' },
+                { symbol: '(´,,•ω•,,)♡', desc: '团圆' }
+            ]
+        },
+        {
+            id: 'newyear',
+            name: '圣诞 · 元旦',
+            emoji: '🎄',
+            badge: 4,
+            items: [
+                { symbol: '(☆▽☆) 圣诞快乐', desc: '圣诞快乐' },
+                { symbol: '(ﾉ´ヮ)ﾉ*: ･ﾟ✧` 跨年！', desc: '跨年' },
+                { symbol: '(★ω★)/ 新年好', desc: '新年好' },
+                { symbol: '(´∀｀)♡ 许个愿', desc: '许个愿' }
+            ]
+        },
+        {
+            id: 'valentine',
+            name: '情人节',
+            emoji: '🌹',
+            badge: 4,
+            items: [
+                { symbol: '(｡♥‿♥｡)', desc: '甜蜜' },
+                { symbol: '(´∀｀)♡', desc: '幸福' },
+                { symbol: '(๑˘͈ ᵕ ˘͈๑)', desc: '害羞' },
+                { symbol: '(；一_一) 单身也开心', desc: '单身也开心' }
+            ]
+        },
+        {
+            id: 'moviesaw',
+            name: '看得很爽',
+            emoji: '🍿',
+            badge: 4,
+            items: [
+                { symbol: '(★ω★)/ 太好看了！', desc: '太好看了' },
+                { symbol: '(✧ω✧) 神作', desc: '神作' },
+                { symbol: '(≧∇≦)/ 再看一遍', desc: '再看一遍' },
+                { symbol: '(´∀｀)♡ 幸福', desc: '幸福' }
+            ]
+        },
+        {
+            id: 'moviesad',
+            name: '看得很虐',
+            emoji: '😭',
+            badge: 4,
+            items: [
+                { symbol: '(；д；) 好难过', desc: '好难过' },
+                { symbol: '(இ﹏இ) 眼泪停不下来', desc: '眼泪停不下来' },
+                { symbol: '(´；ω；｀) 心疼', desc: '心疼' },
+                { symbol: '(T_T) 为什么要这样', desc: '为什么要这样' }
+            ]
+        },
+        {
+            id: 'movieboring',
+            name: '看得很无聊',
+            emoji: '🥱',
+            badge: 4,
+            items: [
+                { symbol: '(－_－)', desc: '平淡' },
+                { symbol: '(￣ρ￣)', desc: '无聊' },
+                { symbol: '(；一_一) 想快进', desc: '想快进' },
+                { symbol: '(´-_ゝ｀) 什么时候结束', desc: '什么时候结束' }
+            ]
+        },
+        {
+            id: 'movietalk',
+            name: '看完讨论',
+            emoji: '💬',
+            badge: 4,
+            items: [
+                { symbol: '(・∀・) 你觉得呢', desc: '你觉得呢' },
+                { symbol: '(¬‿¬) 有伏笔吧', desc: '有伏笔吧' },
+                { symbol: '(＃°Д°) 结局绝了', desc: '结局绝了' },
+                { symbol: '(´⊙ω⊙)` 没看懂', desc: '没看懂' }
+            ]
+        },
+        {
+            id: 'loopmusic',
+            name: '单曲循环',
+            emoji: '🎵',
+            badge: 4,
+            items: [
+                { symbol: '(´∀｀) 好好听', desc: '好好听' },
+                { symbol: '(★ω★) 又循环了', desc: '又循环了' },
+                { symbol: '(๑˘͈ ᵕ ˘͈๑) 入脑', desc: '入脑' },
+                { symbol: '(✧ω✧) 推荐给你', desc: '推荐给你' }
+            ]
+        },
+        {
+            id: 'musiccry',
+            name: '听哭了',
+            emoji: '🎶',
+            badge: 4,
+            items: [
+                { symbol: '(；д；)', desc: '泪目' },
+                { symbol: '(´；ω；｀)', desc: '想哭' },
+                { symbol: '(இ﹏இ)', desc: '哽咽' },
+                { symbol: '(T_T) 歌词写的是我', desc: '歌词写的是我' }
+            ]
+        },
+        {
+            id: 'musichype',
+            name: '听嗨了',
+            emoji: '🔥',
+            badge: 4,
+            items: [
+                { symbol: '(≧∇≦)/ 蹦起来', desc: '蹦起来' },
+                { symbol: '(★≧▽≦) 太燃了', desc: '太燃了' },
+                { symbol: '(ﾉ´ヮ)ﾉ*: ･ﾟ✧`', desc: '撒花' },
+                { symbol: '(๑˃̶͈̀ロ˂̶͈́)و', desc: '激情' }
+            ]
+        },
+        {
+            id: 'headphones',
+            name: '戴耳机世界',
+            emoji: '🎧',
+            badge: 4,
+            items: [
+                { symbol: '(－_－) 听不见', desc: '听不见' },
+                { symbol: '(￣ρ￣) 沉浸中', desc: '沉浸中' },
+                { symbol: '(´-ω-｀) 别叫我', desc: '别叫我' },
+                { symbol: '(；一_一) 耳机是屏障', desc: '耳机是屏障' }
+            ]
+        },
+        {
+            id: 'petcuddle',
+            name: '吸猫 · 吸狗',
+            emoji: '🐱',
+            badge: 4,
+            items: [
+                { symbol: '(´∀｀)♡ 好软', desc: '好软' },
+                { symbol: '(๑˘͈ ᵕ ˘͈๑) 想揉', desc: '想揉' },
+                { symbol: '(つ≧▽≦)つ 抱抱', desc: '抱抱' },
+                { symbol: '(★ω★)/ 可爱死了', desc: '可爱死了' }
+            ]
+        },
+        {
+            id: 'petignored',
+            name: '被宠物无视',
+            emoji: '🙄',
+            badge: 4,
+            items: [
+                { symbol: '(；一_一)', desc: '无语' },
+                { symbol: '(´-﹏-)`', desc: '失落' },
+                { symbol: '(๑•́ ₃ •̀๑) 理我一下', desc: '理我一下' },
+                { symbol: '(；ω；) 我只是铲屎的', desc: '我只是铲屎的' }
+            ]
+        },
+        {
+            id: 'petmischief',
+            name: '宠物搞破坏',
+            emoji: '😾',
+            badge: 4,
+            items: [
+                { symbol: '(＃°Д°) 又拆家了！', desc: '又拆家了' },
+                { symbol: '(；°Д°) 我的东西！', desc: '我的东西' },
+                { symbol: '(¬_¬) 你完了', desc: '你完了' },
+                { symbol: '(｀ε´) 下次再犯', desc: '下次再犯' }
+            ]
+        },
+        {
+            id: 'petsleep',
+            name: '宠物睡觉',
+            emoji: '😺',
+            badge: 4,
+            items: [
+                { symbol: '(－_－) zzZ', desc: '睡觉' },
+                { symbol: '(￣ρ￣)..zz', desc: '打盹' },
+                { symbol: '(´-ω-｀) 好乖', desc: '好乖' },
+                { symbol: '(∪､∪) 安静的幸福', desc: '安静的幸福' }
+            ]
+        },
+        {
+            id: 'rushmetro',
+            name: '早高峰地铁',
+            emoji: '🚇',
+            badge: 4,
+            items: [
+                { symbol: '(；一_一) 好挤', desc: '好挤' },
+                { symbol: '(´-ω-｀) 站不稳', desc: '站不稳' },
+                { symbol: '(－_－) 只想快点到', desc: '只想快点到' },
+                { symbol: '(￣ρ￣) 别靠过来', desc: '别靠过来' }
+            ]
+        },
+        {
+            id: 'latetime',
+            name: '迟到边缘',
+            emoji: '🏃',
+            badge: 4,
+            items: [
+                { symbol: '(；°Д°) 要来不及了！', desc: '要来不及了' },
+                { symbol: '(＃°Д°) 快跑', desc: '快跑' },
+                { symbol: '(´⊙ω⊙)`', desc: '慌' },
+                { symbol: '(；ﾟДﾟ) 电梯好慢', desc: '电梯好慢' }
+            ]
+        },
+        {
+            id: 'gohome',
+            name: '下班回家',
+            emoji: '🏠',
+            badge: 4,
+            items: [
+                { symbol: '(★≧▽≦) 终于结束', desc: '终于结束' },
+                { symbol: '(✧ω✧) 回家！', desc: '回家' },
+                { symbol: '(≧∇≦)/ 自由了', desc: '自由了' },
+                { symbol: '(´∀｀)♡ 只想躺着', desc: '只想躺着' }
+            ]
+        },
+        {
+            id: 'trafficjam',
+            name: '堵车中',
+            emoji: '🚗',
+            badge: 4,
+            items: [
+                { symbol: '(；一_一)', desc: '无奈' },
+                { symbol: '(´-﹏-)`', desc: '烦躁' },
+                { symbol: '(－_－) 怎么还不走', desc: '怎么还不走' },
+                { symbol: '(￣ー￣) 听歌吧', desc: '听歌吧' }
             ]
         }
     ],
