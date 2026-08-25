@@ -1,6 +1,6 @@
 /**
  * 颜文字图鉴 · 数据源
- * 194 大类、约 100+ 个颜文字
+ * 199 大类、约 100+ 个颜文字
  * 通过 window.KAOMOJI_DATA 暴露给页面
  */
 window.KAOMOJI_DATA = {
@@ -10,7 +10,7 @@ window.KAOMOJI_DATA = {
         icon: '(⊙_⊙)',
         subtitle: '从嘲讽到撒娇，从极简到沙雕 · 点击颜文字即可复制',
         totalLabel: '点击 复制',
-        totalCount: 194
+        totalCount: 199
     },
 
     // 14 大分类
@@ -2910,6 +2910,93 @@ window.KAOMOJI_DATA = {
                 { symbol: '☜(ﾟヮﾟ☜)', desc: '反向指点' },
                 { symbol: '(╭☞•́⍛•̀)╭☞', desc: '社会人指你' },
                 { symbol: '(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧', desc: '魔法少女变身' }
+            ]
+        },
+        {
+            id: 'gaming',
+            name: '打游戏专用',
+            emoji: '🎮',
+            badge: 10,
+            items: [
+                { symbol: '(ง •̀_•́)ง', desc: '准备开团' },
+                { symbol: '(╬ Ò﹏Ó)', desc: '强忍怒火' },
+                { symbol: '(｀へ´)╯', desc: '甩锅' },
+                { symbol: '(´;ω;｀)', desc: '被单杀' },
+                { symbol: '(ﾟ∀ﾟ)', desc: '赢了嘚瑟' },
+                { symbol: '(；´Д)`', desc: '被翻盘' },
+                { symbol: '(☞ﾟ∀ﾟ)☞', desc: '指队友你的锅' },
+                { symbol: '(／‵Д′)／~ ╧╧', desc: '怒摔键盘' },
+                { symbol: '(´・ω・)っ由', desc: '递茶安慰' },
+                { symbol: '(｀・ω・´)ｂ', desc: '这波我carry' }
+            ]
+        },
+        {
+            id: 'office',
+            name: '职场专用',
+            emoji: '💼',
+            badge: 9,
+            items: [
+                { symbol: '(´Д )`', desc: '又加班了' },
+                { symbol: '(；一_一)', desc: '老板你说得对' },
+                { symbol: '(￣▽￣)"', desc: '礼貌而不失尴尬' },
+                { symbol: '(´-ω-｀)', desc: '摸鱼中' },
+                { symbol: '(｀・ω・´)ゞ', desc: '收到' },
+                { symbol: '(´・ω・)ﾉ', desc: '好的马上做' },
+                { symbol: '(；´∀｀)', desc: '假装很忙' },
+                { symbol: '(￣ω￣;)', desc: '说漏嘴了' },
+                { symbol: '(´Д )ﾉ ﾊｲﾊｲ`', desc: '敷衍三连' }
+            ]
+        },
+        {
+            id: 'lovetheater',
+            name: '恋爱小剧场',
+            emoji: '💕',
+            badge: 10,
+            items: [
+                { symbol: '(｡♥‿♥｡)', desc: '偷看你' },
+                { symbol: '(♥ω♥*)', desc: '心动到不行' },
+                { symbol: '(´▽ʃ♡)ƪ`', desc: '捧心' },
+                { symbol: '(づ｡◕‿‿◕｡)づ', desc: '要抱抱' },
+                { symbol: '(˶‾᷄ ⁻̫ ‾᷅˵)', desc: '害羞脸红' },
+                { symbol: '(♡˙︶˙♡)', desc: '恋爱少女' },
+                { symbol: '(´｡• ᵕ •｡) ♡`', desc: '温柔心动' },
+                { symbol: '(๑¯◡¯๑)', desc: '傻笑看你' },
+                { symbol: '(◕‿◕)♡', desc: '飞吻比心' },
+                { symbol: '( ˘ ³˘)♥', desc: '嘟嘴亲亲' }
+            ]
+        },
+        {
+            id: 'minimal2',
+            name: '极简杀伤力强',
+            emoji: '💥',
+            badge: 8,
+            items: [
+                { symbol: '(｀)', desc: '盯' },
+                { symbol: '(´)', desc: '累' },
+                { symbol: '(｡)', desc: '弱' },
+                { symbol: '(；)', desc: '汗' },
+                { symbol: '(｀・)', desc: '斜眼' },
+                { symbol: '(・｀)', desc: '反向斜眼' },
+                { symbol: '(´・)', desc: '若有所思' },
+                { symbol: '(・´)', desc: '恍然大悟' }
+            ]
+        },
+        {
+            id: 'ultimate',
+            name: '终极 · 宇宙级',
+            emoji: '🪐',
+            badge: 10,
+            items: [
+                { symbol: '(╯‵□′)╯︵┻━┻', desc: '掀桌标准版' },
+                { symbol: '┬─┬ ノ( ゜-゜ノ)', desc: '扶桌治愈系' },
+                { symbol: '_(:3 」∠)_', desc: '躺平最经典' },
+                { symbol: '(ﾟ⊿ﾟ)', desc: '大脑短路' },
+                { symbol: '(；´ρ)`', desc: '虚脱' },
+                { symbol: '(´ཀ」 ∠)_`', desc: '哭到倒地抽搐' },
+                { symbol: '(°ཀ°)', desc: '吐了' },
+                { symbol: '(☉_☉)', desc: '呆若木鸡' },
+                { symbol: '(｀∀´)Ψ', desc: '邪魅一笑' },
+                { symbol: '(⌐■_■)', desc: '墨镜一戴' }
             ]
         }
     ],
