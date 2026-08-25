@@ -1,6 +1,6 @@
 /**
  * 颜文字图鉴 · 数据源
- * 58 大类、约 100+ 个颜文字
+ * 66 大类、约 100+ 个颜文字
  * 通过 window.KAOMOJI_DATA 暴露给页面
  */
 window.KAOMOJI_DATA = {
@@ -10,7 +10,7 @@ window.KAOMOJI_DATA = {
         icon: '(⊙_⊙)',
         subtitle: '从嘲讽到撒娇，从极简到沙雕 · 点击颜文字即可复制',
         totalLabel: '点击 复制',
-        totalCount: 58
+        totalCount: 66
     },
 
     // 14 大分类
@@ -1107,6 +1107,132 @@ window.KAOMOJI_DATA = {
                 { symbol: '(・へ・)', desc: '淡定噘嘴' },
                 { symbol: '(￣ρ￣)', desc: '淡定瘫' },
                 { symbol: '(´-ω-｀)', desc: '淡定困' }
+            ]
+        },
+        {
+            id: 'socialanxiety',
+            name: '超社恐 · 想消失',
+            emoji: '🫥',
+            badge: 10,
+            items: [
+                { symbol: '(´；ω；｀)', desc: '社恐想哭' },
+                { symbol: '(；一_一)', desc: '不敢直视' },
+                { symbol: '(｡ŏ_ŏ)', desc: '躲闪' },
+                { symbol: '(´-﹏-)`', desc: '想溜走' },
+                { symbol: '(；°Д°)', desc: '紧张到呆' },
+                { symbol: '(・へ・)', desc: '沉默' },
+                { symbol: '(´･_･)`', desc: '低头纠结' },
+                { symbol: '(；ω；)', desc: '想哭' },
+                { symbol: '(๑•́ ₃ •̀๑) 别看我', desc: '别看我' },
+                { symbol: '(；´Д)`', desc: '张大嘴尴尬' }
+            ]
+        },
+        {
+            id: 'socialbutterfly',
+            name: '超社牛 · 谁都敢聊',
+            emoji: '🗣️',
+            badge: 10,
+            items: [
+                { symbol: '(☞ﾟ∀ﾟ)☞', desc: '指点开聊' },
+                { symbol: '(｀・ω・´)', desc: '自信搭话' },
+                { symbol: '(★ω★)/', desc: '热情挥手' },
+                { symbol: '(๑•̀ㅂ•́)و✧', desc: '活力开聊' },
+                { symbol: '(￣▽￣)ノ', desc: '自来熟' },
+                { symbol: '(ﾉ´ヮ)ﾉ*: ･ﾟ`', desc: '撒花开聊' },
+                { symbol: '(•̀ᴗ•́)و', desc: '健谈' },
+                { symbol: '(✧ω✧)', desc: '星星眼搭话' },
+                { symbol: '(｀∀´)Ψ', desc: '社交达人' },
+                { symbol: '(๑˃̵ᴗ˂̵)و', desc: '热情互动' }
+            ]
+        },
+        {
+            id: 'hesitate',
+            name: '超纠结 · 选择困难',
+            emoji: '🤔',
+            badge: 10,
+            items: [
+                { symbol: '(・_・?)', desc: '纠结' },
+                { symbol: '(？o？)', desc: '满脑问号' },
+                { symbol: '(´･_･)`', desc: '皱眉纠结' },
+                { symbol: '(；一_一)?', desc: '无语纠结' },
+                { symbol: '(⊙_⊙)?', desc: '震惊纠结' },
+                { symbol: '(・へ・)?', desc: '歪头纠结' },
+                { symbol: '(｡ŏ_ŏ)?', desc: '犯难' },
+                { symbol: '(；°Д°)?', desc: '彻底纠结' },
+                { symbol: '(´-﹏-) 选哪个`', desc: '选哪个' },
+                { symbol: '(・∀・？)', desc: '选择困难' }
+            ]
+        },
+        {
+            id: 'touched',
+            name: '超感动 · 想哭',
+            emoji: '🥹',
+            badge: 10,
+            items: [
+                { symbol: '(´；ω；｀)', desc: '感动落泪' },
+                { symbol: '(；д；)', desc: '泪目' },
+                { symbol: '(இ﹏இ)', desc: '感动哭' },
+                { symbol: '(T_T)', desc: '泪流满面' },
+                { symbol: '(´∀｀)♡', desc: '感动比心' },
+                { symbol: '(｡♥‿♥｡)', desc: '满心感动' },
+                { symbol: '(๑˘͈ ᵕ ˘͈๑)', desc: '感动害羞' },
+                { symbol: '(；∀；)', desc: '感动爆哭' },
+                { symbol: '(´｡• ᵕ •｡)`', desc: '感动抿嘴' },
+                { symbol: '(ˊᗜˋ*) 好感动', desc: '好感动' }
+            ]
+        },
+        {
+            id: 'perfunctory',
+            name: '超敷衍 · 随便吧',
+            emoji: '🙄',
+            badge: 10,
+            items: [
+                { symbol: '¯\\_(ツ)_/¯', desc: '随便啦' },
+                { symbol: '(￣ー￣)', desc: '敷衍脸' },
+                { symbol: '(－_－)', desc: '无所谓' },
+                { symbol: '(・_・)', desc: '平淡' },
+                { symbol: '(´-_ゝ｀)', desc: '爱答不理' },
+                { symbol: '(；一_一)', desc: '敷衍无语' },
+                { symbol: '(￣ω￣)', desc: '都行' },
+                { symbol: '(・へ・)', desc: '随便吧' },
+                { symbol: '(´･_･)`', desc: '不耐烦' },
+                { symbol: '(￣ρ￣) 都行', desc: '都行' }
+            ]
+        },
+        {
+            id: 'focused',
+            name: '超认真 · 专注中',
+            emoji: '🎯',
+            badge: 10,
+            items: [
+                { symbol: '(｀・ω・´)', desc: '认真' },
+                { symbol: '(•̀ᴗ•́)', desc: '专注' },
+                { symbol: '(๑•̀ㅂ•́)', desc: '认真努力' },
+                { symbol: '(￣ー￣)', desc: '严肃专注' },
+                { symbol: '(´-_ゝ｀)', desc: '专注眯眼' },
+                { symbol: '(・∀・)', desc: '投入' },
+                { symbol: '(｀д´)', desc: '认真较劲' },
+                { symbol: '(¬_¬)', desc: '认真盯' },
+                { symbol: '(๑˃̵ᴗ˂̵)', desc: '认真加油' },
+                { symbol: '(•̀ω•́)', desc: '专注状态' }
+            ]
+        },
+        {
+            id: 'excited',
+            name: '超兴奋 · 嗨起来',
+            emoji: '🎉',
+            badge: 10,
+            items: [
+                { symbol: '(ﾉ´ヮ)ﾉ*: ･ﾟ✧`', desc: '疯狂撒花' },
+                { symbol: '(≧∇≦)/', desc: '欢呼' },
+                { symbol: '(★≧▽≦)', desc: '闪耀狂喜' },
+                { symbol: '(๑˃̶͈̀ロ˂̶͈́)و', desc: '激情澎湃' },
+                { symbol: '(☆▽☆)', desc: '星星眼爆' },
+                { symbol: '(ﾉ≧∀≦)ﾉ', desc: '疯狂欢呼' },
+                { symbol: '(✧ω✧)', desc: '闪亮兴奋' },
+                { symbol: '(★ω★)/', desc: '星光挥手' },
+                { symbol: '(⌒▽⌒)☆', desc: '星星期待' },
+                { symbol: '(๑¯∀¯๑)ノ', desc: '得意挥手' }
             ]
         }
     ],

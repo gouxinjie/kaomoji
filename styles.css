@@ -212,6 +212,13 @@ body {
 .c-clingy .card-emoji    { background: #ffdceb; }
 .c-drama .card-emoji     { background: #f3e0ff; }
 .c-calm .card-emoji      { background: #e0eee8; }
+.c-socialanxiety .card-emoji { background: #e4e0e8; }
+.c-socialbutterfly .card-emoji { background: #ffe8e0; }
+.c-hesitate .card-emoji  { background: #e8f0ff; }
+.c-touched .card-emoji   { background: #ffe0ec; }
+.c-perfunctory .card-emoji { background: #ece4dc; }
+.c-focused .card-emoji   { background: #e8f2e8; }
+.c-excited .card-emoji   { background: #fff0c8; }
 .c-ascii .card-emoji     { background: #f5e8ff; }
 
 .card-title {
