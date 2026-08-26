@@ -55,19 +55,185 @@ window.KAOMOJI_DATA = {
                 }
             ]
         },
+
+        {
+            "id": "sideeye",
+            "name": "斜视 · 侧目",
+            "emoji": "¬_¬",
+            "badge": 28,
+            "items": [
+                {
+                    "symbol": "(→_→)",
+                    "desc": "侧目向右"
+                },
+                {
+                    "symbol": "(←_←)",
+                    "desc": "侧目向左"
+                },
+                {
+                    "symbol": "(→_←)",
+                    "desc": "视线交叉"
+                },
+                {
+                    "symbol": "(←_→)",
+                    "desc": "反向视线交叉"
+                },
+                {
+                    "symbol": "( →_→ )",
+                    "desc": "侧目向右（带空格）"
+                },
+                {
+                    "symbol": "( ←_← )",
+                    "desc": "侧目向左（带空格）"
+                },
+                {
+                    "symbol": "(¬_¬)",
+                    "desc": "斜眼白眼"
+                },
+                {
+                    "symbol": "(¬‿¬)",
+                    "desc": "斜眼奸笑"
+                },
+                {
+                    "symbol": "(¬､¬)",
+                    "desc": "眯眼斜瞥"
+                },
+                {
+                    "symbol": "(눈_눈)",
+                    "desc": "死鱼眼侧目"
+                },
+                {
+                    "symbol": "(ㆆ_ㆆ)",
+                    "desc": "黑线斜眼"
+                },
+                {
+                    "symbol": "(￢_￢)",
+                    "desc": "撇嘴斜眼"
+                },
+                {
+                    "symbol": "(￢‿￢)",
+                    "desc": "撇嘴奸笑"
+                },
+                {
+                    "symbol": "(→_→ )",
+                    "desc": "侧目向右"
+                },
+                {
+                    "symbol": "( ←_←)",
+                    "desc": "侧目向左"
+                },
+                {
+                    "symbol": "(¬_¬\")",
+                    "desc": "斜眼不爽"
+                },
+                {
+                    "symbol": "(→_→;)",
+                    "desc": "心虚侧目"
+                },
+                {
+                    "symbol": "(←_←;)",
+                    "desc": "心虚左瞥"
+                },
+                {
+                    "symbol": "(←_←)(→_→)",
+                    "desc": "左看右看"
+                },
+                {
+                    "symbol": "(→_→)(←_←)",
+                    "desc": "右看左看"
+                },
+                {
+                    "symbol": "( ←_← ) ( →_→ )",
+                    "desc": "左右张望"
+                },
+                {
+                    "symbol": "(/ω＼)",
+                    "desc": "捂脸偷瞄"
+                },
+                {
+                    "symbol": "(*/ω＼*)",
+                    "desc": "害羞捂脸偷瞄"
+                },
+                {
+                    "symbol": "( -_・)",
+                    "desc": "斜眼无语"
+                },
+                {
+                    "symbol": "(・_─)",
+                    "desc": "反向斜眼"
+                },
+                {
+                    "symbol": "(￣ー￣)",
+                    "desc": "得意侧目"
+                },
+                {
+                    "symbol": "(｀_´)",
+                    "desc": "斜眼不爽"
+                },
+                {
+                    "symbol": "(´-_ゝ｀)",
+                    "desc": "反向不爽斜眼"
+                }
+            ]
+        },
+
+        {
+            "id": "think",
+            "name": "思考 · 疑惑",
+            "emoji": "🤔",
+            "badge": 10,
+            "items": [
+                {
+                    "symbol": "(・_・?)",
+                    "desc": "疑惑"
+                },
+                {
+                    "symbol": "(？o？)",
+                    "desc": "满脑问号"
+                },
+                {
+                    "symbol": "(゜-゜)",
+                    "desc": "歪头想"
+                },
+                {
+                    "symbol": "(・∀・？)",
+                    "desc": "不解"
+                },
+                {
+                    "symbol": "(｡ŏ_ŏ)",
+                    "desc": "思考中"
+                },
+                {
+                    "symbol": "(⊙_⊙)?",
+                    "desc": "震惊疑惑"
+                },
+                {
+                    "symbol": "(；一_一)?",
+                    "desc": "无语疑惑"
+                },
+                {
+                    "symbol": "(´･_･)`",
+                    "desc": "纠结"
+                },
+                {
+                    "symbol": "(・へ・)?",
+                    "desc": "不解歪头"
+                },
+                {
+                    "symbol": "(￣ー￣)?",
+                    "desc": "深思"
+                }
+            ]
+        },
         {
             "id": "mock",
             "name": "嘲讽 · 阴阳",
             "emoji": "😏",
-            "badge": 10,
+            "badge": 8,
             "items": [
                 {
                     "symbol": "(￣_,￣)",
                     "desc": "就这？斜眼蔑视"
-                },
-                {
-                    "symbol": "(¬_¬)",
-                    "desc": "我信你个鬼"
                 },
                 {
                     "symbol": "(￣▽￣)ノ",
@@ -76,10 +242,6 @@ window.KAOMOJI_DATA = {
                 {
                     "symbol": "(＾▽＾)b",
                     "desc": "点赞 · 讽刺版"
-                },
-                {
-                    "symbol": "(￣ー￣)",
-                    "desc": "面无表情冷笑"
                 },
                 {
                     "symbol": "(凸⊙▽⊙)凸",
@@ -155,7 +317,7 @@ window.KAOMOJI_DATA = {
             "id": "cry",
             "name": "委屈 · 哭泣",
             "emoji": "😭",
-            "badge": 32,
+            "badge": 31,
             "items": [
                 {
                     "symbol": "(；﹏；)",
@@ -220,10 +382,6 @@ window.KAOMOJI_DATA = {
                 {
                     "symbol": "(இωஇ)",
                     "desc": "暴风哭泣"
-                },
-                {
-                    "symbol": "(｡ŏ_ŏ)",
-                    "desc": "泪眼汪汪"
                 },
                 {
                     "symbol": "(๑´•.̫ • ๑)`",
@@ -547,7 +705,7 @@ window.KAOMOJI_DATA = {
             "id": "crash",
             "name": "宕机 · 发疯",
             "emoji": "🌀",
-            "badge": 10,
+            "badge": 9,
             "items": [
                 {
                     "symbol": "(°▽°)",
@@ -556,10 +714,6 @@ window.KAOMOJI_DATA = {
                 {
                     "symbol": "(°⌓°)",
                     "desc": "灵魂出窍"
-                },
-                {
-                    "symbol": "(°ロ°)",
-                    "desc": "瞳孔地震"
                 },
                 {
                     "symbol": "(ﾟ〇ﾟ)",
@@ -643,7 +797,7 @@ window.KAOMOJI_DATA = {
             "id": "dumb",
             "name": "经典呆萌 · 惊讶",
             "emoji": "😲",
-            "badge": 8,
+            "badge": 5,
             "items": [
                 {
                     "symbol": "(⊙_⊙)",
@@ -654,24 +808,12 @@ window.KAOMOJI_DATA = {
                     "desc": "圆眼惊讶"
                 },
                 {
-                    "symbol": "(๑•́ ₃ •̀๑)",
-                    "desc": "呆萌眨眼"
-                },
-                {
-                    "symbol": "(｡ŏ_ŏ)",
-                    "desc": "呆滞盯"
-                },
-                {
                     "symbol": "(・_・;)",
                     "desc": "尴尬冒汗"
                 },
                 {
                     "symbol": "(゜o゜;",
                     "desc": "惊讶结巴"
-                },
-                {
-                    "symbol": "(°ロ°)",
-                    "desc": "惊掉下巴"
                 },
                 {
                     "symbol": "(・∀・)",
@@ -683,31 +825,19 @@ window.KAOMOJI_DATA = {
             "id": "awkward",
             "name": "无语 · 尴尬",
             "emoji": "🙄",
-            "badge": 28,
+            "badge": 13,
             "items": [
                 {
                     "symbol": "¯\\_(ツ)_/¯",
                     "desc": "耸肩无奈"
                 },
                 {
-                    "symbol": "(¬_¬)",
-                    "desc": "白眼"
-                },
-                {
                     "symbol": "(－‸ლ)",
                     "desc": "扶额无语"
                 },
                 {
-                    "symbol": "(눈_눈)",
-                    "desc": "死鱼眼"
-                },
-                {
                     "symbol": "(￣ヘ￣)",
                     "desc": "不屑扭头"
-                },
-                {
-                    "symbol": "(；￣Д￣)",
-                    "desc": "满头黑线"
                 },
                 {
                     "symbol": "(╮°□°）╭",
@@ -718,40 +848,12 @@ window.KAOMOJI_DATA = {
                     "desc": "摊手无奈"
                 },
                 {
-                    "symbol": "(・_・;)",
-                    "desc": "冒汗尴尬"
-                },
-                {
-                    "symbol": "(゜o゜;",
-                    "desc": "惊讶结巴"
-                },
-                {
-                    "symbol": "(°ロ°)",
-                    "desc": "惊掉下巴"
-                },
-                {
-                    "symbol": "(⊙_⊙)",
-                    "desc": "呆滞"
-                },
-                {
-                    "symbol": "(；一_一)",
-                    "desc": "生无可恋"
-                },
-                {
-                    "symbol": "(¬‿¬)",
-                    "desc": "狡黠"
-                },
-                {
                     "symbol": "(｀д´)",
                     "desc": "无语"
                 },
                 {
                     "symbol": "(；￣ェ￣)",
                     "desc": "尴尬冒汗"
-                },
-                {
-                    "symbol": "(ㆆ_ㆆ)",
-                    "desc": "黑线呆滞"
                 },
                 {
                     "symbol": "(¬_¬)`",
@@ -770,10 +872,6 @@ window.KAOMOJI_DATA = {
                     "desc": "噘嘴无奈"
                 },
                 {
-                    "symbol": "(⊙ˍ⊙)",
-                    "desc": "呆滞"
-                },
-                {
                     "symbol": "(；´Д)`",
                     "desc": "张大嘴尴尬"
                 },
@@ -781,198 +879,27 @@ window.KAOMOJI_DATA = {
                     "symbol": "(；ﾟдﾟ)",
                     "desc": "目瞪口呆"
                 },
-                {
-                    "symbol": "(´-_ゝ｀)",
-                    "desc": "无语斜眼"
-                },
-                {
-                    "symbol": "(￢_￢)",
-                    "desc": "斜眼嫌弃"
-                },
-                {
-                    "symbol": "(￣ー￣)",
-                    "desc": "面无表情"
-                },
-                {
-                    "symbol": "(´･_･)`",
-                    "desc": "无语沉默"
-                }
             ]
         },
-        {
-            "id": "sideeye",
-            "name": "斜视 · 侧目",
-            "emoji": "¬_¬",
-            "badge": 28,
-            "items": [
-                {
-                    "symbol": "(→_→)",
-                    "desc": "侧目向右"
-                },
-                {
-                    "symbol": "(←_←)",
-                    "desc": "侧目向左"
-                },
-                {
-                    "symbol": "(→_←)",
-                    "desc": "视线交叉"
-                },
-                {
-                    "symbol": "(←_→)",
-                    "desc": "反向视线交叉"
-                },
-                {
-                    "symbol": "( →_→ )",
-                    "desc": "侧目向右（带空格）"
-                },
-                {
-                    "symbol": "( ←_← )",
-                    "desc": "侧目向左（带空格）"
-                },
-                {
-                    "symbol": "(¬_¬)",
-                    "desc": "斜眼白眼"
-                },
-                {
-                    "symbol": "(¬‿¬)",
-                    "desc": "斜眼奸笑"
-                },
-                {
-                    "symbol": "(¬､¬)",
-                    "desc": "眯眼斜瞥"
-                },
-                {
-                    "symbol": "(눈_눈)",
-                    "desc": "死鱼眼侧目"
-                },
-                {
-                    "symbol": "(ㆆ_ㆆ)",
-                    "desc": "黑线斜眼"
-                },
-                {
-                    "symbol": "(￢_￢)",
-                    "desc": "撇嘴斜眼"
-                },
-                {
-                    "symbol": "(￢‿￢)",
-                    "desc": "撇嘴奸笑"
-                },
-                {
-                    "symbol": "(→_→ )",
-                    "desc": "侧目向右"
-                },
-                {
-                    "symbol": "( ←_←)",
-                    "desc": "侧目向左"
-                },
-                {
-                    "symbol": "(¬_¬\")",
-                    "desc": "斜眼不爽"
-                },
-                {
-                    "symbol": "(→_→;)",
-                    "desc": "心虚侧目"
-                },
-                {
-                    "symbol": "(←_←;)",
-                    "desc": "心虚左瞥"
-                },
-                {
-                    "symbol": "(←_←)(→_→)",
-                    "desc": "左看右看"
-                },
-                {
-                    "symbol": "(→_→)(←_←)",
-                    "desc": "右看左看"
-                },
-                {
-                    "symbol": "( ←_← ) ( →_→ )",
-                    "desc": "左右张望"
-                },
-                {
-                    "symbol": "(/ω＼)",
-                    "desc": "捂脸偷瞄"
-                },
-                {
-                    "symbol": "(*/ω＼*)",
-                    "desc": "害羞捂脸偷瞄"
-                },
-                {
-                    "symbol": "( -_・)",
-                    "desc": "斜眼无语"
-                },
-                {
-                    "symbol": "(・_─)",
-                    "desc": "反向斜眼"
-                },
-                {
-                    "symbol": "(￣ー￣)",
-                    "desc": "得意侧目"
-                },
-                {
-                    "symbol": "(｀_´)",
-                    "desc": "斜眼不爽"
-                },
-                {
-                    "symbol": "(´-_ゝ｀)",
-                    "desc": "反向不爽斜眼"
-                }
-            ]
-        },
+
         {
             "id": "doubt",
             "name": "怀疑 · 质疑",
             "emoji": "🤨",
-            "badge": 5,
+            "badge": 1,
             "items": [
                 {
                     "symbol": "(・_・)",
                     "desc": "面瘫怀疑"
                 },
-                {
-                    "symbol": "(；一_一)",
-                    "desc": "无语质疑"
-                },
-                {
-                    "symbol": "(⊙_⊙)?",
-                    "desc": "瞪眼疑问"
-                },
-                {
-                    "symbol": "(・∀・？)",
-                    "desc": "歪头疑问"
-                },
-                {
-                    "symbol": "(？o？)",
-                    "desc": "黑人问号"
-                }
             ]
         },
         {
             "id": "disdain",
             "name": "嫌弃 · 看不顺眼",
             "emoji": "😒",
-            "badge": 7,
+            "badge": 2,
             "items": [
-                {
-                    "symbol": "(￣ヘ￣)",
-                    "desc": "不屑"
-                },
-                {
-                    "symbol": "(－‸ლ)",
-                    "desc": "扶额嫌弃"
-                },
-                {
-                    "symbol": "(｀д´)",
-                    "desc": "皱眉嫌弃"
-                },
-                {
-                    "symbol": "(・へ・)",
-                    "desc": "噘嘴嫌弃"
-                },
-                {
-                    "symbol": "(；￣Д￣)",
-                    "desc": "满头黑线"
-                },
                 {
                     "symbol": "(￣ρ￣)",
                     "desc": "嗤之以鼻"
@@ -987,31 +914,19 @@ window.KAOMOJI_DATA = {
             "id": "guilty",
             "name": "心虚 · 偷偷看",
             "emoji": "😅",
-            "badge": 4,
+            "badge": 1,
             "items": [
                 {
                     "symbol": "(〃ω〃)",
                     "desc": "害羞偷瞄"
                 },
-                {
-                    "symbol": "(´-﹏-)`",
-                    "desc": "心虚出汗"
-                },
-                {
-                    "symbol": "(・_・;)",
-                    "desc": "冒汗心虚"
-                },
-                {
-                    "symbol": "(´･_･)`",
-                    "desc": "心虚低头"
-                }
             ]
         },
         {
             "id": "angry",
             "name": "生气 · 傲娇",
             "emoji": "😠",
-            "badge": 28,
+            "badge": 21,
             "items": [
                 {
                     "symbol": "(╬ Ò ‸ Ó)",
@@ -1054,16 +969,8 @@ window.KAOMOJI_DATA = {
                     "desc": "暴怒"
                 },
                 {
-                    "symbol": "(｀ε´)",
-                    "desc": "气哼哼"
-                },
-                {
                     "symbol": "(￣^￣)",
                     "desc": "不爽"
-                },
-                {
-                    "symbol": "(｀д´)",
-                    "desc": "恼火"
                 },
                 {
                     "symbol": "(￣ε(#￣)",
@@ -1086,10 +993,6 @@ window.KAOMOJI_DATA = {
                     "desc": "帅酷确认"
                 },
                 {
-                    "symbol": "(｀∀´)Ψ",
-                    "desc": "邪魅傲娇"
-                },
-                {
                     "symbol": "(￣▽￣)ゞ",
                     "desc": "得意敬礼"
                 },
@@ -1102,24 +1005,8 @@ window.KAOMOJI_DATA = {
                     "desc": "激情打call"
                 },
                 {
-                    "symbol": "(¬_¬)",
-                    "desc": "傲娇白眼"
-                },
-                {
-                    "symbol": "(￣ー￣)",
-                    "desc": "面无表情"
-                },
-                {
                     "symbol": "(´-ω-｀)",
                     "desc": "傲娇困"
-                },
-                {
-                    "symbol": "(；一_一)",
-                    "desc": "傲娇无语"
-                },
-                {
-                    "symbol": "(￣ヘ￣)",
-                    "desc": "傲娇扭头"
                 },
                 {
                     "symbol": "(｀⌒´)",
@@ -1131,7 +1018,7 @@ window.KAOMOJI_DATA = {
             "id": "happy",
             "name": "开心 · 兴奋",
             "emoji": "🎉",
-            "badge": 15,
+            "badge": 11,
             "items": [
                 {
                     "symbol": "＼(≧▽≦)／",
@@ -1162,14 +1049,6 @@ window.KAOMOJI_DATA = {
                     "desc": "疯狂撒花"
                 },
                 {
-                    "symbol": "(★≧▽≦)",
-                    "desc": "闪耀狂喜"
-                },
-                {
-                    "symbol": "(๑˃̶͈̀ロ˂̶͈́)و",
-                    "desc": "激情澎湃"
-                },
-                {
                     "symbol": "(☆▽☆)",
                     "desc": "星星眼爆"
                 },
@@ -1178,16 +1057,8 @@ window.KAOMOJI_DATA = {
                     "desc": "疯狂欢呼"
                 },
                 {
-                    "symbol": "(✧ω✧)",
-                    "desc": "闪亮兴奋"
-                },
-                {
                     "symbol": "(⌒▽⌒)☆",
                     "desc": "星星期待"
-                },
-                {
-                    "symbol": "(๑¯∀¯๑)ノ",
-                    "desc": "得意挥手"
                 },
                 {
                     "symbol": "(≧∀≦)ノ",
@@ -1199,39 +1070,11 @@ window.KAOMOJI_DATA = {
             "id": "supercute",
             "name": "可爱 · 卖萌",
             "emoji": "🥰",
-            "badge": 25,
+            "badge": 16,
             "items": [
-                {
-                    "symbol": "(๑•̀ㅂ•́)و✧",
-                    "desc": "握拳应援"
-                },
-                {
-                    "symbol": "(づ｡◕‿‿◕｡)づ",
-                    "desc": "要抱抱"
-                },
-                {
-                    "symbol": "(｡♥‿♥｡)",
-                    "desc": "含情脉脉"
-                },
-                {
-                    "symbol": "(◕‿◕✿)",
-                    "desc": "带花微笑"
-                },
-                {
-                    "symbol": "(✿◠‿◠)",
-                    "desc": "纯洁无辜"
-                },
                 {
                     "symbol": "(ᵔᴥᵔ)",
                     "desc": "憨憨呆萌"
-                },
-                {
-                    "symbol": "(๑˃̵ᴗ˂̵)و",
-                    "desc": "可爱应援"
-                },
-                {
-                    "symbol": "(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧",
-                    "desc": "撒花转圈"
                 },
                 {
                     "symbol": "(๑>◡<๑)",
@@ -1248,10 +1091,6 @@ window.KAOMOJI_DATA = {
                 {
                     "symbol": "(๑´ㅂ๑)`",
                     "desc": "嘟嘴卖萌"
-                },
-                {
-                    "symbol": "(๑•́ ₃ •̀๑)",
-                    "desc": "委屈巴巴"
                 },
                 {
                     "symbol": "(｡･ω･｡)",
@@ -1294,10 +1133,6 @@ window.KAOMOJI_DATA = {
                     "desc": "抿嘴软萌"
                 },
                 {
-                    "symbol": "(๑˘̩̩̩̩̩̩́˘̩̩̩̩̩̩̀๑)",
-                    "desc": "嘟嘴可爱"
-                },
-                {
                     "symbol": "(๑ᵔ◡ᵔ๑)",
                     "desc": "眯眼满足"
                 }
@@ -1307,15 +1142,11 @@ window.KAOMOJI_DATA = {
             "id": "crazy",
             "name": "沙雕 · 搞怪",
             "emoji": "🤪",
-            "badge": 53,
+            "badge": 35,
             "items": [
                 {
                     "symbol": "( ͡° ͜ʖ ͡°)",
                     "desc": "经典坏笑"
-                },
-                {
-                    "symbol": "(¬‿¬)",
-                    "desc": "狡黠奸笑"
                 },
                 {
                     "symbol": "(☞ﾟヮﾟ)☞",
@@ -1326,24 +1157,12 @@ window.KAOMOJI_DATA = {
                     "desc": "墨镜三段"
                 },
                 {
-                    "symbol": "¯\\_(ツ)_/¯",
-                    "desc": "耸肩无奈"
-                },
-                {
-                    "symbol": "(╯°□°)╯︵ ┻━┻",
-                    "desc": "掀桌"
-                },
-                {
                     "symbol": "┬─┬ノ( º _ ºノ)",
                     "desc": "扶桌"
                 },
                 {
                     "symbol": "(ノಠ益ಠ)ノ彡┻━┻",
                     "desc": "暴怒掀桌"
-                },
-                {
-                    "symbol": "(￣▽￣)ノ",
-                    "desc": "挥手拜拜"
                 },
                 {
                     "symbol": "(｀・ω・´)",
@@ -1356,34 +1175,6 @@ window.KAOMOJI_DATA = {
                 {
                     "symbol": "(ʘ‿ʘ)",
                     "desc": "瞪眼惊讶"
-                },
-                {
-                    "symbol": "(¬_¬)",
-                    "desc": "白眼"
-                },
-                {
-                    "symbol": "(눈_눈)",
-                    "desc": "死鱼眼"
-                },
-                {
-                    "symbol": "(；￣Д￣)",
-                    "desc": "满头黑线"
-                },
-                {
-                    "symbol": "(╮°□°)╭",
-                    "desc": "摊手无奈"
-                },
-                {
-                    "symbol": "(๑•̀д•́๑)",
-                    "desc": "炸毛"
-                },
-                {
-                    "symbol": "(╬ Ò ‸ Ó)",
-                    "desc": "气鼓鼓"
-                },
-                {
-                    "symbol": "(ﾒﾟ皿ﾟ)ﾒ",
-                    "desc": "磨牙怒视"
                 },
                 {
                     "symbol": "(ﾟ∀ﾟ)",
@@ -1426,24 +1217,12 @@ window.KAOMOJI_DATA = {
                     "desc": "兴高采烈"
                 },
                 {
-                    "symbol": "( ͡° ͜ʖ ͡°)✧",
-                    "desc": "坏笑眨眼"
-                },
-                {
                     "symbol": "(☞ﾟ∀ﾟ)☞",
                     "desc": "指点搞怪"
                 },
                 {
                     "symbol": "(ノ°ο°)ノ",
                     "desc": "疯狂摇晃"
-                },
-                {
-                    "symbol": "(╬◣д◢)",
-                    "desc": "愤怒搞怪"
-                },
-                {
-                    "symbol": "(｀⌒´メ)",
-                    "desc": "撇嘴嫌弃"
                 },
                 {
                     "symbol": "(・∀・)ノ",
@@ -1470,10 +1249,6 @@ window.KAOMOJI_DATA = {
                     "desc": "可爱满足"
                 },
                 {
-                    "symbol": "(๑•́ ₃ •̀๑)ﾉﾞ",
-                    "desc": "挥手可爱"
-                },
-                {
                     "symbol": "(๑>؂<๑)",
                     "desc": "开心雀跃"
                 },
@@ -1494,20 +1269,8 @@ window.KAOMOJI_DATA = {
                     "desc": "举旗加油"
                 },
                 {
-                    "symbol": "(๑˃̶͈̀ロ˂̶͈́)و",
-                    "desc": "疯狂打call"
-                },
-                {
-                    "symbol": "(๑˘͈ ᵕ ˘͈๑)",
-                    "desc": "害羞可爱"
-                },
-                {
                     "symbol": "(๑´ㅂ๑)♡`",
                     "desc": "嘟嘴比心"
-                },
-                {
-                    "symbol": "(๑•́ ₃ •̀๑)",
-                    "desc": "一脸问号"
                 },
                 {
                     "symbol": "(๑¯◡¯๑) ♪",
@@ -1527,60 +1290,8 @@ window.KAOMOJI_DATA = {
             "id": "proud",
             "name": "超得意 · 骄傲",
             "emoji": "😎",
-            "badge": 20,
+            "badge": 3,
             "items": [
-                {
-                    "symbol": "(๑•̀ㅂ•́)و✧",
-                    "desc": "挥拳得意"
-                },
-                {
-                    "symbol": "(￣▽￣)ノ",
-                    "desc": "得意挥手"
-                },
-                {
-                    "symbol": "(｀・ω・´)",
-                    "desc": "自信叉腰"
-                },
-                {
-                    "symbol": "(๑˃̵ᴗ˂̵)و",
-                    "desc": "骄傲应援"
-                },
-                {
-                    "symbol": "(★ω★)/",
-                    "desc": "闪耀挥手"
-                },
-                {
-                    "symbol": "(๑¯∀¯๑)",
-                    "desc": "得意可爱"
-                },
-                {
-                    "symbol": "(๑´ڡ๑)`",
-                    "desc": "偷着乐"
-                },
-                {
-                    "symbol": "(๑•̀ω•́๑)",
-                    "desc": "神气满满"
-                },
-                {
-                    "symbol": "(๑>◡<๑)",
-                    "desc": "骄傲眯眼"
-                },
-                {
-                    "symbol": "(๑˘︶˘๑)",
-                    "desc": "满足得意"
-                },
-                {
-                    "symbol": "(๑‾̀◡‾́๑)",
-                    "desc": "眯眼炫耀"
-                },
-                {
-                    "symbol": "(๑˃̶͈̀ロ˂̶͈́)و",
-                    "desc": "激情打call"
-                },
-                {
-                    "symbol": "(｀∀´)Ψ",
-                    "desc": "邪魅得意"
-                },
                 {
                     "symbol": "(￣ω￣)",
                     "desc": "享受满足"
@@ -1590,32 +1301,16 @@ window.KAOMOJI_DATA = {
                     "desc": "霸气挥拳"
                 },
                 {
-                    "symbol": "(✧ω✧)",
-                    "desc": "闪闪发光"
-                },
-                {
                     "symbol": "(•̀ᴗ•́)و",
                     "desc": "得意振作"
                 },
-                {
-                    "symbol": "(￣ε(#￣)",
-                    "desc": "得意坏笑"
-                },
-                {
-                    "symbol": "(¬‿¬)",
-                    "desc": "狡黠得意"
-                },
-                {
-                    "symbol": "(★≧▽≦)",
-                    "desc": "星星大笑"
-                }
             ]
         },
         {
             "id": "action2",
             "name": "特殊动作",
             "emoji": "🎬",
-            "badge": 8,
+            "badge": 5,
             "items": [
                 {
                     "symbol": "(づ￣ ³￣)づ",
@@ -1624,14 +1319,6 @@ window.KAOMOJI_DATA = {
                 {
                     "symbol": "(つ≧▽≦)つ",
                     "desc": "抱抱"
-                },
-                {
-                    "symbol": "(ﾉ´ヮ)ﾉ*: ･ﾟ`",
-                    "desc": "撒花"
-                },
-                {
-                    "symbol": "(⌒▽⌒)☆",
-                    "desc": "星星眼"
                 },
                 {
                     "symbol": "(╯‵□′)╯︵┻━┻",
@@ -1645,17 +1332,13 @@ window.KAOMOJI_DATA = {
                     "symbol": "( •_•)>⌐■-■",
                     "desc": "戴墨镜"
                 },
-                {
-                    "symbol": "(⌐■_■)",
-                    "desc": "戴好墨镜"
-                }
             ]
         },
         {
             "id": "sleepy",
             "name": "睡觉 · 困困",
             "emoji": "😴",
-            "badge": 23,
+            "badge": 22,
             "items": [
                 {
                     "symbol": "(∪､∪)",
@@ -1672,10 +1355,6 @@ window.KAOMOJI_DATA = {
                 {
                     "symbol": "(￣ρ￣)..zzZ",
                     "desc": "打盹"
-                },
-                {
-                    "symbol": "(´-ω-｀)",
-                    "desc": "困困"
                 },
                 {
                     "symbol": "(｡-_-｡)",
@@ -1755,27 +1434,15 @@ window.KAOMOJI_DATA = {
             "id": "hungry",
             "name": "吃饭 · 馋",
             "emoji": "🍜",
-            "badge": 10,
+            "badge": 6,
             "items": [
-                {
-                    "symbol": "(๑´ڡ๑)`",
-                    "desc": "馋嘴"
-                },
                 {
                     "symbol": "(￣﹃￣)",
                     "desc": "流口水"
                 },
                 {
-                    "symbol": "(๑˃́ꇴ˂̀๑)",
-                    "desc": "想吃眼"
-                },
-                {
                     "symbol": "(´∀｀)♡ 好吃",
                     "desc": "好吃"
-                },
-                {
-                    "symbol": "(๑¯◡¯๑)",
-                    "desc": "开心吃"
                 },
                 {
                     "symbol": "( ˘▽˘)っ♨",
@@ -1784,10 +1451,6 @@ window.KAOMOJI_DATA = {
                 {
                     "symbol": "(๑˘̩̩̩̩̩̩́˘̩̩̩̩̩̩̀๑) 想吃",
                     "desc": "想吃"
-                },
-                {
-                    "symbol": "(￣ω￣)",
-                    "desc": "吃饱满足"
                 },
                 {
                     "symbol": "(๑•́₃•̀๑) 饿",
@@ -1803,19 +1466,11 @@ window.KAOMOJI_DATA = {
             "id": "shy",
             "name": "害羞 · 脸红",
             "emoji": "😊",
-            "badge": 15,
+            "badge": 7,
             "items": [
-                {
-                    "symbol": "(〃ω〃)",
-                    "desc": "羞羞"
-                },
                 {
                     "symbol": "(´,,•ω•,,)♡",
                     "desc": "脸红心跳"
-                },
-                {
-                    "symbol": "(*/ω＼*)",
-                    "desc": "捂脸害羞"
                 },
                 {
                     "symbol": "(〃∇〃)",
@@ -1826,20 +1481,8 @@ window.KAOMOJI_DATA = {
                     "desc": "害羞笑"
                 },
                 {
-                    "symbol": "(๑˘͈ ᵕ ˘͈๑)",
-                    "desc": "害羞可爱"
-                },
-                {
                     "symbol": "(⁄ ⁄•⁄ω⁄•⁄ ⁄)",
                     "desc": "扭捏害羞"
-                },
-                {
-                    "symbol": "(｡•́‿•̀｡)",
-                    "desc": "腼腆"
-                },
-                {
-                    "symbol": "(๑´ㅂ๑)`",
-                    "desc": "嘟嘴羞"
                 },
                 {
                     "symbol": "(≧◡≦)",
@@ -1850,232 +1493,53 @@ window.KAOMOJI_DATA = {
                     "desc": "娇羞一笑"
                 },
                 {
-                    "symbol": "(✿◠‿◠)",
-                    "desc": "花儿般害羞"
-                },
-                {
-                    "symbol": "(◕‿◕✿)",
-                    "desc": "乖巧害羞"
-                },
-                {
                     "symbol": "(˘͈ ᵕ ˘͈๑)",
                     "desc": "抿嘴羞"
                 },
-                {
-                    "symbol": "(/ω＼)",
-                    "desc": "捂脸躲闪"
-                }
             ]
         },
         {
             "id": "cheer",
             "name": "加油 · 努力",
             "emoji": "💪",
-            "badge": 10,
+            "badge": 3,
             "items": [
-                {
-                    "symbol": "(๑•̀ㅂ•́)و✧",
-                    "desc": "挥拳加油"
-                },
                 {
                     "symbol": "(ง •̀_•́)ง",
                     "desc": "斗志满满"
-                },
-                {
-                    "symbol": "(๑˃̵ᴗ˂̵)و",
-                    "desc": "握拳努力"
-                },
-                {
-                    "symbol": "(•̀ᴗ•́)و",
-                    "desc": "振作"
-                },
-                {
-                    "symbol": "(๑•̀д•́๑)و",
-                    "desc": "使劲加油"
                 },
                 {
                     "symbol": "(ง°∀°)ง",
                     "desc": "干劲十足"
                 },
                 {
-                    "symbol": "(๑˃̶͈̀ロ˂̶͈́)و",
-                    "desc": "激情冲"
-                },
-                {
                     "symbol": "(•̀ω•́ )✧",
                     "desc": "闪耀努力"
                 },
-                {
-                    "symbol": "(๑¯∀¯๑)ノ",
-                    "desc": "自信挥手"
-                },
-                {
-                    "symbol": "(｀・ω・´)ゞ",
-                    "desc": "敬礼认真"
-                }
             ]
         },
         {
             "id": "heart",
             "name": "比心 · 喜欢",
             "emoji": "💖",
-            "badge": 10,
+            "badge": 1,
             "items": [
-                {
-                    "symbol": "(´∀｀)♡",
-                    "desc": "开心比心"
-                },
-                {
-                    "symbol": "(｡♥‿♥｡)",
-                    "desc": "含情脉脉"
-                },
-                {
-                    "symbol": "(♡˙︶˙♡)",
-                    "desc": "爱意满满"
-                },
-                {
-                    "symbol": "(´,,•ω•,,)♡",
-                    "desc": "心动"
-                },
                 {
                     "symbol": "(๑˘͈ ᵕ ˘͈๑)♡",
                     "desc": "害羞比心"
                 },
-                {
-                    "symbol": "(✿◠‿◠)",
-                    "desc": "温柔喜欢"
-                },
-                {
-                    "symbol": "(◕‿◕✿)",
-                    "desc": "带花喜欢"
-                },
-                {
-                    "symbol": "(ᵔᴥᵔ)",
-                    "desc": "憨憨喜欢"
-                },
-                {
-                    "symbol": "(づ￣ ³￣)づ",
-                    "desc": "亲亲"
-                },
-                {
-                    "symbol": "(つ≧▽≦)つ",
-                    "desc": "拥抱"
-                }
             ]
         },
-        {
-            "id": "think",
-            "name": "思考 · 疑惑",
-            "emoji": "🤔",
-            "badge": 10,
-            "items": [
-                {
-                    "symbol": "(・_・?)",
-                    "desc": "疑惑"
-                },
-                {
-                    "symbol": "(？o？)",
-                    "desc": "满脑问号"
-                },
-                {
-                    "symbol": "(゜-゜)",
-                    "desc": "歪头想"
-                },
-                {
-                    "symbol": "(・∀・？)",
-                    "desc": "不解"
-                },
-                {
-                    "symbol": "(｡ŏ_ŏ)",
-                    "desc": "思考中"
-                },
-                {
-                    "symbol": "(⊙_⊙)?",
-                    "desc": "震惊疑惑"
-                },
-                {
-                    "symbol": "(；一_一)?",
-                    "desc": "无语疑惑"
-                },
-                {
-                    "symbol": "(´･_･)`",
-                    "desc": "纠结"
-                },
-                {
-                    "symbol": "(・へ・)?",
-                    "desc": "不解歪头"
-                },
-                {
-                    "symbol": "(￣ー￣)?",
-                    "desc": "深思"
-                }
-            ]
-        },
+
         {
             "id": "cool",
             "name": "超酷",
             "emoji": "😎",
-            "badge": 30,
+            "badge": 13,
             "items": [
-                {
-                    "symbol": "(⌐■_■)",
-                    "desc": "墨镜装酷"
-                },
-                {
-                    "symbol": "(•_•) ( •_•)>⌐■-■ (⌐■_■)",
-                    "desc": "墨镜三段"
-                },
-                {
-                    "symbol": "(￣ー￣)",
-                    "desc": "面无表情"
-                },
-                {
-                    "symbol": "(｀⌒´)",
-                    "desc": "酷酷撇嘴"
-                },
-                {
-                    "symbol": "(¬‿¬)",
-                    "desc": "狡黠酷"
-                },
-                {
-                    "symbol": "( ͡° ͜ʖ ͡°)",
-                    "desc": "经典坏笑"
-                },
-                {
-                    "symbol": "(｀∀´)Ψ",
-                    "desc": "邪魅酷"
-                },
                 {
                     "symbol": "(★ω★)",
                     "desc": "闪耀酷"
-                },
-                {
-                    "symbol": "(￣ε(#￣)",
-                    "desc": "傲娇酷"
-                },
-                {
-                    "symbol": "(๑˃̵ᴗ˂̵)و",
-                    "desc": "酷酷挥手"
-                },
-                {
-                    "symbol": "(｀・ω・´)",
-                    "desc": "自信酷"
-                },
-                {
-                    "symbol": "(￣▽￣)ノ",
-                    "desc": "酷酷拜拜"
-                },
-                {
-                    "symbol": "(•̀ᴗ•́)و",
-                    "desc": "酷酷加油"
-                },
-                {
-                    "symbol": "(✧ω✧)",
-                    "desc": "酷酷眨眼"
-                },
-                {
-                    "symbol": "(｀ε´)",
-                    "desc": "酷酷哼哼"
                 },
                 {
                     "symbol": "(￣ー￣)ゞ",
@@ -2098,14 +1562,6 @@ window.KAOMOJI_DATA = {
                     "desc": "眯眼酷"
                 },
                 {
-                    "symbol": "(｀⌒´メ)",
-                    "desc": "酷酷撇嘴"
-                },
-                {
-                    "symbol": "(￣ε￣)",
-                    "desc": "闭眼享受"
-                },
-                {
                     "symbol": "(•̀ω•́)✧",
                     "desc": "闪耀酷"
                 },
@@ -2126,10 +1582,6 @@ window.KAOMOJI_DATA = {
                     "desc": "狡黠递物"
                 },
                 {
-                    "symbol": "( ͡~ ͜ʖ ͡°)",
-                    "desc": "眯眼坏笑"
-                },
-                {
                     "symbol": "(｀ε´)ノ",
                     "desc": "傲娇挥手"
                 },
@@ -2143,72 +1595,8 @@ window.KAOMOJI_DATA = {
             "id": "dumb2",
             "name": "超傻",
             "emoji": "🤤",
-            "badge": 30,
+            "badge": 12,
             "items": [
-                {
-                    "symbol": "(⊙_⊙)",
-                    "desc": "呆滞"
-                },
-                {
-                    "symbol": "(゜o゜;",
-                    "desc": "傻眼"
-                },
-                {
-                    "symbol": "(°ロ°)",
-                    "desc": "惊呆"
-                },
-                {
-                    "symbol": "(・_・;)",
-                    "desc": "冒汗尴尬"
-                },
-                {
-                    "symbol": "(；一_一)",
-                    "desc": "生无可恋"
-                },
-                {
-                    "symbol": "(´･_･)`",
-                    "desc": "呆懵"
-                },
-                {
-                    "symbol": "(｡ŏ_ŏ)",
-                    "desc": "傻乎乎"
-                },
-                {
-                    "symbol": "(⊙ˍ⊙)",
-                    "desc": "发呆"
-                },
-                {
-                    "symbol": "(；°Д°)",
-                    "desc": "傻住"
-                },
-                {
-                    "symbol": "(￣o￣)",
-                    "desc": "呆脸"
-                },
-                {
-                    "symbol": "(・へ・)",
-                    "desc": "懵懵"
-                },
-                {
-                    "symbol": "(；ﾟдﾟ)",
-                    "desc": "目瞪口呆"
-                },
-                {
-                    "symbol": "(´-﹏-)`",
-                    "desc": "无奈傻"
-                },
-                {
-                    "symbol": "(；ω；)",
-                    "desc": "傻哭"
-                },
-                {
-                    "symbol": "(｡•́ - •̀｡)",
-                    "desc": "傻傻的"
-                },
-                {
-                    "symbol": "(⊙o⊙)",
-                    "desc": "圆眼呆"
-                },
                 {
                     "symbol": "(・∀・；)",
                     "desc": "冒汗呆"
@@ -2230,16 +1618,8 @@ window.KAOMOJI_DATA = {
                     "desc": "懵圈"
                 },
                 {
-                    "symbol": "(｡´-ω-｀｡)",
-                    "desc": "迷迷糊糊"
-                },
-                {
                     "symbol": "(⊙﹏⊙)",
                     "desc": "呆瓜"
-                },
-                {
-                    "symbol": "(；´Д)`",
-                    "desc": "张大嘴傻"
                 },
                 {
                     "symbol": "(￣△￣)",
@@ -2271,80 +1651,8 @@ window.KAOMOJI_DATA = {
             "id": "gentle",
             "name": "超温柔",
             "emoji": "🕊️",
-            "badge": 30,
+            "badge": 7,
             "items": [
-                {
-                    "symbol": "(｡♥‿♥｡)",
-                    "desc": "含情脉脉"
-                },
-                {
-                    "symbol": "(´∀｀)♡",
-                    "desc": "温柔比心"
-                },
-                {
-                    "symbol": "(๑˘͈ ᵕ ˘͈๑)",
-                    "desc": "温柔可爱"
-                },
-                {
-                    "symbol": "(✿◠‿◠)",
-                    "desc": "温柔微笑"
-                },
-                {
-                    "symbol": "(◕‿◕✿)",
-                    "desc": "带花温柔"
-                },
-                {
-                    "symbol": "(ᵔᴥᵔ)",
-                    "desc": "憨憨温柔"
-                },
-                {
-                    "symbol": "(´｡• ᵕ •｡)`",
-                    "desc": "抿嘴温柔"
-                },
-                {
-                    "symbol": "(๑´ㅂ๑)`",
-                    "desc": "嘟嘴温柔"
-                },
-                {
-                    "symbol": "(｡･ω･｡)",
-                    "desc": "乖乖温柔"
-                },
-                {
-                    "symbol": "(♡˙︶˙♡)",
-                    "desc": "温柔爱意"
-                },
-                {
-                    "symbol": "(づ￣ ³￣)づ",
-                    "desc": "温柔亲亲"
-                },
-                {
-                    "symbol": "(つ≧▽≦)つ",
-                    "desc": "温柔抱抱"
-                },
-                {
-                    "symbol": "(´,,•ω•,,)♡",
-                    "desc": "温柔心动"
-                },
-                {
-                    "symbol": "(๑•ᴗ•๑)",
-                    "desc": "温柔软萌"
-                },
-                {
-                    "symbol": "(˘͈ ᵕ ˘͈๑)",
-                    "desc": "温柔羞羞"
-                },
-                {
-                    "symbol": "(´∀｀*)",
-                    "desc": "温柔浅笑"
-                },
-                {
-                    "symbol": "(๑˘︶˘๑)",
-                    "desc": "温柔满足"
-                },
-                {
-                    "symbol": "(｡•́‿•̀｡)",
-                    "desc": "温柔微笑"
-                },
                 {
                     "symbol": "(˘͈ ᵕ ˘͈ )",
                     "desc": "眉眼弯弯"
@@ -2354,24 +1662,8 @@ window.KAOMOJI_DATA = {
                     "desc": "温柔呢喃"
                 },
                 {
-                    "symbol": "(๑ᵔ◡ᵔ๑)",
-                    "desc": "温柔眯眼"
-                },
-                {
                     "symbol": "(✿´ ꒳  )`",
                     "desc": "捧花温柔"
-                },
-                {
-                    "symbol": "(´∇｀)",
-                    "desc": "温柔宠溺"
-                },
-                {
-                    "symbol": "(๑´ڡ๑)`",
-                    "desc": "温柔馋嘴"
-                },
-                {
-                    "symbol": "(｡◕‿◕｡)",
-                    "desc": "纯真温柔"
                 },
                 {
                     "symbol": "(♡ω♡)",
@@ -2380,10 +1672,6 @@ window.KAOMOJI_DATA = {
                 {
                     "symbol": "(´｡•ω•｡)`",
                     "desc": "软糯温柔"
-                },
-                {
-                    "symbol": "(๑˃́ꇴ˂̀๑)",
-                    "desc": "欢喜温柔"
                 },
                 {
                     "symbol": "(ˊᗜˋ*)",
@@ -2399,72 +1687,8 @@ window.KAOMOJI_DATA = {
             "id": "exaggerate",
             "name": "超夸张",
             "emoji": "😱",
-            "badge": 30,
+            "badge": 10,
             "items": [
-                {
-                    "symbol": "(╯°□°)╯︵ ┻━┻",
-                    "desc": "暴怒掀桌"
-                },
-                {
-                    "symbol": "(ノಠ益ಠ)ノ彡┻━┻",
-                    "desc": "狂怒掀桌"
-                },
-                {
-                    "symbol": "(╬ Ò ‸ Ó)",
-                    "desc": "气炸"
-                },
-                {
-                    "symbol": "(ﾒﾟ皿ﾟ)ﾒ",
-                    "desc": "怒到磨牙"
-                },
-                {
-                    "symbol": "(＃｀д´)ﾉ",
-                    "desc": "暴走"
-                },
-                {
-                    "symbol": "(╬◣д◢)",
-                    "desc": "怒目圆睁"
-                },
-                {
-                    "symbol": "(；д；)",
-                    "desc": "泪崩"
-                },
-                {
-                    "symbol": "(இ﹏இ)",
-                    "desc": "嚎啕大哭"
-                },
-                {
-                    "symbol": "(ㄒoㄒ)",
-                    "desc": "大哭"
-                },
-                {
-                    "symbol": "(T_T)",
-                    "desc": "泪流满面"
-                },
-                {
-                    "symbol": "(´；ω；｀)",
-                    "desc": "伤心欲绝"
-                },
-                {
-                    "symbol": "(ﾉ´ヮ)ﾉ*: ･ﾟ✧`",
-                    "desc": "疯狂撒花"
-                },
-                {
-                    "symbol": "(★≧▽≦)",
-                    "desc": "闪耀狂喜"
-                },
-                {
-                    "symbol": "(๑˃̶͈̀ロ˂̶͈́)و",
-                    "desc": "激情澎湃"
-                },
-                {
-                    "symbol": "( ͡° ͜ʖ ͡°)✧",
-                    "desc": "坏笑搞怪"
-                },
-                {
-                    "symbol": "(ノ°ο°)ノ",
-                    "desc": "疯狂摇晃"
-                },
                 {
                     "symbol": "(＃°Д°)",
                     "desc": "大惊失色"
@@ -2486,28 +1710,12 @@ window.KAOMOJI_DATA = {
                     "desc": "怒摔"
                 },
                 {
-                    "symbol": "(╬ﾟдﾟ)",
-                    "desc": "怒到极致"
-                },
-                {
                     "symbol": "(｀д´)ﾉ",
                     "desc": "暴怒挥手"
                 },
                 {
                     "symbol": "(；°ロ°)",
                     "desc": "惊到张大嘴"
-                },
-                {
-                    "symbol": "(☆▽☆)",
-                    "desc": "星星眼爆"
-                },
-                {
-                    "symbol": "(≧∇≦)/",
-                    "desc": "狂喜挥手"
-                },
-                {
-                    "symbol": "(ﾉ≧∀≦)ﾉ",
-                    "desc": "疯狂欢呼"
                 },
                 {
                     "symbol": "(★≧∀≦★)",
@@ -2527,27 +1735,11 @@ window.KAOMOJI_DATA = {
             "id": "lazy",
             "name": "摸鱼 · 躺平摆烂",
             "emoji": "🛋️",
-            "badge": 38,
+            "badge": 19,
             "items": [
                 {
                     "symbol": "(－_－)",
                     "desc": "懒得动"
-                },
-                {
-                    "symbol": "(￣ρ￣)",
-                    "desc": "瘫着"
-                },
-                {
-                    "symbol": "(´-ω-｀)",
-                    "desc": "犯困懒"
-                },
-                {
-                    "symbol": "(∪､∪)",
-                    "desc": "眯眼躺"
-                },
-                {
-                    "symbol": "(｡-_-｡)",
-                    "desc": "眼皮沉重"
                 },
                 {
                     "symbol": "(－ω－) zzZ",
@@ -2558,76 +1750,20 @@ window.KAOMOJI_DATA = {
                     "desc": "昏昏欲睡"
                 },
                 {
-                    "symbol": "(´,_ゝ｀)",
-                    "desc": "慵懒眯眼"
-                },
-                {
-                    "symbol": "(；一_一)",
-                    "desc": "生无可恋"
-                },
-                {
                     "symbol": "(￣ー￣) 不想动",
                     "desc": "不想动"
-                },
-                {
-                    "symbol": "¯\\_(ツ)_/¯",
-                    "desc": "彻底摆烂"
-                },
-                {
-                    "symbol": "(╮°□°)╭",
-                    "desc": "躺平摊手"
-                },
-                {
-                    "symbol": "(－‸ლ)",
-                    "desc": "放弃扶额"
-                },
-                {
-                    "symbol": "(￣ヘ￣)",
-                    "desc": "不想管"
                 },
                 {
                     "symbol": "(；一_一) 算了",
                     "desc": "算了"
                 },
                 {
-                    "symbol": "(´-﹏-)`",
-                    "desc": "无奈躺平"
-                },
-                {
-                    "symbol": "(・へ・)",
-                    "desc": "随它吧"
-                },
-                {
                     "symbol": "(´,_ゝ｀) 不干了",
                     "desc": "不干了"
                 },
                 {
-                    "symbol": "(´；ω；｀)",
-                    "desc": "崩溃"
-                },
-                {
-                    "symbol": "(｡ŏ_ŏ)",
-                    "desc": "木然"
-                },
-                {
-                    "symbol": "(；°Д°)",
-                    "desc": "傻眼"
-                },
-                {
                     "symbol": "(￣ー￣) 假装在忙",
                     "desc": "假装在忙"
-                },
-                {
-                    "symbol": "(・_・)",
-                    "desc": "划水中"
-                },
-                {
-                    "symbol": "(￣ω￣)",
-                    "desc": "悠闲"
-                },
-                {
-                    "symbol": "(－ω－)",
-                    "desc": "走神"
                 },
                 {
                     "symbol": "(｡-_-｡) 没人发现吧",
@@ -2666,10 +1802,6 @@ window.KAOMOJI_DATA = {
                     "desc": "还没到点"
                 },
                 {
-                    "symbol": "(；°Д°) ！！",
-                    "desc": "被抓包"
-                },
-                {
                     "symbol": "(＃°Д°) 完了",
                     "desc": "完了"
                 },
@@ -2687,27 +1819,11 @@ window.KAOMOJI_DATA = {
             "id": "craving",
             "name": "超馋 · 想吃",
             "emoji": "🍕",
-            "badge": 10,
+            "badge": 4,
             "items": [
-                {
-                    "symbol": "(￣﹃￣)",
-                    "desc": "流口水"
-                },
-                {
-                    "symbol": "(๑´ڡ๑)`",
-                    "desc": "馋嘴"
-                },
                 {
                     "symbol": "(´∀｀) 好香",
                     "desc": "好香"
-                },
-                {
-                    "symbol": "(๑˃́ꇴ˂̀๑)",
-                    "desc": "想吃眼"
-                },
-                {
-                    "symbol": "( ˘▽˘)っ♨",
-                    "desc": "吹热气"
                 },
                 {
                     "symbol": "(๑¯◡¯๑) 真香",
@@ -2721,14 +1837,6 @@ window.KAOMOJI_DATA = {
                     "symbol": "(๑•́₃•̀๑) 想吃",
                     "desc": "想吃"
                 },
-                {
-                    "symbol": "(´▽｀)ノ♪",
-                    "desc": "开心开吃"
-                },
-                {
-                    "symbol": "(๑˘̩̩̩̩̩̩́˘̩̩̩̩̩̩̀๑)",
-                    "desc": "馋馋的"
-                }
             ]
         },
         {
@@ -2738,44 +1846,44 @@ window.KAOMOJI_DATA = {
             "badge": 10,
             "items": [
                 {
-                    "symbol": "(๑•ᴗ•๑)",
-                    "desc": "乖乖软萌"
+                    "symbol": "(＾ω＾ゞ)",
+                    "desc": "乖乖照办"
                 },
                 {
-                    "symbol": "(｡･ω･｡)",
-                    "desc": "乖巧"
+                    "symbol": "(´・ω・`)ゝ",
+                    "desc": "立正站好"
                 },
                 {
-                    "symbol": "(´∀｀*)",
-                    "desc": "听话微笑"
+                    "symbol": "( ｡•̀ᴗ-)✧",
+                    "desc": "乖乖听话"
                 },
                 {
-                    "symbol": "(๑´ㅂ๑)`",
-                    "desc": "嘟嘴乖巧"
+                    "symbol": "(๑Ő∀Ő๑)ﾉ",
+                    "desc": "遵命"
                 },
                 {
-                    "symbol": "(˘͈ ᵕ ˘͈๑)",
-                    "desc": "温顺乖巧"
+                    "symbol": "(￣(●●)￣)",
+                    "desc": "老实坐着"
                 },
                 {
-                    "symbol": "(๑ᵔ◡ᵔ๑)",
-                    "desc": "乖乖眯眼"
+                    "symbol": "(´-`)ゝ",
+                    "desc": "好的好的"
                 },
                 {
-                    "symbol": "(｡◕‿◕｡)",
-                    "desc": "纯真听话"
+                    "symbol": "(๑•̀ㅂ•́)ゝ",
+                    "desc": "收到任务"
                 },
                 {
-                    "symbol": "(´• ω •)`",
-                    "desc": "轻软听话"
+                    "symbol": "(　´∀｀)ノ",
+                    "desc": "乖乖举手"
                 },
                 {
-                    "symbol": "(๑˘︶˘๑)",
-                    "desc": "满足听话"
+                    "symbol": "(´・_・`)ゝ",
+                    "desc": "安静待命"
                 },
                 {
-                    "symbol": "(✿◠‿◠)",
-                    "desc": "乖巧带花"
+                    "symbol": "(◍•ᴗ•◍)ゝ",
+                    "desc": "乖巧应声"
                 }
             ]
         },
@@ -2786,44 +1894,44 @@ window.KAOMOJI_DATA = {
             "badge": 10,
             "items": [
                 {
-                    "symbol": "( ͡° ͜ʖ ͡°)",
+                    "symbol": "(｀∀´)ΨΨ",
+                    "desc": "捣蛋鬼"
+                },
+                {
+                    "symbol": "(๑•̀ᴗ•́)و‿",
+                    "desc": "使坏"
+                },
+                {
+                    "symbol": "(￢‿￢)ゝ",
+                    "desc": "搞怪"
+                },
+                {
+                    "symbol": "(¬‿¬)♫",
+                    "desc": "偷着乐"
+                },
+                {
+                    "symbol": "(≖‿≖)ゝ",
                     "desc": "坏笑"
                 },
                 {
-                    "symbol": "(¬‿¬)",
-                    "desc": "狡黠"
+                    "symbol": "(╯‿╰)ノ",
+                    "desc": "皮一下"
                 },
                 {
-                    "symbol": "(｀∀´)Ψ",
-                    "desc": "调皮邪魅"
+                    "symbol": "(｡•̀ᴗ-)✧",
+                    "desc": "恶作剧"
                 },
                 {
-                    "symbol": "(☞ﾟ∀ﾟ)☞",
-                    "desc": "指点搞怪"
+                    "symbol": "(´,_ゝ｀)ﾉ",
+                    "desc": "调皮鬼"
                 },
                 {
-                    "symbol": "( ͡~ ͜ʖ ͡°)",
-                    "desc": "眯眼坏笑"
+                    "symbol": "(◣_◢)ゝ",
+                    "desc": "犯倔调皮"
                 },
                 {
-                    "symbol": "(✧≖ ͜ʖ≖)",
-                    "desc": "狡诈眯眼"
-                },
-                {
-                    "symbol": "(￣ε(#￣)",
-                    "desc": "傲娇调皮"
-                },
-                {
-                    "symbol": "(｀ε´)",
-                    "desc": "哼哼调皮"
-                },
-                {
-                    "symbol": "(¬_¬)",
-                    "desc": "白眼调皮"
-                },
-                {
-                    "symbol": "( ͡°ω ͡°)",
-                    "desc": "暧昧坏笑"
+                    "symbol": "(￣‿￣)Ψ",
+                    "desc": "小恶魔"
                 }
             ]
         },
@@ -2834,44 +1942,44 @@ window.KAOMOJI_DATA = {
             "badge": 10,
             "items": [
                 {
-                    "symbol": "(；゜o゜)",
-                    "desc": "惊慌"
+                    "symbol": "(；ﾟДﾟ)(ﾟДﾟ)",
+                    "desc": "慌了"
                 },
                 {
-                    "symbol": "(゜Д゜；)",
-                    "desc": "惊呆"
+                    "symbol": "(；゜o゜)ゞ",
+                    "desc": "抖个不停"
                 },
                 {
-                    "symbol": "(；°Д°)",
-                    "desc": "吓到"
+                    "symbol": "(；•̀д•́)",
+                    "desc": "紧张"
                 },
                 {
-                    "symbol": "(´⊙ω⊙)`",
-                    "desc": "慌张"
+                    "symbol": "(；´Д`)ゝ",
+                    "desc": "紧张到抖"
                 },
                 {
-                    "symbol": "(；ﾟдﾟ)",
-                    "desc": "目瞪口呆"
+                    "symbol": "(°▽°；)",
+                    "desc": "僵住"
                 },
                 {
-                    "symbol": "(；一_一)",
-                    "desc": "紧张冒汗"
+                    "symbol": "(；ﾟ∀ﾟ)",
+                    "desc": "手足无措"
                 },
                 {
-                    "symbol": "(´；д；)`",
-                    "desc": "慌到哭"
+                    "symbol": "( ﾟДﾟ)ｳｩ",
+                    "desc": "心跳加速"
                 },
                 {
-                    "symbol": "(；ω；)",
-                    "desc": "紧张泪目"
+                    "symbol": "(；´•ω•｀)",
+                    "desc": "不知所措"
                 },
                 {
-                    "symbol": "(｡ŏ_ŏ)",
-                    "desc": "慌慌张张"
+                    "symbol": "(；o_o)",
+                    "desc": "眼神飘"
                 },
                 {
-                    "symbol": "(；´Д)`",
-                    "desc": "张大嘴慌"
+                    "symbol": "(；´△`)",
+                    "desc": "手心冒汗"
                 }
             ]
         },
@@ -2882,44 +1990,44 @@ window.KAOMOJI_DATA = {
             "badge": 10,
             "items": [
                 {
-                    "symbol": "(´∀｀)♡",
-                    "desc": "幸福比心"
+                    "symbol": "(´∀｀)～♪",
+                    "desc": "满足哼歌"
                 },
                 {
-                    "symbol": "(๑˘͈ ᵕ ˘͈๑)",
+                    "symbol": "(´▽｀)♡",
+                    "desc": "心满意足"
+                },
+                {
+                    "symbol": "(⌒▽⌒)~",
                     "desc": "幸福满足"
                 },
                 {
-                    "symbol": "(｡♥‿♥｡)",
-                    "desc": "满心欢喜"
+                    "symbol": "( ´ ▽ ` )ﾉ",
+                    "desc": "太满足了"
                 },
                 {
-                    "symbol": "(♡˙︶˙♡)",
-                    "desc": "甜蜜幸福"
+                    "symbol": "(◦˘ ˘◦)~",
+                    "desc": "暖洋洋"
                 },
                 {
-                    "symbol": "(´｡• ᵕ •｡)`",
-                    "desc": "幸福抿嘴"
+                    "symbol": "(´,,•ω•,,)♫",
+                    "desc": "满足微笑"
                 },
                 {
-                    "symbol": "(๑´ڡ๑)`",
-                    "desc": "满足馋嘴"
+                    "symbol": "(ﾉ´∀｀)ﾉ♪",
+                    "desc": "幸福哼唱"
                 },
                 {
-                    "symbol": "(ˊᗜˋ*)",
-                    "desc": "甜甜幸福"
+                    "symbol": "(◕‿◕)～",
+                    "desc": "心满意足"
                 },
                 {
-                    "symbol": "(´∇｀)",
-                    "desc": "幸福宠溺"
+                    "symbol": "(´-ω-`)~",
+                    "desc": "幸福犯困"
                 },
                 {
-                    "symbol": "(๑˘︶˘๑)",
-                    "desc": "满足开心"
-                },
-                {
-                    "symbol": "(´,,•ω•,,)♡",
-                    "desc": "幸福心动"
+                    "symbol": "(＾▽＾)♪",
+                    "desc": "满足轻哼"
                 }
             ]
         },
@@ -2930,44 +2038,44 @@ window.KAOMOJI_DATA = {
             "badge": 10,
             "items": [
                 {
-                    "symbol": "(⊙_⊙)",
+                    "symbol": "(；°Д°)=3",
                     "desc": "石化"
                 },
                 {
-                    "symbol": "(°ロ°)",
-                    "desc": "惊掉下巴"
-                },
-                {
-                    "symbol": "(゜o゜;",
-                    "desc": "傻眼"
-                },
-                {
-                    "symbol": "(；°ロ°)",
-                    "desc": "惊到张嘴"
-                },
-                {
-                    "symbol": "(＃°Д°)",
-                    "desc": "大惊"
-                },
-                {
-                    "symbol": "(；ﾟДﾟ)",
-                    "desc": "震惊"
-                },
-                {
-                    "symbol": "(இдஇ)",
-                    "desc": "震惊泪目"
-                },
-                {
-                    "symbol": "(´⊙ω⊙)`",
+                    "symbol": "(°ロ°;)",
                     "desc": "呆滞石化"
                 },
                 {
-                    "symbol": "(・_・;)",
-                    "desc": "冒汗石化"
+                    "symbol": "(°△°)!!!",
+                    "desc": "吓到石化"
                 },
                 {
-                    "symbol": "(⊙ˍ⊙)",
+                    "symbol": "(；ﾟдﾟ)===3",
+                    "desc": "风化成渣"
+                },
+                {
+                    "symbol": "(⊙△⊙)",
+                    "desc": "僵硬"
+                },
+                {
+                    "symbol": "(；°o°)",
+                    "desc": "当场石化"
+                },
+                {
+                    "symbol": "(´；д；`)!!!",
                     "desc": "石化了"
+                },
+                {
+                    "symbol": "(。_。)=3",
+                    "desc": "灵魂出窍"
+                },
+                {
+                    "symbol": "(；・ω・)!!!",
+                    "desc": "震惊到凝固"
+                },
+                {
+                    "symbol": "( ﾟ△ﾟ)",
+                    "desc": "目瞪口呆石化"
                 }
             ]
         },
@@ -2975,87 +2083,23 @@ window.KAOMOJI_DATA = {
             "id": "expect",
             "name": "超期待 · 期待ing",
             "emoji": "✨",
-            "badge": 10,
+            "badge": 1,
             "items": [
-                {
-                    "symbol": "(★ω★)",
-                    "desc": "星光期待"
-                },
-                {
-                    "symbol": "(✧ω✧)",
-                    "desc": "闪闪期待"
-                },
-                {
-                    "symbol": "(☆▽☆)",
-                    "desc": "星星眼"
-                },
-                {
-                    "symbol": "(≧∇≦)/",
-                    "desc": "欢呼期待"
-                },
-                {
-                    "symbol": "(ﾉ≧∀≦)ﾉ",
-                    "desc": "狂喜期待"
-                },
-                {
-                    "symbol": "(๑˃̶͈̀ロ˂̶͈́)و",
-                    "desc": "激情期待"
-                },
                 {
                     "symbol": "(´∀｀) 好期待",
                     "desc": "好期待"
                 },
-                {
-                    "symbol": "(๑¯∀¯๑)",
-                    "desc": "得意期待"
-                },
-                {
-                    "symbol": "(★≧▽≦)",
-                    "desc": "闪耀期待"
-                },
-                {
-                    "symbol": "(⌒▽⌒)☆",
-                    "desc": "星星期待"
-                }
             ]
         },
         {
             "id": "clingy",
             "name": "超粘人 · 求关注",
             "emoji": "🫶",
-            "badge": 10,
+            "badge": 3,
             "items": [
-                {
-                    "symbol": "(づ￣ ³￣)づ",
-                    "desc": "要亲亲"
-                },
-                {
-                    "symbol": "(つ≧▽≦)つ",
-                    "desc": "要抱抱"
-                },
-                {
-                    "symbol": "(｡♥‿♥｡)",
-                    "desc": "含情脉脉"
-                },
-                {
-                    "symbol": "(´∀｀)♡",
-                    "desc": "开心比心"
-                },
                 {
                     "symbol": "(๑•́ ₃ •̀๑) 看我",
                     "desc": "看我"
-                },
-                {
-                    "symbol": "(ﾉ´ヮ)ﾉ*: ･ﾟ`",
-                    "desc": "撒花求关注"
-                },
-                {
-                    "symbol": "(๑˘͈ ᵕ ˘͈๑)",
-                    "desc": "粘人可爱"
-                },
-                {
-                    "symbol": "(´,,•ω•,,)♡",
-                    "desc": "心动粘人"
                 },
                 {
                     "symbol": "(つ´∀｀)つ",
@@ -3071,47 +2115,11 @@ window.KAOMOJI_DATA = {
             "id": "drama",
             "name": "超戏精 · 演技在线",
             "emoji": "🎭",
-            "badge": 11,
+            "badge": 2,
             "items": [
-                {
-                    "symbol": "(╯°□°)╯︵ ┻━┻",
-                    "desc": "暴怒掀桌"
-                },
-                {
-                    "symbol": "(ノಠ益ಠ)ノ彡┻━┻",
-                    "desc": "狂怒掀桌"
-                },
-                {
-                    "symbol": "(；д；)",
-                    "desc": "泪崩"
-                },
-                {
-                    "symbol": "(இ﹏இ)",
-                    "desc": "嚎啕大哭"
-                },
-                {
-                    "symbol": "(＃°Д°)",
-                    "desc": "大惊"
-                },
-                {
-                    "symbol": "(；ﾟДﾟ)",
-                    "desc": "震惊"
-                },
-                {
-                    "symbol": "(╬ Ò ‸ Ó)",
-                    "desc": "气炸"
-                },
-                {
-                    "symbol": "(ﾒﾟ皿ﾟ)ﾒ",
-                    "desc": "怒到磨牙"
-                },
                 {
                     "symbol": "(ﾉ°ο°)ノ",
                     "desc": "疯狂摇晃"
-                },
-                {
-                    "symbol": "(；∀；)",
-                    "desc": "感动痛哭"
                 },
                 {
                     "symbol": "(；∀；) 我真的会谢",
@@ -3123,79 +2131,19 @@ window.KAOMOJI_DATA = {
             "id": "socialanxiety",
             "name": "超社恐 · 想消失",
             "emoji": "🫥",
-            "badge": 19,
+            "badge": 4,
             "items": [
-                {
-                    "symbol": "(´；ω；｀)",
-                    "desc": "社恐想哭"
-                },
-                {
-                    "symbol": "(；一_一)",
-                    "desc": "不敢直视"
-                },
-                {
-                    "symbol": "(｡ŏ_ŏ)",
-                    "desc": "躲闪"
-                },
-                {
-                    "symbol": "(´-﹏-)`",
-                    "desc": "想溜走"
-                },
-                {
-                    "symbol": "(；°Д°)",
-                    "desc": "紧张到呆"
-                },
-                {
-                    "symbol": "(・へ・)",
-                    "desc": "沉默"
-                },
-                {
-                    "symbol": "(´･_･)`",
-                    "desc": "低头纠结"
-                },
-                {
-                    "symbol": "(；ω；)",
-                    "desc": "想哭"
-                },
                 {
                     "symbol": "(๑•́ ₃ •̀๑) 别看我",
                     "desc": "别看我"
-                },
-                {
-                    "symbol": "(；´Д)`",
-                    "desc": "张大嘴尴尬"
                 },
                 {
                     "symbol": "(；°Д°) 别看我",
                     "desc": "别看我"
                 },
                 {
-                    "symbol": "(๑•́ ₃ •̀๑)",
-                    "desc": "委屈社恐"
-                },
-                {
                     "symbol": "(；´Д) 我想回家`",
                     "desc": "我想回家"
-                },
-                {
-                    "symbol": "(＃°Д°)",
-                    "desc": "尴尬石化"
-                },
-                {
-                    "symbol": "(；ﾟДﾟ)",
-                    "desc": "社死呆滞"
-                },
-                {
-                    "symbol": "(´⊙ω⊙)`",
-                    "desc": "尴尬到变形"
-                },
-                {
-                    "symbol": "(இдஇ)",
-                    "desc": "崩溃社死"
-                },
-                {
-                    "symbol": "(゜Д゜；)",
-                    "desc": "惊呆社死"
                 },
                 {
                     "symbol": "(；°ロ°) 好想挖个洞",
@@ -3207,60 +2155,8 @@ window.KAOMOJI_DATA = {
             "id": "socialbutterfly",
             "name": "超社牛 · 社交达人",
             "emoji": "🗣️",
-            "badge": 15,
+            "badge": 2,
             "items": [
-                {
-                    "symbol": "(☞ﾟ∀ﾟ)☞",
-                    "desc": "指点开聊"
-                },
-                {
-                    "symbol": "(｀・ω・´)",
-                    "desc": "自信搭话"
-                },
-                {
-                    "symbol": "(★ω★)/",
-                    "desc": "热情挥手"
-                },
-                {
-                    "symbol": "(๑•̀ㅂ•́)و✧",
-                    "desc": "活力开聊"
-                },
-                {
-                    "symbol": "(￣▽￣)ノ",
-                    "desc": "自来熟"
-                },
-                {
-                    "symbol": "(ﾉ´ヮ)ﾉ*: ･ﾟ`",
-                    "desc": "撒花开聊"
-                },
-                {
-                    "symbol": "(•̀ᴗ•́)و",
-                    "desc": "健谈"
-                },
-                {
-                    "symbol": "(✧ω✧)",
-                    "desc": "星星眼搭话"
-                },
-                {
-                    "symbol": "(｀∀´)Ψ",
-                    "desc": "社交达人"
-                },
-                {
-                    "symbol": "(๑˃̵ᴗ˂̵)و",
-                    "desc": "热情互动"
-                },
-                {
-                    "symbol": "(ﾉ´ヮ)ﾉ*: ･ﾟ✧`",
-                    "desc": "疯狂撒花"
-                },
-                {
-                    "symbol": "(≧∇≦)/",
-                    "desc": "热情欢呼"
-                },
-                {
-                    "symbol": "(★≧▽≦)",
-                    "desc": "闪耀开大"
-                },
                 {
                     "symbol": "(๑˃̵ᴗ˂̵)و 我来了",
                     "desc": "我来了"
@@ -3275,32 +2171,8 @@ window.KAOMOJI_DATA = {
             "id": "hesitate",
             "name": "超纠结 · 选择困难",
             "emoji": "🤔",
-            "badge": 10,
+            "badge": 3,
             "items": [
-                {
-                    "symbol": "(・_・?)",
-                    "desc": "纠结"
-                },
-                {
-                    "symbol": "(？o？)",
-                    "desc": "满脑问号"
-                },
-                {
-                    "symbol": "(´･_･)`",
-                    "desc": "皱眉纠结"
-                },
-                {
-                    "symbol": "(；一_一)?",
-                    "desc": "无语纠结"
-                },
-                {
-                    "symbol": "(⊙_⊙)?",
-                    "desc": "震惊纠结"
-                },
-                {
-                    "symbol": "(・へ・)?",
-                    "desc": "歪头纠结"
-                },
                 {
                     "symbol": "(｡ŏ_ŏ)?",
                     "desc": "犯难"
@@ -3313,54 +2185,14 @@ window.KAOMOJI_DATA = {
                     "symbol": "(´-﹏-) 选哪个`",
                     "desc": "选哪个"
                 },
-                {
-                    "symbol": "(・∀・？)",
-                    "desc": "选择困难"
-                }
             ]
         },
         {
             "id": "touched",
             "name": "超感动 · 想哭",
             "emoji": "🥹",
-            "badge": 10,
+            "badge": 1,
             "items": [
-                {
-                    "symbol": "(´；ω；｀)",
-                    "desc": "感动落泪"
-                },
-                {
-                    "symbol": "(；д；)",
-                    "desc": "泪目"
-                },
-                {
-                    "symbol": "(இ﹏இ)",
-                    "desc": "感动哭"
-                },
-                {
-                    "symbol": "(T_T)",
-                    "desc": "泪流满面"
-                },
-                {
-                    "symbol": "(´∀｀)♡",
-                    "desc": "感动比心"
-                },
-                {
-                    "symbol": "(｡♥‿♥｡)",
-                    "desc": "满心感动"
-                },
-                {
-                    "symbol": "(๑˘͈ ᵕ ˘͈๑)",
-                    "desc": "感动害羞"
-                },
-                {
-                    "symbol": "(；∀；)",
-                    "desc": "感动爆哭"
-                },
-                {
-                    "symbol": "(´｡• ᵕ •｡)`",
-                    "desc": "感动抿嘴"
-                },
                 {
                     "symbol": "(ˊᗜˋ*) 好感动",
                     "desc": "好感动"
@@ -3371,40 +2203,8 @@ window.KAOMOJI_DATA = {
             "id": "perfunctory",
             "name": "超敷衍 · 随便吧",
             "emoji": "🙄",
-            "badge": 9,
+            "badge": 1,
             "items": [
-                {
-                    "symbol": "(￣ー￣)",
-                    "desc": "敷衍脸"
-                },
-                {
-                    "symbol": "(－_－)",
-                    "desc": "无所谓"
-                },
-                {
-                    "symbol": "(・_・)",
-                    "desc": "平淡"
-                },
-                {
-                    "symbol": "(´-_ゝ｀)",
-                    "desc": "爱答不理"
-                },
-                {
-                    "symbol": "(；一_一)",
-                    "desc": "敷衍无语"
-                },
-                {
-                    "symbol": "(￣ω￣)",
-                    "desc": "都行"
-                },
-                {
-                    "symbol": "(・へ・)",
-                    "desc": "随便吧"
-                },
-                {
-                    "symbol": "(´･_･)`",
-                    "desc": "不耐烦"
-                },
                 {
                     "symbol": "(￣ρ￣) 都行",
                     "desc": "都行"
@@ -3415,12 +2215,8 @@ window.KAOMOJI_DATA = {
             "id": "focused",
             "name": "超认真 · 专注中",
             "emoji": "🎯",
-            "badge": 10,
+            "badge": 4,
             "items": [
-                {
-                    "symbol": "(｀・ω・´)",
-                    "desc": "认真"
-                },
                 {
                     "symbol": "(•̀ᴗ•́)",
                     "desc": "专注"
@@ -3428,26 +2224,6 @@ window.KAOMOJI_DATA = {
                 {
                     "symbol": "(๑•̀ㅂ•́)",
                     "desc": "认真努力"
-                },
-                {
-                    "symbol": "(￣ー￣)",
-                    "desc": "严肃专注"
-                },
-                {
-                    "symbol": "(´-_ゝ｀)",
-                    "desc": "专注眯眼"
-                },
-                {
-                    "symbol": "(・∀・)",
-                    "desc": "投入"
-                },
-                {
-                    "symbol": "(｀д´)",
-                    "desc": "认真较劲"
-                },
-                {
-                    "symbol": "(¬_¬)",
-                    "desc": "认真盯"
                 },
                 {
                     "symbol": "(๑˃̵ᴗ˂̵)",
@@ -3463,44 +2239,8 @@ window.KAOMOJI_DATA = {
             "id": "ruminate",
             "name": "超内耗 · 自我攻击",
             "emoji": "🌀",
-            "badge": 10,
+            "badge": 1,
             "items": [
-                {
-                    "symbol": "(´；ω；｀)",
-                    "desc": "内耗想哭"
-                },
-                {
-                    "symbol": "(；д；)",
-                    "desc": "自责泪目"
-                },
-                {
-                    "symbol": "(´-﹏-)`",
-                    "desc": "自我怀疑"
-                },
-                {
-                    "symbol": "(๑•́ ₃ •̀๑)",
-                    "desc": "委屈内耗"
-                },
-                {
-                    "symbol": "(｡•́︿•̀｡)",
-                    "desc": "难受"
-                },
-                {
-                    "symbol": "(；一_一)",
-                    "desc": "自我否定"
-                },
-                {
-                    "symbol": "(´･_･)`",
-                    "desc": "反复纠结"
-                },
-                {
-                    "symbol": "(இ﹏இ)",
-                    "desc": "内耗爆哭"
-                },
-                {
-                    "symbol": "(；ω；)",
-                    "desc": "焦虑"
-                },
                 {
                     "symbol": "(´；д；) 我是不是很差`",
                     "desc": "我是不是很差"
@@ -3511,43 +2251,11 @@ window.KAOMOJI_DATA = {
             "id": "stubborn",
             "name": "超嘴硬 · 死不承认",
             "emoji": "😤",
-            "badge": 11,
+            "badge": 3,
             "items": [
-                {
-                    "symbol": "(￣^￣)",
-                    "desc": "嘴硬哼"
-                },
-                {
-                    "symbol": "(｀ε´)",
-                    "desc": "死鸭子嘴硬"
-                },
-                {
-                    "symbol": "(¬_¬)",
-                    "desc": "死不承认"
-                },
-                {
-                    "symbol": "(｀д´)",
-                    "desc": "嘴硬恼"
-                },
-                {
-                    "symbol": "(￣ー￣)",
-                    "desc": "硬撑"
-                },
-                {
-                    "symbol": "(´-ω-｀)",
-                    "desc": "嘴硬装没事"
-                },
                 {
                     "symbol": "(；一_一) 才没有",
                     "desc": "才没有"
-                },
-                {
-                    "symbol": "(￣ヘ￣)",
-                    "desc": "死不松口"
-                },
-                {
-                    "symbol": "(｀⌒´)",
-                    "desc": "倔强撇嘴"
                 },
                 {
                     "symbol": "(¬‿¬) 我才不在乎",
@@ -3563,44 +2271,8 @@ window.KAOMOJI_DATA = {
             "id": "sweetmouth",
             "name": "超嘴甜 · 疯狂彩虹屁",
             "emoji": "🌈",
-            "badge": 10,
+            "badge": 1,
             "items": [
-                {
-                    "symbol": "(´∀｀)♡",
-                    "desc": "夸你比心"
-                },
-                {
-                    "symbol": "(｡♥‿♥｡)",
-                    "desc": "甜言蜜语"
-                },
-                {
-                    "symbol": "(♡˙︶˙♡)",
-                    "desc": "疯狂夸赞"
-                },
-                {
-                    "symbol": "(´,,•ω•,,)♡",
-                    "desc": "心动彩虹屁"
-                },
-                {
-                    "symbol": "(๑˘͈ ᵕ ˘͈๑)",
-                    "desc": "可爱夸夸"
-                },
-                {
-                    "symbol": "(✿◠‿◠)",
-                    "desc": "温柔夸奖"
-                },
-                {
-                    "symbol": "(◕‿◕✿)",
-                    "desc": "带花彩虹屁"
-                },
-                {
-                    "symbol": "(ᵔᴥᵔ)",
-                    "desc": "憨憨夸赞"
-                },
-                {
-                    "symbol": "(づ￣ ³￣)づ",
-                    "desc": "夸你亲亲"
-                },
                 {
                     "symbol": "(つ≧▽≦)つ 你好棒",
                     "desc": "你好棒"
@@ -3611,43 +2283,11 @@ window.KAOMOJI_DATA = {
             "id": "sarcastic",
             "name": "超阴阳 · 表面客气",
             "emoji": "🫖",
-            "badge": 10,
+            "badge": 2,
             "items": [
-                {
-                    "symbol": "(￣▽￣)ノ",
-                    "desc": "假客气"
-                },
-                {
-                    "symbol": "(¬‿¬)",
-                    "desc": "阴阳怪气"
-                },
                 {
                     "symbol": "(｀∀´)",
                     "desc": "表面乐呵"
-                },
-                {
-                    "symbol": "(；一_一)",
-                    "desc": "无语敷衍"
-                },
-                {
-                    "symbol": "(￣ー￣)",
-                    "desc": "假平静"
-                },
-                {
-                    "symbol": "(・_・)",
-                    "desc": "表面淡定"
-                },
-                {
-                    "symbol": "(´-_ゝ｀)",
-                    "desc": "假随和"
-                },
-                {
-                    "symbol": "(¬_¬)",
-                    "desc": "皮笑肉不笑"
-                },
-                {
-                    "symbol": "(￣ω￣)",
-                    "desc": "假无所谓"
                 },
                 {
                     "symbol": "(｀ε´) 哦是吗",
@@ -3659,44 +2299,8 @@ window.KAOMOJI_DATA = {
             "id": "heartless",
             "name": "超绝情 · 冷酷无情",
             "emoji": "🧊",
-            "badge": 10,
+            "badge": 1,
             "items": [
-                {
-                    "symbol": "(￣ー￣)",
-                    "desc": "冷酷"
-                },
-                {
-                    "symbol": "(－_－)",
-                    "desc": "冷脸"
-                },
-                {
-                    "symbol": "(・_・)",
-                    "desc": "冷漠"
-                },
-                {
-                    "symbol": "(´-_ゝ｀)",
-                    "desc": "绝情眯眼"
-                },
-                {
-                    "symbol": "(；一_一)",
-                    "desc": "无情"
-                },
-                {
-                    "symbol": "(￣ω￣)",
-                    "desc": "无所谓"
-                },
-                {
-                    "symbol": "(・へ・)",
-                    "desc": "冷面"
-                },
-                {
-                    "symbol": "(´･_･)`",
-                    "desc": "冷淡皱眉"
-                },
-                {
-                    "symbol": "(￣ρ￣)",
-                    "desc": "冷瘫"
-                },
                 {
                     "symbol": "(´-ω-｀) 关我什么事",
                     "desc": "关我什么事"
@@ -3707,44 +2311,8 @@ window.KAOMOJI_DATA = {
             "id": "stoic",
             "name": "超淡人 · 情绪稳定",
             "emoji": "🧘",
-            "badge": 12,
+            "badge": 2,
             "items": [
-                {
-                    "symbol": "(￣ー￣)",
-                    "desc": "情绪稳定"
-                },
-                {
-                    "symbol": "(－_－)",
-                    "desc": "平静"
-                },
-                {
-                    "symbol": "(・_・)",
-                    "desc": "淡定"
-                },
-                {
-                    "symbol": "(´-_ゝ｀)",
-                    "desc": "稳如老狗"
-                },
-                {
-                    "symbol": "(￣ω￣)",
-                    "desc": "心态平和"
-                },
-                {
-                    "symbol": "(；一_一)",
-                    "desc": "看淡一切"
-                },
-                {
-                    "symbol": "(´･_･)`",
-                    "desc": "淡定淡定"
-                },
-                {
-                    "symbol": "(・へ・)",
-                    "desc": "波澜不惊"
-                },
-                {
-                    "symbol": "(￣ρ￣)",
-                    "desc": "佛系躺平"
-                },
                 {
                     "symbol": "(´-ω-｀) 都行吧",
                     "desc": "都行吧"
@@ -3753,53 +2321,17 @@ window.KAOMOJI_DATA = {
                     "symbol": "(´-ω-｀) 没事的",
                     "desc": "没事的"
                 },
-                {
-                    "symbol": "(´-ω-｀)",
-                    "desc": "淡定困"
-                }
             ]
         },
         {
             "id": "pretenddead",
             "name": "超装死 · 装看不见",
             "emoji": "☠️",
-            "badge": 10,
+            "badge": 2,
             "items": [
-                {
-                    "symbol": "(－_－)",
-                    "desc": "装死脸"
-                },
-                {
-                    "symbol": "(￣ρ￣)",
-                    "desc": "瘫着装死"
-                },
-                {
-                    "symbol": "(´-ω-｀)",
-                    "desc": "装没看见"
-                },
-                {
-                    "symbol": "(∪､∪)",
-                    "desc": "装眯眼"
-                },
-                {
-                    "symbol": "(｡-_-｡)",
-                    "desc": "装失明"
-                },
                 {
                     "symbol": "(－ω－) 我死了",
                     "desc": "我死了"
-                },
-                {
-                    "symbol": "(￣o￣)",
-                    "desc": "装木讷"
-                },
-                {
-                    "symbol": "(´,_ゝ｀)",
-                    "desc": "装慵懒"
-                },
-                {
-                    "symbol": "(；一_一)",
-                    "desc": "假装不存在"
                 },
                 {
                     "symbol": "(｡´-ω-｀｡) 听不见",
@@ -3811,39 +2343,15 @@ window.KAOMOJI_DATA = {
             "id": "nagging",
             "name": "超嘴碎 · 碎碎念",
             "emoji": "🗯️",
-            "badge": 10,
+            "badge": 4,
             "items": [
-                {
-                    "symbol": "(｀・ω・´)",
-                    "desc": "念叨"
-                },
-                {
-                    "symbol": "(・∀・)",
-                    "desc": "碎碎念"
-                },
                 {
                     "symbol": "(´∀｀)",
                     "desc": "唠叨"
                 },
                 {
-                    "symbol": "(¬‿¬)",
-                    "desc": "阴阳念叨"
-                },
-                {
                     "symbol": "(￣▽￣)",
                     "desc": "啰嗦"
-                },
-                {
-                    "symbol": "(；一_一)",
-                    "desc": "无语念叨"
-                },
-                {
-                    "symbol": "(・_・)",
-                    "desc": "不停说"
-                },
-                {
-                    "symbol": "(´-_ゝ｀)",
-                    "desc": "碎碎念中"
                 },
                 {
                     "symbol": "(￣ー￣) 我跟你讲",
@@ -3859,44 +2367,8 @@ window.KAOMOJI_DATA = {
             "id": "composure",
             "name": "超端着 · 强装镇定",
             "emoji": "🎩",
-            "badge": 10,
+            "badge": 1,
             "items": [
-                {
-                    "symbol": "(￣ー￣)",
-                    "desc": "强装镇定"
-                },
-                {
-                    "symbol": "(－_－)",
-                    "desc": "装稳"
-                },
-                {
-                    "symbol": "(・_・)",
-                    "desc": "假装淡定"
-                },
-                {
-                    "symbol": "(´-_ゝ｀)",
-                    "desc": "强装从容"
-                },
-                {
-                    "symbol": "(；一_一)",
-                    "desc": "内心慌"
-                },
-                {
-                    "symbol": "(￣ω￣)",
-                    "desc": "表面平静"
-                },
-                {
-                    "symbol": "(・へ・)",
-                    "desc": "强撑"
-                },
-                {
-                    "symbol": "(´･_･)`",
-                    "desc": "强装皱眉"
-                },
-                {
-                    "symbol": "(￣ρ￣)",
-                    "desc": "硬装慵懒"
-                },
                 {
                     "symbol": "(´-ω-｀) 我没事",
                     "desc": "我没事"
@@ -3907,43 +2379,11 @@ window.KAOMOJI_DATA = {
             "id": "zen",
             "name": "超佛系 · 随缘人设",
             "emoji": "🍃",
-            "badge": 10,
+            "badge": 2,
             "items": [
-                {
-                    "symbol": "¯\\_(ツ)_/¯",
-                    "desc": "随缘"
-                },
-                {
-                    "symbol": "(￣ー￣)",
-                    "desc": "佛系脸"
-                },
-                {
-                    "symbol": "(－_－)",
-                    "desc": "看淡"
-                },
-                {
-                    "symbol": "(・_・)",
-                    "desc": "随缘"
-                },
-                {
-                    "symbol": "(´-_ゝ｀)",
-                    "desc": "佛系眯眼"
-                },
                 {
                     "symbol": "(；一_一) 都行",
                     "desc": "都行"
-                },
-                {
-                    "symbol": "(￣ω￣)",
-                    "desc": "无所谓"
-                },
-                {
-                    "symbol": "(・へ・)",
-                    "desc": "随缘吧"
-                },
-                {
-                    "symbol": "(´･_･)`",
-                    "desc": "佛系皱眉"
                 },
                 {
                     "symbol": "(￣ρ￣) 顺其自然",
@@ -3958,20 +2398,20 @@ window.KAOMOJI_DATA = {
             "badge": 4,
             "items": [
                 {
-                    "symbol": "(´,,•ω•,,)♡",
+                    "symbol": "(๑•́ ω •̀๑)",
+                    "desc": "偷偷喜欢"
+                },
+                {
+                    "symbol": "(⁄ ⁄>⁄ω⁄<⁄ ⁄)",
+                    "desc": "脸红偷瞄"
+                },
+                {
+                    "symbol": "(´･ω･`)♡",
                     "desc": "心动"
                 },
                 {
-                    "symbol": "(〃ω〃)",
-                    "desc": "害羞"
-                },
-                {
-                    "symbol": "(*/ω＼*)",
-                    "desc": "捂脸"
-                },
-                {
-                    "symbol": "(๑˘͈ ᵕ ˘͈๑)",
-                    "desc": "暗恋可爱"
+                    "symbol": "(◡‿◡)♡",
+                    "desc": "暗自开心"
                 }
             ]
         },
@@ -3979,46 +2419,22 @@ window.KAOMOJI_DATA = {
             "id": "leftread",
             "name": "被已读不回",
             "emoji": "📵",
-            "badge": 4,
+            "badge": 1,
             "items": [
-                {
-                    "symbol": "(；一_一)",
-                    "desc": "已读不回"
-                },
-                {
-                    "symbol": "(´-﹏-)`",
-                    "desc": "难受"
-                },
-                {
-                    "symbol": "(๑•́ ₃ •̀๑)",
-                    "desc": "委屈"
-                },
                 {
                     "symbol": "(；ω；) 我没事",
                     "desc": "我没事"
                 }
             ]
         },
- 
+
 
         {
             "id": "exex",
             "name": "看到前任动态",
             "emoji": "😐",
-            "badge": 4,
+            "badge": 1,
             "items": [
-                {
-                    "symbol": "(；一_一)",
-                    "desc": "无视"
-                },
-                {
-                    "symbol": "(¬_¬)",
-                    "desc": "无语"
-                },
-                {
-                    "symbol": "(￣ー￣)",
-                    "desc": "无感"
-                },
                 {
                     "symbol": "(´-_ゝ｀) 关我什么事",
                     "desc": "关我什么事"
@@ -4030,20 +2446,8 @@ window.KAOMOJI_DATA = {
             "id": "valentine",
             "name": "情人节",
             "emoji": "🌹",
-            "badge": 4,
+            "badge": 1,
             "items": [
-                {
-                    "symbol": "(｡♥‿♥｡)",
-                    "desc": "甜蜜"
-                },
-                {
-                    "symbol": "(´∀｀)♡",
-                    "desc": "幸福"
-                },
-                {
-                    "symbol": "(๑˘͈ ᵕ ˘͈๑)",
-                    "desc": "害羞"
-                },
                 {
                     "symbol": "(；一_一) 单身也开心",
                     "desc": "单身也开心"
@@ -4055,16 +2459,8 @@ window.KAOMOJI_DATA = {
             "id": "trafficjam",
             "name": "堵车中",
             "emoji": "🚗",
-            "badge": 4,
+            "badge": 2,
             "items": [
-                {
-                    "symbol": "(；一_一)",
-                    "desc": "无奈"
-                },
-                {
-                    "symbol": "(´-﹏-)`",
-                    "desc": "烦躁"
-                },
                 {
                     "symbol": "(－_－) 怎么还不走",
                     "desc": "怎么还不走"
@@ -4075,61 +2471,11 @@ window.KAOMOJI_DATA = {
                 }
             ]
         },
-    
-        {
-            "id": "systemupdate",
-            "name": "系统更新",
-            "emoji": "🔧",
-            "badge": 4,
-            "items": [
-                {
-                    "symbol": "(¬_¬) 又更新",
-                    "desc": "又更新"
-                },
-                {
-                    "symbol": "(￣ー￣) 强制的吗",
-                    "desc": "强制的吗"
-                },
-                {
-                    "symbol": "(；一_一) 先不更",
-                    "desc": "先不更"
-                },
-                {
-                    "symbol": "(´-ω-｀) 怕出问题",
-                    "desc": "怕出问题"
-                }
-            ]
-        },
-        {
-            "id": "freeresc",
-            "name": "找到免费资源",
-            "emoji": "🆓",
-            "badge": 4,
-            "items": [
-                {
-                    "symbol": "(★ω★)/ 有了！`",
-                    "desc": "有了"
-                },
-                {
-                    "symbol": "(✧ω✧) 开心",
-                    "desc": "开心"
-                },
-                {
-                    "symbol": "(≧∇≦)/ 太好了",
-                    "desc": "太好了"
-                },
-                {
-                    "symbol": "(´∀｀)♡ 幸福",
-                    "desc": "幸福"
-                }
-            ]
-        },
-    
         {
             "id": "wildanimal",
             "name": "魔性动物系",
             "emoji": "🐾",
-            "badge": 10,
+            "badge": 8,
             "items": [
                 {
                     "symbol": "(▽◕ ᴥ ◕▽)",
@@ -4156,16 +2502,8 @@ window.KAOMOJI_DATA = {
                     "desc": "举手欢呼"
                 },
                 {
-                    "symbol": "(ʘ‿ʘ)",
-                    "desc": "猫头鹰凝视"
-                },
-                {
                     "symbol": "(◑‿◐)",
                     "desc": "阴阳眼"
-                },
-                {
-                    "symbol": "(｀∀´)Ψ",
-                    "desc": "邪魅猫猫"
                 },
                 {
                     "symbol": "(￣(エ)￣)",
@@ -4265,23 +2603,11 @@ window.KAOMOJI_DATA = {
             "id": "bodyaction",
             "name": "身体动作系",
             "emoji": "🕺",
-            "badge": 9,
+            "badge": 6,
             "items": [
-                {
-                    "symbol": "(ﾉ≧∀≦)ﾉ",
-                    "desc": "双手挥舞"
-                },
-                {
-                    "symbol": "(ノ°ο°)ノ",
-                    "desc": "慌张乱跑"
-                },
                 {
                     "symbol": "(ﾉ´ヮ)ﾉ*:･ﾟ✧`",
                     "desc": "撒花"
-                },
-                {
-                    "symbol": "(｀・ω・´)ゞ",
-                    "desc": "敬礼"
                 },
                 {
                     "symbol": "(´･_･)ﾉ⌒●~*`",
@@ -4309,7 +2635,7 @@ window.KAOMOJI_DATA = {
             "id": "minimal3",
             "name": "极简 · 单字符变体",
             "emoji": "⚫",
-            "badge": 8,
+            "badge": 6,
             "items": [
                 {
                     "symbol": "(｡)",
@@ -4324,10 +2650,6 @@ window.KAOMOJI_DATA = {
                     "desc": "强忍委屈"
                 },
                 {
-                    "symbol": "(◡‿◡✿)",
-                    "desc": "绿茶微笑"
-                },
-                {
                     "symbol": "(♡◡♡)",
                     "desc": "超爱"
                 },
@@ -4339,29 +2661,17 @@ window.KAOMOJI_DATA = {
                     "symbol": "(˘･_･˘)",
                     "desc": "冷漠"
                 },
-                {
-                    "symbol": "(˘ω˘)",
-                    "desc": "安详"
-                }
             ]
         },
         {
             "id": "obscure",
             "name": "冷门魔性",
             "emoji": "🎁",
-            "badge": 10,
+            "badge": 6,
             "items": [
-                {
-                    "symbol": "(；一_一)",
-                    "desc": "死鱼眼凝视"
-                },
                 {
                     "symbol": "(；¬_¬)",
                     "desc": "斜眼偷瞄"
-                },
-                {
-                    "symbol": "(｀ε´)",
-                    "desc": "臭脸"
                 },
                 {
                     "symbol": "(´ཀ」 ∠)_`",
@@ -4376,10 +2686,6 @@ window.KAOMOJI_DATA = {
                     "desc": "世界崩塌式哭泣"
                 },
                 {
-                    "symbol": "(☞ﾟ∀ﾟ)☞",
-                    "desc": "指指点点"
-                },
-                {
                     "symbol": "☜(ﾟヮﾟ☜)",
                     "desc": "反向指点"
                 },
@@ -4387,38 +2693,22 @@ window.KAOMOJI_DATA = {
                     "symbol": "(╭☞•́⍛•̀)╭☞",
                     "desc": "社会人指你"
                 },
-                {
-                    "symbol": "(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧",
-                    "desc": "魔法少女变身"
-                }
             ]
         },
-       
+
         {
             "id": "office",
             "name": "职场专用",
             "emoji": "💼",
-            "badge": 9,
+            "badge": 5,
             "items": [
                 {
                     "symbol": "(´Д )`",
                     "desc": "又加班了"
                 },
                 {
-                    "symbol": "(；一_一)",
-                    "desc": "老板你说得对"
-                },
-                {
                     "symbol": "(￣▽￣)\"",
                     "desc": "礼貌而不失尴尬"
-                },
-                {
-                    "symbol": "(´-ω-｀)",
-                    "desc": "摸鱼中"
-                },
-                {
-                    "symbol": "(｀・ω・´)ゞ",
-                    "desc": "收到"
                 },
                 {
                     "symbol": "(´・ω・)ﾉ",
@@ -4427,10 +2717,6 @@ window.KAOMOJI_DATA = {
                 {
                     "symbol": "(；´∀｀)",
                     "desc": "假装很忙"
-                },
-                {
-                    "symbol": "(￣ω￣;)",
-                    "desc": "说漏嘴了"
                 },
                 {
                     "symbol": "(´Д )ﾉ ﾊｲﾊｲ`",
@@ -4442,67 +2728,27 @@ window.KAOMOJI_DATA = {
             "id": "lovetheater",
             "name": "恋爱小剧场",
             "emoji": "💕",
-            "badge": 10,
+            "badge": 2,
             "items": [
-                {
-                    "symbol": "(｡♥‿♥｡)",
-                    "desc": "偷看你"
-                },
-                {
-                    "symbol": "(♥ω♥*)",
-                    "desc": "心动到不行"
-                },
                 {
                     "symbol": "(´▽ʃ♡)ƪ`",
                     "desc": "捧心"
                 },
                 {
-                    "symbol": "(づ｡◕‿‿◕｡)づ",
-                    "desc": "要抱抱"
-                },
-                {
-                    "symbol": "(˶‾᷄ ⁻̫ ‾᷅˵)",
-                    "desc": "害羞脸红"
-                },
-                {
-                    "symbol": "(♡˙︶˙♡)",
-                    "desc": "恋爱少女"
-                },
-                {
                     "symbol": "(´｡• ᵕ •｡) ♡`",
                     "desc": "温柔心动"
                 },
-                {
-                    "symbol": "(๑¯◡¯๑)",
-                    "desc": "傻笑看你"
-                },
-                {
-                    "symbol": "(◕‿◕)♡",
-                    "desc": "飞吻比心"
-                },
-                {
-                    "symbol": "( ˘ ³˘)♥",
-                    "desc": "嘟嘴亲亲"
-                }
             ]
         },
         {
             "id": "minimal2",
             "name": "极简杀伤力强",
             "emoji": "💥",
-            "badge": 8,
+            "badge": 6,
             "items": [
-                {
-                    "symbol": "(｀)",
-                    "desc": "盯"
-                },
                 {
                     "symbol": "(´)",
                     "desc": "累"
-                },
-                {
-                    "symbol": "(｡)",
-                    "desc": "弱"
                 },
                 {
                     "symbol": "(；)",
@@ -4526,17 +2772,13 @@ window.KAOMOJI_DATA = {
                 }
             ]
         },
-       
+
         {
             "id": "greeting",
             "name": "打招呼 · 再见",
             "emoji": "👋",
-            "badge": 6,
+            "badge": 4,
             "items": [
-                {
-                    "symbol": "(￣▽￣)ノ",
-                    "desc": "嗨"
-                },
                 {
                     "symbol": "(＾▽＾)",
                     "desc": "你好"
@@ -4544,10 +2786,6 @@ window.KAOMOJI_DATA = {
                 {
                     "symbol": "(´∀｀)ノ",
                     "desc": "哈喽"
-                },
-                {
-                    "symbol": "(・∀・)ノ",
-                    "desc": "拜拜"
                 },
                 {
                     "symbol": "(￣ー￣)ノ",
@@ -4563,40 +2801,32 @@ window.KAOMOJI_DATA = {
             "id": "agree",
             "name": "同意 · 收到",
             "emoji": "🤝",
-            "badge": 6,
+            "badge": 4,
             "items": [
                 {
-                    "symbol": "(｀・ω・´)",
+                    "symbol": "(・ω・)ゝ",
                     "desc": "收到"
                 },
                 {
-                    "symbol": "(・∀・)",
-                    "desc": "好的"
+                    "symbol": "(o゜▽゜)o",
+                    "desc": "好嘞"
                 },
                 {
-                    "symbol": "(´∀｀)",
-                    "desc": "OK"
+                    "symbol": "(・ω・)ノ",
+                    "desc": "明白"
                 },
                 {
-                    "symbol": "(￣▽￣)",
-                    "desc": "没问题"
-                },
+                    "symbol": "(´・ω・`)ﾉ",
+                    "desc": "知道了"
+                }
             ]
         },
         {
             "id": "thanks",
             "name": "谢谢 · 不客气",
             "emoji": "🙏",
-            "badge": 3,
+            "badge": 1,
             "items": [
-                {
-                    "symbol": "(´∀｀)♡",
-                    "desc": "谢谢"
-                },
-                {
-                    "symbol": "(｡･ω･｡)",
-                    "desc": "谢谢你"
-                },
                 {
                     "symbol": "(ﾉ´∀｀)ﾉ",
                     "desc": "太感谢了"
@@ -4607,28 +2837,12 @@ window.KAOMOJI_DATA = {
             "id": "sorry",
             "name": "抱歉 · 对不起",
             "emoji": "🥺",
-            "badge": 5,
+            "badge": 1,
             "items": [
-                {
-                    "symbol": "(´；ω；｀)",
-                    "desc": "对不起"
-                },
-                {
-                    "symbol": "(；一_一)",
-                    "desc": "抱歉"
-                },
                 {
                     "symbol": "(´-﹏-)",
                     "desc": "我错了"
                 },
-                {
-                    "symbol": "(；ω；)",
-                    "desc": "真的对不起"
-                },
-                {
-                    "symbol": "(/ω＼)",
-                    "desc": "抱歉啦"
-                }
             ]
         }
     ],
