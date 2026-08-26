@@ -6,10 +6,11 @@
 (function () {
     'use strict';
 
-    // 三个独立数据源：颜文字（data.js）、Emoji 图标（icons.js）、特殊符号（symbols.js）
+    // 四个独立数据源：颜文字（data.js）、Emoji 图标（icons.js）、特殊符号（symbols.js）、汉字部首（radicals.js）
     const KAOMOJI = window.KAOMOJI_DATA;
     const ICONS = window.KAOMOJI_ICONS;
     const SYMBOLS = window.KAOMOJI_SYMBOLS;
+    const RADICALS = window.KAOMOJI_RADICALS;
     if (!KAOMOJI) {
         console.error('[kaomoji] 未找到数据源 window.KAOMOJI_DATA，请先引入 data.js');
         return;
@@ -22,14 +23,19 @@
         console.error('[kaomoji] 未找到数据源 window.KAOMOJI_SYMBOLS，请先引入 symbols.js');
         return;
     }
+    if (!RADICALS) {
+        console.error('[kaomoji] 未找到数据源 window.KAOMOJI_RADICALS，请先引入 radicals.js');
+        return;
+    }
 
-    // 当前激活的 Tab：'kaomoji'（颜文字）| 'icons'（图标）| 'symbols'（特殊符号）
+    // 当前激活的 Tab：'kaomoji'（颜文字）| 'icons'（图标）| 'symbols'（特殊符号）| 'radicals'（汉字部首）
     let activeTab = 'kaomoji';
 
     // 返回当前 Tab 对应的数据源
     function currentData() {
         if (activeTab === 'icons') return ICONS;
         if (activeTab === 'symbols') return SYMBOLS;
+        if (activeTab === 'radicals') return RADICALS;
         return KAOMOJI;
     }
 
@@ -81,7 +87,8 @@
         const tabs = [
             { id: 'kaomoji', label: '颜文字', icon: '📝', panel: 'grid' },
             { id: 'icons', label: '图标', icon: '😊', panel: 'grid' },
-            { id: 'symbols', label: '符号', icon: '★', panel: 'grid' }
+            { id: 'symbols', label: '符号', icon: '★', panel: 'grid' },
+            { id: 'radicals', label: '部首', icon: '灬', panel: 'grid' }
         ];
         wrap.innerHTML = tabs.map(t => `
             <button type="button" class="tab-btn ${activeTab === t.id ? 'active' : ''}"
@@ -117,6 +124,7 @@
     function searchPlaceholder() {
         if (activeTab === 'icons') return '搜索 Emoji 图标';
         if (activeTab === 'symbols') return '搜索特殊符号';
+        if (activeTab === 'radicals') return '搜索汉字部首';
         return '搜索颜文字';
     }
 
@@ -124,6 +132,7 @@
     function emptyMessage() {
         if (activeTab === 'icons') return '没有找到匹配的图标';
         if (activeTab === 'symbols') return '没有找到匹配的符号';
+        if (activeTab === 'radicals') return '没有找到匹配的部首';
         return '没有找到匹配的颜文字';
     }
 
@@ -339,7 +348,10 @@
     function renderCard(cat) {
         const isArt = cat.id === 'ascii';
         const isIcon = activeTab === 'icons';
-        const isSymbol = activeTab === 'symbols';
+        // 特殊符号用大字号展示；汉字部首用小一点的字号（仍是单字符）
+        let sizeClass = '';
+        if (activeTab === 'symbols') sizeClass = 'symbol-card';
+        else if (activeTab === 'radicals') sizeClass = 'radical-card';
         const itemsHtml = cat.items.map(item => renderItem(item, isArt, isIcon)).join('');
         const needCollapse = cat.items.length > COLLAPSE_THRESHOLD;
         const listClass = needCollapse ? 'emoji-list collapsed' : 'emoji-list';
@@ -348,7 +360,7 @@
             : '';
 
         return `
-            <div class="card c-${cat.id} ${isArt ? 'art-card' : ''} ${isSymbol ? 'symbol-card' : ''}">
+            <div class="card c-${cat.id} ${isArt ? 'art-card' : ''} ${sizeClass}">
                 <div class="card-header">
                     <span class="card-emoji">${escapeHtml(cat.emoji)}</span>
                     <span class="card-title">${escapeHtml(cat.name)}</span>

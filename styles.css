@@ -700,6 +700,14 @@ body {
     line-height: 1.2;
 }
 
+/* 汉字部首 Tab：单字展示，字号略小于符号 */
+.radical-card .emoji-symbol {
+    font-size: 1.5rem;
+    min-width: 56px;
+    text-align: center;
+    line-height: 1.2;
+}
+
 .emoji-desc {
     font-size: 0.9rem;
     color: #6b7280;
@@ -1017,6 +1025,7 @@ body {
     /* 两列时符号略收窄，避免拥挤；移动端字号 +1px */
     .emoji-symbol { min-width: 60px; font-size: 21px; }
     .symbol-card .emoji-symbol { min-width: 44px; font-size: 26px; }
+    .radical-card .emoji-symbol { min-width: 44px; font-size: 22px; }
     .emoji-desc { font-size: 15px; }
 
     /* 侧边栏改为左侧抽屉，默认滑出屏幕 */
@@ -1094,6 +1103,7 @@ body.no-scroll {
     .subhead { font-size: 0.85rem; padding-left: 10px; }
     .emoji-symbol { min-width: 60px; font-size: 21px; }
     .symbol-card .emoji-symbol { min-width: 44px; font-size: 26px; }
+    .radical-card .emoji-symbol { min-width: 44px; font-size: 22px; }
     .emoji-desc { font-size: 15px; }
 
     /* 卡片：减小内边距，贴合小屏 */
