@@ -1,5 +1,5 @@
 /**
- * 颜文字图鉴 · 特殊符号 Symbol 数据源（独立模块，与颜文字 kaomoji.js、图标 icons.js 区分）
+ * 颜文字图鉴 · 特殊符号 Symbol 数据源（独立模块，与颜文字 data/kaomoji.js、图标 data/icons.js 区分）
  * 通过 window.KAOMOJI_SYMBOLS 暴露给页面
  */
 window.KAOMOJI_SYMBOLS = {

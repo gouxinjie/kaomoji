@@ -1,5 +1,5 @@
 /**
- * 颜文字图鉴 · 汉字部首数据源（独立模块，与颜文字 kaomoji.js、图标 icons.js、特殊符号 symbols.js 区分）
+ * 颜文字图鉴 · 汉字部首数据源（独立模块，与颜文字 data/kaomoji.js、图标 data/icons.js、特殊符号 data/symbols.js 区分）
  * 收录《康熙字典》传统 214 部首，按构字位置分类，每类内部按笔画升序排列
  * 通过 window.KAOMOJI_RADICALS 暴露给页面
  */
