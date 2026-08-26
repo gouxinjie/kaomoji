@@ -56,11 +56,11 @@
 
     /* ---------------- 头部 ---------------- */
     // 各板块统一的"统计四件套"：用于头部 hero 卡片展示
-    // 4 大分类 / 189 子分类 / 2100+ 精选灵感 / 1 键 一键复制
+    // 4 大分类 / 103 子分类 / 1440+ 精选灵感 / 1 键 一键复制
     const HERO_STATS = [
         { num: '4',  label: '大分类',  desc: '满足不同场景需求',  icon: 'grid',     tone: 'purple' },
-        { num: '189',label: '子分类',  desc: '精细分类快速查找',  icon: 'diamond',  tone: 'blue'   },
-        { num: '2100+', label: '精选灵感', desc: '持续更新的灵感库', icon: 'bolt',    tone: 'green'  },
+        { num: '103',label: '子分类',  desc: '精细分类快速查找',  icon: 'diamond',  tone: 'blue'   },
+        { num: '1440+', label: '精选灵感', desc: '持续更新的灵感库', icon: 'bolt',    tone: 'green'  },
         { num: '1 键', label: '一键复制', desc: '快速使用不繁琐',   icon: 'copy',     tone: 'orange' }
     ];
 

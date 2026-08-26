@@ -10,7 +10,7 @@ window.KAOMOJI_RADICALS = {
         icon: '艹',
         subtitle: '康熙字典 214 部首，按构字位置与笔画整理 · 学汉字查部首更顺手',
         totalLabel: '点击 复制',
-        totalCount: 6
+        totalCount: 216
     },
 
     // 分类（按构字位置，每部首唯一归属；每类内部按笔画升序）

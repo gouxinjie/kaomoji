@@ -9,7 +9,7 @@ window.KAOMOJI_ICONS = {
         icon: '😊',
         subtitle: '从笑脸到萌宠，从美食到出行 · 400+ 常用 Emoji 一目了然，点击即复制',
         totalLabel: '点击 复制',
-        totalCount: 15
+        totalCount: 449
     },
 
     // 分类

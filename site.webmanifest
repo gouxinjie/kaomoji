@@ -1,7 +1,7 @@
 {
   "name": "颜文字图鉴",
   "short_name": "颜文字",
-  "description": "151 大类精选颜文字，一键复制，让表达更有趣",
+  "description": "颜文字图鉴：65 大类 540+ 颜文字，以及 Emoji、特殊符号、汉字部首，一键复制，让表达更有趣",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#fff5fa",
