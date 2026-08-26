@@ -26,15 +26,15 @@ window.KAOMOJI_RADICALS = {
                 { "symbol": "女", "desc": "女字旁（nǚ）" },
                 { "symbol": "子", "desc": "子字旁（zǐ）" },
                 { "symbol": "口", "desc": "口字旁（kǒu）" },
-                { "symbol": "心", "desc": "竖心旁（xīn）" },
-                { "symbol": "手", "desc": "提手旁（shǒu）" },
-                { "symbol": "水", "desc": "三点水（shuǐ）" },
+                { "symbol": "忄", "desc": "竖心旁（xīn）" },
+                { "symbol": "扌", "desc": "提手旁（shǒu）" },
+                { "symbol": "氵", "desc": "三点水（shuǐ）" },
                 { "symbol": "火", "desc": "火字旁（huǒ）" },
                 { "symbol": "日", "desc": "日字旁（rì）" },
                 { "symbol": "月", "desc": "月字旁（yuè）" },
                 { "symbol": "木", "desc": "木字旁（mù）" },
                 { "symbol": "牛", "desc": "牛字旁（niú）" },
-                { "symbol": "玉", "desc": "王字旁（yù）" },
+                { "symbol": "王", "desc": "王字旁（yù）" },
                 { "symbol": "石", "desc": "石字旁（shí）" },
                 { "symbol": "禾", "desc": "禾木旁（hé）" },
                 { "symbol": "耳", "desc": "耳字旁（ěr）" },
@@ -53,7 +53,7 @@ window.KAOMOJI_RADICALS = {
             "emoji": "刂",
             "badge": 14,
             "items": [
-                { "symbol": "刀", "desc": "立刀旁（dāo）" },
+                { "symbol": "刂", "desc": "立刀旁（dāo）" },
                 { "symbol": "力", "desc": "力字旁（lì）" },
                 { "symbol": "又", "desc": "又字旁（yòu）" },
                 { "symbol": "攴", "desc": "攴字旁（pū）" },
@@ -62,10 +62,10 @@ window.KAOMOJI_RADICALS = {
                 { "symbol": "辛", "desc": "辛字旁（xīn）" },
                 { "symbol": "見", "desc": "见字旁（jiàn）" },
                 { "symbol": "貝", "desc": "贝字旁（bèi）" },
-                { "symbol": "邑", "desc": "右耳旁（yì）" },
+                { "symbol": "阝", "desc": "邑部·右耳旁（yì）" },
                 { "symbol": "隹", "desc": "隹字旁（zhuī）" },
                 { "symbol": "長", "desc": "长字旁（cháng）" },
-                { "symbol": "阜", "desc": "右耳旁（fù）" },
+                { "symbol": "阜", "desc": "阜部·右耳旁（fù）" },
                 { "symbol": "頁", "desc": "页字旁（yè）" }
             ]
         },
@@ -91,7 +91,7 @@ window.KAOMOJI_RADICALS = {
                 { "symbol": "癶", "desc": "登字头（bō）" },
                 { "symbol": "竹", "desc": "竹字头（zhú）" },
                 { "symbol": "虍", "desc": "虎字头（hǔ）" },
-                { "symbol": "艸", "desc": "草字头（cǎo）" },
+                { "symbol": "艹", "desc": "草字头（cǎo）" },
                 { "symbol": "雨", "desc": "雨字头（yǔ）" }
             ]
         },
@@ -112,7 +112,7 @@ window.KAOMOJI_RADICALS = {
                 { "symbol": "至", "desc": "至字底（zhì）" },
                 { "symbol": "臼", "desc": "臼字底（jiù）" },
                 { "symbol": "糸", "desc": "系字底（mì）" },
-                { "symbol": "辵", "desc": "走之底（chuò）" },
+                { "symbol": "辶", "desc": "走之底（chuò）" },
                 { "symbol": "黑", "desc": "黑字底（hēi）" }
             ]
         },

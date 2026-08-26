@@ -61,8 +61,8 @@
         const m = currentData().meta;
         const stats = [
             { num: '4', label: '内容板块' },
-            { num: '189', label: '分类' },
-            { num: '2100+', label: '精选条目' },
+            { num: '103', label: '分类' },
+            { num: '1442', label: '精选条目' },
             { num: '1 键', label: '点击复制' }
         ];
         header.innerHTML = `
