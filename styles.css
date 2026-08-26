@@ -692,6 +692,14 @@ body {
     font-weight: 500;
 }
 
+/* 特殊符号 Tab：字符更单薄，放大便于查看与点击 */
+.symbol-card .emoji-symbol {
+    font-size: 1.8rem;
+    min-width: 60px;
+    text-align: center;
+    line-height: 1.2;
+}
+
 .emoji-desc {
     font-size: 0.9rem;
     color: #6b7280;
@@ -1006,9 +1014,10 @@ body {
     .search-box { max-width: 100%; }
     #search-bar { margin-bottom: 18px; }
 
-    /* 两列时符号略收窄，避免拥挤 */
-    .emoji-symbol { min-width: 60px; }
-    .emoji-desc { font-size: 0.82rem; }
+    /* 两列时符号略收窄，避免拥挤；移动端字号 +1px */
+    .emoji-symbol { min-width: 60px; font-size: 21px; }
+    .symbol-card .emoji-symbol { min-width: 44px; font-size: 26px; }
+    .emoji-desc { font-size: 15px; }
 
     /* 侧边栏改为左侧抽屉，默认滑出屏幕 */
     .sidebar {
@@ -1083,8 +1092,9 @@ body.no-scroll {
     .brand-title { font-size: 1.4rem; }
     .brand { gap: 10px; margin-bottom: 8px; }
     .subhead { font-size: 0.85rem; padding-left: 10px; }
-    .emoji-symbol { min-width: 60px; font-size: 1.1rem; }
-    .emoji-desc { font-size: 0.9rem; }
+    .emoji-symbol { min-width: 60px; font-size: 21px; }
+    .symbol-card .emoji-symbol { min-width: 44px; font-size: 26px; }
+    .emoji-desc { font-size: 15px; }
 
     /* 卡片：减小内边距，贴合小屏 */
     .card { padding: 16px 14px 14px; }

@@ -6,9 +6,10 @@
 (function () {
     'use strict';
 
-    // 两个独立数据源：颜文字（data.js）与 Emoji 图标（icons.js）
+    // 三个独立数据源：颜文字（data.js）、Emoji 图标（icons.js）、特殊符号（symbols.js）
     const KAOMOJI = window.KAOMOJI_DATA;
     const ICONS = window.KAOMOJI_ICONS;
+    const SYMBOLS = window.KAOMOJI_SYMBOLS;
     if (!KAOMOJI) {
         console.error('[kaomoji] 未找到数据源 window.KAOMOJI_DATA，请先引入 data.js');
         return;
@@ -17,13 +18,19 @@
         console.error('[kaomoji] 未找到数据源 window.KAOMOJI_ICONS，请先引入 icons.js');
         return;
     }
+    if (!SYMBOLS) {
+        console.error('[kaomoji] 未找到数据源 window.KAOMOJI_SYMBOLS，请先引入 symbols.js');
+        return;
+    }
 
-    // 当前激活的 Tab：'kaomoji'（颜文字）| 'icons'（图标）
+    // 当前激活的 Tab：'kaomoji'（颜文字）| 'icons'（图标）| 'symbols'（特殊符号）
     let activeTab = 'kaomoji';
 
     // 返回当前 Tab 对应的数据源
     function currentData() {
-        return activeTab === 'icons' ? ICONS : KAOMOJI;
+        if (activeTab === 'icons') return ICONS;
+        if (activeTab === 'symbols') return SYMBOLS;
+        return KAOMOJI;
     }
 
     const COLLAPSE_THRESHOLD = 5; // 超过 5 条显示「查看更多」
@@ -73,7 +80,8 @@
         if (!wrap) return;
         const tabs = [
             { id: 'kaomoji', label: '颜文字', icon: '📝', panel: 'grid' },
-            { id: 'icons', label: '图标', icon: '😊', panel: 'grid' }
+            { id: 'icons', label: '图标', icon: '😊', panel: 'grid' },
+            { id: 'symbols', label: '符号', icon: '★', panel: 'grid' }
         ];
         wrap.innerHTML = tabs.map(t => `
             <button type="button" class="tab-btn ${activeTab === t.id ? 'active' : ''}"
@@ -107,7 +115,16 @@
 
     // 返回当前 Tab 的搜索框提示文案
     function searchPlaceholder() {
-        return activeTab === 'icons' ? '搜索 Emoji 图标' : '搜索颜文字';
+        if (activeTab === 'icons') return '搜索 Emoji 图标';
+        if (activeTab === 'symbols') return '搜索特殊符号';
+        return '搜索颜文字';
+    }
+
+    // 返回当前 Tab 空结果提示文案
+    function emptyMessage() {
+        if (activeTab === 'icons') return '没有找到匹配的图标';
+        if (activeTab === 'symbols') return '没有找到匹配的符号';
+        return '没有找到匹配的颜文字';
     }
 
     function filteredCategories() {
@@ -300,7 +317,7 @@
             grid.innerHTML = `
                 <div class="empty-result">
                     <span class="empty-icon">(・_・;)</span>
-                    <p>没有找到匹配的颜文字</p>
+                    <p>${emptyMessage()}</p>
                     <button type="button" class="empty-reset" id="empty-reset">清空筛选</button>
                 </div>`;
             const reset = grid.querySelector('#empty-reset');
@@ -322,6 +339,7 @@
     function renderCard(cat) {
         const isArt = cat.id === 'ascii';
         const isIcon = activeTab === 'icons';
+        const isSymbol = activeTab === 'symbols';
         const itemsHtml = cat.items.map(item => renderItem(item, isArt, isIcon)).join('');
         const needCollapse = cat.items.length > COLLAPSE_THRESHOLD;
         const listClass = needCollapse ? 'emoji-list collapsed' : 'emoji-list';
@@ -330,7 +348,7 @@
             : '';
 
         return `
-            <div class="card c-${cat.id} ${isArt ? 'art-card' : ''}">
+            <div class="card c-${cat.id} ${isArt ? 'art-card' : ''} ${isSymbol ? 'symbol-card' : ''}">
                 <div class="card-header">
                     <span class="card-emoji">${escapeHtml(cat.emoji)}</span>
                     <span class="card-title">${escapeHtml(cat.name)}</span>
