@@ -48,7 +48,7 @@ npx serve .
 kaomoji/
 ├── index.html      # 页面结构
 ├── styles.css      # 样式
-├── data.js         # 颜文字数据源（window.KAOMOJI_DATA）
+├── kaomoji.js      # 颜文字数据源（window.KAOMOJI_DATA）
 ├── app.js          # 渲染与交互逻辑
 ├── index.png       # 预览图
 └── README.md       # 说明文档
@@ -56,7 +56,7 @@ kaomoji/
 
 ## 🛠️ 自定义数据
 
-想增删颜文字？直接编辑 `data.js`：
+想增删颜文字？直接编辑 `kaomoji.js`：
 
 ```js
 window.KAOMOJI_DATA = {

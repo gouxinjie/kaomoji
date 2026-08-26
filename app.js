@@ -1,18 +1,18 @@
 /**
  * 颜文字图鉴 · 渲染与交互逻辑
- * 数据来源：window.KAOMOJI_DATA （见 data.js）
+ * 数据来源：window.KAOMOJI_DATA （见 kaomoji.js）
  */
 
 (function () {
     'use strict';
 
-    // 四个独立数据源：颜文字（data.js）、Emoji 图标（icons.js）、特殊符号（symbols.js）、汉字部首（radicals.js）
+    // 四个独立数据源：颜文字（kaomoji.js）、Emoji 图标（icons.js）、特殊符号（symbols.js）、汉字部首（radicals.js）
     const KAOMOJI = window.KAOMOJI_DATA;
     const ICONS = window.KAOMOJI_ICONS;
     const SYMBOLS = window.KAOMOJI_SYMBOLS;
     const RADICALS = window.KAOMOJI_RADICALS;
     if (!KAOMOJI) {
-        console.error('[kaomoji] 未找到数据源 window.KAOMOJI_DATA，请先引入 data.js');
+        console.error('[kaomoji] 未找到数据源 window.KAOMOJI_DATA，请先引入 kaomoji.js');
         return;
     }
     if (!ICONS) {
