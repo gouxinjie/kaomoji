@@ -6,10 +6,24 @@
 (function () {
     'use strict';
 
-    const DATA = window.KAOMOJI_DATA;
-    if (!DATA) {
+    // 两个独立数据源：颜文字（data.js）与 Emoji 图标（icons.js）
+    const KAOMOJI = window.KAOMOJI_DATA;
+    const ICONS = window.KAOMOJI_ICONS;
+    if (!KAOMOJI) {
         console.error('[kaomoji] 未找到数据源 window.KAOMOJI_DATA，请先引入 data.js');
         return;
+    }
+    if (!ICONS) {
+        console.error('[kaomoji] 未找到数据源 window.KAOMOJI_ICONS，请先引入 icons.js');
+        return;
+    }
+
+    // 当前激活的 Tab：'kaomoji'（颜文字）| 'icons'（图标）
+    let activeTab = 'kaomoji';
+
+    // 返回当前 Tab 对应的数据源
+    function currentData() {
+        return activeTab === 'icons' ? ICONS : KAOMOJI;
     }
 
     const COLLAPSE_THRESHOLD = 5; // 超过 5 条显示「查看更多」
@@ -31,7 +45,7 @@
     function renderHeader() {
         const header = document.getElementById('site-header');
         if (!header) return;
-        const m = DATA.meta;
+        const m = currentData().meta;
         header.innerHTML = `
             <div class="header-left">
                 <div class="brand">
@@ -53,10 +67,53 @@
     let activeCategories = new Set(['all']); // 当前筛选的分类 id 集合（多选）
     let searchKeyword = '';                  // 当前搜索关键词
 
+    /* ---------------- Tab 切换 ---------------- */
+    function renderTabs() {
+        const wrap = document.getElementById('tabs');
+        if (!wrap) return;
+        const tabs = [
+            { id: 'kaomoji', label: '颜文字', icon: '📝', panel: 'grid' },
+            { id: 'icons', label: '图标', icon: '😊', panel: 'grid' }
+        ];
+        wrap.innerHTML = tabs.map(t => `
+            <button type="button" class="tab-btn ${activeTab === t.id ? 'active' : ''}"
+                role="tab" aria-selected="${activeTab === t.id}"
+                aria-controls="${t.panel}"
+                data-tab="${t.id}">
+                <span class="tab-icon">${escapeHtml(t.icon)}</span>
+                <span>${escapeHtml(t.label)}</span>
+            </button>
+        `).join('');
+        wrap.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const id = this.getAttribute('data-tab');
+                if (id === activeTab) return;
+                activeTab = id;
+                // 切换 Tab 时重置筛选与搜索，并同步搜索框提示文案
+                activeCategories = new Set(['all']);
+                searchKeyword = '';
+                const input = document.getElementById('search-input');
+                if (input) { input.value = ''; input.placeholder = searchPlaceholder(); }
+                const clear = document.getElementById('search-clear');
+                if (clear) clear.hidden = true;
+                // 全量刷新视图
+                renderHeader();
+                renderSidebar();
+                renderGrid();
+                renderTabs();
+            });
+        });
+    }
+
+    // 返回当前 Tab 的搜索框提示文案
+    function searchPlaceholder() {
+        return activeTab === 'icons' ? '搜索 Emoji 图标' : '搜索颜文字';
+    }
+
     function filteredCategories() {
         const kw = searchKeyword.trim().toLowerCase();
         const allSelected = activeCategories.has('all');
-        return DATA.categories.filter(cat => {
+        return currentData().categories.filter(cat => {
             // 分类筛选：多选（all 表示全选）
             if (!allSelected && !activeCategories.has(cat.id)) return false;
             // 关键词筛选：匹配分类名 / 符号 / 描述
@@ -79,8 +136,8 @@
                     <path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z"/>
                 </svg>
                 <input type="text" id="search-input" class="search-input"
-                    placeholder="搜索颜文字"
-                    aria-label="搜索颜文字" autocomplete="off">
+                    placeholder="${searchPlaceholder()}"
+                    aria-label="${searchPlaceholder()}" autocomplete="off">
                 <button type="button" class="search-clear" id="search-clear" aria-label="清除搜索" hidden>✕</button>
             </div>
         `;
@@ -153,9 +210,10 @@
     function renderSidebar() {
         const aside = document.getElementById('sidebar');
         if (!aside) return;
+        const cats = currentData().categories;
         const items = [
-            { id: 'all', emoji: '🌐', name: '全部', count: DATA.categories.length },
-            ...DATA.categories.map(cat => ({
+            { id: 'all', emoji: '🌐', name: '全部', count: cats.length },
+            ...cats.map(cat => ({
                 id: cat.id,
                 emoji: cat.emoji,
                 name: cat.name,
@@ -263,11 +321,12 @@
 
     function renderCard(cat) {
         const isArt = cat.id === 'ascii';
-        const itemsHtml = cat.items.map(item => renderItem(item, isArt)).join('');
+        const isIcon = activeTab === 'icons';
+        const itemsHtml = cat.items.map(item => renderItem(item, isArt, isIcon)).join('');
         const needCollapse = cat.items.length > COLLAPSE_THRESHOLD;
         const listClass = needCollapse ? 'emoji-list collapsed' : 'emoji-list';
         const moreHtml = needCollapse
-            ? `<div class="more-link" data-target="list-${cat.id}">查看更多 <span class="arrow">⌄</span></div>`
+            ? `<div class="more-link" data-target="list-${cat.id}">查看更多 <span class="arrow">▾</span></div>`
             : '';
 
         return `
@@ -283,7 +342,18 @@
         `;
     }
 
-    function renderItem(item, isArt) {
+    function renderItem(item, isArt, isIcon) {
+        if (isIcon) {
+            return `
+                <li class="emoji-item icon-item" data-text="${escapeHtml(item.symbol)}">
+                    <div class="icon-main">
+                        <span class="icon-glyph">${escapeHtml(item.symbol)}</span>
+                        <span class="icon-desc">${escapeHtml(item.desc)}</span>
+                    </div>
+                    <button class="copy-btn" aria-label="复制">${COPY_ICON_SVG}</button>
+                </li>
+            `;
+        }
         if (isArt) {
             return `
                 <li class="emoji-item art-block-wrap">
@@ -312,7 +382,8 @@
     function renderFeatures() {
         const wrap = document.getElementById('features');
         if (!wrap) return;
-        wrap.innerHTML = DATA.features.map(f => `
+        const features = currentData().features || KAOMOJI.features || [];
+        wrap.innerHTML = features.map(f => `
             <div class="feature">
                 <span class="feature-icon ${f.iconClass}">${escapeHtml(f.icon)}</span>
                 <div class="feature-text">
@@ -327,7 +398,7 @@
     function renderFooter() {
         const f = document.getElementById('footer-note');
         if (!f) return;
-        f.innerHTML = `© ${new Date().getFullYear()} ${escapeHtml(DATA.footer)}<span class="heart">💗</span>`;
+        f.innerHTML = `© ${new Date().getFullYear()} ${escapeHtml(currentData().footer || KAOMOJI.footer)}<span class="heart">💗</span>`;
     }
 
     /* ---------------- 复制逻辑 ---------------- */
@@ -428,12 +499,12 @@
                 list.classList.remove('expanded');
                 list.classList.add('collapsed');
                 link.classList.remove('expanded');
-                link.innerHTML = '查看更多 <span class="arrow">⌄</span>';
+                link.innerHTML = '查看更多 <span class="arrow">▾</span>';
             } else {
                 list.classList.remove('collapsed');
                 list.classList.add('expanded');
                 link.classList.add('expanded');
-                link.innerHTML = '收起 <span class="arrow">⌄</span>';
+                link.innerHTML = '收起 <span class="arrow">▾</span>';
             }
         });
     }
@@ -452,6 +523,7 @@
     /* ---------------- 启动 ---------------- */
     function init() {
         renderHeader();
+        renderTabs();
         renderSearch();
         renderSidebar();
         renderGrid();

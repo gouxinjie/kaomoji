@@ -17,6 +17,9 @@
     <button type="button" class="mobile-filter-btn" id="mobile-filter-btn"
         aria-label="打开分类筛选" title="分类筛选"></button>
 
+    <!-- Tab 切换（颜文字 / 图标，由 app.js 渲染） -->
+    <nav class="tabs" id="tabs" role="tablist" aria-label="内容切换"></nav>
+
     <!-- 搜索框（由 app.js 渲染） -->
     <div id="search-bar"></div>
 
@@ -28,7 +31,7 @@
         <!-- 内容区 -->
         <div class="content">
             <!-- 分类卡片网格（由 app.js 渲染） -->
-            <main class="grid" id="grid"></main>
+            <main class="grid" id="grid" role="tabpanel" aria-label="内容分类"></main>
 
             <!-- 底部特性区（由 app.js 渲染） -->
             <section class="features" id="features"></section>
@@ -44,6 +47,7 @@
 
 <!-- 数据：先于 app.js 加载 -->
 <script src="./data.js"></script>
+<script src="./icons.js"></script>
 <!-- 逻辑 -->
 <script src="./app.js"></script>
 
