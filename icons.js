@@ -7,7 +7,7 @@ window.KAOMOJI_ICONS = {
     meta: {
         title: 'Emoji 图标库',
         icon: '😊',
-        subtitle: '常用 Emoji 表情符号 · 点击即可复制',
+        subtitle: '从笑脸到萌宠，从美食到出行 · 400+ 常用 Emoji 一目了然，点击即复制',
         totalLabel: '点击 复制',
         totalCount: 15
     },

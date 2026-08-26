@@ -7,7 +7,7 @@ window.KAOMOJI_SYMBOLS = {
     meta: {
         title: '特殊符号库',
         icon: '★',
-        subtitle: '键盘打不出的装饰符号 · 点击即可复制',
+        subtitle: '键盘打不出的星星爱心、箭头序号、数学货币 · 200+ 特殊符号随手复制',
         totalLabel: '点击 复制',
         totalCount: 17
     },

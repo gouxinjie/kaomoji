@@ -8,7 +8,7 @@ window.KAOMOJI_RADICALS = {
     meta: {
         title: '汉字部首',
         icon: '艹',
-        subtitle: '康熙字典 214 部首 · 按位置·笔画分类',
+        subtitle: '康熙字典 214 部首，按构字位置与笔画整理 · 学汉字查部首更顺手',
         totalLabel: '点击 复制',
         totalCount: 6
     },

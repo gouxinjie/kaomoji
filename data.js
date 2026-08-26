@@ -8,7 +8,7 @@ window.KAOMOJI_DATA = {
     meta: {
         title: '颜文字图鉴',
         icon: '(⊙_⊙)',
-        subtitle: '从嘲讽到撒娇，从极简到沙雕 · 点击颜文字即可复制',
+        subtitle: '从嘲讽到撒娇，从极简到沙雕，从含蓄到放肆 · 百余种颜文字一键复制，让表达更有温度',
         totalLabel: '点击 复制',
         totalCount: 151
     },
