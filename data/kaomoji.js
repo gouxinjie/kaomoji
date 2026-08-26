@@ -683,7 +683,7 @@ window.KAOMOJI_DATA = {
             "id": "awkward",
             "name": "无语 · 尴尬",
             "emoji": "🙄",
-            "badge": 24,
+            "badge": 28,
             "items": [
                 {
                     "symbol": "¯\\_(ツ)_/¯",
@@ -780,6 +780,22 @@ window.KAOMOJI_DATA = {
                 {
                     "symbol": "(；ﾟдﾟ)",
                     "desc": "目瞪口呆"
+                },
+                {
+                    "symbol": "(´-_ゝ｀)",
+                    "desc": "无语斜眼"
+                },
+                {
+                    "symbol": "(￢_￢)",
+                    "desc": "斜眼嫌弃"
+                },
+                {
+                    "symbol": "(￣ー￣)",
+                    "desc": "面无表情"
+                },
+                {
+                    "symbol": "(´･_･)`",
+                    "desc": "无语沉默"
                 }
             ]
         },
@@ -1511,7 +1527,7 @@ window.KAOMOJI_DATA = {
             "id": "proud",
             "name": "超得意 · 骄傲",
             "emoji": "😎",
-            "badge": 15,
+            "badge": 20,
             "items": [
                 {
                     "symbol": "(๑•̀ㅂ•́)و✧",
@@ -1572,6 +1588,26 @@ window.KAOMOJI_DATA = {
                 {
                     "symbol": "(๑•̀д•́๑)و",
                     "desc": "霸气挥拳"
+                },
+                {
+                    "symbol": "(✧ω✧)",
+                    "desc": "闪闪发光"
+                },
+                {
+                    "symbol": "(•̀ᴗ•́)و",
+                    "desc": "得意振作"
+                },
+                {
+                    "symbol": "(￣ε(#￣)",
+                    "desc": "得意坏笑"
+                },
+                {
+                    "symbol": "(¬‿¬)",
+                    "desc": "狡黠得意"
+                },
+                {
+                    "symbol": "(★≧▽≦)",
+                    "desc": "星星大笑"
                 }
             ]
         },
@@ -1767,7 +1803,7 @@ window.KAOMOJI_DATA = {
             "id": "shy",
             "name": "害羞 · 脸红",
             "emoji": "😊",
-            "badge": 10,
+            "badge": 15,
             "items": [
                 {
                     "symbol": "(〃ω〃)",
@@ -1808,6 +1844,26 @@ window.KAOMOJI_DATA = {
                 {
                     "symbol": "(≧◡≦)",
                     "desc": "害羞眯眼"
+                },
+                {
+                    "symbol": "(´∇｀)",
+                    "desc": "娇羞一笑"
+                },
+                {
+                    "symbol": "(✿◠‿◠)",
+                    "desc": "花儿般害羞"
+                },
+                {
+                    "symbol": "(◕‿◕✿)",
+                    "desc": "乖巧害羞"
+                },
+                {
+                    "symbol": "(˘͈ ᵕ ˘͈๑)",
+                    "desc": "抿嘴羞"
+                },
+                {
+                    "symbol": "(/ω＼)",
+                    "desc": "捂脸躲闪"
                 }
             ]
         },
@@ -3848,129 +3904,6 @@ window.KAOMOJI_DATA = {
             ]
         },
         {
-            "id": "examstress",
-            "name": "考试前 · 复习崩溃",
-            "emoji": "📚",
-            "badge": 8,
-            "items": [
-                {
-                    "symbol": "(；д；) 记不住了",
-                    "desc": "记不住了"
-                },
-                {
-                    "symbol": "(இ﹏இ) 心态崩了",
-                    "desc": "心态崩了"
-                },
-                {
-                    "symbol": "(´；ω；｀) 我是不是要挂",
-                    "desc": "我是不是要挂"
-                },
-                {
-                    "symbol": "(；°Д°) 还有这么多",
-                    "desc": "还有这么多"
-                },
-                {
-                    "symbol": "(＃°Д°) 来不及了",
-                    "desc": "来不及了"
-                },
-                {
-                    "symbol": "(；一_一) 摆烂算了",
-                    "desc": "摆烂算了"
-                },
-                {
-                    "symbol": "(´-﹏-) 不会啊`",
-                    "desc": "不会啊"
-                },
-                {
-                    "symbol": "(T_T) 救命",
-                    "desc": "救命"
-                }
-            ]
-        },
-        {
-            "id": "marriagepressure",
-            "name": "被催婚 · 被催生",
-            "emoji": "👵",
-            "badge": 8,
-            "items": [
-                {
-                    "symbol": "(；一_一) 再说吧",
-                    "desc": "再说吧"
-                },
-                {
-                    "symbol": "(￣ー￣) 不急",
-                    "desc": "不急"
-                },
-                {
-                    "symbol": "(¬_¬) 关你什么事",
-                    "desc": "关你什么事"
-                },
-                {
-                    "symbol": "(´-ω-｀) 随便",
-                    "desc": "随便"
-                },
-                {
-                    "symbol": "(；°Д°) 别问了",
-                    "desc": "别问了"
-                },
-                {
-                    "symbol": "(￣ヘ￣) 听不懂",
-                    "desc": "听不懂"
-                },
-                {
-                    "symbol": "(・へ・) 我还小",
-                    "desc": "我还小"
-                },
-                {
-                    "symbol": "(´,_ゝ｀) 下一位",
-                    "desc": "下一位"
-                }
-            ]
-        },
-        {
-            "id": "rainyday",
-            "name": "下雨天不想出门",
-            "emoji": "🌧️",
-            "badge": 8,
-            "items": [
-                {
-                    "symbol": "(－_－) 不出门",
-                    "desc": "不出门"
-                },
-                {
-                    "symbol": "(￣ρ￣) 下雨了真好",
-                    "desc": "下雨了真好"
-                },
-                {
-                    "symbol": "(´-ω-｀) 合法躺平",
-                    "desc": "合法躺平"
-                },
-                {
-                    "symbol": "(∪､∪) 睡觉",
-                    "desc": "睡觉"
-                },
-                {
-                    "symbol": "(｡-_-｡) 哪也不去",
-                    "desc": "哪也不去"
-                },
-                {
-                    "symbol": "(－ω－) 完美借口",
-                    "desc": "完美借口"
-                },
-                {
-                    "symbol": "(￣o￣) 继续躺",
-                    "desc": "继续躺"
-                },
-                {
-                    "symbol": "(´,_ゝ｀) 谁去谁是狗",
-                    "desc": "谁去谁是狗"
-                }
-            ]
-        },
-
-
-
-        {
             "id": "zen",
             "name": "超佛系 · 随缘人设",
             "emoji": "🍃",
@@ -4019,55 +3952,6 @@ window.KAOMOJI_DATA = {
             ]
         },
         {
-            "id": "grinder",
-            "name": "超卷王 · 努力人设",
-            "emoji": "📈",
-            "badge": 10,
-            "items": [
-                {
-                    "symbol": "(｀・ω・´)",
-                    "desc": "卷王"
-                },
-                {
-                    "symbol": "(•̀ᴗ•́)و",
-                    "desc": "努力卷"
-                },
-                {
-                    "symbol": "(๑•̀ㅂ•́)",
-                    "desc": "认真卷"
-                },
-                {
-                    "symbol": "(ง •̀_•́)ง",
-                    "desc": "斗志卷"
-                },
-                {
-                    "symbol": "(๑˃̵ᴗ˂̵)و",
-                    "desc": "拼命卷"
-                },
-                {
-                    "symbol": "(•̀ω•́)✧",
-                    "desc": "闪耀卷"
-                },
-                {
-                    "symbol": "(｀д´)",
-                    "desc": "卷到较劲"
-                },
-                {
-                    "symbol": "(¬_¬)",
-                    "desc": "卷王盯"
-                },
-                {
-                    "symbol": "(๑˃̶͈̀ロ˂̶͈́)و",
-                    "desc": "激情卷"
-                },
-                {
-                    "symbol": "(•̀ᴗ•́) 我还能卷",
-                    "desc": "我还能卷"
-                }
-            ]
-        },
-
-        {
             "id": "crush",
             "name": "暗恋中",
             "emoji": "💘",
@@ -4115,30 +3999,7 @@ window.KAOMOJI_DATA = {
                 }
             ]
         },
-        {
-            "id": "reconcile",
-            "name": "复合边缘",
-            "emoji": "💞",
-            "badge": 4,
-            "items": [
-                {
-                    "symbol": "(´；ω；｀)",
-                    "desc": "想复合"
-                },
-                {
-                    "symbol": "(；д；)",
-                    "desc": "纠结"
-                },
-                {
-                    "symbol": "(இ﹏இ)",
-                    "desc": "难过"
-                },
-                {
-                    "symbol": "(T_T) 还要不要继续",
-                    "desc": "还要不要继续"
-                }
-            ]
-        },
+ 
 
         {
             "id": "exex",
@@ -4191,31 +4052,6 @@ window.KAOMOJI_DATA = {
         },
 
         {
-            "id": "musiccry",
-            "name": "听哭了",
-            "emoji": "🎶",
-            "badge": 4,
-            "items": [
-                {
-                    "symbol": "(；д；)",
-                    "desc": "泪目"
-                },
-                {
-                    "symbol": "(´；ω；｀)",
-                    "desc": "想哭"
-                },
-                {
-                    "symbol": "(இ﹏இ)",
-                    "desc": "哽咽"
-                },
-                {
-                    "symbol": "(T_T) 歌词写的是我",
-                    "desc": "歌词写的是我"
-                }
-            ]
-        },
-
-        {
             "id": "trafficjam",
             "name": "堵车中",
             "emoji": "🚗",
@@ -4239,150 +4075,7 @@ window.KAOMOJI_DATA = {
                 }
             ]
         },
-        {
-            "id": "graduate",
-            "name": "刚毕业",
-            "emoji": "🎓",
-            "badge": 4,
-            "items": [
-                {
-                    "symbol": "(；°Д°) 以后怎么办",
-                    "desc": "以后怎么办"
-                },
-                {
-                    "symbol": "(´-﹏-)` 好迷茫",
-                    "desc": "好迷茫"
-                },
-                {
-                    "symbol": "(★ω★)/ 新开始！`",
-                    "desc": "新开始"
-                },
-                {
-                    "symbol": "(；一_一) 先躺平一下",
-                    "desc": "先躺平一下"
-                }
-            ]
-        },
-        {
-            "id": "firstyear",
-            "name": "上班一年内",
-            "emoji": "💼",
-            "badge": 4,
-            "items": [
-                {
-                    "symbol": "(；一_一) 原来是这样",
-                    "desc": "原来是这样"
-                },
-                {
-                    "symbol": "(´-_ゝ｀) 学到了",
-                    "desc": "学到了"
-                },
-                {
-                    "symbol": "(¬_¬) 职场啊",
-                    "desc": "职场啊"
-                },
-                {
-                    "symbol": "(￣ー￣) 适应中",
-                    "desc": "适应中"
-                }
-            ]
-        },
-        {
-            "id": "thirty",
-            "name": "三十岁前后",
-            "emoji": "⏳",
-            "badge": 4,
-            "items": [
-                {
-                    "symbol": "(；一_一) 时间好快",
-                    "desc": "时间好快"
-                },
-                {
-                    "symbol": "(´-ω-｀) 该认真了吗",
-                    "desc": "该认真了吗"
-                },
-                {
-                    "symbol": "(￣ρ￣) 还是想躺",
-                    "desc": "还是想躺"
-                },
-                {
-                    "symbol": "(・へ・) 随便吧",
-                    "desc": "随便吧"
-                }
-            ]
-        },
-        {
-            "id": "retire",
-            "name": "退休幻想",
-            "emoji": "🏖️",
-            "badge": 4,
-            "items": [
-                {
-                    "symbol": "(－_－) 躺平人生",
-                    "desc": "躺平人生"
-                },
-                {
-                    "symbol": "(￣ρ￣) 每天睡觉",
-                    "desc": "每天睡觉"
-                },
-                {
-                    "symbol": "(´-ω-｀) 理想生活",
-                    "desc": "理想生活"
-                },
-                {
-                    "symbol": "(∪､∪) 谁也不见",
-                    "desc": "谁也不见"
-                }
-            ]
-        },
-        {
-            "id": "lowbattery",
-            "name": "手机没电",
-            "emoji": "🔋",
-            "badge": 4,
-            "items": [
-                {
-                    "symbol": "(；°Д°) 要关机了！",
-                    "desc": "要关机了"
-                },
-                {
-                    "symbol": "(＃°Д°) 充电宝呢",
-                    "desc": "充电宝呢"
-                },
-                {
-                    "symbol": "(´⊙ω⊙)`",
-                    "desc": "慌"
-                },
-                {
-                    "symbol": "(；一_一) 焦虑",
-                    "desc": "焦虑"
-                }
-            ]
-        },
-        {
-            "id": "slowinternet",
-            "name": "网速很慢",
-            "emoji": "🐌",
-            "badge": 4,
-            "items": [
-                {
-                    "symbol": "(－_－)",
-                    "desc": "无奈"
-                },
-                {
-                    "symbol": "(￣ρ￣)",
-                    "desc": "等"
-                },
-                {
-                    "symbol": "(；一_一) 转圈圈",
-                    "desc": "转圈圈"
-                },
-                {
-                    "symbol": "(´-_ゝ｀) 快点啊",
-                    "desc": "快点啊"
-                }
-            ]
-        },
+    
         {
             "id": "systemupdate",
             "name": "系统更新",
@@ -4431,174 +4124,7 @@ window.KAOMOJI_DATA = {
                 }
             ]
         },
-        {
-            "id": "schoolstart",
-            "name": "开学前",
-            "emoji": "🏫",
-            "badge": 4,
-            "items": [
-                {
-                    "symbol": "(；д；) 不想开学",
-                    "desc": "不想开学"
-                },
-                {
-                    "symbol": "(இ﹏இ) 假期呢",
-                    "desc": "假期呢"
-                },
-                {
-                    "symbol": "(´；ω；｀) 作业还没写",
-                    "desc": "作业还没写"
-                },
-                {
-                    "symbol": "(T_T) 好快",
-                    "desc": "好快"
-                }
-            ]
-        },
-        {
-            "id": "attentive",
-            "name": "认真听课",
-            "emoji": "🎓",
-            "badge": 4,
-            "items": [
-                {
-                    "symbol": "(｀・ω・´)",
-                    "desc": "专注"
-                },
-                {
-                    "symbol": "(•̀ᴗ•́)",
-                    "desc": "认真"
-                },
-                {
-                    "symbol": "(๑•̀ㅂ•́)",
-                    "desc": "用心"
-                },
-                {
-                    "symbol": "(´-_ゝ｀) 记下了",
-                    "desc": "记下了"
-                }
-            ]
-        },
-        {
-            "id": "daydream",
-            "name": "走神中",
-            "emoji": "☁️",
-            "badge": 4,
-            "items": [
-                {
-                    "symbol": "(－_－)",
-                    "desc": "放空"
-                },
-                {
-                    "symbol": "(￣ρ￣)",
-                    "desc": "发呆"
-                },
-                {
-                    "symbol": "(´-ω-｀) 在想晚饭",
-                    "desc": "在想晚饭"
-                },
-                {
-                    "symbol": "(；一_一) 老师说什么了",
-                    "desc": "老师说什么了"
-                }
-            ]
-        },
-        {
-            "id": "examweek",
-            "name": "考前一周",
-            "emoji": "📚",
-            "badge": 4,
-            "items": [
-                {
-                    "symbol": "(；°Д°) 来不及了",
-                    "desc": "来不及了"
-                },
-                {
-                    "symbol": "(＃°Д°) 通宵吧",
-                    "desc": "通宵吧"
-                },
-                {
-                    "symbol": "(´；ω；｀) 好慌",
-                    "desc": "好慌"
-                },
-                {
-                    "symbol": "(；д；) 心态崩了",
-                    "desc": "心态崩了"
-                }
-            ]
-        },
-        {
-            "id": "scorching",
-            "name": "暴晒",
-            "emoji": "☀️",
-            "badge": 4,
-            "items": [
-                {
-                    "symbol": "(；一_一) 要融化了",
-                    "desc": "要融化了"
-                },
-                {
-                    "symbol": "(´-ω-｀) 中暑边缘",
-                    "desc": "中暑边缘"
-                },
-                {
-                    "symbol": "(－_－) 不想出门",
-                    "desc": "不想出门"
-                },
-                {
-                    "symbol": "(￣ρ￣) 空调救我",
-                    "desc": "空调救我"
-                }
-            ]
-        },
-        {
-            "id": "heavyrain",
-            "name": "暴雨",
-            "emoji": "⛈️",
-            "badge": 4,
-            "items": [
-                {
-                    "symbol": "(；°Д°) 好大的雨",
-                    "desc": "好大的雨"
-                },
-                {
-                    "symbol": "(＃°Д°) 没带伞",
-                    "desc": "没带伞"
-                },
-                {
-                    "symbol": "(´⊙ω⊙)`",
-                    "desc": "懵"
-                },
-                {
-                    "symbol": "(；一_一) 等雨停",
-                    "desc": "等雨停"
-                }
-            ]
-        },
-        {
-            "id": "freezing",
-            "name": "极冷",
-            "emoji": "🥶",
-            "badge": 4,
-            "items": [
-                {
-                    "symbol": "(；°Д°) 好冷！",
-                    "desc": "好冷"
-                },
-                {
-                    "symbol": "(´-﹏-)` 手冻僵了",
-                    "desc": "手冻僵了"
-                },
-                {
-                    "symbol": "(∪､∪) 缩成一团",
-                    "desc": "缩成一团"
-                },
-                {
-                    "symbol": "(つ≧▽≦)つ 求暖气",
-                    "desc": "求暖气"
-                }
-            ]
-        },
+    
         {
             "id": "wildanimal",
             "name": "魔性动物系",
@@ -4780,94 +4306,6 @@ window.KAOMOJI_DATA = {
             ]
         },
         {
-            "id": "longcombo",
-            "name": "超长组合型",
-            "emoji": "🎪",
-            "badge": 8,
-            "items": [
-                {
-                    "symbol": "ヽ(｀⌒´)ノ",
-                    "desc": "愤怒"
-                },
-                {
-                    "symbol": "ヽ(´▽｀)/",
-                    "desc": "开心"
-                },
-                {
-                    "symbol": "ヽ(｀Д´)ﾉ",
-                    "desc": "抓狂"
-                },
-                {
-                    "symbol": "ヽ(｀皿´)ﾉ",
-                    "desc": "暴怒"
-                },
-                {
-                    "symbol": "ヽ(´ー｀)ノ",
-                    "desc": "悠闲"
-                },
-                {
-                    "symbol": "ヽ(・∀・)ﾉ",
-                    "desc": "轻快"
-                },
-                {
-                    "symbol": "ヽ(´ω｀)ノ",
-                    "desc": "治愈"
-                },
-                {
-                    "symbol": "ヽ(´▽｀)ノ♪",
-                    "desc": "哼歌"
-                }
-            ]
-        },
-        {
-            "id": "specialcombo",
-            "name": "特殊符号组合",
-            "emoji": "🌟",
-            "badge": 10,
-            "items": [
-                {
-                    "symbol": "(ง •̀_•́)ง",
-                    "desc": "准备打架"
-                },
-                {
-                    "symbol": "(๑•̀ㅂ•́)و✧",
-                    "desc": "握拳有干劲"
-                },
-                {
-                    "symbol": "(｀・ω・´)ゞ",
-                    "desc": "乖巧敬礼"
-                },
-                {
-                    "symbol": "( ˘ ³˘)♥",
-                    "desc": "飞吻"
-                },
-                {
-                    "symbol": "(´｡• ᵕ •｡) ♡`",
-                    "desc": "温柔心动"
-                },
-                {
-                    "symbol": "(´▽ʃ♡)ƪ`",
-                    "desc": "捧心"
-                },
-                {
-                    "symbol": "(˶‾᷄ ⁻̫ ‾᷅˵)",
-                    "desc": "害羞脸红"
-                },
-                {
-                    "symbol": "(๑¯◡¯๑)",
-                    "desc": "憨憨傻笑"
-                },
-                {
-                    "symbol": "(っ˘ω˘ς)",
-                    "desc": "猫咪蜷缩"
-                },
-                {
-                    "symbol": "(ノ｀Д´)ノ彡┻━┻",
-                    "desc": "掀桌升级版"
-                }
-            ]
-        },
-        {
             "id": "minimal3",
             "name": "极简 · 单字符变体",
             "emoji": "⚫",
@@ -4955,54 +4393,7 @@ window.KAOMOJI_DATA = {
                 }
             ]
         },
-        {
-            "id": "gaming",
-            "name": "打游戏专用",
-            "emoji": "🎮",
-            "badge": 10,
-            "items": [
-                {
-                    "symbol": "(ง •̀_•́)ง",
-                    "desc": "准备开团"
-                },
-                {
-                    "symbol": "(╬ Ò﹏Ó)",
-                    "desc": "强忍怒火"
-                },
-                {
-                    "symbol": "(｀へ´)╯",
-                    "desc": "甩锅"
-                },
-                {
-                    "symbol": "(´;ω;｀)",
-                    "desc": "被单杀"
-                },
-                {
-                    "symbol": "(ﾟ∀ﾟ)",
-                    "desc": "赢了嘚瑟"
-                },
-                {
-                    "symbol": "(；´Д)`",
-                    "desc": "被翻盘"
-                },
-                {
-                    "symbol": "(☞ﾟ∀ﾟ)☞",
-                    "desc": "指队友你的锅"
-                },
-                {
-                    "symbol": "(／‵Д′)／~ ╧╧",
-                    "desc": "怒摔键盘"
-                },
-                {
-                    "symbol": "(´・ω・)っ由",
-                    "desc": "递茶安慰"
-                },
-                {
-                    "symbol": "(｀・ω・´)ｂ",
-                    "desc": "这波我carry"
-                }
-            ]
-        },
+       
         {
             "id": "office",
             "name": "职场专用",
@@ -5135,54 +4526,7 @@ window.KAOMOJI_DATA = {
                 }
             ]
         },
-        {
-            "id": "ultimate",
-            "name": "终极 · 宇宙级",
-            "emoji": "🪐",
-            "badge": 10,
-            "items": [
-                {
-                    "symbol": "(╯‵□′)╯︵┻━┻",
-                    "desc": "掀桌标准版"
-                },
-                {
-                    "symbol": "┬─┬ ノ( ゜-゜ノ)",
-                    "desc": "扶桌治愈系"
-                },
-                {
-                    "symbol": "_(:3 」∠)_",
-                    "desc": "躺平最经典"
-                },
-                {
-                    "symbol": "(ﾟ⊿ﾟ)",
-                    "desc": "大脑短路"
-                },
-                {
-                    "symbol": "(；´ρ)`",
-                    "desc": "虚脱"
-                },
-                {
-                    "symbol": "(´ཀ」 ∠)_`",
-                    "desc": "哭到倒地抽搐"
-                },
-                {
-                    "symbol": "(°ཀ°)",
-                    "desc": "吐了"
-                },
-                {
-                    "symbol": "(☉_☉)",
-                    "desc": "呆若木鸡"
-                },
-                {
-                    "symbol": "(｀∀´)Ψ",
-                    "desc": "邪魅一笑"
-                },
-                {
-                    "symbol": "(⌐■_■)",
-                    "desc": "墨镜一戴"
-                }
-            ]
-        },
+       
         {
             "id": "greeting",
             "name": "打招呼 · 再见",
@@ -5237,14 +4581,6 @@ window.KAOMOJI_DATA = {
                     "symbol": "(￣▽￣)",
                     "desc": "没问题"
                 },
-                {
-                    "symbol": "(๑•̀ㅂ•́)و",
-                    "desc": "明白"
-                },
-                {
-                    "symbol": "(•̀ᴗ•́)و",
-                    "desc": "收到！"
-                }
             ]
         },
         {
