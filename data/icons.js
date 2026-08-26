@@ -18,7 +18,7 @@ window.KAOMOJI_ICONS = {
             "id": "face",
             "name": "表情 · 笑脸",
             "emoji": "😀",
-            "badge": 41,
+            "badge": 44,
             "items": [
                 { "symbol": "😀", "desc": "开心大笑" },
                 { "symbol": "😁", "desc": "露齿笑" },
@@ -60,14 +60,17 @@ window.KAOMOJI_ICONS = {
                 { "symbol": "🫠", "desc": "融化瘫软" },
                 { "symbol": "🥲", "desc": "含泪微笑" },
                 { "symbol": "🤭", "desc": "捂嘴笑" },
-                { "symbol": "🫢", "desc": "捂眼偷看" }
+                { "symbol": "🫢", "desc": "捂眼偷看" },
+                { "symbol": "😐", "desc": "中性脸" },
+                { "symbol": "😎", "desc": "墨镜酷" },
+                { "symbol": "🤓", "desc": "书呆子眼镜" }
             ]
         },
         {
             "id": "shockface",
             "name": "表情 · 震惊尴尬",
             "emoji": "😳",
-            "badge": 28,
+            "badge": 32,
             "items": [
                 { "symbol": "😳", "desc": "脸红尴尬" },
                 { "symbol": "😱", "desc": "吓到尖叫" },
@@ -96,7 +99,11 @@ window.KAOMOJI_ICONS = {
                 { "symbol": "🥱", "desc": "打哈欠" },
                 { "symbol": "😴", "desc": "睡觉" },
                 { "symbol": "😷", "desc": "戴口罩" },
-                { "symbol": "🤒", "desc": "发烧" }
+                { "symbol": "🤒", "desc": "发烧" },
+                { "symbol": "🥶", "desc": "冷到发抖" },
+                { "symbol": "🥵", "desc": "热到融化" },
+                { "symbol": "🤢", "desc": "恶心" },
+                { "symbol": "😕", "desc": "困惑" }
             ]
         },
         {
@@ -129,7 +136,7 @@ window.KAOMOJI_ICONS = {
             "id": "gesture",
             "name": "手势 · 比赞",
             "emoji": "👍",
-            "badge": 26,
+            "badge": 30,
             "items": [
                 { "symbol": "👍", "desc": "点赞" },
                 { "symbol": "👎", "desc": "点踩" },
@@ -156,14 +163,18 @@ window.KAOMOJI_ICONS = {
                 { "symbol": "🫶", "desc": "双手比心" },
                 { "symbol": "🫰", "desc": "手指比心" },
                 { "symbol": "🤌", "desc": "捏指手势" },
-                { "symbol": "💪", "desc": "肌肉加油" }
+                { "symbol": "💪", "desc": "肌肉加油" },
+                { "symbol": "🫵", "desc": "手指点你" },
+                { "symbol": "🤙", "desc": "打电话手势" },
+                { "symbol": "✋", "desc": "手掌举起" },
+                { "symbol": "🖖", "desc": "瓦肯举手礼" }
             ]
         },
         {
             "id": "animal",
             "name": "动物 · 萌宠",
             "emoji": "🐶",
-            "badge": 39,
+            "badge": 45,
             "items": [
                 { "symbol": "🐶", "desc": "狗" },
                 { "symbol": "🐱", "desc": "猫" },
@@ -203,14 +214,20 @@ window.KAOMOJI_ICONS = {
                 { "symbol": "🐬", "desc": "海豚" },
                 { "symbol": "🐟", "desc": "鱼" },
                 { "symbol": "🦈", "desc": "鲨鱼" },
-                { "symbol": "🦋", "desc": "蝴蝶" }
+                { "symbol": "🦋", "desc": "蝴蝶" },
+                { "symbol": "🐈", "desc": "黑猫" },
+                { "symbol": "🦮", "desc": "导盲犬" },
+                { "symbol": "🐕", "desc": "狗" },
+                { "symbol": "🐇", "desc": "兔子" },
+                { "symbol": "🦇", "desc": "蝙蝠" },
+                { "symbol": "🐝", "desc": "蜜蜂" }
             ]
         },
         {
             "id": "food",
             "name": "美食 · 吃喝",
             "emoji": "🍔",
-            "badge": 48,
+            "badge": 54,
             "items": [
                 { "symbol": "🍔", "desc": "汉堡" },
                 { "symbol": "🍟", "desc": "薯条" },
@@ -259,14 +276,20 @@ window.KAOMOJI_ICONS = {
                 { "symbol": "🥭", "desc": "芒果" },
                 { "symbol": "🥝", "desc": "猕猴桃" },
                 { "symbol": "🫐", "desc": "蓝莓" },
-                { "symbol": "🍅", "desc": "番茄" }
+                { "symbol": "🍅", "desc": "番茄" },
+                { "symbol": "🍳", "desc": "煎蛋" },
+                { "symbol": "🥚", "desc": "鸡蛋" },
+                { "symbol": "🧀", "desc": "奶酪" },
+                { "symbol": "🥓", "desc": "培根" },
+                { "symbol": "🍗", "desc": "鸡腿" },
+                { "symbol": "🥦", "desc": "西兰花" }
             ]
         },
         {
             "id": "activity",
             "name": "运动 · 活动",
             "emoji": "⚽",
-            "badge": 27,
+            "badge": 30,
             "items": [
                 { "symbol": "⚽", "desc": "足球" },
                 { "symbol": "🏀", "desc": "篮球" },
@@ -294,14 +317,17 @@ window.KAOMOJI_ICONS = {
                 { "symbol": "🥉", "desc": "铜牌" },
                 { "symbol": "🧩", "desc": "拼图" },
                 { "symbol": "🎨", "desc": "调色板" },
-                { "symbol": "🎭", "desc": "面具" }
+                { "symbol": "🎭", "desc": "面具" },
+                { "symbol": "🧘", "desc": "瑜伽打坐" },
+                { "symbol": "🏹", "desc": "射箭" },
+                { "symbol": "🎣", "desc": "钓鱼" }
             ]
         },
         {
             "id": "music",
             "name": "乐器 · 音乐",
             "emoji": "🎵",
-            "badge": 18,
+            "badge": 17,
             "items": [
                 { "symbol": "🎵", "desc": "音符" },
                 { "symbol": "🎶", "desc": "音符串" },
@@ -319,15 +345,14 @@ window.KAOMOJI_ICONS = {
                 { "symbol": "🪘", "desc": "非洲鼓" },
                 { "symbol": "🎙️", "desc": "录音麦克风" },
                 { "symbol": "🎚️", "desc": "调音滑块" },
-                { "symbol": "🎛️", "desc": "调音台" },
-                { "symbol": "📻", "desc": "收音机" }
+                { "symbol": "🎛️", "desc": "调音台" }
             ]
         },
         {
             "id": "nature",
             "name": "自然 · 天气",
             "emoji": "🌈",
-            "badge": 28,
+            "badge": 31,
             "items": [
                 { "symbol": "🌈", "desc": "彩虹" },
                 { "symbol": "☀️", "desc": "晴天" },
@@ -356,21 +381,22 @@ window.KAOMOJI_ICONS = {
                 { "symbol": "🍃", "desc": "树叶" },
                 { "symbol": "🍂", "desc": "落叶" },
                 { "symbol": "🍄", "desc": "蘑菇" },
-                { "symbol": "☘️", "desc": "三叶草" }
+                { "symbol": "☘️", "desc": "三叶草" },
+                { "symbol": "☁️", "desc": "云朵" },
+                { "symbol": "⛄", "desc": "雪人" },
+                { "symbol": "☔", "desc": "雨伞" }
             ]
         },
         {
             "id": "symbol",
             "name": "符号 · 标记",
             "emoji": "⭐",
-            "badge": 26,
+            "badge": 23,
             "items": [
-                { "symbol": "⭐", "desc": "星星" },
                 { "symbol": "✨", "desc": "闪光" },
                 { "symbol": "🔥", "desc": "火" },
                 { "symbol": "💧", "desc": "水滴" },
                 { "symbol": "⚡", "desc": "闪电" },
-                { "symbol": "🎵", "desc": "音符" },
                 { "symbol": "💯", "desc": "满分" },
                 { "symbol": "❗", "desc": "感叹号" },
                 { "symbol": "❓", "desc": "问号" },
@@ -388,7 +414,6 @@ window.KAOMOJI_ICONS = {
                 { "symbol": "👀", "desc": "眼睛" },
                 { "symbol": "💬", "desc": "对话气泡" },
                 { "symbol": "💭", "desc": "思考气泡" },
-                { "symbol": "💡", "desc": "灵感" },
                 { "symbol": "💢", "desc": "怒气" },
                 { "symbol": "💦", "desc": "汗滴" }
             ]
@@ -397,7 +422,7 @@ window.KAOMOJI_ICONS = {
             "id": "celebration",
             "name": "庆祝 · 场景",
             "emoji": "🎉",
-            "badge": 16,
+            "badge": 18,
             "items": [
                 { "symbol": "🎉", "desc": "庆祝彩带" },
                 { "symbol": "🎊", "desc": "庆祝礼花" },
@@ -414,7 +439,9 @@ window.KAOMOJI_ICONS = {
                 { "symbol": "🎃", "desc": "南瓜灯" },
                 { "symbol": "🎄", "desc": "圣诞树" },
                 { "symbol": "🎅", "desc": "圣诞老人" },
-                { "symbol": "🎓", "desc": "毕业帽" }
+                { "symbol": "🎓", "desc": "毕业帽" },
+                { "symbol": "🏅", "desc": "奖牌" },
+                { "symbol": "🎟️", "desc": "门票" }
             ]
         },
         {
@@ -449,7 +476,7 @@ window.KAOMOJI_ICONS = {
             "id": "travel",
             "name": "出行 · 交通",
             "emoji": "🚗",
-            "badge": 32,
+            "badge": 34,
             "items": [
                 { "symbol": "🚗", "desc": "轿车" },
                 { "symbol": "🚕", "desc": "出租车" },
@@ -482,14 +509,16 @@ window.KAOMOJI_ICONS = {
                 { "symbol": "🛸", "desc": "飞碟" },
                 { "symbol": "🚡", "desc": "缆车" },
                 { "symbol": "🛶", "desc": "独木舟" },
-                { "symbol": "🚦", "desc": "红绿灯" }
+                { "symbol": "🚦", "desc": "红绿灯" },
+                { "symbol": "🚨", "desc": "警车灯" },
+                { "symbol": "⛽", "desc": "加油站" }
             ]
         },
         {
             "id": "place",
             "name": "建筑 · 地点",
             "emoji": "🏠",
-            "badge": 16,
+            "badge": 18,
             "items": [
                 { "symbol": "🏠", "desc": "房子" },
                 { "symbol": "🏡", "desc": "带花园小屋" },
@@ -506,14 +535,16 @@ window.KAOMOJI_ICONS = {
                 { "symbol": "🕌", "desc": "清真寺" },
                 { "symbol": "🏛️", "desc": "古典建筑" },
                 { "symbol": "🗽", "desc": "自由女神像" },
-                { "symbol": "🗼", "desc": "东京铁塔" }
+                { "symbol": "🗼", "desc": "东京铁塔" },
+                { "symbol": "🌅", "desc": "日出" },
+                { "symbol": "🌃", "desc": "城市夜景" }
             ]
         },
         {
             "id": "life",
             "name": "生活 · 物品",
             "emoji": "📱",
-            "badge": 30,
+            "badge": 35,
             "items": [
                 { "symbol": "📱", "desc": "手机" },
                 { "symbol": "💻", "desc": "笔记本电脑" },
@@ -544,7 +575,12 @@ window.KAOMOJI_ICONS = {
                 { "symbol": "⌨️", "desc": "键盘" },
                 { "symbol": "🔒", "desc": "上锁" },
                 { "symbol": "🔓", "desc": "开锁" },
-                { "symbol": "🔍", "desc": "放大镜" }
+                { "symbol": "🔍", "desc": "放大镜" },
+                { "symbol": "📲", "desc": "手机来电" },
+                { "symbol": "🕹️", "desc": "游戏摇杆" },
+                { "symbol": "🔬", "desc": "显微镜" },
+                { "symbol": "🛠️", "desc": "锤子扳手" },
+                { "symbol": "📺", "desc": "电视" }
             ]
         }
     ],
