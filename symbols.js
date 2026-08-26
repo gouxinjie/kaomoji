@@ -9,7 +9,7 @@ window.KAOMOJI_SYMBOLS = {
         icon: '★',
         subtitle: '键盘打不出的装饰符号 · 点击即可复制',
         totalLabel: '点击 复制',
-        totalCount: 12
+        totalCount: 17
     },
 
     // 分类
@@ -18,7 +18,7 @@ window.KAOMOJI_SYMBOLS = {
             "id": "star",
             "name": "装饰星星",
             "emoji": "★",
-            "badge": 12,
+            "badge": 18,
             "items": [
                 { "symbol": "★", "desc": "实心星" },
                 { "symbol": "☆", "desc": "空心星" },
@@ -31,14 +31,20 @@ window.KAOMOJI_SYMBOLS = {
                 { "symbol": "✭", "desc": "细八角星" },
                 { "symbol": "✮", "desc": "实心八角星" },
                 { "symbol": "✯", "desc": "旋转星" },
-                { "symbol": "≛", "desc": "三星星" }
+                { "symbol": "≛", "desc": "三星星" },
+                { "symbol": "✰", "desc": "白星" },
+                { "symbol": "✶", "desc": "六角星" },
+                { "symbol": "✷", "desc": "空心八角星" },
+                { "symbol": "✹", "desc": "八芒星" },
+                { "symbol": "✺", "desc": "六瓣星花" },
+                { "symbol": "✵", "desc": "双环星" }
             ]
         },
         {
             "id": "heart",
             "name": "爱心符号",
             "emoji": "♥",
-            "badge": 10,
+            "badge": 12,
             "items": [
                 { "symbol": "♥", "desc": "实心心" },
                 { "symbol": "♡", "desc": "空心心" },
@@ -49,7 +55,31 @@ window.KAOMOJI_SYMBOLS = {
                 { "symbol": "❣", "desc": "感叹心" },
                 { "symbol": "💕", "desc": "双心" },
                 { "symbol": "💘", "desc": "带箭心" },
-                { "symbol": "🖤", "desc": "黑心" }
+                { "symbol": "🖤", "desc": "黑心" },
+                { "symbol": "💗", "desc": "粉心" },
+                { "symbol": "💙", "desc": "蓝心" }
+            ]
+        },
+        {
+            "id": "flower",
+            "name": "花朵装饰",
+            "emoji": "✿",
+            "badge": 14,
+            "items": [
+                { "symbol": "✿", "desc": "小花" },
+                { "symbol": "❀", "desc": "白花" },
+                { "symbol": "❁", "desc": "八瓣花" },
+                { "symbol": "❃", "desc": "涡旋花" },
+                { "symbol": "✾", "desc": "六瓣花" },
+                { "symbol": "✻", "desc": "十二瓣花" },
+                { "symbol": "❋", "desc": "重瓣花" },
+                { "symbol": "❊", "desc": "轮辐花" },
+                { "symbol": "❈", "desc": "星形花" },
+                { "symbol": "❉", "desc": "雪花花" },
+                { "symbol": "✼", "desc": "四叶花" },
+                { "symbol": "✽", "desc": "对称花" },
+                { "symbol": "❖", "desc": "钻石花" },
+                { "symbol": "✢", "desc": "三叶花" }
             ]
         },
         {
@@ -93,7 +123,7 @@ window.KAOMOJI_SYMBOLS = {
             "id": "number",
             "name": "序号符号",
             "emoji": "①",
-            "badge": 12,
+            "badge": 22,
             "items": [
                 { "symbol": "①", "desc": "圈内一" },
                 { "symbol": "②", "desc": "圈内二" },
@@ -106,7 +136,17 @@ window.KAOMOJI_SYMBOLS = {
                 { "symbol": "⑨", "desc": "圈内九" },
                 { "symbol": "⑩", "desc": "圈内十" },
                 { "symbol": "❶", "desc": "实心一" },
-                { "symbol": "⓪", "desc": "圈内零" }
+                { "symbol": "⓪", "desc": "圈内零" },
+                { "symbol": "⑪", "desc": "圈内十一" },
+                { "symbol": "⑫", "desc": "圈内十二" },
+                { "symbol": "⑬", "desc": "圈内十三" },
+                { "symbol": "⑭", "desc": "圈内十四" },
+                { "symbol": "⑮", "desc": "圈内十五" },
+                { "symbol": "⑯", "desc": "圈内十六" },
+                { "symbol": "⑰", "desc": "圈内十七" },
+                { "symbol": "⑱", "desc": "圈内十八" },
+                { "symbol": "⑲", "desc": "圈内十九" },
+                { "symbol": "⑳", "desc": "圈内二十" }
             ]
         },
         {
@@ -183,7 +223,7 @@ window.KAOMOJI_SYMBOLS = {
             "id": "currency",
             "name": "货币符号",
             "emoji": "¥",
-            "badge": 8,
+            "badge": 16,
             "items": [
                 { "symbol": "¥", "desc": "人民币" },
                 { "symbol": "₩", "desc": "韩元" },
@@ -192,11 +232,19 @@ window.KAOMOJI_SYMBOLS = {
                 { "symbol": "$", "desc": "美元" },
                 { "symbol": "₹", "desc": "卢比" },
                 { "symbol": "₽", "desc": "卢布" },
-                { "symbol": "฿", "desc": "泰铢" }
+                { "symbol": "฿", "desc": "泰铢" },
+                { "symbol": "₿", "desc": "比特币" },
+                { "symbol": "₪", "desc": "新谢克尔" },
+                { "symbol": "₫", "desc": "越南盾" },
+                { "symbol": "₱", "desc": "菲律宾比索" },
+                { "symbol": "₴", "desc": "乌克兰格里夫纳" },
+                { "symbol": "₮", "desc": "蒙古图格里克" },
+                { "symbol": "₺", "desc": "土耳其里拉" },
+                { "symbol": "₦", "desc": "尼日利亚奈拉" }
             ]
         },
         {
-            "id": "music",
+            "id": "music-symbol",
             "name": "音符音乐",
             "emoji": "♪",
             "badge": 8,
@@ -212,10 +260,52 @@ window.KAOMOJI_SYMBOLS = {
             ]
         },
         {
+            "id": "weather",
+            "name": "天气自然",
+            "emoji": "☀",
+            "badge": 14,
+            "items": [
+                { "symbol": "☀", "desc": "太阳" },
+                { "symbol": "☁", "desc": "云朵" },
+                { "symbol": "☂", "desc": "雨伞" },
+                { "symbol": "☃", "desc": "雪人" },
+                { "symbol": "☄", "desc": "彗星" },
+                { "symbol": "☾", "desc": "上弦月" },
+                { "symbol": "☽", "desc": "下弦月" },
+                { "symbol": "☼", "desc": "带射线太阳" },
+                { "symbol": "❄", "desc": "雪花" },
+                { "symbol": "❅", "desc": "带叶雪花" },
+                { "symbol": "❆", "desc": "粗雪花" },
+                { "symbol": "☀️", "desc": "太阳表情" },
+                { "symbol": "☁️", "desc": "云朵表情" },
+                { "symbol": "⛈", "desc": "雷雨" }
+            ]
+        },
+        {
+            "id": "mood",
+            "name": "心情字符",
+            "emoji": "☺",
+            "badge": 12,
+            "items": [
+                { "symbol": "☺", "desc": "微笑脸" },
+                { "symbol": "☻", "desc": "实心笑脸" },
+                { "symbol": "☹", "desc": "哭脸" },
+                { "symbol": "♞", "desc": "马" },
+                { "symbol": "♜", "desc": "城堡" },
+                { "symbol": "♛", "desc": "王后" },
+                { "symbol": "♚", "desc": "国王" },
+                { "symbol": "♝", "desc": "主教" },
+                { "symbol": "♟", "desc": "棋子" },
+                { "symbol": "☠", "desc": "骷髅" },
+                { "symbol": "☯", "desc": "太极" },
+                { "symbol": "☮", "desc": "和平" }
+            ]
+        },
+        {
             "id": "shape",
             "name": "菱形方块",
             "emoji": "◆",
-            "badge": 10,
+            "badge": 16,
             "items": [
                 { "symbol": "◆", "desc": "实心菱形" },
                 { "symbol": "◇", "desc": "空心菱形" },
@@ -226,7 +316,49 @@ window.KAOMOJI_SYMBOLS = {
                 { "symbol": "▼", "desc": "实心三角下" },
                 { "symbol": "●", "desc": "实心圆点" },
                 { "symbol": "○", "desc": "空心圆" },
-                { "symbol": "▣", "desc": "内点方框" }
+                { "symbol": "▣", "desc": "内点方框" },
+                { "symbol": "▢", "desc": "空心方框" },
+                { "symbol": "▷", "desc": "空心三角右" },
+                { "symbol": "▶", "desc": "实心三角右" },
+                { "symbol": "◀", "desc": "实心三角左" },
+                { "symbol": "◍", "desc": "阴影圆" },
+                { "symbol": "▧", "desc": "斜纹方框" }
+            ]
+        },
+        {
+            "id": "card",
+            "name": "扑克花色",
+            "emoji": "♠",
+            "badge": 8,
+            "items": [
+                { "symbol": "♠", "desc": "黑桃" },
+                { "symbol": "♣", "desc": "梅花" },
+                { "symbol": "♦", "desc": "方块" },
+                { "symbol": "♤", "desc": "空心黑桃" },
+                { "symbol": "♧", "desc": "空心梅花" },
+                { "symbol": "♢", "desc": "空心方块" },
+                { "symbol": "🂠", "desc": "扑克牌背" },
+                { "symbol": "🃏", "desc": "小丑牌" }
+            ]
+        },
+        {
+            "id": "tech",
+            "name": "科技符号",
+            "emoji": "☎",
+            "badge": 12,
+            "items": [
+                { "symbol": "☎", "desc": "电话" },
+                { "symbol": "☏", "desc": "手绘电话" },
+                { "symbol": "✆", "desc": "电话占线" },
+                { "symbol": "✉", "desc": "信封" },
+                { "symbol": "✎", "desc": "铅笔" },
+                { "symbol": "✏", "desc": "斜铅笔" },
+                { "symbol": "✂", "desc": "剪刀" },
+                { "symbol": "✚", "desc": "十字" },
+                { "symbol": "⚡", "desc": "闪电" },
+                { "symbol": "☢", "desc": "辐射" },
+                { "symbol": "☣", "desc": "生物危害" },
+                { "symbol": "⚛", "desc": "原子" }
             ]
         }
     ],
@@ -243,7 +375,7 @@ window.KAOMOJI_SYMBOLS = {
             "icon": "🔍",
             "iconClass": "feat-green",
             "title": "分类清晰",
-            "desc": "12 类精心整理 快速找到想要的符号"
+            "desc": "17 类精心整理 快速找到想要的符号"
         },
         {
             "icon": "⭐",

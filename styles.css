@@ -147,6 +147,15 @@ body {
     font-family: inherit;
 }
 
+/* ---------- Tab 切换 + 搜索框（桌面端一行） ---------- */
+.tab-search-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
 /* ---------- Tab 切换 ---------- */
 .tabs {
     display: inline-flex;
@@ -158,7 +167,7 @@ body {
     border-radius: 12px;
     padding: 5px;
     box-shadow: 0 4px 18px rgba(31, 35, 48, 0.05);
-    margin-bottom: 18px;
+    flex-shrink: 0;
 }
 
 .tab-btn {
@@ -195,7 +204,8 @@ body {
 
 /* ---------- 搜索框 ---------- */
 #search-bar {
-    margin-bottom: 24px;
+    flex: 1;
+    min-width: 0;
 }
 
 .search-box {
@@ -209,7 +219,8 @@ body {
     border-radius: 10px;
     padding: 0 14px;
     box-shadow: 0 4px 18px rgba(31, 35, 48, 0.05);
-    max-width: 560px;
+    width: 100%;
+    max-width: 420px;
     transition: box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
@@ -702,7 +713,7 @@ body {
 
 /* 汉字部首 Tab：单字展示，字号略小于符号 */
 .radical-card .emoji-symbol {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     min-width: 56px;
     text-align: center;
     line-height: 1.2;
@@ -983,6 +994,10 @@ body {
     .features { grid-template-columns: 1fr; }
     .site-header { margin-bottom: 20px; }
 
+    /* Tab + 搜索框改为两行：Tab / 搜索框 */
+    .tab-search-row { flex-direction: column; align-items: stretch; gap: 14px; margin-bottom: 18px; }
+    #search-bar { flex: none; }
+
     /* 布局变单列 */
     .layout { grid-template-columns: 1fr; gap: 0; }
 
@@ -1020,12 +1035,11 @@ body {
     }
 
     .search-box { max-width: 100%; }
-    #search-bar { margin-bottom: 18px; }
 
     /* 两列时符号略收窄，避免拥挤；移动端字号 +1px */
     .emoji-symbol { min-width: 60px; font-size: 21px; }
     .symbol-card .emoji-symbol { min-width: 44px; font-size: 26px; }
-    .radical-card .emoji-symbol { min-width: 44px; font-size: 22px; }
+    .radical-card .emoji-symbol { min-width: 44px; font-size: 19px; }
     .emoji-desc { font-size: 15px; }
 
     /* 侧边栏改为左侧抽屉，默认滑出屏幕 */
@@ -1103,7 +1117,7 @@ body.no-scroll {
     .subhead { font-size: 0.85rem; padding-left: 10px; }
     .emoji-symbol { min-width: 60px; font-size: 21px; }
     .symbol-card .emoji-symbol { min-width: 44px; font-size: 26px; }
-    .radical-card .emoji-symbol { min-width: 44px; font-size: 22px; }
+    .radical-card .emoji-symbol { min-width: 44px; font-size: 19px; }
     .emoji-desc { font-size: 15px; }
 
     /* 卡片：减小内边距，贴合小屏 */

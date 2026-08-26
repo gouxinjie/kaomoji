@@ -19,7 +19,7 @@ window.KAOMOJI_DATA = {
         "id": "shock",
         "name": "震惊 · 瞪大眼",
         "emoji": "😳",
-        "badge": 6,
+        "badge": 8,
         "items": [
             {
                 "symbol": "(⊙ˍ⊙)",
@@ -59,7 +59,7 @@ window.KAOMOJI_DATA = {
         "id": "mock",
         "name": "嘲讽 · 阴阳",
         "emoji": "😏",
-        "badge": 8,
+        "badge": 10,
         "items": [
             {
                 "symbol": "(￣_,￣)",
@@ -107,7 +107,7 @@ window.KAOMOJI_DATA = {
         "id": "coquetry",
         "name": "撒娇 · 腻歪",
         "emoji": "🥺",
-        "badge": 9,
+        "badge": 10,
         "items": [
             {
                 "symbol": "(｡♥‿♥｡)",
@@ -291,7 +291,7 @@ window.KAOMOJI_DATA = {
         "id": "minimal",
         "name": "极简 · 线条",
         "emoji": "✏️",
-        "badge": 8,
+        "badge": 10,
         "items": [
             {
                 "symbol": "·_·",
@@ -339,7 +339,7 @@ window.KAOMOJI_DATA = {
         "id": "action",
         "name": "狂野 · 动作",
         "emoji": "🤸",
-        "badge": 7,
+        "badge": 8,
         "items": [
             {
                 "symbol": "(╯°□°)╯︵ ┻━┻",
@@ -379,7 +379,7 @@ window.KAOMOJI_DATA = {
         "id": "animal",
         "name": "动物 · 拟态",
         "emoji": "🐱",
-        "badge": 8,
+        "badge": 10,
         "items": [
             {
                 "symbol": "=^.^=",
@@ -427,7 +427,7 @@ window.KAOMOJI_DATA = {
         "id": "cyber",
         "name": "机械 · 科幻",
         "emoji": "🤖",
-        "badge": 7,
+        "badge": 8,
         "items": [
             {
                 "symbol": "[O_O]",
@@ -467,7 +467,7 @@ window.KAOMOJI_DATA = {
         "id": "green",
         "name": "绿茶 · 白莲",
         "emoji": "🍵",
-        "badge": 7,
+        "badge": 8,
         "items": [
             {
                 "symbol": "(￣▽￣)~*",
@@ -507,7 +507,7 @@ window.KAOMOJI_DATA = {
         "id": "art",
         "name": "文艺 · 唯美",
         "emoji": "🌸",
-        "badge": 7,
+        "badge": 8,
         "items": [
             {
                 "symbol": "(´▽｀)ノ♪",
@@ -547,7 +547,7 @@ window.KAOMOJI_DATA = {
         "id": "crash",
         "name": "宕机 · 发疯",
         "emoji": "🌀",
-        "badge": 8,
+        "badge": 10,
         "items": [
             {
                 "symbol": "(°▽°)",
@@ -595,7 +595,7 @@ window.KAOMOJI_DATA = {
         "id": "daily",
         "name": "日常 · 短组合",
         "emoji": "📋",
-        "badge": 8,
+        "badge": 10,
         "items": [
             {
                 "symbol": "(´▽`)ﾉ おはよ",
@@ -6179,7 +6179,7 @@ window.KAOMOJI_DATA = {
         "id": "obscure",
         "name": "冷门魔性",
         "emoji": "🎁",
-        "badge": 9,
+        "badge": 10,
         "items": [
             {
                 "symbol": "(；一_一)",
