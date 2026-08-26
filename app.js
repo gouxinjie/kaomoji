@@ -66,11 +66,9 @@
 
     // 装饰用颜文字 / 表情：固定文案，呼应"键盘打不出的灵感"主题
     const HERO_FLOATS = [
-        { text: '(◕‿◕)',  cls: 'float-1' },
         { text: '(°▽°)/', cls: 'float-2' },
         { text: '✦',       cls: 'float-3' },
         { text: '★',       cls: 'float-4' },
-        { text: '(◑ω◑)',  cls: 'float-5' },
         { text: '✿',       cls: 'float-6' },
         { text: '(ˆ▽ˆ)',  cls: 'float-7' },
         { text: '(⊙▽⊙)',  cls: 'float-8' }

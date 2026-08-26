@@ -364,7 +364,7 @@ body {
     gap: 10px;
     background: rgba(255, 255, 255, 0.92);
     border: none;
-    border-radius: 14px;
+    border-radius: 8px;
     padding: 11px 16px;
     min-height: 46px;
     box-sizing: border-box;
@@ -450,6 +450,8 @@ body {
     box-shadow: 0 2px 8px rgba(31, 35, 48, 0.04);
     padding: 8px 14px;
     font-size: 0.88rem;
+    cursor: pointer;
+    border-radius: 2px;
 }
 
 .tabs .tab-btn:hover {
@@ -579,11 +581,9 @@ body {
     font-family: 'Segoe UI', 'SF Mono', 'Courier New', monospace;
 }
 
-.float-1 { top: 60px;  left: 6%;  color: #ff6b9d; animation-delay: 0s;   font-size: 1.6rem; }
 .float-2 { top: 88px;  left: 24%; color: #6a5bff; animation-delay: 0.6s; font-size: 1.2rem; }
 .float-3 { top: 28px;  left: 38%; color: #ff8a3d; animation-delay: 1.1s; font-size: 1.4rem; }
 .float-4 { top: 200px; left: 4%;  color: #f5b400; animation-delay: 1.6s; font-size: 1.5rem; }
-.float-5 { top: 28px;  right: 6%; color: #6a5bff; animation-delay: 0.3s; font-size: 1.3rem; }
 .float-6 { top: 100px; right: 4%; color: #ff6b9d; animation-delay: 0.9s; font-size: 1.5rem; }
 .float-7 { top: 56px;  right: 18%; color: #3a5bd9; animation-delay: 1.4s; font-size: 1.2rem; }
 .float-8 { top: 195px; right: 10%; color: #5b8bff; animation-delay: 2.0s; font-size: 1.3rem; }
@@ -1330,7 +1330,7 @@ body {
 
 @media (max-width: 800px) {
     body {
-        padding: 20px 16px calc(36px + env(safe-area-inset-bottom, 0px));
+        padding: 12px calc(12px + env(safe-area-inset-bottom, 0px));
         overflow-x: hidden;
     }
     /* 抑制移动端点击高亮闪烁，提升手感 */
@@ -1341,7 +1341,7 @@ body {
     .brand-title { font-size: 1.3rem; }
     .brand-icon { font-size: 1.05rem; padding: 0 12px; min-width: 44px; height: 44px; }
     .features { grid-template-columns: 1fr; }
-    .site-header { margin-bottom: 20px; padding: 22px 20px 24px; gap: 18px; }
+    .site-header { margin-bottom: 20px; padding: 12px; gap: 18px; }
     .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 10px; }
     .stat-num { font-size: 1.55rem; }
     .stat-label { font-size: 0.88rem; }
@@ -1360,16 +1360,18 @@ body {
     .hero-search-row { flex-direction: column; align-items: stretch; gap: 12px; }
     .hero-search-box { flex: none; padding: 11px 14px; min-height: 48px; max-width: none; width: 100%; }
 
-    /* 移动端 Tab 栏：占满宽度、按钮均分，防止内部文本换行 */
-    .tabs { display: flex; width: 100%; }
-    .tab-btn { flex: 1; justify-content: center; white-space: nowrap; min-height: 42px; }
+    /* 移动端 Tab 栏：换行居中，彻底避免按钮被压扁或溢出切割 */
+    .tabs {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        gap: 6px;
+    }
+    .tab-btn { flex: 0 1 auto; justify-content: center; white-space: nowrap; min-height: 42px; }
 
-    /* 浮动装饰：移动端弱化，避免遮挡 */
-    .hero-float { font-size: 1rem; opacity: 0.6; }
-    .float-1 { top: 50px;  left: 2%; }
-    .float-4 { top: auto; bottom: 200px; left: 2%; }
-    .float-5 { top: 50px;  right: 2%; }
-    .float-8 { top: auto; bottom: 200px; right: 2%; }
+    /* 浮动装饰：移动端完全隐藏，避免遮挡内容 */
+    .hero-float { display: none; }
 
     /* 布局变单列 */
     .layout { grid-template-columns: 1fr; gap: 0; }
@@ -1486,9 +1488,9 @@ body.no-scroll {
 }
 
 @media (max-width: 520px) {
-    body { padding: 16px 12px 32px; }
+    body { padding: 12px; }
     .grid { grid-template-columns: 1fr; gap: 10px; }
-    .site-header { flex-direction: column; gap: 14px; padding: 20px 16px 22px; align-items: center; text-align: center; }
+    .site-header { flex-direction: column; gap: 14px; padding: 12px; align-items: center; text-align: center; }
     .brand-title { font-size: 1.2rem; }
     .brand { gap: 10px; }
     .brand-icon { height: 40px; min-width: 40px; font-size: 0.95rem; padding: 0 10px; }
@@ -1543,8 +1545,8 @@ body.no-scroll {
 
 /* ---------- 超窄屏（≤380px）兼容 ---------- */
 @media (max-width: 380px) {
-    body { padding: 14px 10px calc(28px + env(safe-area-inset-bottom, 0px)); }
-    .site-header { padding: 16px 12px 18px; }
+    body { padding: 12px calc(12px + env(safe-area-inset-bottom, 0px)); }
+    .site-header { padding: 12px; }
     .hero-title { font-size: 1.45rem; letter-spacing: 0.5px; }
     /* 隐藏两侧装饰颜文字，避免与标题重叠/溢出 */
     .hero-deco { display: none; }
