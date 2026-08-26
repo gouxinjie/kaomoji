@@ -55,41 +55,224 @@
     }
 
     /* ---------------- 头部 ---------------- */
+    // 各板块统一的"统计四件套"：用于头部 hero 卡片展示
+    // 4 大分类 / 189 子分类 / 2100+ 精选灵感 / 1 键 一键复制
+    const HERO_STATS = [
+        { num: '4',  label: '大分类',  desc: '满足不同场景需求',  icon: 'grid',     tone: 'purple' },
+        { num: '189',label: '子分类',  desc: '精细分类快速查找',  icon: 'diamond',  tone: 'blue'   },
+        { num: '2100+', label: '精选灵感', desc: '持续更新的灵感库', icon: 'bolt',    tone: 'green'  },
+        { num: '1 键', label: '一键复制', desc: '快速使用不繁琐',   icon: 'copy',     tone: 'orange' }
+    ];
+
+    // 装饰用颜文字 / 表情：固定文案，呼应"键盘打不出的灵感"主题
+    const HERO_FLOATS = [
+        { text: '(◕‿◕)',  cls: 'float-1' },
+        { text: '(°▽°)/', cls: 'float-2' },
+        { text: '✦',       cls: 'float-3' },
+        { text: '★',       cls: 'float-4' },
+        { text: '(◑ω◑)',  cls: 'float-5' },
+        { text: '✿',       cls: 'float-6' },
+        { text: '(ˆ▽ˆ)',  cls: 'float-7' },
+        { text: '(⊙▽⊙)',  cls: 'float-8' }
+    ];
+
+    // 头部 chip：横排展示站内可寻找的灵感类型，纯展示，不承担 Tab 切换职责
+    // tone 字段决定 chip 的配色（与 .hero-chip-{tone} 一一对应）
+    const HERO_CHIPS = [
+        { text: '颜文字',  emoji: '◕‿◕', tone: 'pink'   },
+        { text: '表情符号', emoji: '😊',  tone: 'orange' },
+        { text: '星星爱心', emoji: '♥',   tone: 'rose'   },
+        { text: '箭头符号', emoji: '→',   tone: 'blue'   },
+        { text: '序号编号', emoji: '①',   tone: 'indigo' },
+        { text: '数学符号', emoji: '√',   tone: 'green'  },
+        { text: '货币符号', emoji: '$',   tone: 'lime'   },
+        { text: 'ID 昵称', emoji: '☺',   tone: 'purple' },
+        { text: '更多分类', emoji: '⋯',   tone: 'gray'   }
+    ];
+
+    // Tab 切换：渲染到 site-header 内部，与搜索框同行展示
+    const HEADER_TABS = [
+        { id: 'kaomoji',  label: '颜文字', icon: '(◕‿◕)' },
+        { id: 'icons',    label: 'Emoji', icon: '😊' },
+        { id: 'symbols',  label: '符号',   icon: '★' },
+        { id: 'radicals', label: '部首',   icon: '艹' }
+    ];
+
     function renderHeader() {
         const header = document.getElementById('site-header');
         if (!header) return;
         const m = currentData().meta;
-        const stats = [
-            { num: '4', label: '内容板块' },
-            { num: '103', label: '分类' },
-            { num: '1442', label: '精选条目' },
-            { num: '1 键', label: '点击复制' }
-        ];
-        header.innerHTML = `
+
+        // 标题分段："键盘打不出的" + "灵感"（灵感带紫色波浪下划线）
+        const titleLeft = '键盘打不出的';
+        const titleAccent = '灵感';
+
+        // 头部顶部：左 brand，右信息胶囊
+        const heroTop = `
             <div class="hero-top">
                 <div class="brand">
                     <span class="brand-icon">${escapeHtml(m.icon)}</span>
                     <div class="brand-text">
                         <span class="brand-title">${escapeHtml(m.title)}</span>
-                        <span class="brand-badge">纯静态 · 零依赖</span>
+                        <span class="brand-sub">灵感集合站</span>
                     </div>
                 </div>
                 <div class="header-hint">
-                    <span class="info-icon">i</span>
-                    <span>${escapeHtml(m.totalLabel)} · 无需安装，浏览器打开即用</span>
+                    <span class="info-icon" aria-hidden="true">i</span>
+                    <span>${escapeHtml(m.totalLabel)}，都在这里找到 ✦</span>
                 </div>
             </div>
-            <p class="hero-lead">${escapeHtml(m.subtitle)}</p>
-            <p class="hero-desc">「颜文字图鉴」汇集 <b>颜文字</b>、<b>Emoji 图标</b>、<b>特殊符号</b>、<b>汉字部首</b> 四大板块，顶部切换、左侧筛选、上方搜索，<b>点击任意条目即复制到剪贴板</b>，让文字聊天更有温度。</p>
+        `;
+
+        // 大标题区：左右装饰颜文字 + 主标题（含波浪下划线）
+        const heroTitle = `
+            <div class="hero-title-wrap">
+                <span class="hero-deco hero-deco-left" aria-hidden="true">(◕‿◕)</span>
+                <h1 class="hero-title">
+                    <span class="hero-title-text">${titleLeft}</span><span class="hero-title-accent">${titleAccent}<span class="wavy-underline" aria-hidden="true"></span></span>
+                </h1>
+                <span class="hero-deco hero-deco-right" aria-hidden="true">(ˆ▽ˆ)</span>
+            </div>
+        `;
+
+        // 副描述：分行排版，结尾用 (→_→) 颜文字呼应
+        const heroDesc = `
+            <p class="hero-desc">
+                颜文字、表情符号、特殊符号、星星爱心、箭头序号、数学货币、ID 昵称……<br>
+                你想要的灵感（→_→）都在这里
+            </p>
+        `;
+
+        // 头部 chip 行：纯展示的灵感类型标签
+        const heroChips = `
+            <div class="hero-chips" aria-label="灵感分类速览">
+                ${HERO_CHIPS.map(c => `
+                    <span class="hero-chip hero-chip-${c.tone}">
+                        <span class="hero-chip-emoji" aria-hidden="true">${escapeHtml(c.emoji)}</span>
+                        <span>${escapeHtml(c.text)}</span>
+                    </span>
+                `).join('')}
+            </div>
+        `;
+
+        // 搜索 + Tab 切换行：搜索框放左侧，Tab 按钮在右
+        const heroSearchRow = `
+            <div class="hero-search-row">
+                <div class="hero-search-box">
+                    <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z"/>
+                    </svg>
+                    <input type="text" id="search-input" class="search-input"
+                        placeholder="${searchPlaceholder()}"
+                        aria-label="${searchPlaceholder()}" autocomplete="off">
+                    <button type="button" class="search-clear" id="search-clear" aria-label="清除搜索" hidden>✕</button>
+                </div>
+                <nav class="tabs" id="tabs" role="tablist" aria-label="内容切换">
+                    ${HEADER_TABS.map(t => `
+                        <button type="button" class="tab-btn ${activeTab === t.id ? 'active' : ''}"
+                            role="tab" aria-selected="${activeTab === t.id}"
+                            data-tab="${t.id}">
+                            <span class="tab-icon">${escapeHtml(t.icon)}</span>
+                            <span>${escapeHtml(t.label)}</span>
+                        </button>
+                    `).join('')}
+                </nav>
+            </div>
+        `;
+
+        // 数据统计行：4 张大卡片
+        const heroStats = `
             <div class="hero-stats">
-                ${stats.map(s => `
-                    <div class="stat">
-                        <span class="stat-num">${s.num}</span>
-                        <span class="stat-label">${s.label}</span>
+                ${HERO_STATS.map(s => `
+                    <div class="stat-card stat-${s.tone}">
+                        <div class="stat-text">
+                            <div class="stat-num">${s.num}</div>
+                            <div class="stat-label">${s.label}</div>
+                            <div class="stat-desc">${s.desc}</div>
+                        </div>
+                        <span class="stat-icon stat-icon-${s.icon}" aria-hidden="true">
+                            ${statIconSvg(s.icon)}
+                        </span>
                     </div>
                 `).join('')}
             </div>
         `;
+
+        // 浮动装饰颜文字
+        const heroFloats = HERO_FLOATS.map(f => `
+            <span class="hero-float ${f.cls}" aria-hidden="true">${f.text}</span>
+        `).join('');
+
+        header.innerHTML = `
+            ${heroTop}
+            ${heroTitle}
+            ${heroDesc}
+            ${heroChips}
+            ${heroSearchRow}
+            ${heroStats}
+            ${heroFloats}
+        `;
+
+        // 头部内嵌的搜索 / Tab 交互必须在此处挂载，否则会丢事件
+        bindHeaderInteractions();
+    }
+
+    // 渲染头部内的统计卡片右上角小图标 SVG
+    function statIconSvg(kind) {
+        switch (kind) {
+            case 'grid':
+                return '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>';
+            case 'diamond':
+                return '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12 12 2z"/></svg>';
+            case 'bolt':
+                return '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>';
+            case 'copy':
+            default:
+                return '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm0 16H8V7h11v14z"/></svg>';
+        }
+    }
+
+    // 头部内交互：搜索框输入/清除、Tab 切换
+    function bindHeaderInteractions() {
+        const input = document.getElementById('search-input');
+        const clear = document.getElementById('search-clear');
+        if (input) {
+            let debounceTimer = null;
+            input.addEventListener('input', function () {
+                searchKeyword = this.value;
+                if (clear) clear.hidden = !this.value;
+                clearTimeout(debounceTimer);
+                debounceTimer = setTimeout(renderGrid, 200);
+            });
+        }
+        if (clear && input) {
+            clear.addEventListener('click', function () {
+                input.value = '';
+                searchKeyword = '';
+                this.hidden = true;
+                input.focus();
+                renderGrid();
+            });
+        }
+        const tabs = document.getElementById('tabs');
+        if (tabs) {
+            tabs.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const id = this.getAttribute('data-tab');
+                    if (id === activeTab) return;
+                    activeTab = id;
+                    activeCategories = new Set(['all']);
+                    searchKeyword = '';
+                    const i = document.getElementById('search-input');
+                    if (i) { i.value = ''; i.placeholder = searchPlaceholder(); }
+                    const c = document.getElementById('search-clear');
+                    if (c) c.hidden = true;
+                    renderHeader();
+                    renderSidebar();
+                    renderGrid();
+                });
+            });
+        }
     }
 
     /* ---------------- 状态 ---------------- */
@@ -97,51 +280,15 @@
     let searchKeyword = '';                  // 当前搜索关键词
 
     /* ---------------- Tab 切换 ---------------- */
-    function renderTabs() {
-        const wrap = document.getElementById('tabs');
-        if (!wrap) return;
-        const tabs = [
-            { id: 'kaomoji', label: '颜文字', icon: '📝', panel: 'grid' },
-            { id: 'icons', label: '图标', icon: '😊', panel: 'grid' },
-            { id: 'symbols', label: '符号', icon: '★', panel: 'grid' },
-            { id: 'radicals', label: '部首', icon: '灬', panel: 'grid' }
-        ];
-        wrap.innerHTML = tabs.map(t => `
-            <button type="button" class="tab-btn ${activeTab === t.id ? 'active' : ''}"
-                role="tab" aria-selected="${activeTab === t.id}"
-                aria-controls="${t.panel}"
-                data-tab="${t.id}">
-                <span class="tab-icon">${escapeHtml(t.icon)}</span>
-                <span>${escapeHtml(t.label)}</span>
-            </button>
-        `).join('');
-        wrap.querySelectorAll('.tab-btn').forEach(btn => {
-            btn.addEventListener('click', function () {
-                const id = this.getAttribute('data-tab');
-                if (id === activeTab) return;
-                activeTab = id;
-                // 切换 Tab 时重置筛选与搜索，并同步搜索框提示文案
-                activeCategories = new Set(['all']);
-                searchKeyword = '';
-                const input = document.getElementById('search-input');
-                if (input) { input.value = ''; input.placeholder = searchPlaceholder(); }
-                const clear = document.getElementById('search-clear');
-                if (clear) clear.hidden = true;
-                // 全量刷新视图
-                renderHeader();
-                renderSidebar();
-                renderGrid();
-                renderTabs();
-            });
-        });
-    }
+    // Tab 按钮和搜索框现已嵌入到 site-header 中，由 renderHeader() 统一渲染，
+    // 交互由 bindHeaderInteractions() 挂载。下面仅保留 placeholder / empty 文案。
 
     // 返回当前 Tab 的搜索框提示文案
     function searchPlaceholder() {
-        if (activeTab === 'icons') return '搜索 Emoji 图标';
-        if (activeTab === 'symbols') return '搜索特殊符号';
-        if (activeTab === 'radicals') return '搜索汉字部首';
-        return '搜索颜文字';
+        if (activeTab === 'icons') return '搜索 Emoji、表情、图标…';
+        if (activeTab === 'symbols') return '搜索箭头、爱心、数学符号…';
+        if (activeTab === 'radicals') return '搜索汉字部首、偏旁…';
+        return '搜索颜文字、符号、昵称等灵感…';
     }
 
     // 返回当前 Tab 空结果提示文案
@@ -169,38 +316,7 @@
     }
 
     /* ---------------- 搜索框 ---------------- */
-    function renderSearch() {
-        const wrap = document.getElementById('search-bar');
-        if (!wrap) return;
-        wrap.innerHTML = `
-            <div class="search-box">
-                <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z"/>
-                </svg>
-                <input type="text" id="search-input" class="search-input"
-                    placeholder="${searchPlaceholder()}"
-                    aria-label="${searchPlaceholder()}" autocomplete="off">
-                <button type="button" class="search-clear" id="search-clear" aria-label="清除搜索" hidden>✕</button>
-            </div>
-        `;
-        const input = wrap.querySelector('#search-input');
-        const clear = wrap.querySelector('#search-clear');
-        // 输入防抖：避免每次按键都全量重渲染网格
-        let debounceTimer = null;
-        input.addEventListener('input', function () {
-            searchKeyword = this.value;
-            clear.hidden = !this.value;
-            clearTimeout(debounceTimer);
-            debounceTimer = setTimeout(renderGrid, 200);
-        });
-        clear.addEventListener('click', function () {
-            input.value = '';
-            searchKeyword = '';
-            this.hidden = true;
-            input.focus();
-            renderGrid();
-        });
-    }
+    // 搜索框由 renderHeader() 统一渲染到 site-header 内部，事件在 bindHeaderInteractions() 中绑定。
 
     /* ---------------- 侧边栏筛选（桌面折叠 + 移动端抽屉） ---------------- */
     const mqMobile = window.matchMedia('(max-width: 800px)'); // 缓存，避免重复创建
@@ -568,9 +684,8 @@
 
     /* ---------------- 启动 ---------------- */
     function init() {
+        // renderHeader() 内部已渲染 Tab 和搜索框，并绑定交互
         renderHeader();
-        renderTabs();
-        renderSearch();
         renderSidebar();
         renderGrid();
         renderFeatures();

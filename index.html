@@ -9,26 +9,17 @@
     <link rel="icon" type="image/svg+xml" href="./favicon.svg">
     <link rel="apple-touch-icon" href="./favicon.svg">
     <link rel="manifest" href="./site.webmanifest">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css?v=20260826">
 </head>
 <body>
 
 <div class="container">
-    <!-- 头部（由 app.js 渲染） -->
+    <!-- 头部（由 app.js 渲染：品牌行 + 大标题 + 描述 + 分类chips + 搜索/Tab + 数据统计） -->
     <header class="site-header" id="site-header"></header>
 
     <!-- 移动端分类筛选按钮 -->
     <button type="button" class="mobile-filter-btn" id="mobile-filter-btn"
         aria-label="打开分类筛选" title="分类筛选"></button>
-
-    <!-- Tab 切换 + 搜索框（桌面端一行，移动端两行） -->
-    <div class="tab-search-row">
-        <!-- Tab 切换（颜文字 / 图标 / 符号 / 部首，由 app.js 渲染） -->
-        <nav class="tabs" id="tabs" role="tablist" aria-label="内容切换"></nav>
-
-        <!-- 搜索框（由 app.js 渲染） -->
-        <div id="search-bar"></div>
-    </div>
 
     <!-- 主体：侧边栏 + 内容区 -->
     <div class="layout">
