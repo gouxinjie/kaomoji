@@ -662,7 +662,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 9px 6px;
+    padding: 11px 8px;
     border-radius: 12px;
     transition: background 0.15s ease;
     cursor: pointer;
@@ -683,19 +683,17 @@ body {
 
 .emoji-symbol {
     font-family: 'Segoe UI', 'SF Mono', 'PingFang SC', 'Courier New', monospace;
-    font-size: 0.95rem;
+    font-size: 1.25rem;
     color: #1f2330;
-    min-width: 78px;
-    max-width: 110px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    flex-shrink: 0;
+    min-width: 90px;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-all;
     font-weight: 500;
 }
 
 .emoji-desc {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     color: #6b7280;
     flex: 1;
     overflow: hidden;
@@ -1009,7 +1007,7 @@ body {
     #search-bar { margin-bottom: 18px; }
 
     /* 两列时符号略收窄，避免拥挤 */
-    .emoji-symbol { min-width: 64px; max-width: 96px; }
+    .emoji-symbol { min-width: 60px; }
     .emoji-desc { font-size: 0.82rem; }
 
     /* 侧边栏改为左侧抽屉，默认滑出屏幕 */
@@ -1085,7 +1083,8 @@ body.no-scroll {
     .brand-title { font-size: 1.4rem; }
     .brand { gap: 10px; margin-bottom: 8px; }
     .subhead { font-size: 0.85rem; padding-left: 10px; }
-    .emoji-symbol { min-width: 60px; font-size: 0.85rem; }
+    .emoji-symbol { min-width: 60px; font-size: 1.1rem; }
+    .emoji-desc { font-size: 0.9rem; }
 
     /* 卡片：减小内边距，贴合小屏 */
     .card { padding: 16px 14px 14px; }
