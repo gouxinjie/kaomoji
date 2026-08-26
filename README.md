@@ -4,7 +4,7 @@
 
 一个纯静态的中文表达符号收藏网站，收录 **颜文字、Emoji 图标、特殊符号、汉字部首** 四大类内容，总计 **103 个分类、约 1440+ 个精选条目**。点击即可一键复制到剪贴板，让文字表达更有温度。
 
-![预览](index.png)
+![预览](imgs/home.png)
 
 ## ✨ 功能特性
 
@@ -74,7 +74,14 @@ kaomoji/
 │   ├── icons.js        # Emoji 图标数据（window.KAOMOJI_ICONS）
 │   ├── symbols.js      # 特殊符号数据（window.KAOMOJI_SYMBOLS）
 │   └── radicals.js     # 汉字部首数据（window.KAOMOJI_RADICALS）
-├── index.png           # 预览图
+├── imgs/               # 预览图等静态资源
+│   ├── home.png        # 首页预览图
+│   └── top.png         # 顶部预览图
+├── favicon.svg         # 网站图标（矢量）
+├── site.webmanifest    # PWA / Web App 清单
+├── push.bat            # 一键推送 GitHub + Gitee 脚本
+├── start.ps1           # 一键启动本地预览服务器脚本
+├── LICENSE             # MIT 许可证
 └── README.md           # 说明文档
 ```
 
