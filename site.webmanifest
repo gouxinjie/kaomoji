@@ -1,0 +1,17 @@
+{
+  "name": "颜文字图鉴",
+  "short_name": "颜文字",
+  "description": "151 大类精选颜文字，一键复制，让表达更有趣",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fff5fa",
+  "theme_color": "#3a7bd5",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

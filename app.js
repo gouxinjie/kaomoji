@@ -59,19 +59,35 @@
         const header = document.getElementById('site-header');
         if (!header) return;
         const m = currentData().meta;
+        const stats = [
+            { num: '4', label: '内容板块' },
+            { num: '189', label: '分类' },
+            { num: '2100+', label: '精选条目' },
+            { num: '1 键', label: '点击复制' }
+        ];
         header.innerHTML = `
-            <div class="header-left">
+            <div class="hero-top">
                 <div class="brand">
                     <span class="brand-icon">${escapeHtml(m.icon)}</span>
-                    <span class="brand-title">${escapeHtml(m.title)}</span>
+                    <div class="brand-text">
+                        <span class="brand-title">${escapeHtml(m.title)}</span>
+                        <span class="brand-badge">纯静态 · 零依赖</span>
+                    </div>
                 </div>
-                <div class="subhead">+ ${escapeHtml(m.subtitle)}</div>
+                <div class="header-hint">
+                    <span class="info-icon">i</span>
+                    <span>${escapeHtml(m.totalLabel)} · 无需安装，浏览器打开即用</span>
+                </div>
             </div>
-            <div class="header-info">
-                <span class="info-icon">i</span>
-                <span>${escapeHtml(m.totalLabel)}</span>
-                <span class="divider">|</span>
-                <span>共 ${m.totalCount} 类</span>
+            <p class="hero-lead">${escapeHtml(m.subtitle)}</p>
+            <p class="hero-desc">「颜文字图鉴」汇集 <b>颜文字</b>、<b>Emoji 图标</b>、<b>特殊符号</b>、<b>汉字部首</b> 四大板块，顶部切换、左侧筛选、上方搜索，<b>点击任意条目即复制到剪贴板</b>，让文字聊天更有温度。</p>
+            <div class="hero-stats">
+                ${stats.map(s => `
+                    <div class="stat">
+                        <span class="stat-num">${s.num}</span>
+                        <span class="stat-label">${s.label}</span>
+                    </div>
+                `).join('')}
             </div>
         `;
     }
