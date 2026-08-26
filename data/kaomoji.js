@@ -881,19 +881,6 @@ window.KAOMOJI_DATA = {
                 },
             ]
         },
-
-        {
-            "id": "doubt",
-            "name": "怀疑 · 质疑",
-            "emoji": "🤨",
-            "badge": 1,
-            "items": [
-                {
-                    "symbol": "(・_・)",
-                    "desc": "面瘫怀疑"
-                },
-            ]
-        },
         {
             "id": "disdain",
             "name": "嫌弃 · 看不顺眼",
@@ -908,18 +895,6 @@ window.KAOMOJI_DATA = {
                     "symbol": "(｀ε´)",
                     "desc": "撇嘴轻蔑"
                 }
-            ]
-        },
-        {
-            "id": "guilty",
-            "name": "心虚 · 偷偷看",
-            "emoji": "😅",
-            "badge": 1,
-            "items": [
-                {
-                    "symbol": "(〃ω〃)",
-                    "desc": "害羞偷瞄"
-                },
             ]
         },
         {
@@ -1338,7 +1313,7 @@ window.KAOMOJI_DATA = {
             "id": "sleepy",
             "name": "睡觉 · 困困",
             "emoji": "😴",
-            "badge": 22,
+            "badge": 14,
             "items": [
                 {
                     "symbol": "(∪､∪)",
@@ -1381,16 +1356,8 @@ window.KAOMOJI_DATA = {
                     "desc": "眼皮打架"
                 },
                 {
-                    "symbol": "(－ω－) 好困",
-                    "desc": "好困"
-                },
-                {
                     "symbol": "(´,_ゝ｀)",
                     "desc": "困到瘫"
-                },
-                {
-                    "symbol": "(；一_一) 撑不住了",
-                    "desc": "撑不住了"
                 },
                 {
                     "symbol": "(－ω－)",
@@ -1401,65 +1368,25 @@ window.KAOMOJI_DATA = {
                     "desc": "装睡实盯"
                 },
                 {
-                    "symbol": "(；一_一) 我睡着了",
-                    "desc": "我睡着了"
-                },
-                {
-                    "symbol": "(´-ω-｀) 好幸福",
-                    "desc": "好幸福"
-                },
-                {
-                    "symbol": "(∪､∪) 继续睡",
-                    "desc": "继续睡"
-                },
-                {
                     "symbol": "(；°Д°) ！！",
                     "desc": "惊醒"
                 },
-                {
-                    "symbol": "(＃°Д°) 好吵",
-                    "desc": "好吵"
-                },
-                {
-                    "symbol": "(´⊙ω⊙)` 再睡五分钟",
-                    "desc": "再睡五分钟"
-                },
-                {
-                    "symbol": "(；一_一) 不想醒",
-                    "desc": "不想醒"
-                }
             ]
         },
         {
             "id": "hungry",
             "name": "吃饭 · 馋",
             "emoji": "🍜",
-            "badge": 6,
+            "badge": 2,
             "items": [
                 {
                     "symbol": "(￣﹃￣)",
                     "desc": "流口水"
                 },
                 {
-                    "symbol": "(´∀｀)♡ 好吃",
-                    "desc": "好吃"
-                },
-                {
                     "symbol": "( ˘▽˘)っ♨",
                     "desc": "吹热气"
                 },
-                {
-                    "symbol": "(๑˘̩̩̩̩̩̩́˘̩̩̩̩̩̩̀๑) 想吃",
-                    "desc": "想吃"
-                },
-                {
-                    "symbol": "(๑•́₃•̀๑) 饿",
-                    "desc": "饿"
-                },
-                {
-                    "symbol": "(´▽｀)ノ♪ 真香",
-                    "desc": "真香"
-                }
             ]
         },
         {
@@ -1518,19 +1445,6 @@ window.KAOMOJI_DATA = {
                 },
             ]
         },
-        {
-            "id": "heart",
-            "name": "比心 · 喜欢",
-            "emoji": "💖",
-            "badge": 1,
-            "items": [
-                {
-                    "symbol": "(๑˘͈ ᵕ ˘͈๑)♡",
-                    "desc": "害羞比心"
-                },
-            ]
-        },
-
         {
             "id": "cool",
             "name": "超酷",
@@ -1735,7 +1649,7 @@ window.KAOMOJI_DATA = {
             "id": "lazy",
             "name": "摸鱼 · 躺平摆烂",
             "emoji": "🛋️",
-            "badge": 19,
+            "badge": 3,
             "items": [
                 {
                     "symbol": "(－_－)",
@@ -1748,94 +1662,6 @@ window.KAOMOJI_DATA = {
                 {
                     "symbol": "(￣o￣) ..zz",
                     "desc": "昏昏欲睡"
-                },
-                {
-                    "symbol": "(￣ー￣) 不想动",
-                    "desc": "不想动"
-                },
-                {
-                    "symbol": "(；一_一) 算了",
-                    "desc": "算了"
-                },
-                {
-                    "symbol": "(´,_ゝ｀) 不干了",
-                    "desc": "不干了"
-                },
-                {
-                    "symbol": "(￣ー￣) 假装在忙",
-                    "desc": "假装在忙"
-                },
-                {
-                    "symbol": "(｡-_-｡) 没人发现吧",
-                    "desc": "没人发现吧"
-                },
-                {
-                    "symbol": "(－_－) 假装在忙",
-                    "desc": "假装在忙"
-                },
-                {
-                    "symbol": "(￣ρ￣) 划水中",
-                    "desc": "划水中"
-                },
-                {
-                    "symbol": "(´-ω-｀) 没人发现吧",
-                    "desc": "没人发现吧"
-                },
-                {
-                    "symbol": "(；一_一) 领导来了",
-                    "desc": "领导来了"
-                },
-                {
-                    "symbol": "(￣ー￣) 认真工作中（装的）",
-                    "desc": "认真工作中"
-                },
-                {
-                    "symbol": "(・_・) 什么都没看见",
-                    "desc": "什么都没看见"
-                },
-                {
-                    "symbol": "(´,_ゝ｀) 再摸五分钟",
-                    "desc": "再摸五分钟"
-                },
-                {
-                    "symbol": "(￣ω￣) 还没到点",
-                    "desc": "还没到点"
-                },
-                {
-                    "symbol": "(＃°Д°) 完了",
-                    "desc": "完了"
-                },
-                {
-                    "symbol": "(；一_一) 我在工作",
-                    "desc": "我在工作"
-                },
-                {
-                    "symbol": "(´⊙ω⊙)` 假装认真",
-                    "desc": "假装认真"
-                }
-            ]
-        },
-        {
-            "id": "craving",
-            "name": "超馋 · 想吃",
-            "emoji": "🍕",
-            "badge": 4,
-            "items": [
-                {
-                    "symbol": "(´∀｀) 好香",
-                    "desc": "好香"
-                },
-                {
-                    "symbol": "(๑¯◡¯๑) 真香",
-                    "desc": "真香"
-                },
-                {
-                    "symbol": "(￣ω￣) 饿了",
-                    "desc": "饿了"
-                },
-                {
-                    "symbol": "(๑•́₃•̀๑) 想吃",
-                    "desc": "想吃"
                 },
             ]
         },
@@ -2080,98 +1906,10 @@ window.KAOMOJI_DATA = {
             ]
         },
         {
-            "id": "expect",
-            "name": "超期待 · 期待ing",
-            "emoji": "✨",
-            "badge": 1,
-            "items": [
-                {
-                    "symbol": "(´∀｀) 好期待",
-                    "desc": "好期待"
-                },
-            ]
-        },
-        {
-            "id": "clingy",
-            "name": "超粘人 · 求关注",
-            "emoji": "🫶",
-            "badge": 3,
-            "items": [
-                {
-                    "symbol": "(๑•́ ₃ •̀๑) 看我",
-                    "desc": "看我"
-                },
-                {
-                    "symbol": "(つ´∀｀)つ",
-                    "desc": "抱紧紧"
-                },
-                {
-                    "symbol": "(｡•́︿•̀｡) 理我",
-                    "desc": "理我"
-                }
-            ]
-        },
-        {
-            "id": "drama",
-            "name": "超戏精 · 演技在线",
-            "emoji": "🎭",
-            "badge": 2,
-            "items": [
-                {
-                    "symbol": "(ﾉ°ο°)ノ",
-                    "desc": "疯狂摇晃"
-                },
-                {
-                    "symbol": "(；∀；) 我真的会谢",
-                    "desc": "我真的会谢"
-                }
-            ]
-        },
-        {
-            "id": "socialanxiety",
-            "name": "超社恐 · 想消失",
-            "emoji": "🫥",
-            "badge": 4,
-            "items": [
-                {
-                    "symbol": "(๑•́ ₃ •̀๑) 别看我",
-                    "desc": "别看我"
-                },
-                {
-                    "symbol": "(；°Д°) 别看我",
-                    "desc": "别看我"
-                },
-                {
-                    "symbol": "(；´Д) 我想回家`",
-                    "desc": "我想回家"
-                },
-                {
-                    "symbol": "(；°ロ°) 好想挖个洞",
-                    "desc": "好想挖个洞"
-                }
-            ]
-        },
-        {
-            "id": "socialbutterfly",
-            "name": "超社牛 · 社交达人",
-            "emoji": "🗣️",
-            "badge": 2,
-            "items": [
-                {
-                    "symbol": "(๑˃̵ᴗ˂̵)و 我来了",
-                    "desc": "我来了"
-                },
-                {
-                    "symbol": "(๑˃̵ᴗ˂̵)و 来聊天！",
-                    "desc": "来聊天"
-                }
-            ]
-        },
-        {
             "id": "hesitate",
             "name": "超纠结 · 选择困难",
             "emoji": "🤔",
-            "badge": 3,
+            "badge": 2,
             "items": [
                 {
                     "symbol": "(｡ŏ_ŏ)?",
@@ -2181,34 +1919,6 @@ window.KAOMOJI_DATA = {
                     "symbol": "(；°Д°)?",
                     "desc": "彻底纠结"
                 },
-                {
-                    "symbol": "(´-﹏-) 选哪个`",
-                    "desc": "选哪个"
-                },
-            ]
-        },
-        {
-            "id": "touched",
-            "name": "超感动 · 想哭",
-            "emoji": "🥹",
-            "badge": 1,
-            "items": [
-                {
-                    "symbol": "(ˊᗜˋ*) 好感动",
-                    "desc": "好感动"
-                }
-            ]
-        },
-        {
-            "id": "perfunctory",
-            "name": "超敷衍 · 随便吧",
-            "emoji": "🙄",
-            "badge": 1,
-            "items": [
-                {
-                    "symbol": "(￣ρ￣) 都行",
-                    "desc": "都行"
-                }
             ]
         },
         {
@@ -2236,162 +1946,6 @@ window.KAOMOJI_DATA = {
             ]
         },
         {
-            "id": "ruminate",
-            "name": "超内耗 · 自我攻击",
-            "emoji": "🌀",
-            "badge": 1,
-            "items": [
-                {
-                    "symbol": "(´；д；) 我是不是很差`",
-                    "desc": "我是不是很差"
-                }
-            ]
-        },
-        {
-            "id": "stubborn",
-            "name": "超嘴硬 · 死不承认",
-            "emoji": "😤",
-            "badge": 3,
-            "items": [
-                {
-                    "symbol": "(；一_一) 才没有",
-                    "desc": "才没有"
-                },
-                {
-                    "symbol": "(¬‿¬) 我才不在乎",
-                    "desc": "我才不在乎"
-                },
-                {
-                    "symbol": "(¬‿¬) 我不在乎",
-                    "desc": "我不在乎"
-                }
-            ]
-        },
-        {
-            "id": "sweetmouth",
-            "name": "超嘴甜 · 疯狂彩虹屁",
-            "emoji": "🌈",
-            "badge": 1,
-            "items": [
-                {
-                    "symbol": "(つ≧▽≦)つ 你好棒",
-                    "desc": "你好棒"
-                }
-            ]
-        },
-        {
-            "id": "sarcastic",
-            "name": "超阴阳 · 表面客气",
-            "emoji": "🫖",
-            "badge": 2,
-            "items": [
-                {
-                    "symbol": "(｀∀´)",
-                    "desc": "表面乐呵"
-                },
-                {
-                    "symbol": "(｀ε´) 哦是吗",
-                    "desc": "哦是吗"
-                }
-            ]
-        },
-        {
-            "id": "heartless",
-            "name": "超绝情 · 冷酷无情",
-            "emoji": "🧊",
-            "badge": 1,
-            "items": [
-                {
-                    "symbol": "(´-ω-｀) 关我什么事",
-                    "desc": "关我什么事"
-                }
-            ]
-        },
-        {
-            "id": "stoic",
-            "name": "超淡人 · 情绪稳定",
-            "emoji": "🧘",
-            "badge": 2,
-            "items": [
-                {
-                    "symbol": "(´-ω-｀) 都行吧",
-                    "desc": "都行吧"
-                },
-                {
-                    "symbol": "(´-ω-｀) 没事的",
-                    "desc": "没事的"
-                },
-            ]
-        },
-        {
-            "id": "pretenddead",
-            "name": "超装死 · 装看不见",
-            "emoji": "☠️",
-            "badge": 2,
-            "items": [
-                {
-                    "symbol": "(－ω－) 我死了",
-                    "desc": "我死了"
-                },
-                {
-                    "symbol": "(｡´-ω-｀｡) 听不见",
-                    "desc": "听不见"
-                }
-            ]
-        },
-        {
-            "id": "nagging",
-            "name": "超嘴碎 · 碎碎念",
-            "emoji": "🗯️",
-            "badge": 4,
-            "items": [
-                {
-                    "symbol": "(´∀｀)",
-                    "desc": "唠叨"
-                },
-                {
-                    "symbol": "(￣▽￣)",
-                    "desc": "啰嗦"
-                },
-                {
-                    "symbol": "(￣ー￣) 我跟你讲",
-                    "desc": "我跟你讲"
-                },
-                {
-                    "symbol": "(｀ε´) 真的假的",
-                    "desc": "真的假的"
-                }
-            ]
-        },
-        {
-            "id": "composure",
-            "name": "超端着 · 强装镇定",
-            "emoji": "🎩",
-            "badge": 1,
-            "items": [
-                {
-                    "symbol": "(´-ω-｀) 我没事",
-                    "desc": "我没事"
-                }
-            ]
-        },
-        {
-            "id": "zen",
-            "name": "超佛系 · 随缘人设",
-            "emoji": "🍃",
-            "badge": 2,
-            "items": [
-                {
-                    "symbol": "(；一_一) 都行",
-                    "desc": "都行"
-                },
-                {
-                    "symbol": "(￣ρ￣) 顺其自然",
-                    "desc": "顺其自然"
-                }
-            ]
-        },
-        {
             "id": "crush",
             "name": "暗恋中",
             "emoji": "💘",
@@ -2415,62 +1969,8 @@ window.KAOMOJI_DATA = {
                 }
             ]
         },
-        {
-            "id": "leftread",
-            "name": "被已读不回",
-            "emoji": "📵",
-            "badge": 1,
-            "items": [
-                {
-                    "symbol": "(；ω；) 我没事",
-                    "desc": "我没事"
-                }
-            ]
-        },
 
 
-        {
-            "id": "exex",
-            "name": "看到前任动态",
-            "emoji": "😐",
-            "badge": 1,
-            "items": [
-                {
-                    "symbol": "(´-_ゝ｀) 关我什么事",
-                    "desc": "关我什么事"
-                }
-            ]
-        },
-
-        {
-            "id": "valentine",
-            "name": "情人节",
-            "emoji": "🌹",
-            "badge": 1,
-            "items": [
-                {
-                    "symbol": "(；一_一) 单身也开心",
-                    "desc": "单身也开心"
-                }
-            ]
-        },
-
-        {
-            "id": "trafficjam",
-            "name": "堵车中",
-            "emoji": "🚗",
-            "badge": 2,
-            "items": [
-                {
-                    "symbol": "(－_－) 怎么还不走",
-                    "desc": "怎么还不走"
-                },
-                {
-                    "symbol": "(￣ー￣) 听歌吧",
-                    "desc": "听歌吧"
-                }
-            ]
-        },
         {
             "id": "wildanimal",
             "name": "魔性动物系",
@@ -2612,10 +2112,6 @@ window.KAOMOJI_DATA = {
                 {
                     "symbol": "(´･_･)ﾉ⌒●~*`",
                     "desc": "扔炸弹"
-                },
-                {
-                    "symbol": "(￣ε(#￣)☆╰╮o(￣皿￣///)",
-                    "desc": "揍人"
                 },
                 {
                     "symbol": "(╬ Ò﹏Ó)",
