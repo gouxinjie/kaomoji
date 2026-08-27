@@ -7,9 +7,9 @@ window.KAOMOJI_SYMBOLS = {
     meta: {
         title: '特殊符号库',
         icon: '★',
-        subtitle: '键盘打不出的星星爱心、箭头序号、数学货币 · 200+ 特殊符号随手复制',
+        subtitle: '键盘打不出的星星爱心、箭头序号、数学货币 · 280+ 特殊符号随手复制',
         totalLabel: '点击 复制',
-        totalCount: 237
+        totalCount: 286
     },
 
     // 分类
@@ -18,7 +18,7 @@ window.KAOMOJI_SYMBOLS = {
             "id": "star",
             "name": "装饰星星",
             "emoji": "★",
-            "badge": 21,
+            "badge": 24,
             "items": [
                 { "symbol": "★", "desc": "实心星" },
                 { "symbol": "☆", "desc": "空心星" },
@@ -27,11 +27,11 @@ window.KAOMOJI_SYMBOLS = {
                 { "symbol": "✩", "desc": "空心小星" },
                 { "symbol": "✪", "desc": "圈内星" },
                 { "symbol": "✫", "desc": "带点星" },
-                { "symbol": "✬", "desc": "八角星" },
+                { "symbol": "✬", "desc": "黑心白星" },
                 { "symbol": "✭", "desc": "细八角星" },
                 { "symbol": "✮", "desc": "实心八角星" },
                 { "symbol": "✯", "desc": "旋转星" },
-                { "symbol": "≛", "desc": "三星星" },
+                { "symbol": "⋆", "desc": "小星点" },
                 { "symbol": "✰", "desc": "白星" },
                 { "symbol": "✶", "desc": "六角星" },
                 { "symbol": "✷", "desc": "空心八角星" },
@@ -40,7 +40,10 @@ window.KAOMOJI_SYMBOLS = {
                 { "symbol": "✵", "desc": "双环星" },
                 { "symbol": "✡", "desc": "大卫之星" },
                 { "symbol": "⚝", "desc": "五角星" },
-                { "symbol": "☪", "desc": "星月" }
+                { "symbol": "☪", "desc": "星月" },
+                { "symbol": "∗", "desc": "星号算子" },
+                { "symbol": "✱", "desc": "重星号" },
+                { "symbol": "✲", "desc": "空心星号" }
             ]
         },
         {
@@ -89,23 +92,25 @@ window.KAOMOJI_SYMBOLS = {
             "id": "check",
             "name": "对错勾叉",
             "emoji": "✓",
-            "badge": 8,
+            "badge": 10,
             "items": [
                 { "symbol": "✓", "desc": "对勾" },
                 { "symbol": "✔", "desc": "粗对勾" },
                 { "symbol": "☑", "desc": "带框勾" },
+                { "symbol": "✅", "desc": "绿对勾" },
                 { "symbol": "✗", "desc": "细错叉" },
                 { "symbol": "✘", "desc": "粗错叉" },
                 { "symbol": "☒", "desc": "带框叉" },
                 { "symbol": "✖", "desc": "乘号叉" },
-                { "symbol": "❌", "desc": "红叉" }
+                { "symbol": "❌", "desc": "红叉" },
+                { "symbol": "❎", "desc": "方框叉" }
             ]
         },
         {
             "id": "arrow",
             "name": "箭头符号",
             "emoji": "→",
-            "badge": 17,
+            "badge": 24,
             "items": [
                 { "symbol": "→", "desc": "右箭头" },
                 { "symbol": "←", "desc": "左箭头" },
@@ -123,7 +128,15 @@ window.KAOMOJI_SYMBOLS = {
                 { "symbol": "↪", "desc": "右旋箭头" },
                 { "symbol": "↩", "desc": "左旋箭头" },
                 { "symbol": "↺", "desc": "逆时针" },
-                { "symbol": "↻", "desc": "顺时针" }
+                { "symbol": "↻", "desc": "顺时针" },
+                // 新增
+                { "symbol": "➤", "desc": "实心三角箭" },
+                { "symbol": "➜", "desc": "圆头右箭" },
+                { "symbol": "➝", "desc": "细右箭头" },
+                { "symbol": "⇄", "desc": "左右交换" },
+                { "symbol": "⇅", "desc": "上下交换" },
+                { "symbol": "⤴", "desc": "上弯箭头" },
+                { "symbol": "⤵", "desc": "下弯箭头" }
             ]
         },
         {
@@ -185,7 +198,7 @@ window.KAOMOJI_SYMBOLS = {
             "id": "math",
             "name": "数学符号",
             "emoji": "≠",
-            "badge": 19,
+            "badge": 30,
             "items": [
                 { "symbol": "≤", "desc": "小于等于" },
                 { "symbol": "≥", "desc": "大于等于" },
@@ -205,7 +218,20 @@ window.KAOMOJI_SYMBOLS = {
                 { "symbol": "∏", "desc": "连乘" },
                 { "symbol": "∂", "desc": "偏导" },
                 { "symbol": "∆", "desc": "增量" },
-                { "symbol": "∮", "desc": "环路积分" }
+                { "symbol": "∮", "desc": "环路积分" },
+                // 新增
+                { "symbol": "≡", "desc": "恒等于" },
+                { "symbol": "∈", "desc": "属于" },
+                { "symbol": "∉", "desc": "不属于" },
+                { "symbol": "⊂", "desc": "包含于" },
+                { "symbol": "⊃", "desc": "包含" },
+                { "symbol": "∪", "desc": "并集" },
+                { "symbol": "∩", "desc": "交集" },
+                { "symbol": "∧", "desc": "逻辑与" },
+                { "symbol": "∨", "desc": "逻辑或" },
+                { "symbol": "∀", "desc": "任意" },
+                { "symbol": "∃", "desc": "存在" },
+                { "symbol": "∅", "desc": "空集" }
             ]
         },
         {
@@ -309,22 +335,22 @@ window.KAOMOJI_SYMBOLS = {
                 { "symbol": "☺", "desc": "微笑脸" },
                 { "symbol": "☻", "desc": "实心笑脸" },
                 { "symbol": "☹", "desc": "哭脸" },
+                { "symbol": "☠", "desc": "骷髅" },
+                { "symbol": "☯", "desc": "太极" },
+                { "symbol": "☮", "desc": "和平" },
                 { "symbol": "♞", "desc": "马" },
                 { "symbol": "♜", "desc": "城堡" },
                 { "symbol": "♛", "desc": "王后" },
                 { "symbol": "♚", "desc": "国王" },
                 { "symbol": "♝", "desc": "主教" },
-                { "symbol": "♟", "desc": "棋子" },
-                { "symbol": "☠", "desc": "骷髅" },
-                { "symbol": "☯", "desc": "太极" },
-                { "symbol": "☮", "desc": "和平" }
+                { "symbol": "♟", "desc": "棋子" }
             ]
         },
         {
             "id": "shape",
             "name": "菱形方块",
             "emoji": "◆",
-            "badge": 21,
+            "badge": 26,
             "items": [
                 { "symbol": "◆", "desc": "实心菱形" },
                 { "symbol": "◇", "desc": "空心菱形" },
@@ -346,7 +372,13 @@ window.KAOMOJI_SYMBOLS = {
                 { "symbol": "◈", "desc": "菱形点" },
                 { "symbol": "◊", "desc": "菱形" },
                 { "symbol": "▤", "desc": "横纹方框" },
-                { "symbol": "▥", "desc": "竖纹方框" }
+                { "symbol": "▥", "desc": "竖纹方框" },
+                // 新增
+                { "symbol": "▬", "desc": "实心长条" },
+                { "symbol": "▭", "desc": "空心长条" },
+                { "symbol": "▮", "desc": "竖长条" },
+                { "symbol": "▰", "desc": "实心平行四边形" },
+                { "symbol": "▱", "desc": "空心平行四边形" }
             ]
         },
         {
@@ -386,6 +418,29 @@ window.KAOMOJI_SYMBOLS = {
                 { "symbol": "⌘", "desc": "命令键" },
                 { "symbol": "⎋", "desc": "Esc 键" }
             ]
+        },
+        {
+            "id": "punct",
+            "name": "标点装饰",
+            "emoji": "※",
+            "badge": 15,
+            "items": [
+                { "symbol": "※", "desc": "米字号" },
+                { "symbol": "•", "desc": "实心圆点" },
+                { "symbol": "·", "desc": "中点" },
+                { "symbol": "‥", "desc": "两点" },
+                { "symbol": "…", "desc": "省略号" },
+                { "symbol": "—", "desc": "破折号" },
+                { "symbol": "–", "desc": "短破折号" },
+                { "symbol": "〰", "desc": "波浪线" },
+                { "symbol": "‾", "desc": "上划线" },
+                { "symbol": "¯", "desc": "长音符" },
+                { "symbol": "†", "desc": "剑号" },
+                { "symbol": "‡", "desc": "双剑号" },
+                { "symbol": "‰", "desc": "千分号" },
+                { "symbol": "′", "desc": "撇号" },
+                { "symbol": "″", "desc": "双撇号" }
+            ]
         }
     ],
 
@@ -401,7 +456,7 @@ window.KAOMOJI_SYMBOLS = {
             "icon": "🔍",
             "iconClass": "feat-green",
             "title": "分类清晰",
-            "desc": "17 类精心整理 快速找到想要的符号"
+            "desc": "18 类精心整理 快速找到想要的符号"
         },
         {
             "icon": "⭐",

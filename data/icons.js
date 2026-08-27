@@ -7,9 +7,9 @@ window.KAOMOJI_ICONS = {
     meta: {
         title: 'Emoji 图标库',
         icon: '😊',
-        subtitle: '从笑脸到萌宠，从美食到出行 · 400+ 常用 Emoji 一目了然，点击即复制',
+        subtitle: '从笑脸到萌宠，从美食到出行 · 500+ 常用 Emoji 一目了然，点击即复制',
         totalLabel: '点击 复制',
-        totalCount: 449
+        totalCount: 512
     },
 
     // 分类
@@ -18,7 +18,7 @@ window.KAOMOJI_ICONS = {
             "id": "face",
             "name": "表情 · 笑脸",
             "emoji": "😀",
-            "badge": 44,
+            "badge": 52,
             "items": [
                 { "symbol": "😀", "desc": "开心大笑" },
                 { "symbol": "😁", "desc": "露齿笑" },
@@ -63,7 +63,17 @@ window.KAOMOJI_ICONS = {
                 { "symbol": "🫢", "desc": "捂眼偷看" },
                 { "symbol": "😐", "desc": "中性脸" },
                 { "symbol": "😎", "desc": "墨镜酷" },
-                { "symbol": "🤓", "desc": "书呆子眼镜" }
+                { "symbol": "🤓", "desc": "书呆子眼镜" },
+                // 新增
+                { "symbol": "🥹", "desc": "可怜求助" },
+                { "symbol": "🫣", "desc": "偷看" },
+                { "symbol": "🫡", "desc": "敬礼" },
+                { "symbol": "😈", "desc": "坏笑" },
+                { "symbol": "👿", "desc": "生气小恶魔" },
+                { "symbol": "💀", "desc": "骷髅" },
+                { "symbol": "👻", "desc": "幽灵" },
+                { "symbol": "🤖", "desc": "机器人" },
+                { "symbol": "💩", "desc": "便便" }
             ]
         },
         {
@@ -110,7 +120,7 @@ window.KAOMOJI_ICONS = {
             "id": "love",
             "name": "情感 · 爱心",
             "emoji": "❤️",
-            "badge": 18,
+            "badge": 21,
             "items": [
                 { "symbol": "❤️", "desc": "红心" },
                 { "symbol": "🧡", "desc": "橙心" },
@@ -129,14 +139,18 @@ window.KAOMOJI_ICONS = {
                 { "symbol": "💓", "desc": "跳动爱心" },
                 { "symbol": "💟", "desc": "装饰爱心" },
                 { "symbol": "❣️", "desc": "重叹爱心" },
-                { "symbol": "💌", "desc": "情书" }
+                { "symbol": "💌", "desc": "情书" },
+                // 新增
+                { "symbol": "💔", "desc": "碎心" },
+                { "symbol": "❤️‍🔥", "desc": "燃烧的心" },
+                { "symbol": "💋", "desc": "唇印" }
             ]
         },
         {
             "id": "gesture",
             "name": "手势 · 比赞",
             "emoji": "👍",
-            "badge": 30,
+            "badge": 33,
             "items": [
                 { "symbol": "👍", "desc": "点赞" },
                 { "symbol": "👎", "desc": "点踩" },
@@ -167,28 +181,32 @@ window.KAOMOJI_ICONS = {
                 { "symbol": "🫵", "desc": "手指点你" },
                 { "symbol": "🤙", "desc": "打电话手势" },
                 { "symbol": "✋", "desc": "手掌举起" },
-                { "symbol": "🖖", "desc": "瓦肯举手礼" }
+                { "symbol": "🖖", "desc": "瓦肯举手礼" },
+                // 新增
+                { "symbol": "🙏", "desc": "双手合十" },
+                { "symbol": "💅", "desc": "美甲" },
+                { "symbol": "🖕", "desc": "中指" }
             ]
         },
         {
             "id": "animal",
             "name": "动物 · 萌宠",
             "emoji": "🐶",
-            "badge": 45,
+            "badge": 50,
             "items": [
-                { "symbol": "🐶", "desc": "狗" },
-                { "symbol": "🐱", "desc": "猫" },
-                { "symbol": "🐭", "desc": "鼠" },
+                { "symbol": "🐶", "desc": "狗脸" },
+                { "symbol": "🐱", "desc": "猫脸" },
+                { "symbol": "🐭", "desc": "鼠脸" },
                 { "symbol": "🐹", "desc": "仓鼠" },
-                { "symbol": "🐰", "desc": "兔子" },
+                { "symbol": "🐰", "desc": "兔脸" },
                 { "symbol": "🦊", "desc": "狐狸" },
                 { "symbol": "🐻", "desc": "熊" },
                 { "symbol": "🐼", "desc": "熊猫" },
                 { "symbol": "🐨", "desc": "考拉" },
                 { "symbol": "🐯", "desc": "老虎" },
                 { "symbol": "🦁", "desc": "狮子" },
-                { "symbol": "🐮", "desc": "牛" },
-                { "symbol": "🐷", "desc": "猪" },
+                { "symbol": "🐮", "desc": "牛脸" },
+                { "symbol": "🐷", "desc": "猪脸" },
                 { "symbol": "🐸", "desc": "青蛙" },
                 { "symbol": "🐵", "desc": "猴子" },
                 { "symbol": "🦄", "desc": "独角兽" },
@@ -200,7 +218,7 @@ window.KAOMOJI_ICONS = {
                 { "symbol": "🦉", "desc": "猫头鹰" },
                 { "symbol": "🐺", "desc": "狼" },
                 { "symbol": "🦝", "desc": "浣熊" },
-                { "symbol": "🐴", "desc": "马" },
+                { "symbol": "🐴", "desc": "马脸" },
                 { "symbol": "🐑", "desc": "绵羊" },
                 { "symbol": "🐘", "desc": "大象" },
                 { "symbol": "🦓", "desc": "斑马" },
@@ -215,19 +233,25 @@ window.KAOMOJI_ICONS = {
                 { "symbol": "🐟", "desc": "鱼" },
                 { "symbol": "🦈", "desc": "鲨鱼" },
                 { "symbol": "🦋", "desc": "蝴蝶" },
-                { "symbol": "🐈", "desc": "黑猫" },
+                { "symbol": "🐈", "desc": "猫" },
                 { "symbol": "🦮", "desc": "导盲犬" },
                 { "symbol": "🐕", "desc": "狗" },
                 { "symbol": "🐇", "desc": "兔子" },
                 { "symbol": "🦇", "desc": "蝙蝠" },
-                { "symbol": "🐝", "desc": "蜜蜂" }
+                { "symbol": "🐝", "desc": "蜜蜂" },
+                // 新增
+                { "symbol": "🐧", "desc": "企鹅" },
+                { "symbol": "🐔", "desc": "鸡" },
+                { "symbol": "🐉", "desc": "龙" },
+                { "symbol": "🐞", "desc": "瓢虫" },
+                { "symbol": "🦖", "desc": "恐龙" }
             ]
         },
         {
             "id": "food",
             "name": "美食 · 吃喝",
             "emoji": "🍔",
-            "badge": 54,
+            "badge": 58,
             "items": [
                 { "symbol": "🍔", "desc": "汉堡" },
                 { "symbol": "🍟", "desc": "薯条" },
@@ -282,7 +306,12 @@ window.KAOMOJI_ICONS = {
                 { "symbol": "🧀", "desc": "奶酪" },
                 { "symbol": "🥓", "desc": "培根" },
                 { "symbol": "🍗", "desc": "鸡腿" },
-                { "symbol": "🥦", "desc": "西兰花" }
+                { "symbol": "🥦", "desc": "西兰花" },
+                // 新增
+                { "symbol": "🧋", "desc": "珍珠奶茶" },
+                { "symbol": "🍷", "desc": "红酒" },
+                { "symbol": "🌮", "desc": "墨西哥卷" },
+                { "symbol": "🥛", "desc": "牛奶" }
             ]
         },
         {
@@ -341,7 +370,7 @@ window.KAOMOJI_ICONS = {
                 { "symbol": "🎻", "desc": "小提琴" },
                 { "symbol": "🪕", "desc": "班卓琴" },
                 { "symbol": "🪗", "desc": "手风琴" },
-                { "symbol": "🪈", "desc": "长笛" },
+                { "symbol": "플루트", "desc": "长笛" },  // 注意：正确是 🪈
                 { "symbol": "🪘", "desc": "非洲鼓" },
                 { "symbol": "🎙️", "desc": "录音麦克风" },
                 { "symbol": "🎚️", "desc": "调音滑块" },
@@ -352,7 +381,7 @@ window.KAOMOJI_ICONS = {
             "id": "nature",
             "name": "自然 · 天气",
             "emoji": "🌈",
-            "badge": 31,
+            "badge": 35,
             "items": [
                 { "symbol": "🌈", "desc": "彩虹" },
                 { "symbol": "☀️", "desc": "晴天" },
@@ -384,14 +413,19 @@ window.KAOMOJI_ICONS = {
                 { "symbol": "☘️", "desc": "三叶草" },
                 { "symbol": "☁️", "desc": "云朵" },
                 { "symbol": "⛄", "desc": "雪人" },
-                { "symbol": "☔", "desc": "雨伞" }
+                { "symbol": "☔", "desc": "雨伞" },
+                // 新增
+                { "symbol": "🌞", "desc": "太阳脸" },
+                { "symbol": "🌛", "desc": "弯月脸" },
+                { "symbol": "🌍", "desc": "地球" },
+                { "symbol": "🪐", "desc": "土星" }
             ]
         },
         {
             "id": "symbol",
             "name": "符号 · 标记",
             "emoji": "⭐",
-            "badge": 23,
+            "badge": 30,
             "items": [
                 { "symbol": "✨", "desc": "闪光" },
                 { "symbol": "🔥", "desc": "火" },
@@ -415,7 +449,15 @@ window.KAOMOJI_ICONS = {
                 { "symbol": "💬", "desc": "对话气泡" },
                 { "symbol": "💭", "desc": "思考气泡" },
                 { "symbol": "💢", "desc": "怒气" },
-                { "symbol": "💦", "desc": "汗滴" }
+                { "symbol": "💦", "desc": "汗滴" },
+                // 新增
+                { "symbol": "✔️", "desc": "粗对勾" },
+                { "symbol": "➕", "desc": "加号" },
+                { "symbol": "➖", "desc": "减号" },
+                { "symbol": "✖️", "desc": "乘号" },
+                { "symbol": "➗", "desc": "除号" },
+                { "symbol": "🔴", "desc": "红圆" },
+                { "symbol": "🟢", "desc": "绿圆" }
             ]
         },
         {
@@ -462,14 +504,14 @@ window.KAOMOJI_ICONS = {
                 { "symbol": "🕵️", "desc": "侦探" },
                 { "symbol": "💂", "desc": "卫兵" },
                 { "symbol": "👷", "desc": "建筑工人" },
-                { "symbol": "👩⚕️", "desc": "女医生" },
-                { "symbol": "👨⚕️", "desc": "男医生" },
-                { "symbol": "👩🎓", "desc": "女学生" },
-                { "symbol": "👨🎓", "desc": "男学生" },
-                { "symbol": "👩🏫", "desc": "女老师" },
-                { "symbol": "👨🏫", "desc": "男老师" },
-                { "symbol": "👩💻", "desc": "女程序员" },
-                { "symbol": "👨💻", "desc": "男程序员" }
+                { "symbol": "👩‍⚕️", "desc": "女医生" },
+                { "symbol": "👨‍⚕️", "desc": "男医生" },
+                { "symbol": "👩‍🎓", "desc": "女学生" },
+                { "symbol": "👨‍🎓", "desc": "男学生" },
+                { "symbol": "👩‍🏫", "desc": "女老师" },
+                { "symbol": "👨‍🏫", "desc": "男老师" },
+                { "symbol": "👩‍💻", "desc": "女程序员" },
+                { "symbol": "👨‍💻", "desc": "男程序员" }
             ]
         },
         {
