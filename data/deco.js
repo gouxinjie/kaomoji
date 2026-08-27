@@ -9,7 +9,7 @@ window.KAOMOJI_DECO = {
         icon: '✦',
         subtitle: '花式分隔线、长串星星爱心、文字点缀 · 排版评论区都能用',
         totalLabel: '点击 复制',
-        totalCount: 120
+        totalCount: 148
     },
 
     categories: [
@@ -17,7 +17,7 @@ window.KAOMOJI_DECO = {
             "id": "divider-line",
             "name": "分隔线",
             "emoji": "═",
-            "badge": 18,
+            "badge": 26,
             "items": [
                 { "symbol": "──────────", "desc": "细横线" },
                 { "symbol": "══════════", "desc": "粗横线" },
@@ -36,14 +36,23 @@ window.KAOMOJI_DECO = {
                 { "symbol": "╭───────╮", "desc": "上弧线" },
                 { "symbol": "╰───────╯", "desc": "下弧线" },
                 { "symbol": "︵──────────────────︵", "desc": "弧形长线" },
-                { "symbol": "◜◝◞◟", "desc": "四角点" }
+                { "symbol": "◜◝◞◟", "desc": "四角点" },
+                // 新增
+                { "symbol": "୨୧┈┈┈┈┈┈┈┈┈┈୨୧", "desc": "蝴蝶结分隔线" },
+                { "symbol": "⋆ ˚｡⋆୨୧˚｡⋆", "desc": "星点蝴蝶结" },
+                { "symbol": "━━━━━━━ • ━━━━━━━", "desc": "居中圆点粗线" },
+                { "symbol": "✧･ﾟ: *✧･ﾟ:* *:･ﾟ✧*:･ﾟ✧", "desc": "完整闪光分隔" },
+                { "symbol": "︵‿︵‿୨♡୧‿︵‿︵", "desc": "波浪爱心分隔" },
+                { "symbol": "─── ⋆⋅☆⋅⋆ ───", "desc": "星点短分隔" },
+                { "symbol": "‧₊˚ ⋅ 𓐐𓎩 ‧₊˚ ⋅", "desc": "天使翅膀分隔" },
+                { "symbol": "⋆┈┈┈┈┈┈┈┈⋆", "desc": "星点虚线" }
             ]
         },
         {
             "id": "star-line",
             "name": "星星长串",
             "emoji": "✩",
-            "badge": 12,
+            "badge": 17,
             "items": [
                 { "symbol": "★ ★ ★ ★ ★", "desc": "空格星" },
                 { "symbol": "✧✧✧✧✧✧✧✧", "desc": "细星连串" },
@@ -56,14 +65,20 @@ window.KAOMOJI_DECO = {
                 { "symbol": "✧✦✧✦✧✦✧✦", "desc": "大小星交替" },
                 { "symbol": "🌟⋆⭒˚｡⋆", "desc": "emoji 星串" },
                 { "symbol": "✫彡✫彡✫彡", "desc": "花星闪烁" },
-                { "symbol": "⌒°⋆⠁⋆°⌒", "desc": "弧角星" }
+                { "symbol": "⌒°⋆⠁⋆°⌒", "desc": "弧角星" },
+                // 新增
+                { "symbol": "⋆｡°✩⋆｡°✩⋆｡°✩", "desc": "连续星钻" },
+                { "symbol": "⋆⁺₊⋆ ☾⋆⁺₊⋆", "desc": "月亮星尘" },
+                { "symbol": "★彡★彡★彡", "desc": "流星闪" },
+                { "symbol": "⋆⭒˚｡⋆ ⋆⭒˚｡⋆", "desc": "双星串" },
+                { "symbol": "✧･ﾟ: *✧･ﾟ:* *:･ﾟ✧*:･ﾟ✧", "desc": "双闪光" }
             ]
         },
         {
             "id": "heart-line",
             "name": "爱心长串",
             "emoji": "♡",
-            "badge": 12,
+            "badge": 16,
             "items": [
                 { "symbol": "♡ ♡ ♡ ♡ ♡", "desc": "空格爱心" },
                 { "symbol": "♥♥♥♥♥♥♥♥", "desc": "实心爱串" },
@@ -76,14 +91,19 @@ window.KAOMOJI_DECO = {
                 { "symbol": "♡ ～♡～ ♡", "desc": "波浪爱心" },
                 { "symbol": "₍ᐢ •⌄• ᐢ₎ ♡", "desc": "小手爱心" },
                 { "symbol": "·  ♡  ·", "desc": "居中爱心" },
-                { "symbol": "♡̷♡̷♡̷♡̷", "desc": "音符爱串" }
+                { "symbol": "♡̷♡̷♡̷♡̷", "desc": "音符爱串" },
+                // 新增
+                { "symbol": "୨♡୧ ୨♡୧ ୨♡୧", "desc": "蝴蝶结爱心" },
+                { "symbol": "♡₊˚♡₊˚♡₊˚", "desc": "星点爱心" },
+                { "symbol": "♡̷♡̷♡̷♡̷♡̷", "desc": "划线爱心串" },
+                { "symbol": "·♡· ♡ ·♡·", "desc": "对称爱心" }
             ]
         },
         {
             "id": "flower-line",
             "name": "花朵装饰",
             "emoji": "✿",
-            "badge": 12,
+            "badge": 15,
             "items": [
                 { "symbol": "✿ ✿ ✿ ✿ ✿", "desc": "空格花" },
                 { "symbol": "❀❀❀❀❀❀❀", "desc": "白花串" },
@@ -96,7 +116,11 @@ window.KAOMOJI_DECO = {
                 { "symbol": "₊✧.◦・◦.✧₊", "desc": "小碎花" },
                 { "symbol": "❁❀✿❁❀✿", "desc": "三种花循环" },
                 { "symbol": "(❁´◡`❁)", "desc": "笑脸带花" },
-                { "symbol": "  ♡◦*♡◦*", "desc": "花心碎钻" }
+                { "symbol": "♡◦*♡◦*", "desc": "花心碎钻" },
+                // 新增
+                { "symbol": "°❀⋆.ೃ࿔*", "desc": "梦幻小花" },
+                { "symbol": "✿´◡`✿", "desc": "笑脸花" },
+                { "symbol": "❀✿❁❀✿❁", "desc": "三种花循环加强" }
             ]
         },
         {
@@ -149,7 +173,7 @@ window.KAOMOJI_DECO = {
             "id": "arrow-line",
             "name": "箭头长串",
             "emoji": "➤",
-            "badge": 10,
+            "badge": 13,
             "items": [
                 { "symbol": "➤➤➤➤➤", "desc": "实心箭头串" },
                 { "symbol": "→→→→→→→→", "desc": "右箭头串" },
@@ -160,7 +184,11 @@ window.KAOMOJI_DECO = {
                 { "symbol": "➤┈┈┈┈┈┈➤", "desc": "线箭结合" },
                 { "symbol": "→ → → → →", "desc": "空格箭头" },
                 { "symbol": "»»»»»»»»", "desc": "双尖括号" },
-                { "symbol": "↺↻↺↻↺↻", "desc": "旋转箭头" }
+                { "symbol": "↺↻↺↻↺↻", "desc": "旋转箭头" },
+                // 新增
+                { "symbol": "╰┈➤", "desc": "弯曲箭头" },
+                { "symbol": "»»————-««", "desc": "双向箭头框" },
+                { "symbol": "→∙→∙→∙→", "desc": "点缀箭头" }
             ]
         },
         {
@@ -189,7 +217,7 @@ window.KAOMOJI_DECO = {
             "id": "text-deco",
             "name": "文字点缀",
             "emoji": "♡",
-            "badge": 12,
+            "badge": 15,
             "items": [
                 { "symbol": "· 别忘了我 ·", "desc": "文字强调" },
                 { "symbol": "✧ 划重点 ✧", "desc": "重点标记" },
@@ -202,7 +230,27 @@ window.KAOMOJI_DECO = {
                 { "symbol": "✦ 今日份 ✦", "desc": "今日标记" },
                 { "symbol": "☾ 晚安好梦 ☽", "desc": "晚安标记" },
                 { "symbol": "☀ 早安 ☀", "desc": "早安标记" },
-                { "symbol": "♫ 配乐 ♫", "desc": "配乐标记" }
+                { "symbol": "♫ 配乐 ♫", "desc": "配乐标记" },
+                // 新增
+                { "symbol": "✦ 重点内容 ✦", "desc": "重点内容" },
+                { "symbol": "♡ 今日心情 ♡", "desc": "心情标记" },
+                { "symbol": "─── END ───", "desc": "结束标记" }
+            ]
+        },
+        {
+            "id": "bow-line",
+            "name": "蝴蝶结长串",
+            "emoji": "୨୧",
+            "badge": 8,
+            "items": [
+                { "symbol": "୨୧୨୧୨୧୨୧", "desc": "连续蝴蝶结" },
+                { "symbol": "⋆୨୧⋆୨୧⋆", "desc": "星点蝴蝶结" },
+                { "symbol": "୨♡୧୨♡୧୨♡୧", "desc": "爱心蝴蝶结" },
+                { "symbol": "‧₊˚୨୧˚₊‧", "desc": "柔和蝴蝶结" },
+                { "symbol": "୨୧┈┈┈┈୨୧", "desc": "线蝴蝶结" },
+                { "symbol": "⋆ ˚｡⋆୨୧˚｡⋆", "desc": "星环蝴蝶结" },
+                { "symbol": "୨୧ ୨୧ ୨୧", "desc": "空格蝴蝶结" },
+                { "symbol": "꒰୨୧꒱", "desc": "括号蝴蝶结" }
             ]
         }
     ],
@@ -219,7 +267,7 @@ window.KAOMOJI_DECO = {
             "icon": "✨",
             "iconClass": "feat-purple",
             "title": "样式丰富",
-            "desc": "星星、爱心、花朵、边框、箭头……应有尽有"
+            "desc": "星星、爱心、花朵、边框、箭头、蝴蝶结……应有尽有"
         },
         {
             "icon": "📋",
