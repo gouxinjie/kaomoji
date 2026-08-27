@@ -415,7 +415,7 @@ body {
 }
 
 .hero-search-box:focus-within {
-    box-shadow: 0 0 0 3px rgba(74, 123, 255, 0.18), 0 6px 22px rgba(31, 35, 48, 0.08);
+    box-shadow: 0 0 0 2px rgba(74, 123, 255, 0.16), 0 2px 10px rgba(31, 35, 48, 0.05);
 }
 
 .hero-search-box .search-input {

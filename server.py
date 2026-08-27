@@ -1,6 +1,11 @@
 import http.server
 import socketserver
 
+# 强制修正 .svg 的 MIME 类型（Windows 注册表常将其误报为 image/svg）
+http.server.SimpleHTTPRequestHandler.extensions_map.update({
+    '.svg': 'image/svg+xml',
+})
+
 class NoCacheHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
     def end_headers(self):
         self.send_header('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0')
