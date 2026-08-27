@@ -68,15 +68,12 @@
     const HERO_CHIPS = [
         { text: '颜文字',  emoji: '◕‿◕', tone: 'pink'   },
         { text: '表情符号', emoji: '😊',  tone: 'orange' },
-        { text: '星星爱心', emoji: '♥',   tone: 'rose'   },
         { text: '箭头符号', emoji: '→',   tone: 'blue'   },
         { text: '序号编号', emoji: '①',   tone: 'indigo' },
         { text: '数学符号', emoji: '√',   tone: 'green'  },
         { text: '货币符号', emoji: '$',   tone: 'lime'   },
-        { text: 'ID 昵称', emoji: '☺',   tone: 'purple' },
         { text: '花字变体', emoji: 'ⓐ',  tone: 'pink' },
         { text: '装饰长串', emoji: '✦',   tone: 'green' },
-        { text: '更多分类', emoji: '⋯',   tone: 'gray'   }
     ];
 
     // Tab 切换：渲染到 site-header 内部，与搜索框同行展示
@@ -85,8 +82,8 @@
         { id: 'icons',    label: 'Emoji', icon: '😊' },
         { id: 'symbols',  label: '符号',   icon: '★' },
         { id: 'radicals', label: '部首',   icon: '艹' },
-        { id: 'fancy',    label: '花字',   icon: 'ⓐ' },
-        { id: 'deco',     label: '装饰',   icon: '✦' }
+        { id: 'fancy',    label: '花字变体',   icon: 'ⓐ' },
+        { id: 'deco',     label: '装饰长串',   icon: '✦' }
     ];
 
     function renderHeader() {
@@ -129,8 +126,7 @@
         // 副描述：分行排版，结尾用 (→_→) 颜文字呼应
         const heroDesc = `
             <p class="hero-desc">
-                颜文字、表情符号、特殊符号、汉字部首、花字变体、装饰长串……<br>
-                你想要的灵感（→_→）都在这里
+                颜文字、表情符号、特殊符号、汉字部首、花字变体、装饰长串……<span class="hero-desc-br"></span>你想要的灵感（→_→）都在这里
             </p>
         `;
 
@@ -176,14 +172,14 @@
             <div class="hero-stats">
                 ${HERO_STATS.map(s => `
                     <div class="stat-card stat-${s.tone}">
+                        <span class="stat-icon stat-icon-${s.icon}" aria-hidden="true">
+                            ${statIconSvg(s.icon)}
+                        </span>
                         <div class="stat-text">
                             <div class="stat-num">${s.num}</div>
                             <div class="stat-label">${s.label}</div>
                             <div class="stat-desc">${s.desc}</div>
                         </div>
-                        <span class="stat-icon stat-icon-${s.icon}" aria-hidden="true">
-                            ${statIconSvg(s.icon)}
-                        </span>
                     </div>
                 `).join('')}
             </div>
