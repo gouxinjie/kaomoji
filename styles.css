@@ -1388,17 +1388,72 @@ body {
 
 /* ---------- 页脚 ---------- */
 .footer-note {
+    margin-top: 36px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(31, 35, 48, 0.08);
     text-align: center;
     color: #6b7280;
     font-size: 0.88rem;
-    padding: 18px 0 4px;
+    padding: 20px 0 4px;
     letter-spacing: 0.4px;
+}
+
+.footer-inner {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-brand {
+    font-weight: 600;
+    color: #4a5163;
+}
+
+.footer-sep {
+    color: #c3c9d6;
+}
+
+.footer-copy {
+    color: #8a90a0;
+}
+
+.footer-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 10px;
+    border-radius: 8px;
+    color: #4a5163;
+    text-decoration: none;
+    font-weight: 600;
+    background: rgba(74, 123, 255, 0.08);
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+.footer-link svg {
+    width: 15px;
+    height: 15px;
+    fill: currentColor;
+}
+
+.footer-link:hover {
+    background: rgba(74, 123, 255, 0.16);
+    color: #4a7bff;
 }
 
 .footer-note .heart {
     color: #ff5e7e;
     display: inline-block;
     margin-left: 4px;
+}
+
+.footer-note-tip {
+    margin-top: 10px;
+    font-size: 0.78rem;
+    color: #9aa0b0;
+    letter-spacing: 0.2px;
 }
 
 /* ---------- Toast ---------- */
@@ -1678,7 +1733,8 @@ body.no-scroll {
     .feature-desc { font-size: 0.82rem; }
 
     /* 页脚 */
-    .footer-note { font-size: 0.82rem; padding: 14px 0 2px; }
+    .footer-note { font-size: 0.82rem; padding: 18px 0 2px; }
+    .footer-inner { gap: 8px; }
 
     /* 搜索框触控放大（16px 避免 iOS Safari 聚焦自动缩放） */
     .hero-search-box .search-input { padding: 1px 0; font-size: 16px; }
