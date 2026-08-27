@@ -1130,7 +1130,7 @@ body {
 
 .emoji-left {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 12px;
     flex: 1;
     min-width: 0;

@@ -510,9 +510,11 @@
     }
 
     function renderItem(item, isArt, isIcon) {
+        // 完整描述/符号作为原生 hover 提示，避免省略号截断后无法查看全文
+        const tip = escapeHtml(item.desc || item.symbol);
         if (isIcon) {
             return `
-                <li class="emoji-item icon-item" data-text="${escapeHtml(item.symbol)}">
+                <li class="emoji-item icon-item" data-text="${escapeHtml(item.symbol)}" title="${tip}">
                     <div class="icon-main">
                         <span class="icon-glyph">${escapeHtml(item.symbol)}</span>
                         <span class="icon-desc">${escapeHtml(item.desc)}</span>
@@ -523,7 +525,7 @@
         }
         if (activeTab === 'deco') {
             return `
-                <li class="emoji-item deco-item" data-text="${escapeHtml(item.symbol)}">
+                <li class="emoji-item deco-item" data-text="${escapeHtml(item.symbol)}" title="${tip}">
                     <div class="deco-main">
                         <span class="deco-symbol">${escapeHtml(item.symbol)}</span>
                         <span class="deco-desc">${escapeHtml(item.desc)}</span>
@@ -534,7 +536,7 @@
         }
         if (isArt) {
             return `
-                <li class="emoji-item art-block-wrap">
+                <li class="emoji-item art-block-wrap" title="${tip}">
                     <div class="art-block" data-text="${escapeHtml(item.symbol)}">
                         <pre class="art-pre">${escapeHtml(item.symbol)}</pre>
                         <div class="art-foot">
@@ -546,7 +548,7 @@
             `;
         }
         return `
-            <li class="emoji-item" data-text="${escapeHtml(item.symbol)}">
+            <li class="emoji-item" data-text="${escapeHtml(item.symbol)}" title="${tip}">
                 <div class="emoji-left">
                     <span class="emoji-symbol">${escapeHtml(item.symbol)}</span>
                     <span class="emoji-desc">${escapeHtml(item.desc)}</span>
