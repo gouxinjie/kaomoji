@@ -45,11 +45,11 @@
 
     /* ---------------- 头部 ---------------- */
     // 各板块统一的"统计四件套"：用于头部 hero 卡片展示
-    // 6 大分类 / 120+ 子分类 / 1800+ 精选灵感 / 1 键 一键复制
+    // 大分类 = 6 个 Tab；子分类 / 精选灵感 = 各数据源 categories / items 实际累加
     const HERO_STATS = [
         { num: '6',  label: '大分类',  desc: '满足不同场景需求',  icon: 'grid',     tone: 'purple' },
-        { num: '124',label: '子分类',  desc: '精细分类快速查找',  icon: 'diamond',  tone: 'blue'   },
-        { num: '1843+', label: '精选灵感', desc: '持续更新的灵感库', icon: 'bolt',    tone: 'green'  },
+        { num: '136',label: '子分类',  desc: '精细分类快速查找',  icon: 'diamond',  tone: 'blue'   },
+        { num: '2240+', label: '精选灵感', desc: '持续更新的灵感库', icon: 'bolt',    tone: 'green'  },
         { num: '1 键', label: '一键复制', desc: '快速使用不繁琐',   icon: 'copy',     tone: 'orange' }
     ];
 

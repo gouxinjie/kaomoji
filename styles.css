@@ -39,7 +39,7 @@ body {
 
 *::-webkit-scrollbar-thumb {
     background: #c3c9d6;
-    border-radius: 8px;
+    border-radius: 4px;
     border: 2px solid transparent;
     background-clip: padding-box;
 }
@@ -68,7 +68,7 @@ body {
     gap: 18px;
     margin-bottom: 28px;
     padding: 26px 32px 28px;
-    border-radius: 18px;
+    border-radius: 10px;
     background:
         radial-gradient(900px 360px at 88% -20%, rgba(74, 123, 255, 0.20), transparent 60%),
         radial-gradient(700px 320px at 0% 120%, rgba(120, 90, 255, 0.16), transparent 55%),
@@ -105,7 +105,7 @@ body {
     font-family: 'Segoe UI', 'SF Mono', 'Courier New', monospace;
     font-weight: 700;
     font-size: 1.25rem;
-    border-radius: 8px;
+    border-radius: 4px;
     box-shadow: 0 10px 24px rgba(74, 123, 255, 0.35);
     letter-spacing: 0.5px;
 }
@@ -369,7 +369,7 @@ body {
     gap: 10px;
     background: rgba(255, 255, 255, 0.92);
     border: none;
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 11px 16px;
     min-height: 46px;
     box-sizing: border-box;
@@ -443,7 +443,7 @@ body {
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
     padding: 0;
-    border-radius: 12px;
+    border-radius: 6px;
     display: inline-flex;
     gap: 4px;
 }
@@ -488,7 +488,7 @@ body {
     padding: 16px 18px;
     background: rgba(255, 255, 255, 0.92);
     border: none;
-    border-radius: 12px;
+    border-radius: 6px;
     box-shadow: 0 4px 16px rgba(31, 35, 48, 0.06);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -542,7 +542,7 @@ body {
     flex-shrink: 0;
     width: 44px;
     height: 44px;
-    border-radius: 12px;
+    border-radius: 6px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -633,7 +633,7 @@ body {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.6);
-    border-radius: 12px;
+    border-radius: 6px;
     padding: 16px 12px;
     box-shadow: 0 6px 24px rgba(31, 35, 48, 0.05);
     max-height: calc(100vh - 40px);
@@ -692,7 +692,7 @@ body {
     align-items: center;
     gap: 10px;
     padding: 8px 10px;
-    border-radius: 8px;
+    border-radius: 4px;
     cursor: pointer;
     transition: background 0.15s ease;
     user-select: none;
@@ -748,7 +748,7 @@ body {
     padding: 60px 20px;
     background: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(255, 255, 255, 0.6);
-    border-radius: 12px;
+    border-radius: 6px;
     color: #6b7280;
 }
 
@@ -770,7 +770,7 @@ body {
     font-size: 0.85rem;
     font-weight: 600;
     padding: 8px 20px;
-    border-radius: 8px;
+    border-radius: 4px;
     cursor: pointer;
     transition: background 0.15s ease;
     font-family: inherit;
@@ -793,7 +793,7 @@ body {
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border-radius: 12px;
+    border-radius: 6px;
     padding: 14px;
     min-width: 0;
     overflow: hidden;
@@ -1040,7 +1040,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 7px 8px;
-    border-radius: 12px;
+    border-radius: 6px;
     transition: background 0.15s ease;
     cursor: pointer;
     gap: 10px;
@@ -1178,7 +1178,7 @@ body {
     border: none;
     width: 30px;
     height: 30px;
-    border-radius: 8px;
+    border-radius: 4px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -1217,7 +1217,7 @@ body {
 .art-block {
     background: #fafbfd;
     border: 1px solid #eef0f5;
-    border-radius: 10px;
+    border-radius: 4px;
     padding: 14px 12px 10px;
     position: relative;
     transition: background 0.15s ease;
@@ -1301,7 +1301,7 @@ body {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.6);
-    border-radius: 12px;
+    border-radius: 6px;
     padding: 28px 24px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1413,7 +1413,7 @@ body {
     .stat-num { font-size: 1.5rem; }
     .stat-label { font-size: 0.85rem; }
     .stat-desc { font-size: 0.72rem; }
-    .stat-icon { width: 38px; height: 38px; border-radius: 10px; }
+    .stat-icon { width: 38px; height: 38px; border-radius: 8px; }
     .stat-icon svg { width: 18px; height: 18px; }
     .stat-card { padding: 12px 14px; gap: 10px; }
     .header-hint { display: none; }
@@ -1450,7 +1450,7 @@ body {
     .layout { grid-template-columns: 1fr; gap: 0; }
 
     /* 移动端头部内容居中；子项保持整行拉伸，与下方卡片宽度对齐 */
-    .hero-top { justify-content: center; }
+    .hero-top { justify-content: center; margin-bottom: 10px; }
     .site-header { align-items: stretch; text-align: center; }
     .hero-title-wrap { justify-content: center; }
     /* 移动端隐藏灵感分类速览 chip 行，节省首屏空间 */
@@ -1508,7 +1508,7 @@ body {
         max-height: 100vh;
         height: 100%;
         margin: 0;
-        border-radius: 0 14px 14px 0;
+        border-radius: 0 8px 8px 0;
         z-index: 1002;
         transform: translateX(-105%);
         transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1);
@@ -1534,7 +1534,7 @@ body {
     /* 抽屉触控目标加大 */
     .sidebar .sidebar-item {
         padding: 12px 10px;
-        border-radius: 10px;
+        border-radius: 4px;
     }
     .sidebar .sidebar-name { font-size: 0.95rem; }
     .sidebar .sidebar-head { padding: 0 8px 14px; }
@@ -1604,11 +1604,11 @@ body.no-scroll {
     .hero-desc { font-size: 0.86rem; line-height: 1.65; }
     .hero-chips { gap: 6px; justify-content: center; flex-wrap: wrap; }
     .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 8px; }
-    .stat-card { padding: 10px 12px; gap: 8px; border-radius: 10px; }
+    .stat-card { padding: 10px 12px; gap: 8px; border-radius: 8px; }
     .stat-num { font-size: 1.2rem; }
     .stat-label { font-size: 0.78rem; }
     .stat-desc { font-size: 0.66rem; margin-top: 1px; }
-    .stat-icon { width: 30px; height: 30px; border-radius: 8px; }
+    .stat-icon { width: 30px; height: 30px; border-radius: 6px; }
     .stat-icon svg { width: 15px; height: 15px; }
     .hero-chip { padding: 6px 12px; font-size: 0.78rem; gap: 5px; }
     .hero-search-box .search-clear { width: 20px; height: 20px; font-size: 0.7rem; }
@@ -1627,15 +1627,15 @@ body.no-scroll {
     .card { padding: 14px; }
     .card-header { margin-bottom: 12px; padding-bottom: 10px; gap: 8px; justify-content: center; }
     .card-title { font-size: 0.98rem; text-align: center; }
-    .emoji-item { padding: 7px 8px; gap: 8px; border-radius: 10px; justify-content: center; }
+    .emoji-item { padding: 7px 8px; gap: 8px; border-radius: 8px; justify-content: center; }
     .emoji-left { gap: 10px; justify-content: center; }
 
     /* 触控目标：放大复制按钮 */
-    .copy-btn { width: 34px; height: 34px; border-radius: 9px; }
+    .copy-btn { width: 34px; height: 34px; border-radius: 5px; }
     .copy-btn svg { width: 16px; height: 16px; }
 
     /* 特性区 */
-    .features { padding: 20px 18px; gap: 18px; border-radius: 12px; }
+    .features { padding: 20px 18px; gap: 18px; border-radius: 8px; }
     .feature { gap: 12px; }
     .feature-icon { width: 38px; height: 38px; font-size: 1rem; }
     .feature-desc { font-size: 0.82rem; }
@@ -1645,7 +1645,7 @@ body.no-scroll {
 
     /* 搜索框触控放大（16px 避免 iOS Safari 聚焦自动缩放） */
     .hero-search-box .search-input { padding: 1px 0; font-size: 16px; }
-    .hero-search-box { padding: 12px 14px; min-height: 50px; }
+    .hero-search-box { padding: 10px 14px; min-height: 44px; }
     .mobile-filter-btn { padding: 13px 16px; }
 }
 
