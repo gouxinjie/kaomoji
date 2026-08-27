@@ -48,8 +48,8 @@
     // 大分类 = 6 个 Tab；子分类 / 精选灵感 = 各数据源 categories / items 实际累加
     const HERO_STATS = [
         { num: '6',  label: '大分类',  desc: '满足不同场景需求',  icon: 'grid',     tone: 'purple' },
-        { num: '136',label: '子分类',  desc: '精细分类快速查找',  icon: 'diamond',  tone: 'blue'   },
-        { num: '2240+', label: '精选灵感', desc: '持续更新的灵感库', icon: 'bolt',    tone: 'green'  },
+        { num: '131',label: '子分类',  desc: '精细分类快速查找',  icon: 'diamond',  tone: 'blue'   },
+        { num: '2341', label: '精选灵感', desc: '持续更新的灵感库', icon: 'bolt',    tone: 'green'  },
         { num: '1 键', label: '一键复制', desc: '快速使用不繁琐',   icon: 'copy',     tone: 'orange' }
     ];
 
@@ -471,6 +471,13 @@
             return;
         }
         grid.innerHTML = cats.map(cat => renderCard(cat)).join('');
+        // 切换分类/搜索时给卡片添加渐入动画，卡片间交错延迟提升层次感
+        grid.querySelectorAll('.card').forEach((card, i) => {
+            card.style.setProperty('--stagger', Math.min(i, 8) * 45 + 'ms');
+            card.classList.remove('card-enter');
+            void card.offsetWidth; // 强制重排以重启动画
+            card.classList.add('card-enter');
+        });
     }
 
     function renderCard(cat) {
@@ -689,6 +696,13 @@
                 list.classList.add('expanded');
                 link.classList.add('expanded');
                 link.innerHTML = '收起 <span class="arrow">▾</span>';
+                // 展开时给条目添加交错渐入动画，提升展开观感
+                list.querySelectorAll('.emoji-item').forEach((item, i) => {
+                    item.style.setProperty('--stagger', Math.min(i, 12) * 35 + 'ms');
+                    item.classList.remove('item-enter');
+                    void item.offsetWidth; // 强制重排以重启动画
+                    item.classList.add('item-enter');
+                });
             }
         });
     }

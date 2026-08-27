@@ -842,6 +842,47 @@ body {
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+/* 分类/搜索切换时的卡片渐入动画 */
+.card-enter {
+    animation: cardFadeIn 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: var(--stagger, 0ms);
+}
+
+@keyframes cardFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 列表条目渐入动画（用于「查看更多」展开） */
+.item-enter {
+    animation: itemFadeIn 0.35s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: var(--stagger, 0ms);
+}
+
+@keyframes itemFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card-enter,
+    .item-enter {
+        animation: none;
+    }
+}
+
 .card:hover {
     transform: translateY(-4px);
     box-shadow: 0 14px 36px rgba(31, 35, 48, 0.08),
