@@ -6,37 +6,26 @@
 (function () {
     'use strict';
 
-    // 四个独立数据源：颜文字（kaomoji.js）、Emoji 图标（icons.js）、特殊符号（symbols.js）、汉字部首（radicals.js）
+    // 六个独立数据源：颜文字（kaomoji.js）、Emoji 图标（icons.js）、特殊符号（symbols.js）、汉字部首（radicals.js）、花字变体（deco.js）、装饰长串（deco.js）
     const KAOMOJI = window.KAOMOJI_DATA;
     const ICONS = window.KAOMOJI_ICONS;
     const SYMBOLS = window.KAOMOJI_SYMBOLS;
     const RADICALS = window.KAOMOJI_RADICALS;
-    if (!KAOMOJI) {
-        console.error('[kaomoji] 未找到数据源 window.KAOMOJI_DATA，请先引入 kaomoji.js');
-        return;
-    }
-    if (!ICONS) {
-        console.error('[kaomoji] 未找到数据源 window.KAOMOJI_ICONS，请先引入 icons.js');
-        return;
-    }
-    if (!SYMBOLS) {
-        console.error('[kaomoji] 未找到数据源 window.KAOMOJI_SYMBOLS，请先引入 symbols.js');
-        return;
-    }
-    if (!RADICALS) {
-        console.error('[kaomoji] 未找到数据源 window.KAOMOJI_RADICALS，请先引入 radicals.js');
+    const FANCY = window.KAOMOJI_FANCY;
+    const DECO = window.KAOMOJI_DECO;
+    const DATA_SOURCES = { kaomoji: KAOMOJI, icons: ICONS, symbols: SYMBOLS, radicals: RADICALS, fancy: FANCY, deco: DECO };
+    var missing = Object.keys(DATA_SOURCES).filter(function (key) { return !DATA_SOURCES[key]; });
+    if (missing.length) {
+        console.error('[kaomoji] 未找到数据源：' + missing.join(', ') + '，请先引入对应数据脚本');
         return;
     }
 
-    // 当前激活的 Tab：'kaomoji'（颜文字）| 'icons'（图标）| 'symbols'（特殊符号）| 'radicals'（汉字部首）
+    // 当前激活的 Tab：'kaomoji'（颜文字）| 'icons'（图标）| 'symbols'（特殊符号）| 'radicals'（汉字部首）| 'fancy'（花字变体）| 'deco'（装饰长串）
     let activeTab = 'kaomoji';
 
     // 返回当前 Tab 对应的数据源
     function currentData() {
-        if (activeTab === 'icons') return ICONS;
-        if (activeTab === 'symbols') return SYMBOLS;
-        if (activeTab === 'radicals') return RADICALS;
-        return KAOMOJI;
+        return DATA_SOURCES[activeTab] || KAOMOJI;
     }
 
     const COLLAPSE_THRESHOLD = 6; // 超过 6 条显示「查看更多」
@@ -56,11 +45,11 @@
 
     /* ---------------- 头部 ---------------- */
     // 各板块统一的"统计四件套"：用于头部 hero 卡片展示
-    // 4 大分类 / 103 子分类 / 1440+ 精选灵感 / 1 键 一键复制
+    // 6 大分类 / 120+ 子分类 / 1800+ 精选灵感 / 1 键 一键复制
     const HERO_STATS = [
-        { num: '4',  label: '大分类',  desc: '满足不同场景需求',  icon: 'grid',     tone: 'purple' },
-        { num: '103',label: '子分类',  desc: '精细分类快速查找',  icon: 'diamond',  tone: 'blue'   },
-        { num: '1440+', label: '精选灵感', desc: '持续更新的灵感库', icon: 'bolt',    tone: 'green'  },
+        { num: '6',  label: '大分类',  desc: '满足不同场景需求',  icon: 'grid',     tone: 'purple' },
+        { num: '124',label: '子分类',  desc: '精细分类快速查找',  icon: 'diamond',  tone: 'blue'   },
+        { num: '1814+', label: '精选灵感', desc: '持续更新的灵感库', icon: 'bolt',    tone: 'green'  },
         { num: '1 键', label: '一键复制', desc: '快速使用不繁琐',   icon: 'copy',     tone: 'orange' }
     ];
 
@@ -85,6 +74,8 @@
         { text: '数学符号', emoji: '√',   tone: 'green'  },
         { text: '货币符号', emoji: '$',   tone: 'lime'   },
         { text: 'ID 昵称', emoji: '☺',   tone: 'purple' },
+        { text: '花字变体', emoji: 'ⓐ',  tone: 'pink' },
+        { text: '装饰长串', emoji: '✦',   tone: 'green' },
         { text: '更多分类', emoji: '⋯',   tone: 'gray'   }
     ];
 
@@ -93,7 +84,9 @@
         { id: 'kaomoji',  label: '颜文字', icon: '(◕‿◕)' },
         { id: 'icons',    label: 'Emoji', icon: '😊' },
         { id: 'symbols',  label: '符号',   icon: '★' },
-        { id: 'radicals', label: '部首',   icon: '艹' }
+        { id: 'radicals', label: '部首',   icon: '艹' },
+        { id: 'fancy',    label: '花字',   icon: 'ⓐ' },
+        { id: 'deco',     label: '装饰',   icon: '✦' }
     ];
 
     function renderHeader() {
@@ -136,7 +129,7 @@
         // 副描述：分行排版，结尾用 (→_→) 颜文字呼应
         const heroDesc = `
             <p class="hero-desc">
-                颜文字、表情符号、特殊符号、星星爱心、箭头序号、数学货币、ID 昵称……<br>
+                颜文字、表情符号、特殊符号、汉字部首、花字变体、装饰长串……<br>
                 你想要的灵感（→_→）都在这里
             </p>
         `;
@@ -286,6 +279,8 @@
         if (activeTab === 'icons') return '搜索 Emoji、表情、图标…';
         if (activeTab === 'symbols') return '搜索箭头、爱心、数学符号…';
         if (activeTab === 'radicals') return '搜索汉字部首、偏旁…';
+        if (activeTab === 'fancy') return '搜索带圈、带框、花体字母…';
+        if (activeTab === 'deco') return '搜索分隔线、长串装饰…';
         return '搜索颜文字、符号、昵称等灵感…';
     }
 
@@ -294,6 +289,8 @@
         if (activeTab === 'icons') return '没有找到匹配的图标';
         if (activeTab === 'symbols') return '没有找到匹配的符号';
         if (activeTab === 'radicals') return '没有找到匹配的部首';
+        if (activeTab === 'fancy') return '没有找到匹配的花字';
+        if (activeTab === 'deco') return '没有找到匹配的装饰';
         return '没有找到匹配的颜文字';
     }
 
@@ -478,10 +475,12 @@
     function renderCard(cat) {
         const isArt = cat.id === 'ascii';
         const isIcon = activeTab === 'icons';
-        // 特殊符号用大字号展示；汉字部首用小一点的字号（仍是单字符）
+        // 特殊符号/花字用大字号展示；汉字部首用小一点的字号；装饰长串用等宽换行样式
         let sizeClass = '';
         if (activeTab === 'symbols') sizeClass = 'symbol-card';
         else if (activeTab === 'radicals') sizeClass = 'radical-card';
+        else if (activeTab === 'fancy') sizeClass = 'fancy-card';
+        else if (activeTab === 'deco') sizeClass = 'deco-card';
         const itemsHtml = cat.items.map(item => renderItem(item, isArt, isIcon)).join('');
         const needCollapse = cat.items.length > COLLAPSE_THRESHOLD;
         const listClass = needCollapse ? 'emoji-list collapsed' : 'emoji-list';
@@ -509,6 +508,17 @@
                     <div class="icon-main">
                         <span class="icon-glyph">${escapeHtml(item.symbol)}</span>
                         <span class="icon-desc">${escapeHtml(item.desc)}</span>
+                    </div>
+                    <button class="copy-btn" aria-label="复制">${COPY_ICON_SVG}</button>
+                </li>
+            `;
+        }
+        if (activeTab === 'deco') {
+            return `
+                <li class="emoji-item deco-item" data-text="${escapeHtml(item.symbol)}">
+                    <div class="deco-main">
+                        <span class="deco-symbol">${escapeHtml(item.symbol)}</span>
+                        <span class="deco-desc">${escapeHtml(item.desc)}</span>
                     </div>
                     <button class="copy-btn" aria-label="复制">${COPY_ICON_SVG}</button>
                 </li>

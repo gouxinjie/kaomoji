@@ -981,6 +981,27 @@ body {
 .c-minimal2 .card-emoji { background: #e8e8e0; }
 .c-ultimate .card-emoji { background: #f3e0ff; }
 .c-ascii .card-emoji    { background: #f5e8ff; }
+.c-circled-alpha .card-emoji { background: #ffe7f0; }
+.c-circled-num .card-emoji   { background: #fff0d6; }
+.c-boxed-alpha .card-emoji   { background: #e7f0ff; }
+.c-negative-boxed .card-emoji { background: #e6f8ee; }
+.c-parenthesis .card-emoji   { background: #f3e8ff; }
+.c-superscript .card-emoji   { background: #ffe8e0; }
+.c-subscript .card-emoji     { background: #e4e0e8; }
+.c-math-bold .card-emoji     { background: #e0e8f2; }
+.c-math-script .card-emoji   { background: #ffd9ec; }
+.c-fullwidth .card-emoji     { background: #e8e8e0; }
+.c-zhuyin .card-emoji        { background: #e0f0e6; }
+.c-symbol-num .card-emoji    { background: #fff0c8; }
+.c-divider-line .card-emoji  { background: #e0e8f2; }
+.c-star-line .card-emoji     { background: #fff0c8; }
+.c-heart-line .card-emoji    { background: #ffd9ec; }
+.c-flower-line .card-emoji   { background: #ffe8e0; }
+.c-emoji-deco .card-emoji    { background: #f3e8ff; }
+.c-deco-combo .card-emoji    { background: #ffe0d6; }
+.c-arrow-line .card-emoji    { background: #e0e8f2; }
+.c-box-deco .card-emoji      { background: #ece4dc; }
+.c-text-deco .card-emoji     { background: #e6f8ee; }
 
 .card-title {
     flex: 1;
@@ -1058,6 +1079,48 @@ body {
     min-width: 56px;
     text-align: center;
     line-height: 1.2;
+}
+
+/* 花字变体 Tab：单字符偏单薄，放大居中便于查看与点击 */
+.fancy-card .emoji-symbol {
+    font-size: 1.7rem;
+    min-width: 56px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* 装饰长串 Tab：整段长串独占一行，等宽字体自动换行 */
+.deco-item {
+    padding: 10px 8px;
+    align-items: flex-start;
+}
+
+.deco-main {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+    min-width: 0;
+}
+
+.deco-symbol {
+    font-family: 'SF Mono', 'Cascadia Code', 'Consolas', 'Courier New', 'PingFang SC', monospace;
+    font-size: 1.05rem;
+    color: #1f2330;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-all;
+    line-height: 1.5;
+    font-weight: 500;
+    user-select: all;
+}
+
+.deco-desc {
+    font-size: 0.8rem;
+    color: #6b7280;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .emoji-desc {
@@ -1420,6 +1483,8 @@ body {
     .emoji-symbol { min-width: 60px; font-size: 21px; }
     .symbol-card .emoji-symbol { min-width: 44px; font-size: 26px; }
     .radical-card .emoji-symbol { min-width: 44px; font-size: 19px; }
+    .fancy-card .emoji-symbol { min-width: 44px; font-size: 23px; }
+    .deco-symbol { font-size: 15px; }
     .emoji-desc { font-size: 15px; }
 
     /* 侧边栏改为左侧抽屉，默认滑出屏幕 */
@@ -1515,6 +1580,8 @@ body.no-scroll {
     .emoji-symbol { min-width: 60px; font-size: 21px; }
     .symbol-card .emoji-symbol { min-width: 44px; font-size: 26px; }
     .radical-card .emoji-symbol { min-width: 44px; font-size: 19px; }
+    .fancy-card .emoji-symbol { min-width: 44px; font-size: 23px; }
+    .deco-symbol { font-size: 15px; }
     .emoji-desc { font-size: 15px; }
 
     /* 卡片：减小内边距，贴合小屏 */
