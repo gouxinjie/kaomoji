@@ -39,14 +39,17 @@ cd kaomoji
 建议通过本地服务器访问，以获得最佳体验：
 
 ```bash
-# Python 3
-python -m http.server 8000
+# 推荐使用项目自带脚本（已禁用浏览器缓存，刷新即更新）
+./start.ps1          # Windows 一键启动，端口 8000
 
-# Node.js
-npx serve .
+# 或手动启动（注意：python -m http.server 默认有缓存，刷新可能不生效）
+python -m http.server 8000
 
 # 然后浏览器访问
 # http://localhost:8000
+```
+
+> **缓存提示**：静态资源已加版本号（`?v=日期`），每次更新数据后修改该日期即可强制刷新。若仍看到旧内容，用 `Ctrl+Shift+R`（Windows）硬刷新，或开无痕窗口。
 ```
 
 ## 🌐 在线访问

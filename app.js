@@ -6,7 +6,7 @@
 (function () {
     'use strict';
 
-    // 六个独立数据源：颜文字（kaomoji.js）、Emoji 图标（icons.js）、特殊符号（symbols.js）、汉字部首（radicals.js）、花字变体（deco.js）、装饰长串（deco.js）
+    // 六个独立数据源：颜文字（kaomoji.js）、Emoji 图标（icons.js）、特殊符号（symbols.js）、汉字部首（radicals.js）、花字变体（fancy.js）、装饰长串（deco.js）
     const KAOMOJI = window.KAOMOJI_DATA;
     const ICONS = window.KAOMOJI_ICONS;
     const SYMBOLS = window.KAOMOJI_SYMBOLS;

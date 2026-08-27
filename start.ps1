@@ -12,21 +12,21 @@ Write-Host ""
 # 优先使用 Python；否则尝试 Node.js
 try {
     python --version | Out-Null
-    Write-Host "[启动] 使用 Python 启动服务器，端口 8000"
+    Write-Host "[启动] 使用 Python 启动服务器（禁用缓存），端口 8000"
     Write-Host "[访问] http://localhost:8000/"
     Write-Host "[停止] 按 Ctrl+C"
     Write-Host ""
-    python -m http.server 8000
+    python "$PSScriptRoot/server.py"
     exit 0
 } catch { }
 
 try {
     node --version | Out-Null
-    Write-Host "[启动] 使用 Node.js 启动服务器，端口 8000"
+    Write-Host "[启动] 使用 Node.js 启动服务器（禁用缓存），端口 8000"
     Write-Host "[访问] http://localhost:8000/"
     Write-Host "[停止] 按 Ctrl+C"
     Write-Host ""
-    node -e "const http=require('http'),fs=require('fs'),path=require('path');const types={'.html':'text/html','.js':'text/javascript','.css':'text/css','.svg':'image/svg+xml','.png':'image/png','.webmanifest':'application/manifest+json'};http.createServer((q,r)=>{let p=decodeURIComponent(q.url.split('?')[0]);if(p==='/')p='/index.html';const f=path.join(process.cwd(),p);fs.readFile(f,(e,d)=>{if(e){r.writeHead(404);r.end('404');return;}r.writeHead(200,{'Content-Type':types[path.extname(f)]||'application/octet-stream'});r.end(d);});}).listen(8000,'0.0.0.0',()=>console.log('Serving on http://localhost:8000/'));"
+    node -e "const http=require('http'),fs=require('fs'),path=require('path');const types={'.html':'text/html','.js':'text/javascript','.css':'text/css','.svg':'image/svg+xml','.png':'image/png','.webmanifest':'application/manifest+json'};http.createServer((q,r)=>{let p=decodeURIComponent(q.url.split('?')[0]);if(p==='/')p='/index.html';const f=path.join(process.cwd(),p);fs.readFile(f,(e,d)=>{if(e){r.writeHead(404);r.end('404');return;}r.writeHead(200,{'Content-Type':types[path.extname(f)]||'application/octet-stream','Cache-Control':'no-store, no-cache, must-revalidate, max-age=0','Pragma':'no-cache','Expires':'0'});r.end(d);});}).listen(8000,'0.0.0.0',()=>console.log('Serving on http://localhost:8000/'));"
     exit 0
 } catch { }
 
