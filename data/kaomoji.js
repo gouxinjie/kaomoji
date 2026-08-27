@@ -1,15 +1,15 @@
 /**
  * 颜文字图鉴 · 数据源
- * 精简优化版 · 57 大类、约 568 个颜文字
+ * 精简优化版 · 51 大类、534 个颜文字
  * 通过 window.KAOMOJI_DATA 暴露给页面
  */
 window.KAOMOJI_DATA = {
     meta: {
         title: '颜文字图鉴',
         icon: '(→_→)',
-        subtitle: '从嘲讽到撒娇，从极简到沙雕，从含蓄到放肆 · 568 种颜文字一键复制，让表达更有温度',
+        subtitle: '从嘲讽到撒娇，从极简到沙雕，从含蓄到放肆 · 534 种颜文字一键复制，让表达更有温度',
         totalLabel: '点击 复制',
-        totalCount: 568
+        totalCount: 534
     },
 
     categories: [

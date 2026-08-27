@@ -9,7 +9,7 @@ window.KAOMOJI_DECO = {
         icon: '✦',
         subtitle: '花式分隔线、长串星星爱心、文字点缀 · 排版评论区都能用',
         totalLabel: '点击 复制',
-        totalCount: 148
+        totalCount: 154
     },
 
     categories: [

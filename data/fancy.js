@@ -9,7 +9,7 @@ window.KAOMOJI_FANCY = {
         icon: 'ⓐ',
         subtitle: '带圈、带框、空心、花体、哥特……键盘打不出的特殊字母数字 · 昵称签名一步到位',
         totalLabel: '点击 复制',
-        totalCount: 512
+        totalCount: 674
     },
 
     categories: [

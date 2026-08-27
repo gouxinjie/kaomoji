@@ -55,25 +55,25 @@
 
     // 装饰用颜文字 / 表情：固定文案，呼应"键盘打不出的灵感"主题
     const HERO_FLOATS = [
-        { text: '(°▽°)/', cls: 'float-2' },
-        { text: '✦',       cls: 'float-3' },
-        { text: '★',       cls: 'float-4' },
-        { text: '✿',       cls: 'float-6' },
-        { text: '(ˆ▽ˆ)',  cls: 'float-7' },
-        { text: '(⊙▽⊙)',  cls: 'float-8' }
+        { text: '(ノ°▽°)ノ', cls: 'float-2' },
+        { text: '✧',       cls: 'float-3' },
+        { text: '♡',       cls: 'float-4' },
+        { text: '❀',       cls: 'float-6' },
+        { text: '(つ≧▽≦)つ', cls: 'float-7' },
+        { text: 'ヽ(°〇°)ﾉ',  cls: 'float-8' }
     ];
 
     // 头部 chip：横排展示站内可寻找的灵感类型，纯展示，不承担 Tab 切换职责
     // tone 字段决定 chip 的配色（与 .hero-chip-{tone} 一一对应）
     const HERO_CHIPS = [
-        { text: '颜文字',  emoji: '◕‿◕', tone: 'pink'   },
-        { text: '表情符号', emoji: '😊',  tone: 'orange' },
-        { text: '箭头符号', emoji: '→',   tone: 'blue'   },
-        { text: '序号编号', emoji: '①',   tone: 'indigo' },
-        { text: '数学符号', emoji: '√',   tone: 'green'  },
-        { text: '货币符号', emoji: '$',   tone: 'lime'   },
-        { text: '花字变体', emoji: 'ⓐ',  tone: 'pink' },
-        { text: '装饰长串', emoji: '✦',   tone: 'green' },
+        { text: '颜文字',  emoji: '(◕‿◕)', tone: 'pink'   },
+        { text: '表情符号', emoji: '🥰',  tone: 'orange' },
+        { text: '箭头符号', emoji: '↘',   tone: 'blue'   },
+        { text: '序号编号', emoji: 'Ⓐ',   tone: 'indigo' },
+        { text: '数学符号', emoji: '∞',   tone: 'green'  },
+        { text: '货币符号', emoji: '¥',   tone: 'lime'   },
+        { text: '花字变体', emoji: '𝔸',  tone: 'pink' },
+        { text: '装饰长串', emoji: '✧',   tone: 'green' },
     ];
 
     // Tab 切换：渲染到 site-header 内部，与搜索框同行展示
@@ -82,8 +82,8 @@
         { id: 'icons',    label: 'Emoji', icon: '😊' },
         { id: 'symbols',  label: '符号',   icon: '★' },
         { id: 'radicals', label: '部首',   icon: '艹' },
-        { id: 'fancy',    label: '花字变体',   icon: 'ⓐ' },
-        { id: 'deco',     label: '装饰长串',   icon: '✦' }
+        { id: 'fancy',    label: '花字变体',   icon: '𝔸' },
+        { id: 'deco',     label: '装饰长串',   icon: '✧' }
     ];
 
     function renderHeader() {

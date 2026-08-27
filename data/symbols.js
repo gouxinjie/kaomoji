@@ -9,7 +9,7 @@ window.KAOMOJI_SYMBOLS = {
         icon: '★',
         subtitle: '键盘打不出的星星爱心、箭头序号、数学货币 · 280+ 特殊符号随手复制',
         totalLabel: '点击 复制',
-        totalCount: 286
+        totalCount: 281
     },
 
     // 分类
@@ -198,7 +198,7 @@ window.KAOMOJI_SYMBOLS = {
             "id": "math",
             "name": "数学符号",
             "emoji": "≠",
-            "badge": 30,
+            "badge": 31,
             "items": [
                 { "symbol": "≤", "desc": "小于等于" },
                 { "symbol": "≥", "desc": "大于等于" },

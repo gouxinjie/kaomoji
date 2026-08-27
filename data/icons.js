@@ -9,7 +9,7 @@ window.KAOMOJI_ICONS = {
         icon: '😊',
         subtitle: '从笑脸到萌宠，从美食到出行 · 500+ 常用 Emoji 一目了然，点击即复制',
         totalLabel: '点击 复制',
-        totalCount: 512
+        totalCount: 484
     },
 
     // 分类
@@ -18,7 +18,7 @@ window.KAOMOJI_ICONS = {
             "id": "face",
             "name": "表情 · 笑脸",
             "emoji": "😀",
-            "badge": 52,
+            "badge": 53,
             "items": [
                 { "symbol": "😀", "desc": "开心大笑" },
                 { "symbol": "😁", "desc": "露齿笑" },
