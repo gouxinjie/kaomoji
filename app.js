@@ -49,7 +49,7 @@
     const HERO_STATS = [
         { num: '6',  label: '大分类',  desc: '满足不同场景需求',  icon: 'grid',     tone: 'purple' },
         { num: '124',label: '子分类',  desc: '精细分类快速查找',  icon: 'diamond',  tone: 'blue'   },
-        { num: '1814+', label: '精选灵感', desc: '持续更新的灵感库', icon: 'bolt',    tone: 'green'  },
+        { num: '1843+', label: '精选灵感', desc: '持续更新的灵感库', icon: 'bolt',    tone: 'green'  },
         { num: '1 键', label: '一键复制', desc: '快速使用不繁琐',   icon: 'copy',     tone: 'orange' }
     ];
 
