@@ -164,6 +164,43 @@ body {
     flex-shrink: 0;
 }
 
+/* 右上角代码仓库参考图标（GitHub / Gitee） */
+.repo-links {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 4px;
+}
+
+.repo-link {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(31, 35, 48, 0.08);
+    box-shadow: 0 4px 14px rgba(31, 35, 48, 0.05);
+    transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+}
+
+.repo-link svg {
+    width: 18px;
+    height: 18px;
+    fill: #4a5163;
+}
+
+.repo-link:hover {
+    transform: translateY(-2px);
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(31, 35, 48, 0.12);
+}
+
+.repo-link:hover svg {
+    fill: #4a7bff;
+}
+
 /* 大标题区：左右装饰颜文字 + 主标题（居中） */
 .hero-title-wrap {
     position: relative;
