@@ -5,9 +5,28 @@
 
 一个纯静态的中文表达符号收藏网站，收录 **颜文字、Emoji 图标、特殊符号、汉字部首、花字变体、装饰长串** 六大类内容，总计 **131 个分类、2341 个精选条目**。点击即可一键复制到剪贴板，让文字表达更有温度。
 
-**页面截图**：
+----
 
-![预览](imgs/home.png)
+
+## 页面截图
+
+**PC 端 · 颜文字**：
+
+![PC 端 · 颜文字](imgs/pc-kaomoji.png)
+
+**PC 端 · 花字变体**：
+
+![PC 端 · 花字变体](imgs/pc-fancy.png)
+
+**移动端**（一行三个）：
+
+<table align="center" style="max-width:1100px">
+  <tr>
+    <td width="33%" style="text-align:center"><img src="imgs/mob-kaomoji.png" alt="移动端 · 颜文字" style="width:100%; max-width:340px"></td>
+    <td width="33%" style="text-align:center"><img src="imgs/mob-fancy.png" alt="移动端 · 花字变体" style="width:100%; max-width:340px"></td>
+    <td width="33%" style="text-align:center"><img src="imgs/mob-icons.png" alt="移动端 · Emoji" style="width:100%; max-width:340px"></td>
+  </tr>
+</table>
 
 ## ✨ 功能特性
 
