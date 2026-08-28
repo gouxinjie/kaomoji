@@ -2,6 +2,10 @@
 # 触发条件：推送 master 分支时自动部署
 # 目标目录：/var/www/kaomoji
 # 域名：kaomoji.gouxinjie.com (HTTP)
+#
+# 说明：私钥通过 base64 编码存入 Secret（ECS_SSH_PRIVATE_KEY），
+#       runner 上用 base64 -d 解码成文件，彻底避免多行 PEM 换行/回车符导致的
+#       "error in libcrypto" 问题。
 
 name: Deploy to Aliyun ECS
 
@@ -18,20 +22,26 @@ jobs:
       - name: 检出代码
         uses: actions/checkout@v4
 
-      # 2. 通过 SSH 将文件部署到 ECS
-      - name: 通过 SSH 部署
-        uses: easingthemes/ssh-deploy@v4.1.0
-        with:
-          # GitHub Secrets 中配置的部署参数
-          SSH_PRIVATE_KEY: ${{ secrets.ECS_SSH_PRIVATE_KEY }}
-          REMOTE_HOST: ${{ secrets.ECS_HOST }}
-          REMOTE_USER: ${{ secrets.ECS_USER }}
-          REMOTE_PORT: ${{ secrets.ECS_PORT }}
-          # 部署的目标目录。建议 ECS_TARGET 设为 /var/www/kaomoji（root 用户下即映射到部署目录）
-          TARGET: ${{ secrets.ECS_TARGET }}
-          EXCLUDE: ".github/,.git/,.gitignore,README.md,LICENSE,start.ps1,docs/,.codebuddy/"
-          # --delete：同步删除远端已不存在的文件，保证部署目录与仓库完全一致
-          ARGS: "-rltgoDzvO --delete"
-          SCRIPT_AFTER: |
-            echo "部署完成，目录内容："
-            ls -la /var/www/kaomoji
+      # 2. 解码 base64 私钥为 SSH 密钥文件
+      - name: 准备 SSH 密钥
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.ECS_SSH_PRIVATE_KEY }}" | base64 -d > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+
+      # 3. 通过 rsync 将文件部署到 ECS（手动控制，不使用 action 的密钥处理）
+      - name: 通过 SSH/rsync 部署
+        run: |
+          rsync -avzO --delete \
+            --rsh "ssh -p ${{ secrets.ECS_PORT }} -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no" \
+            --exclude='.github/' --exclude='.git/' --exclude='.gitignore' \
+            --exclude='README.md' --exclude='LICENSE' --exclude='start.ps1' \
+            --exclude='docs/' --exclude='.codebuddy/' \
+            ./ ${{ secrets.ECS_USER }}@${{ secrets.ECS_HOST }}:${{ secrets.ECS_TARGET }}/
+
+      # 4. 部署完成后的验证
+      - name: 验证部署
+        run: |
+          ssh -p ${{ secrets.ECS_PORT }} -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no \
+            ${{ secrets.ECS_USER }}@${{ secrets.ECS_HOST }} \
+            "echo '部署完成，目录内容：' && ls -la ${{ secrets.ECS_TARGET }}"
