@@ -9,7 +9,7 @@ window.KAOMOJI_DATA = {
         icon: '(→_→)',
         subtitle: '从嘲讽到撒娇，从极简到沙雕，从含蓄到放肆 · 534 种颜文字一键复制，让表达更有温度',
         totalLabel: '点击 复制',
-        totalCount: 569
+        totalCount: 589
     },
 
     categories: [
@@ -62,20 +62,35 @@ window.KAOMOJI_DATA = {
             "id": "think",
             "name": "思考 · 疑惑",
             "emoji": "🤔",
-            "badge": 12,
+            "badge": 32,
             "items": [
                 { "symbol": "(・_・?)", "desc": "疑惑" },
                 { "symbol": "(？o？)", "desc": "满脑问号" },
-                { "symbol": "(゜-゜)", "desc": "歪头想" },
                 { "symbol": "(・∀・？)", "desc": "不解" },
-                { "symbol": "(｡ŏ_ŏ)", "desc": "思考中" },
                 { "symbol": "(⊙_⊙)?", "desc": "震惊疑惑" },
-                { "symbol": "(；一_一)?", "desc": "无语疑惑" },
                 { "symbol": "(´･_･)`", "desc": "纠结" },
+                { "symbol": "(；一_一)?", "desc": "无语疑惑" },
                 { "symbol": "(・へ・)?", "desc": "不解歪头" },
-                { "symbol": "(￣ー￣)?", "desc": "深思" },
                 { "symbol": "(｡ŏ_ŏ)?", "desc": "犯难" },
-                { "symbol": "(；°Д°)?", "desc": "彻底纠结" }
+                { "symbol": "(￣ー￣)?", "desc": "深思" },
+                { "symbol": "(´-_ゝ｀)?", "desc": "怀疑人生" },
+                { "symbol": "(゜-゜)", "desc": "歪头想" },
+                { "symbol": "(・_・。)", "desc": "若有所思" },
+                { "symbol": "(？_？)", "desc": "满脑问号" },
+                { "symbol": "(⊙ˍ⊙)", "desc": "呆滞疑惑" },
+                { "symbol": "(；一_一)", "desc": "无语发愣" },
+                { "symbol": "(；°Д°)?", "desc": "彻底纠结" },
+                { "symbol": "(⊙_⊙)", "desc": "瞪眼疑惑" },
+                { "symbol": "(¬_¬)?", "desc": "斜眼怀疑" },
+                { "symbol": "(눈_눈)?", "desc": "死鱼眼质疑" },
+                { "symbol": "(；￣Д￣)?", "desc": "气到问号" },
+                { "symbol": "(・_・;)", "desc": "冒汗疑问" },
+                { "symbol": "(´-﹏-)`", "desc": "无奈疑惑" },
+                { "symbol": "(￢_￢)?", "desc": "撇嘴质疑" },
+                { "symbol": "(・∀・)", "desc": "咦？" },
+                { "symbol": "(￣▽￣)?", "desc": "轻松疑问" },
+                { "symbol": "(´∀｀)?", "desc": "随口一问" },
+                { "symbol": "(・_・)", "desc": "咦" }
             ]
         },
         {
