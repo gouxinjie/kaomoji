@@ -1,0 +1,37 @@
+# 颜文字图鉴 · 部署到阿里云 ECS
+# 触发条件：推送 master 分支时自动部署
+# 目标目录：/var/www/kaomoji
+# 域名：kaomoji.gouxinjie.com (HTTP)
+
+name: Deploy to Aliyun ECS
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  deploy:
+    name: 部署到 ECS
+    runs-on: ubuntu-latest
+    steps:
+      # 1. 拉取仓库代码
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      # 2. 通过 SSH 将文件部署到 ECS
+      - name: 通过 SSH 部署
+        uses: easingthemes/ssh-deploy@v4.1.0
+        with:
+          # GitHub Secrets 中配置的部署参数
+          SSH_PRIVATE_KEY: ${{ secrets.ECS_SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.ECS_HOST }}
+          REMOTE_USER: ${{ secrets.ECS_USER }}
+          REMOTE_PORT: ${{ secrets.ECS_PORT }}
+          # 部署的目标目录。建议 ECS_TARGET 设为 /var/www/kaomoji（root 用户下即映射到部署目录）
+          TARGET: ${{ secrets.ECS_TARGET }}
+          EXCLUDE: ".github/,.git/,.gitignore,README.md,LICENSE,start.ps1,docs/,.codebuddy/"
+          # --delete：同步删除远端已不存在的文件，保证部署目录与仓库完全一致
+          ARGS: "-rltgoDzvO --delete"
+          SCRIPT_AFTER: |
+            echo "部署完成，目录内容："
+            ls -la /var/www/kaomoji

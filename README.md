@@ -88,6 +88,80 @@ python -m http.server 8000
 
 > 部署后若需更新内容，修改对应 `data/` 文件后提交并推送到 `master`，Pages 服务会自动重新发布。
 
+## 🖥️ 部署到阿里云 ECS（GitHub Actions）
+
+本项目支持通过 **GitHub Actions** 自动部署到自建的阿里云 ECS 服务器（Nginx 托管）。每次推送到 `master` 分支都会自动同步到服务器 `/var/www/kaomoji` 目录。
+
+**部署结构**：`kaomoji.gouxinjie.com` → Nginx (80) → `/var/www/kaomoji`
+
+### 一、服务器初始化（一次性）
+
+登录 ECS 服务器，执行初始化脚本（安装 Nginx、创建部署目录、配置站点）：
+
+```bash
+# 把项目拉到服务器（或直接执行仓库中的脚本）
+git clone https://github.com/gouxinjie/kaomoji.git
+cd kaomoji
+sudo bash docs/setup_server.sh
+```
+
+脚本会自动完成：
+- 安装并启动 Nginx
+- 创建 `/var/www/kaomoji` 部署目录
+- 将 `docs/server_kaomoji.conf` 复制到 `/etc/nginx/conf.d/`
+- 校验并重载 Nginx 配置
+
+> 服务器安全组需放行 **80**（HTTP）和 **22**（SSH）端口。
+>
+> 部署目录默认属主为 `root`。若 `ECS_USER` 使用普通用户部署，请将 `/var/www/kaomoji` 属主改为该部署用户，使其具备写入权限：
+> ```bash
+> sudo chown -R deploy_user:deploy_user /var/www/kaomoji
+> ```
+
+### 二、配置 GitHub Secrets
+
+在 GitHub 仓库 **Settings → Secrets and variables → Actions** 中新增以下 Secrets：
+
+| Secret 名称 | 说明 | 示例 |
+| --- | --- | --- |
+| `ECS_HOST` | 服务器公网 IP | `47.98.xx.xx` |
+| `ECS_USER` | 部署 SSH 用户 | `root`（或具有部署权限的用户） |
+| `ECS_PORT` | SSH 端口 | `22` |
+| `ECS_SSH_PRIVATE_KEY` | 部署密钥对的**私钥** | `-----BEGIN OPENSSH PRIVATE KEY-----...` |
+| `ECS_TARGET` | 相对部署用户家目录的路径，最终映射到 `/var/www/kaomoji` | 见下方说明 |
+
+**关于 `ECS_TARGET`**：`ssh-deploy` 会把文件上传到 SSH 用户的家目录下。若部署用户是 `root`，家目录为 `/root`，则 `ECS_TARGET` 设为 `/var/www/kaomoji`（绝对路径即可映射正确）；若使用普通用户（家目录为 `/home/user`），可设为 `/var/www/kaomoji` 或家目录下的相对路径，部署前脚本会先 `mkdir -p /var/www/kaomoji` 创建目录。
+
+### 三、生成部署密钥对（可选但推荐）
+
+为安全起见，建议在 ECS 上为部署用户生成独立的 SSH 密钥对：
+
+```bash
+ssh-keygen -t ed25519 -C "github-actions-deploy" -f ~/.ssh/deploy_key
+cat ~/.ssh/deploy_key.pub >> ~/.ssh/authorized_keys
+chmod 600 ~/.ssh/authorized_keys
+```
+
+将 `~/.ssh/deploy_key` 的**私钥内容**填入 `ECS_SSH_PRIVATE_KEY`。
+
+### 四、触发部署
+
+初始化完成后，每次 `git push` 到 `master` 分支，GitHub Actions 会自动：
+1. 检出最新代码
+2. 通过 SSH 将文件同步到 `/var/www/kaomoji`（自动清理已删除的文件，保证与仓库完全一致）
+3. 跳过 `.github/`、`docs/`、`README.md` 等非站点文件
+
+在仓库 **Actions** 页面可查看每次部署的实时日志。
+
+### 五、Nginx 配置说明
+
+站点配置文件为 `docs/server_kaomoji.conf`，主要配置：
+- `listen 80` + `server_name kaomoji.gouxinjie.com`：HTTP 访问
+- 静态资源（css/js/svg/png）长缓存 7 天；HTML 不缓存，保证数据更新及时生效
+- 关闭 `server_tokens` 隐藏版本号
+
+如需使用 HTTPS，可在阿里云申请免费 SSL 证书，并将 `listen 80` 改为 `listen 443 ssl` + 配置证书路径 + 添加 80 跳转 443。
+
 ## 📁 项目结构
 
 ```
@@ -109,6 +183,12 @@ kaomoji/
 ├── push.bat            # 一键推送 GitHub + Gitee 脚本
 ├── start.ps1           # 一键启动本地预览服务器脚本
 ├── LICENSE             # MIT 许可证
+├── .github/            # GitHub Actions 配置
+│   └── workflows/
+│       └── deploy.yml  # 部署到阿里云 ECS 的工作流
+├── docs/               # 部署相关文档与配置
+│   ├── server_kaomoji.conf   # Nginx 站点配置（kaomoji.gouxinjie.com）
+│   └── setup_server.sh       # ECS 服务器初始化脚本（一次性）
 └── README.md           # 说明文档
 ```
 
