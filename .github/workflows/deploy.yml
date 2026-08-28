@@ -23,10 +23,12 @@ jobs:
         uses: actions/checkout@v4
 
       # 2. 解码 base64 私钥为 SSH 密钥文件
+      #    先去除 secret 中可能混入的换行/回车/空格，再解码，避免 base64: invalid input
       - name: 准备 SSH 密钥
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.ECS_SSH_PRIVATE_KEY }}" | base64 -d > ~/.ssh/deploy_key
+          echo "${{ secrets.ECS_SSH_PRIVATE_KEY }}" | tr -d '\r\n ' > /tmp/deploy_key.b64
+          base64 -d /tmp/deploy_key.b64 > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
 
       # 3. 通过 rsync 将文件部署到 ECS（手动控制，不使用 action 的密钥处理）
