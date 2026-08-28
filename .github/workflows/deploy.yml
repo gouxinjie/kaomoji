@@ -3,9 +3,10 @@
 # 目标目录：/var/www/kaomoji
 # 域名：kaomoji.gouxinjie.com (HTTP)
 #
-# 说明：私钥通过 base64 编码存入 Secret（ECS_SSH_PRIVATE_KEY），
-#       runner 上用 base64 -d 解码成文件，彻底避免多行 PEM 换行/回车符导致的
-#       "error in libcrypto" 问题。
+# 说明：ECS_SSH_PRIVATE_KEY 支持两种格式，自动识别：
+#   - PEM 明文（-----BEGIN ...-----）：直接使用
+#   - base64：先解码再使用
+#   runner 上会统一清洗回车符，避免 "error in libcrypto"。
 
 name: Deploy to Aliyun ECS
 
@@ -22,14 +23,25 @@ jobs:
       - name: 检出代码
         uses: actions/checkout@v4
 
-      # 2. 解码 base64 私钥为 SSH 密钥文件
-      #    先去除 secret 中可能混入的换行/回车/空格，再解码，避免 base64: invalid input
+      # 2. 准备 SSH 密钥文件（自动识别 PEM 明文 / base64）
+      #    通过 env 传入 secret，避免多行内容在 run 块中被 shell 拆分
       - name: 准备 SSH 密钥
+        env:
+          KEY: ${{ secrets.ECS_SSH_PRIVATE_KEY }}
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.ECS_SSH_PRIVATE_KEY }}" | tr -d '\r\n ' > /tmp/deploy_key.b64
-          base64 -d /tmp/deploy_key.b64 > ~/.ssh/deploy_key
+          printf '%s' "$KEY" > /tmp/key_input
+          if grep -q -- '-----BEGIN' /tmp/key_input; then
+            echo "检测到 PEM 明文私钥，直接使用"
+            sed 's/\r$//' /tmp/key_input > ~/.ssh/deploy_key
+          else
+            echo "检测到 base64 私钥，先解码"
+            tr -d '\r\n ' < /tmp/key_input | base64 -d > ~/.ssh/deploy_key
+          fi
+          # 若结尾缺换行则补上，并校验密钥能被 ssh 正确解析
+          [ -n "$(tail -c1 ~/.ssh/deploy_key)" ] && echo >> ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
+          ssh-keygen -y -f ~/.ssh/deploy_key > /dev/null && echo "密钥解析成功"
 
       # 3. 通过 rsync 将文件部署到 ECS（手动控制，不使用 action 的密钥处理）
       - name: 通过 SSH/rsync 部署
