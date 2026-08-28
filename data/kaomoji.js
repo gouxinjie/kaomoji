@@ -9,7 +9,7 @@ window.KAOMOJI_DATA = {
         icon: '(→_→)',
         subtitle: '从嘲讽到撒娇，从极简到沙雕，从含蓄到放肆 · 534 种颜文字一键复制，让表达更有温度',
         totalLabel: '点击 复制',
-        totalCount: 534
+        totalCount: 569
     },
 
     categories: [
@@ -150,6 +150,36 @@ window.KAOMOJI_DATA = {
                 { "symbol": "(；ω；)", "desc": "泪目" },
                 { "symbol": "(´-﹏-)`", "desc": "无奈可怜" },
                 { "symbol": "(இдஇ)", "desc": "泪流成河" }
+            ]
+        },
+        {
+            "id": "regret",
+            "name": "遗憾 · 惋惜",
+            "emoji": "😔",
+            "badge": 35,
+            "items": [
+                { "symbol": "(；一_一)", "desc": "神情落寞" },
+                { "symbol": "(´-﹏-`)", "desc": "惋惜叹气" },
+                { "symbol": "(｡ŏ_ŏ)", "desc": "欲言又止" },
+                { "symbol": "(´･_･`)", "desc": "有点遗憾" },
+                { "symbol": "(´;︵;)", "desc": "委屈遗憾" },
+                { "symbol": "(｡•́︿•̀｡)", "desc": "满脸遗憾" },
+                { "symbol": "(T﹏T)", "desc": "惋惜不已" },
+                { "symbol": "(T_T)", "desc": "泪流满面" },
+                { "symbol": "(இ﹏இ)", "desc": "泪眼婆娑" },
+                { "symbol": "(；∀；)", "desc": "哽咽难言" },
+                { "symbol": "(ㄒoㄒ)", "desc": "忍不住大哭" },
+                { "symbol": "(；°Д°)", "desc": "错愕难当" },
+                { "symbol": "(´-ω-｀)", "desc": "情绪低落" },
+                { "symbol": "(｡ŏ﹏ŏ)", "desc": "可怜巴巴" },
+                { "symbol": "(´_ゝ`)", "desc": "有些失落" },
+                { "symbol": "(￣ヘ￣)", "desc": "不甘心" },
+                { "symbol": "(－‸ლ)", "desc": "无奈扶额" },
+                { "symbol": "(・へ・)", "desc": "撇嘴无奈" },
+                { "symbol": "(´-_ゝ｀)", "desc": "无奈斜眼" },
+                { "symbol": "(╮°□°)╭", "desc": "摊手无奈" },
+                { "symbol": "(；°ロ°)", "desc": "错愕呆住" },
+                { "symbol": "( ；′⌒`)", "desc": "遗憾摇头" }
             ]
         },
         {
