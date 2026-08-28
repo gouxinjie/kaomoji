@@ -5,7 +5,11 @@
 
 一个纯静态的中文表达符号收藏网站，收录 **颜文字、Emoji 图标、特殊符号、汉字部首、花字变体、装饰长串** 六大类内容，总计 **131 个分类、2341 个精选条目**。点击即可一键复制到剪贴板，让文字表达更有温度。
 
-----
+ **🌐 在线访问**
+
+**https://kaomoji.gouxinjie.com/**
+
+> 打开即可使用，支持 PC 端与移动端，点击任意条目一键复制。
 
 
 ## 页面截图
@@ -72,11 +76,6 @@ python -m http.server 8000
 ```
 
 > **缓存提示**：静态资源已加版本号（`?v=日期`），每次更新数据后修改该日期即可强制刷新。若仍看到旧内容，用 `Ctrl+Shift+R`（Windows）硬刷新，或开无痕窗口。
-
-## 🌐 在线访问
-
-- **Gitee Pages**：https://gou-xinjie.gitee.io/kaomoji/
-- **GitHub Pages**：https://gouxinjie.github.io/kaomoji/
 
 ## 📦 部署到静态 Pages
 
