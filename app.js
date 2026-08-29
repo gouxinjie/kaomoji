@@ -17,6 +17,7 @@
     var missing = Object.keys(DATA_SOURCES).filter(function (key) { return !DATA_SOURCES[key]; });
     if (missing.length) {
         console.error('[kaomoji] 未找到数据源：' + missing.join(', ') + '，请先引入对应数据脚本');
+        showFatalError('数据文件加载失败（' + missing.join(', ') + '），请检查网络后重试');
         return;
     }
 
@@ -41,6 +42,30 @@
             .replace(/>/g, '&gt;')
             .replace(/"/g, '&quot;')
             .replace(/'/g, '&#39;');
+    }
+
+    /* ---------------- 加载兜底 ---------------- */
+    // 隐藏居中的加载遮罩
+    function hideLoading() {
+        const loading = document.getElementById('page-loading');
+        if (loading) loading.classList.add('hidden');
+    }
+
+    // 数据缺失 / 渲染异常 / 加载超时时，把加载遮罩切换为错误提示，并支持一键重试
+    function showFatalError(msg) {
+        const loading = document.getElementById('page-loading');
+        if (!loading) return;
+        loading.classList.remove('hidden');
+        const wrap = document.createElement('div');
+        wrap.style.cssText = 'display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;';
+        wrap.innerHTML =
+            '<div style="font-size:2.2rem" aria-hidden="true">(×_×)</div>' +
+            '<p style="margin:0;max-width:300px;line-height:1.7">' + escapeHtml(msg) + '</p>' +
+            '<button type="button" id="fatal-reload" style="padding:9px 26px;border:0;border-radius:8px;background:#4a7bff;color:#fff;font-size:0.9rem;cursor:pointer">重新加载</button>';
+        loading.textContent = '';
+        loading.appendChild(wrap);
+        const btn = wrap.querySelector('#fatal-reload');
+        if (btn) btn.addEventListener('click', function () { location.reload(); });
     }
 
     /* ---------------- 头部 ---------------- */
@@ -809,18 +834,23 @@
 
     /* ---------------- 启动 ---------------- */
     function init() {
-        // renderHeader() 内部已渲染 Tab 和搜索框，并绑定交互
-        renderHeader();
-        renderSidebar();
-        renderGrid();
-        renderFeatures();
-        renderFooter();
-        setupCopy();
-        setupMore();
-        setupMobileFilter();
-        // 内容渲染完成后隐藏居中的加载提示
-        const loading = document.getElementById('page-loading');
-        if (loading) loading.classList.add('hidden');
+        try {
+            // renderHeader() 内部已渲染 Tab 和搜索框，并绑定交互
+            renderHeader();
+            renderSidebar();
+            renderGrid();
+            renderFeatures();
+            renderFooter();
+            setupCopy();
+            setupMore();
+            setupMobileFilter();
+        } catch (e) {
+            // 任一环节出错都不能让页面永久停在加载中
+            console.error('[kaomoji] 渲染失败：', e);
+            showFatalError('页面渲染出错，请刷新重试');
+            return;
+        }
+        hideLoading();
     }
 
     if (document.readyState === 'loading') {
@@ -828,4 +858,13 @@
     } else {
         init();
     }
+
+    // 最后兜底：若脚本因资源下载失败/被阻塞而迟迟未完成渲染，
+    // 超时后强制结束加载态并提示重试，避免一直卡在 loading。
+    setTimeout(function () {
+        const grid = document.getElementById('grid');
+        const rendered = grid && grid.children.length > 0;
+        if (!rendered) showFatalError('页面加载超时，请检查网络后重试');
+        else hideLoading();
+    }, 8000);
 })();

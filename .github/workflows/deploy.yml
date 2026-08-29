@@ -13,6 +13,8 @@ name: Deploy to Aliyun ECS
 on:
   push:
     branches: [ master ]
+  # 支持在 Actions 页面手动触发部署，便于首次初始化或排查问题
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -44,18 +46,26 @@ jobs:
           ssh-keygen -y -f ~/.ssh/deploy_key > /dev/null && echo "密钥解析成功"
 
       # 3. 通过 rsync 将文件部署到 ECS（手动控制，不使用 action 的密钥处理）
+      #    --no-o --no-g：非 root 部署用户无需也不应同步属主/组，避免 chown 失败
       - name: 通过 SSH/rsync 部署
         run: |
-          rsync -avzO --delete \
+          rsync -avzO --no-o --no-g --delete \
             --rsh "ssh -p ${{ secrets.ECS_PORT }} -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no" \
             --exclude='.github/' --exclude='.git/' --exclude='.gitignore' \
             --exclude='README.md' --exclude='LICENSE' --exclude='start.ps1' \
             --exclude='docs/' --exclude='.codebuddy/' \
             ./ ${{ secrets.ECS_USER }}@${{ secrets.ECS_HOST }}:${{ secrets.ECS_TARGET }}/
 
-      # 4. 部署完成后的验证
+      # 4. 部署完成后的验证：确认目录内容 + 站点 HTTP 可达
       - name: 验证部署
         run: |
           ssh -p ${{ secrets.ECS_PORT }} -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no \
             ${{ secrets.ECS_USER }}@${{ secrets.ECS_HOST }} \
             "echo '部署完成，目录内容：' && ls -la ${{ secrets.ECS_TARGET }}"
+
+      # 5. 健康检查：站点不可达则工作流失败，及时暴露部署问题
+      - name: 检查站点可访问性
+        run: |
+          curl -fsS -o /dev/null --connect-timeout 10 --max-time 30 \
+            -w "站点可访问：HTTP %{http_code}，耗时 %{time_total}s\n" \
+            http://kaomoji.gouxinjie.com/
