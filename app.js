@@ -818,6 +818,9 @@
         setupCopy();
         setupMore();
         setupMobileFilter();
+        // 内容渲染完成后隐藏居中的加载提示
+        const loading = document.getElementById('page-loading');
+        if (loading) loading.classList.add('hidden');
     }
 
     if (document.readyState === 'loading') {

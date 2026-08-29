@@ -20,11 +20,54 @@
             -moz-osx-font-smoothing: grayscale;
         }
         body { padding: 20px 24px 40px; }
-        .site-header:empty { display: none; }
+        /* JS 渲染前：所有由脚本填充的容器为空时隐藏，避免出现"空卡片"闪烁 */
+        .site-header:empty,
+        #sidebar:empty,
+        #grid:empty,
+        #features:empty,
+        #footer-note:empty { display: none; }
+        /* 页面加载中提示：居中显示，内容渲染完成后由 app.js 隐藏 */
+        .page-loading {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            background: #f6f7fb;
+            color: #5b6478;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            transition: opacity 0.35s ease, visibility 0.35s ease;
+        }
+        .page-loading.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+        .loading-spinner {
+            width: 38px;
+            height: 38px;
+            border: 3px solid #e3e8f7;
+            border-top-color: #4a7bff;
+            border-radius: 50%;
+            animation: loading-spin 0.9s linear infinite;
+        }
+        @keyframes loading-spin {
+            to { transform: rotate(360deg); }
+        }
     </style>
     <link rel="stylesheet" href="./styles.css?v=20260827">
 </head>
 <body>
+
+<!-- 页面加载中提示：内容渲染完成后由 app.js 隐藏 -->
+<div class="page-loading" id="page-loading" role="status" aria-live="polite">
+    <div class="loading-spinner" aria-hidden="true"></div>
+    <span class="loading-text">正在加载灵感库…</span>
+</div>
 
 <div class="container">
     <!-- 头部（由 app.js 渲染：品牌行 + 大标题 + 描述 + 分类chips + 搜索/Tab + 数据统计） -->

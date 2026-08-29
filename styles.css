@@ -663,6 +663,13 @@ body {
 }
 
 /* ---------- 侧边栏 ---------- */
+/* JS 渲染前的容器占位骨架：全部隐藏避免出现"空卡片"闪烁（与 index.html critical CSS 冗余兜底） */
+.site-header:empty,
+#sidebar:empty,
+#grid:empty,
+#features:empty,
+#footer-note:empty { display: none; }
+
 .sidebar {
     position: sticky;
     top: 20px;
