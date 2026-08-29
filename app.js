@@ -233,6 +233,18 @@
             input.addEventListener('input', function () {
                 searchKeyword = this.value;
                 if (clear) clear.hidden = !this.value;
+                // 进入全局搜索模式：暂存当前分类筛选并重置为「全部」
+                if (this.value.trim()) {
+                    if (!savedCategories) {
+                        savedCategories = new Set(activeCategories);
+                        activeCategories = new Set(['all']);
+                        renderSidebar();
+                    }
+                } else if (savedCategories) {
+                    // 清空搜索词：还原进入搜索前的分类筛选
+                    restoreCategories();
+                    renderSidebar();
+                }
                 clearTimeout(debounceTimer);
                 debounceTimer = setTimeout(renderGrid, 200);
             });
@@ -242,6 +254,8 @@
                 input.value = '';
                 searchKeyword = '';
                 this.hidden = true;
+                restoreCategories();
+                renderSidebar();
                 input.focus();
                 renderGrid();
             });
@@ -253,6 +267,7 @@
                     const id = this.getAttribute('data-tab');
                     if (id === activeTab) return;
                     activeTab = id;
+                    savedCategories = null;
                     activeCategories = new Set(['all']);
                     searchKeyword = '';
                     const i = document.getElementById('search-input');
@@ -270,23 +285,20 @@
     /* ---------------- 状态 ---------------- */
     let activeCategories = new Set(['all']); // 当前筛选的分类 id 集合（多选）
     let searchKeyword = '';                  // 当前搜索关键词
+    let savedCategories = null;              // 进入全局搜索前暂存的分类筛选，清空搜索后还原
 
     /* ---------------- Tab 切换 ---------------- */
     // Tab 按钮和搜索框现已嵌入到 site-header 中，由 renderHeader() 统一渲染，
     // 交互由 bindHeaderInteractions() 挂载。下面仅保留 placeholder / empty 文案。
 
-    // 返回当前 Tab 的搜索框提示文案
+    // 搜索框提示文案：现在为跨 6 个模块的全局搜索
     function searchPlaceholder() {
-        if (activeTab === 'icons') return '搜索 Emoji、表情、图标…';
-        if (activeTab === 'symbols') return '搜索箭头、爱心、数学符号…';
-        if (activeTab === 'radicals') return '搜索汉字部首、偏旁…';
-        if (activeTab === 'fancy') return '搜索带圈、带框、花体字母…';
-        if (activeTab === 'deco') return '搜索分隔线、长串装饰…';
-        return '搜索颜文字、符号、昵称等灵感…';
+        return '全局搜索颜文字、Emoji、符号、部首、花字、装饰…';
     }
 
-    // 返回当前 Tab 空结果提示文案
+    // 返回当前 Tab 空结果提示文案（全局搜索时有独立的空结果文案）
     function emptyMessage() {
+        if (searchKeyword.trim()) return '没有找到匹配的灵感，换个关键词试试';
         if (activeTab === 'icons') return '没有找到匹配的图标';
         if (activeTab === 'symbols') return '没有找到匹配的符号';
         if (activeTab === 'radicals') return '没有找到匹配的部首';
@@ -295,20 +307,50 @@
         return '没有找到匹配的颜文字';
     }
 
+    // 浏览模式：当前 Tab + 侧边栏分类筛选（多选；all 表示全选）
     function filteredCategories() {
-        const kw = searchKeyword.trim().toLowerCase();
         const allSelected = activeCategories.has('all');
-        return currentData().categories.filter(cat => {
-            // 分类筛选：多选（all 表示全选）
-            if (!allSelected && !activeCategories.has(cat.id)) return false;
-            // 关键词筛选：匹配分类名 / 符号 / 描述
-            if (!kw) return true;
-            if (cat.name.toLowerCase().includes(kw)) return true;
-            return cat.items.some(item =>
-                String(item.symbol).toLowerCase().includes(kw) ||
-                String(item.desc || '').toLowerCase().includes(kw)
-            );
+        return currentData().categories
+            .filter(cat => allSelected || activeCategories.has(cat.id))
+            .map(cat => ({ sourceKey: activeTab, cat }));
+    }
+
+    // 全局搜索模式：跨全部 6 个数据源检索，返回匹配的分类（仅保留命中的条目）
+    function globalSearch(kw) {
+        const results = [];
+        Object.keys(DATA_SOURCES).forEach(sourceKey => {
+            const data = DATA_SOURCES[sourceKey];
+            if (!data || !data.categories) return;
+            data.categories.forEach(cat => {
+                const nameHit = cat.name.toLowerCase().includes(kw);
+                const matched = cat.items.filter(item =>
+                    String(item.symbol).toLowerCase().includes(kw) ||
+                    String(item.desc || '').toLowerCase().includes(kw)
+                );
+                if (!nameHit && matched.length === 0) return;
+                results.push({
+                    sourceKey,
+                    cat: { ...cat, items: nameHit ? cat.items : matched }
+                });
+            });
         });
+        return results;
+    }
+
+    // 统一入口：有搜索词走全局搜索，否则走当前 Tab 的分类筛选
+    function visibleCards() {
+        const kw = searchKeyword.trim().toLowerCase();
+        return kw ? globalSearch(kw) : filteredCategories();
+    }
+
+    // 清空搜索词时还原进入搜索前的分类筛选（无暂存则重置为「全部」）
+    function restoreCategories() {
+        if (savedCategories) {
+            activeCategories = savedCategories;
+            savedCategories = null;
+        } else {
+            activeCategories = new Set(['all']);
+        }
     }
 
     /* ---------------- 搜索框 ---------------- */
@@ -375,6 +417,7 @@
             }))
         ];
         const isFiltered = !activeCategories.has('all'); // 是否处于具体分类筛选状态
+        const searching = !!searchKeyword.trim(); // 全局搜索模式下分类筛选停用
         aside.innerHTML = `
             <div class="sidebar-head">
                 <span class="sidebar-title">分类筛选</span>
@@ -382,7 +425,8 @@
                 <button type="button" class="sidebar-clear" id="sidebar-clear"
                     ${isFiltered ? '' : 'hidden'}>清空</button>
             </div>
-            <ul class="sidebar-list">
+            ${searching ? '<div class="sidebar-search-tip">全局搜索中，分类筛选已停用</div>' : ''}
+            <ul class="sidebar-list ${searching ? 'sidebar-disabled' : ''}">
                 ${items.map(it => `
                     <li class="sidebar-item ${activeCategories.has(it.id) ? 'active' : ''}"
                         data-id="${escapeHtml(it.id)}" role="button" tabindex="0">
@@ -409,6 +453,7 @@
         // 分类项：只切换 active 状态，避免全量重渲染侧边栏
         aside.querySelectorAll('.sidebar-item').forEach(item => {
             const select = () => {
+                if (searching) return; // 全局搜索模式下分类筛选停用，忽略点击
                 const id = item.getAttribute('data-id');
                 // 多选逻辑
                 if (id === 'all') {
@@ -449,17 +494,19 @@
     function renderGrid() {
         const grid = document.getElementById('grid');
         if (!grid) return;
-        const cats = filteredCategories();
-        if (cats.length === 0) {
+        const kw = searchKeyword.trim();
+        const cards = visibleCards();
+        if (cards.length === 0) {
+            const resetText = kw ? '清除搜索' : '清空筛选';
             grid.innerHTML = `
                 <div class="empty-result">
                     <span class="empty-icon">(・_・;)</span>
                     <p>${emptyMessage()}</p>
-                    <button type="button" class="empty-reset" id="empty-reset">清空筛选</button>
+                    <button type="button" class="empty-reset" id="empty-reset">${resetText}</button>
                 </div>`;
             const reset = grid.querySelector('#empty-reset');
             if (reset) reset.addEventListener('click', function () {
-                activeCategories = new Set(['all']);
+                restoreCategories();
                 searchKeyword = '';
                 const input = document.getElementById('search-input');
                 if (input) { input.value = ''; }
@@ -470,7 +517,8 @@
             });
             return;
         }
-        grid.innerHTML = cats.map(cat => renderCard(cat)).join('');
+        const banner = kw ? renderSearchBanner(kw, cards) : '';
+        grid.innerHTML = banner + cards.map(c => renderCard(c.cat, c.sourceKey)).join('');
         // 切换分类/搜索时给卡片添加渐入动画，卡片间交错延迟提升层次感
         grid.querySelectorAll('.card').forEach((card, i) => {
             card.style.setProperty('--stagger', Math.min(i, 8) * 45 + 'ms');
@@ -478,38 +526,77 @@
             void card.offsetWidth; // 强制重排以重启动画
             card.classList.add('card-enter');
         });
+        // 搜索结果横幅的清除按钮
+        const gsb = grid.querySelector('#gsb-clear');
+        if (gsb) gsb.addEventListener('click', function () {
+            searchKeyword = '';
+            const input = document.getElementById('search-input');
+            if (input) { input.value = ''; }
+            const clear = document.getElementById('search-clear');
+            if (clear) { clear.hidden = true; }
+            restoreCategories();
+            renderSidebar();
+            renderGrid();
+        });
     }
 
-    function renderCard(cat) {
-        const isArt = cat.id === 'ascii';
-        const isIcon = activeTab === 'icons';
+    // 全局搜索结果横幅：说明搜索范围与命中数量（role=status 供读屏播报结果变化）
+    function renderSearchBanner(kw, cards) {
+        const total = cards.reduce((n, c) => n + c.cat.items.length, 0);
+        return `
+            <div class="global-search-bar" role="status" aria-live="polite">
+                <span class="gsb-label">全局搜索</span>
+                <span class="gsb-query">“${escapeHtml(kw)}”</span>
+                <span class="gsb-count">命中 ${cards.length} 个分类 · ${total} 条</span>
+                <button type="button" class="gsb-clear" id="gsb-clear" aria-label="清除搜索">✕ 清除</button>
+            </div>
+        `;
+    }
+
+    // 全局搜索时在卡片头部标注来源模块
+    function moduleTag(sourceKey) {
+        const t = HEADER_TABS.find(x => x.id === sourceKey);
+        if (!t) return '';
+        return `<span class="card-source" title="来自「${escapeHtml(t.label)}」模块">${escapeHtml(t.icon)} ${escapeHtml(t.label)}</span>`;
+    }
+
+    function renderCard(cat, sourceKey) {
+        const isArt = cat.id === 'ascii' && sourceKey === 'kaomoji';
+        const isIcon = sourceKey === 'icons';
         // 特殊符号/花字用大字号展示；汉字部首用小一点的字号；装饰长串用等宽换行样式
         let sizeClass = '';
-        if (activeTab === 'symbols') sizeClass = 'symbol-card';
-        else if (activeTab === 'radicals') sizeClass = 'radical-card';
-        else if (activeTab === 'fancy') sizeClass = 'fancy-card';
-        else if (activeTab === 'deco') sizeClass = 'deco-card';
-        const itemsHtml = cat.items.map(item => renderItem(item, isArt, isIcon)).join('');
+        if (sourceKey === 'symbols') sizeClass = 'symbol-card';
+        else if (sourceKey === 'radicals') sizeClass = 'radical-card';
+        else if (sourceKey === 'fancy') sizeClass = 'fancy-card';
+        else if (sourceKey === 'deco') sizeClass = 'deco-card';
+        const itemsHtml = cat.items.map(item => renderItem(item, isArt, isIcon, sourceKey === 'deco')).join('');
         const needCollapse = cat.items.length > COLLAPSE_THRESHOLD;
         const listClass = needCollapse ? 'emoji-list collapsed' : 'emoji-list';
         const moreHtml = needCollapse
-            ? `<div class="more-link" data-target="list-${cat.id}">查看更多 <span class="arrow">▾</span></div>`
+            ? `<div class="more-link" data-target="list-${sourceKey}-${cat.id}">查看更多 <span class="arrow">▾</span></div>`
             : '';
+        // 全局搜索时 badge 显示实际命中的条目数，而非原始全量数
+        const searching = searchKeyword.trim();
+        const badge = searching ? cat.items.length : cat.badge;
+        // 来源标签仅全局搜索时显示
+        const sourceTag = searching ? moduleTag(sourceKey) : '';
 
         return `
-            <div class="card c-${cat.id} ${isArt ? 'art-card' : ''} ${sizeClass}">
+            <div class="card c-${cat.id} ${isArt ? 'art-card' : ''} ${sizeClass}"
+                data-source="${escapeHtml(sourceKey)}">
                 <div class="card-header">
                     <span class="card-emoji">${escapeHtml(cat.emoji)}</span>
                     <span class="card-title">${escapeHtml(cat.name)}</span>
-                    <span class="card-badge">${cat.badge}</span>
+                    ${sourceTag}
+                    <span class="card-badge">${badge}</span>
                 </div>
-                <ul class="${listClass}" id="list-${cat.id}">${itemsHtml}</ul>
+                <ul class="${listClass}" id="list-${sourceKey}-${cat.id}">${itemsHtml}</ul>
                 ${moreHtml}
             </div>
         `;
     }
 
-    function renderItem(item, isArt, isIcon) {
+    function renderItem(item, isArt, isIcon, isDeco) {
         // 完整描述/符号作为原生 hover 提示，避免省略号截断后无法查看全文
         const tip = escapeHtml(item.desc || item.symbol);
         if (isIcon) {
@@ -523,7 +610,7 @@
                 </li>
             `;
         }
-        if (activeTab === 'deco') {
+        if (isDeco) {
             return `
                 <li class="emoji-item deco-item" data-text="${escapeHtml(item.symbol)}" title="${tip}">
                     <div class="deco-main">
